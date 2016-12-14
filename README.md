@@ -30,3 +30,6 @@ git branch -b "nom branche"
 
 # nommage classes css
 par convention mettre omb- devant chaque nom de classe et d'ids.
+
+#liste icones bootstrap pour info
+ http://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp
