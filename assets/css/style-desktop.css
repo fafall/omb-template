@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'roboto regular';
+   src: url('../fonts/roboto/Roboto-Regular.ttf')  format('truetype'),
+      
+      
+}
+/** font clair **/
+@font-face {
+  font-family: 'roboto light';
+    src:  url('../fonts/roboto/Roboto-Light.ttf')  format('truetype'),
+        url('../fonts/roboto/Roboto-LightItalic.ttf')  format('truetype');
+    }
+
+   @font-face {
+  font-family: 'roboto thin';
+    src:   url('../fonts/roboto/Roboto-Thin.ttf')  format('truetype'),
+        url('../fonts/roboto/Roboto-ThinItalic.ttf')  format('truetype');
+    }
+
+    /** font medium */
+@font-face {
+  font-family: 'roboto medium';
+    src: url('../fonts/roboto/Roboto-Medium.ttf')  format('truetype'),
+        url('../fonts/roboto/Roboto-MediumItalic.ttf')  format('truetype');
+    }
+
+/* font bold */
+@font-face {
+  font-family: 'roboto bold';
+    src:   url('../fonts/roboto/Roboto-Bold.ttf')  format('truetype'),
+        url('../fonts/roboto/Roboto-BoldItalic.ttf')  format('truetype');
+    }
+
+ @font-face {
+  font-family: 'roboto black';
+    src:   url('../fonts/roboto/Roboto-Black.ttf')  format('truetype'),
+        url('../fonts/roboto/Roboto-BlackItalic.ttf')  format('truetype');
+    }
+
+
+
+
+body{
+	background-image:url('../images/login_bg.png') ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: auto;
+	overflow: hidden;
+	font-family: 'roboto thin', 'sans-serif';
+	font-size: 16px;
+	
+}
+
+
+.omb-logo{
+	padding: 0;
+}
+.navbar-brand img{
+	width: 70%;
+}

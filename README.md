@@ -33,3 +33,8 @@ par convention mettre omb- devant chaque nom de classe et d'ids.
 
 #liste icones bootstrap pour info
  http://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp
+
+ #font/polices
+
+ le font utilisé par Cofina est roboto et raleway les deux sont rajoutés dans le dossier fonts dans assets et dans le fichier css "style-desktop".
+ Par contre seul roboto est en local, Raleway est sur google fonts.
