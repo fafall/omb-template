@@ -27,3 +27,6 @@ git merge master "branche nouvellement crée"
 # supprimer branche
 
 git branch -b "nom branche"
+
+# nommage classes css
+par convention mettre omb- devant chaque nom de classe et d'ids.
