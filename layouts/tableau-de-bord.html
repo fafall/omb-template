@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->-
+</head>
+<header>
+        <div class= "container">
+            <div class= "omb-entete">
+                <div class= "omb-logo col-sm-2 col-lg-2 ">
+                    <img src="img/logo-cofina.png" alt="SENEGAL">
+                </div>
+                <div class= "omb-icone col-lg-5 col-lg-offset-5">
+                    <ul class="navbar">
+                            <li> 
+                                <a href="#"><i class="fa fa-user fa-2x active"> </i></a>
+                            </li>
+                             <li> 
+                                <a href="#"><i class="fa fa-address-book fa-2x"> </i></a>
+                            </li>
+                            <li> 
+                                <a href="#"><i class="fa fa-envelope-o fa-2x"> </i></a>
+                            </li>
+                            <li> 
+                                <a href="#"><i class="fa  fa-power-off fa-2x"> </i></a>
+                            </li>
+                        </ul>
+                </div>
+        </div>    
+    </header>
+<body>  
+    <div id="omb-homepage">
+        <div class= "container">
+            <div class="row">
+                <div  class="omb-infos col-lg-4 col-lg-offset-8">
+                    <div class="omb-details">
+                        <div class="omb-welcome"> <p>Bienvenue Mr Démo</p>
+                        </div>
+                         <small>Dernière connexion le 02/12/2016 à 10:16</small>
+                         <p class="omb-details-compte">Solde : 2088585 Crédits : -1254 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="omb-menu col-xs-3 col-sm-3 col-md-3  col-lg-3">
+                     <ul class="nav nav-pills nav-stacked">
+                        <li> 
+                            <a href="#" class="active"><i class="fa fa-th-large">  TABLEAU DE BORD </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-user"> MES COMPTES </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-chevron-right"> MES  VIREMENTS </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-chevron-right"> MES  MISES A  DISPOSITION </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-chevron-right"> MES  BENEFICIAIRES </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-chevron-right"> MES  DEMANDES </i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa  fa-chevron-right"> MES  ANNULATIONS </i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="omb-contenu col-lg-6">
+                    <div class="row">
+                        <h2 class="omb-titre-page"> MON TABLEAU DE BORD</h2>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-red " data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> Ajouter un widget </button>
+                    </div>
+                    <div class="row">
+                        <div class="omb-compte col-lg-6">
+                            <div class="omb-header">
+                                <i class="fa fa-user"> </i>
+                                <span> MES COMPTES </span><a href="#"><i class="fa fa-close pull-right"></i></a>
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#"> COMPTES ORDINAIRES COMMERCIAUX</a>
+                                            <div>25011 00500 05001234564 90</div>
+                                            <div> Mr Démo</div>
+                                       </td>
+                                       <td>
+                                            <span>0</span>
+                                            <span>XOF</span>
+                                       </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#"> COMPTES ORDINAIRES COMMERCIAUX</a>
+                                            <div>25011 00500 05001234564 25</div>
+                                            <div> Mr Démo</div>
+                                        </td>
+                                         <td>
+                                            <span>0</span>
+                                            <span>XOF</span>
+                                       </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="omb-footer">
+                            <a href="#"> <i class="fa fa-chevron-right"></i>Le solde de mes comptes</a>    
+                            </div>
+                        </div>
+                        <div class="omb-droite col-lg-6">
+                            <div class="row">
+                                <div class="omb-message">
+                                     <div class="omb-header">
+                                        <i class="fa fa-envelope"> </i>
+                                        <span> MES MESSAGES </span><a href="#"><i class="fa fa-close pull-right"></i></a>
+                                    </div>
+                                    <div class="aucun">
+                                        Vous n'avez pas d'ancien message
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="omb-virement">
+                                     <div class="omb-header">
+                                        <i class="fa fa-user"> </i>
+                                        <span> MES VIREMENTS </span><a href="#"><i class="fa fa-close pull-right"></i></a>
+                                    </div>
+                                    <div class="aucun">
+                                        Vous n'avez aucun virement à signer
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="omb-carte">
+                                     <div class="omb-header">
+                                        <i class="fa  fa-credit-card "> </i>
+                                        <span> MES CARTES </span><a href="#"><i class="fa fa-close pull-right"></i></a>
+                                    </div>
+                                    <div class="aucun">
+                                        Vous n'avez pas de carte bancaire disponible
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="omb-pub col-lg-2">
+                    <img src="img/client-particulier.jpg">
+                </div>
+            </div> 
+            </div>
+        </div>
+   
+        <footer>
+            <div class="container">
+                <div class="omb-footer">
+                    <div class="row">
+                        <div class= "omb-logo col-sm-2 col-lg-2  ">
+                            <img src="img/logo-cofina.png" alt="SENEGAL">
+                        </div>
+                        <div class="omb-liens col-lg-5 col-lg-offset-3">
+                            <ul>
+                               <li>
+                                    <a href="#">Mentions légales</a>
+                                </li>
+                                <span>|</span>
+                                <li>
+                                    <a href="#">Sécurité</a>
+                                </li>
+                                <span>|</span>
+                                <li>
+                                    <a href="#">Aide à la connexion</a>
+                                </li>
+                                <span>|</span>
+                                <li>
+                                    <a href="#">Visite guidée</a>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <span>Copyright 2016</span>
+                             </div>
+                        </div> 
+                    </div> 
+                    
+                 </div>
+           </div>
+        </footer>
+</body> 
+</html>
