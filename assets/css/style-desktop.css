@@ -52,10 +52,179 @@ body{
 	
 }
 
-
-.omb-logo{
-	padding: 0;
+header .navbar-default{
+	background:#000;
+	opacity: .62;
+	border:none;
+	border-radius:0;
 }
+
+header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border:none;
+}
+
+header .omb-logo,
+header .navbar-header:hover{
+	padding: 0;
+	background: #fafafa;
+	opacity:1;
+}
+
+
 .navbar-brand img{
 	width: 70%;
 }
+header .navbar-default .navbar-nav>li>a{
+	color:#fff;
+	font-family:'Roboto-Bold', sans-serif;
+	border-right: 1px solid rgba(255,255,255,.5);
+	opacity:1;
+}
+header .navbar-default .navbar-nav>li>a:hover{
+	color:#b10021;
+}
+
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus,
+ .navbar-default .navbar-nav>.active>a:hover{
+ 	background:#b10021;
+ 	color:#fff;
+ }
+
+
+ /*
+ ** login bloc 
+ */
+#omb-content .omb-login-bloc{
+ 	background:rgba(0,0,0, .62);
+ 	padding: 5% 0;
+ 	text-align: center;
+ }
+ #omb-content .omb-container-login{ opacity:1; }
+  #omb-content h2{
+  	color:#e3212e;
+  	text-transform: uppercase;
+  	opacity:1;
+  	font-size:1.5em;
+  	margin-bottom: 30px;
+  	font-family: 'Roboto-Bold', sans-serif;
+  }
+   #omb-content label{
+   	color:#fff;
+   	font-size:1.2em;
+  
+   }
+   #omb-content .form-control{
+   	height: 40px;
+   	border:1px solid #fff;
+   	background:#fff;
+   	opacity:1;
+   	border-radius:0;
+   	width: 70%;
+   	margin: 10px auto ;
+   	color:#b20;
+   	padding-left: 42.5px;
+   }
+
+
+   /** icon dans champ input **/
+
+   .has-feedback label~.form-control-feedback{
+   	top: 45px;
+   }
+   .form-control-feedback{
+   	left: 15%;
+   }
+
+   /**texte help champ input **/
+
+   #omb-content .text-muted{
+   	color:#fff;
+  }
+  small{
+  	font-size: 63%;
+  	text-align: left !important;
+  	display: none;
+  }
+
+/*   **pavé numerique **/
+/*  #omb-content ul{
+	text-align: left;
+	list-style: none;
+	background:#000;
+	border:1px solid #ccc;
+	width: 70%;
+	margin: 30px auto 0;
+	padding: 0;
+}
+ #omb-content ul li{
+ 	background:#fff;
+  display:inline-block;
+ 	width: 18.99%;
+ 	text-align: center;
+ 	border-bottom:1px solid #000;
+ 	height: 50px;
+}
+   #omb-content ul li a{
+   	text-decoration: none;
+   	font-size: 1.2em;
+   	color:#e3212e;
+   	font-weight: 700;
+   } */
+
+
+   #omb-content .omb-pave {
+	text-align: left;
+	list-style: none;
+	background:#000;
+	
+	width: 70%;
+	margin: 30px auto 0;
+	padding: 0;
+}
+ #omb-content .omb-pave .ligne{
+ 	margin: 0;
+ }
+ #omb-content .omb-pave div{
+ 	background:#fff;
+    text-align: center;
+ 	border-bottom:1px solid rgba(0,0,0,.62);
+ 	border-right:1px solid rgba(0,0,0,.62);
+ 	 height: 45px;
+ 	 line-height: 35px;
+ 	 vertical-align: middle;
+}
+   #omb-content .omb-pave div a{
+   	text-decoration: none;
+   	font-size: 1.2em;
+   	color:#e3212e;
+   	font-weight: 700;
+   }
+   /** bouton valider **/
+     #omb-content .omb-login-bloc .submit-button{
+     	background:#e3212e;
+     	color:#fff;
+     	text-transform: uppercase;
+     	text-align: center;
+     	width: 70%;
+     	border:none;
+     	font-size:1.2em;
+     	margin-bottom: 20px;
+     	font-weight: 700;
+     }
+      #omb-content .omb-login-bloc .submit-button:hover{
+      	
+      	background:#fff;
+      	color:#e3212e;
+      }
+
+     /** lien d'oubli mot de passe */
+      #omb-content .omb-login-bloc .omb-oubli-connexion a{
+      	color:#fff;
+      font-size: 1em;
+      text-decoration:underline;
+      }
+      #omb-content .omb-login-bloc .omb-oubli-connexion a:hover{
+      	color:#e3212e;
+      }

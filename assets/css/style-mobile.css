@@ -1,0 +1,39 @@
+@media (max-width: 768px){
+
+	header .navbar-default
+	{
+		background:transparent;
+		opacity:1;
+		width: 90%;
+		margin:0 auto;
+	}
+	header .omb-logo,
+    header .navbar-header:hover{
+		background: transparent;
+	
+   }
+
+   .navbar-brand img{
+	width: 80%;
+   }
+
+   header .navbar-default .navbar-collapse{
+   	     background: #000;
+       opacity: .62;
+      text-align: center;
+      border: none;
+   }  
+   .navbar-default .navbar-toggle,
+   .navbar-default .navbar-toggle:focus, 
+   .navbar-default .navbar-toggle:hover{
+    border-color: #5f6062;
+    background: #5f6062;
+    opacity: 1;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+   }
+
+
+}/** end media 768px **/
