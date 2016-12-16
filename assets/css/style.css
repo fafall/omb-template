@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6{
   font-family:helvetica,arial,sans-serif !important;  
 }
 /** header**/
-header .navbar-default{
+header .navbar-default, #omb-homepage .omb-menu .navbar-default{
     background-color: #fff;
     border:none;
 }
