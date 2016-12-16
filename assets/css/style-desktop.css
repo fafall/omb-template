@@ -46,10 +46,13 @@ body{
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: auto;
-	overflow: hidden;
+	overflow-x: hidden; 
 	font-family: 'roboto thin', 'sans-serif';
 	font-size: 16px;
 	
+}
+header{
+	height: 50px;
 }
 
 header .navbar-default{
@@ -80,6 +83,10 @@ header .navbar-default .navbar-nav>li>a{
 	border-right: 1px solid rgba(255,255,255,.5);
 	opacity:1;
 }
+header .navbar-right li a{
+	border:none !important;
+
+}
 header .navbar-default .navbar-nav>li>a:hover{
 	color:#b10021;
 }
@@ -96,9 +103,12 @@ header .navbar-default .navbar-nav>li>a:hover{
  /*
  ** login bloc 
  */
+ #omb-content{
+ 	margin-top: 5%;
+ }
 #omb-content .omb-login-bloc{
  	background:rgba(0,0,0, .62);
- 	padding: 5% 0;
+ 	padding: 2% 0;
  	text-align: center;
  }
  #omb-content .omb-container-login{ opacity:1; }
@@ -192,7 +202,7 @@ header .navbar-default .navbar-nav>li>a:hover{
  	border-bottom:1px solid rgba(0,0,0,.62);
  	border-right:1px solid rgba(0,0,0,.62);
  	 height: 45px;
- 	 line-height: 35px;
+ 	 line-height: 45px;
  	 vertical-align: middle;
 }
    #omb-content .omb-pave div a{
@@ -214,9 +224,8 @@ header .navbar-default .navbar-nav>li>a:hover{
      	font-weight: 700;
      }
       #omb-content .omb-login-bloc .submit-button:hover{
-      	
       	background:#fff;
-      	color:#e3212e;
+      	 color:#e3212e;
       }
 
      /** lien d'oubli mot de passe */
@@ -228,3 +237,13 @@ header .navbar-default .navbar-nav>li>a:hover{
       #omb-content .omb-login-bloc .omb-oubli-connexion a:hover{
       	color:#e3212e;
       }
+
+     .vertical-align{
+     	display: -webkit-flex;
+     	display: -moz-flex;
+     	display: -ms-flex;
+     	display: -o-flex;
+     	display: flex;
+     	align-items: center;
+     	align-content: center;
+     }
