@@ -37,3 +37,40 @@
 
 
 }/** end media 768px **/
+
+
+/** small devices **/
+
+@media (max-width:468px){
+	.navbar-brand img{
+		width: 55%;
+	}
+	#omb-content{
+		margin-top: 10%;
+	}
+
+	#omb-content h2{
+		font-size: 1em; 
+		margin-bottom: 15px;
+	}
+	#omb-content label{
+		font-size: 0.8em;
+	}
+	#omb-content .form-control{
+		height: 30px;
+	}
+	/*icone input */
+	.has-feedback label~.form-control-feedback {
+		top: 33px;
+	}
+	#omb-content .omb-pave div{
+		height: 35px;
+		line-height: 35px;
+	}
+	#omb-content .omb-login-bloc .submit-button{
+		font-size: 1em;
+	}
+	#omb-content .omb-login-bloc .omb-oubli-connexion a{
+		font-size: 0.8em;
+	}
+}
