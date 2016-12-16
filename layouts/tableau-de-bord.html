@@ -2,41 +2,53 @@
 <html lang='fr'>
 <head>
     <title>tableau de bord </title>
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/bootstrap/css/bootstrap.min.css">
+  
+    <link   rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link href="../assets/fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body> 
-<header>
-        <div class= "container">
-            <div class= "omb-entete col-lg-12">
-                <div class= "omb-logo col-sm-2 col-lg-2 ">
-                    <img src="../assets/images/mylogo.png" alt="SENEGAL">
+    <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#"><img src="../assets/images/mylogo.png" alt="SENEGAL"></a>
                 </div>
-                <div class= "omb-icone col-lg-6 col-lg-offset-4">
-                    <ul class="navbar">
-                            <li> 
-                                <a href="#"><i class="fa fa-user fa-2x active"> </i></a>
-                            </li>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <ul class="nav navbar-nav navbar-right">
+                          
                              <li> 
-                                <a href="#"><i class="fa fa-address-book fa-2x"> </i></a>
-                            </li>
-                            <li> 
-                                <a href="#"><i class="fa fa-envelope-o fa-2x"> </i></a>
-                            </li>
-                            <li> 
-                                <a href="#"><i class="fa  fa-power-off fa-2x"> </i></a>
-                            </li>
-                        </ul>
-                </div>
-            </div>
-        </div>    
-    </header> 
+                                 <a href="#"><i class="fa align-center fa-user fa-2x active"> </i></a>
+                                            </li>
+                                             <li> 
+                                                <a href="#"><i class="fa fa-address-book fa-2x"> </i></a>
+                                            </li>
+                                            <li> 
+                                                <a href="#"><i class="fa fa-envelope-o fa-2x"> </i></a>
+                                            </li>
+                                            <li> 
+                                                <a href="#"><i class="fa  fa-power-off fa-2x"> </i></a>
+                                            </li>
+                        
+                      </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+   </header>
     <div id="omb-homepage">
         <div class= "container">
             <div class="row">
-                <div  class="omb-infos col-lg-4 col-lg-offset-8">
+                <div  class="omb-infos">
                     <div class="omb-details">
                         <div class="omb-welcome"> <p>Bienvenue Mr Démo</p>
                         </div>
@@ -47,6 +59,16 @@
             </div>
             <div class="row">
                 <div class="omb-menu col-xs-3 col-sm-3 col-md-3  col-lg-3">
+                     <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      
+                </div>
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                      <ul class="nav nav-pills nav-stacked">
                         <li> 
                             <a href="#" class="active"><i class="fa fa-th-large">  TABLEAU DE BORD </i></a>
@@ -70,6 +92,7 @@
                             <a href="#"><i class="fa  fa-chevron-right"> MES  ANNULATIONS </i></a>
                         </li>
                     </ul>
+                </div>
                 </div>
                 <div class="omb-contenu col-lg-6">
                     <div class="row">
@@ -163,9 +186,7 @@
             <div class="container">
                 <div class="omb-footer">
                     <div class="row">
-                        <div class= "omb-logo col-sm-2 col-lg-2  ">
-                            <img src="../assets/images/mylogo.png" alt="SENEGAL">
-                        </div>
+                        
                         <div class="omb-liens col-lg-5 col-lg-offset-3">
                             <ul>
                                <li>
@@ -193,5 +214,9 @@
                  </div>
            </div>
         </footer>
+       <!--<script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+        <script src="../assets/bootstrap/js/npm.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+        <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body> 
 </html>
