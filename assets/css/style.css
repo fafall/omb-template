@@ -1,0 +1,184 @@
+body{
+  background:#fff; 
+  color:#000;
+  font-family:helvetica,arial,sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:helvetica,arial,sans-serif !important;  
+}
+/** entete**/
+
+.omb-entete .omb-logo{
+    padding: 5px 15px 5px 0;
+    margin-left: 0px;
+}
+.omb-entete .omb-icone , .omb-entete .omb-logo {
+     margin-top:10px;
+}
+.omb-entete .omb-icone {
+    padding-left:185px;
+}
+.omb-entete .omb-icone ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+.omb-entete .omb-icone ul li a{
+    color:#5F6062;
+}
+/*.entete .icone ul{
+    float:right;
+}*/
+.omb-entete .omb-icone ul li a{
+    margin:10px;
+}
+.omb-infos .omb-welcome p{
+    color:#E3212E;
+    font-weight:bold;
+   padding-left: 112px;
+}
+/** détails**/
+.container .omb-infos{
+    padding-left: 75px;
+}
+.omb-infos small{
+    padding:10px 20px;
+}
+.omb-infos .omb-details .omb-details-compte{
+    padding-left:48px;
+    padding-top:10px;
+}
+.omb-infos  .omb-details{
+    display: table-cell;
+    border:1px solid #404040;
+    background-color: #E9E7E7;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/** menu**/
+#omb-homepage .omb-menu ul{
+    background-color: #DCDCDC;
+    height:500px;
+}
+#omb-homepage .omb-menu{
+    padding-top:50px;
+    padding-right: 40px;
+}
+#omb-homepage .omb-menu ul li a{
+    color:#000;
+     
+}
+#omb-homepage .omb-menu .nav-pills li a {
+    border:none;
+    border-radius: 0px;
+}
+#omb-homepage .omb-menu .nav-pills li a:hover,
+#omb-homepage .omb-menu .nav-pills li a:focus,
+#omb-homepage .omb-menu .nav-pills li a:active{
+    background-color: #9F2528;
+    color:white;
+}
+/**contenu **/
+#omb-homepage .omb-contenu h2{
+    margin-top:53px;
+}
+#omb-homepage .omb-pub{
+    margin-left:36px;
+    margin-top: 30px;
+}
+#omb-homepage .omb-contenu .btn-red{
+    float: right;
+    background-color: #9F2528;
+    color:#fff;
+    margin-bottom: 60px;
+}
+#omb-homepage .omb-contenu .omb-compte,
+#omb-homepage .omb-contenu .omb-message,
+#omb-homepage .omb-contenu .omb-virement,
+#omb-homepage .omb-contenu .omb-carte
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+#omb-homepage .omb-contenu .omb-compte{
+    border:1px solid #9F2528;
+}
+#omb-homepage .omb-contenu .omb-message{
+    border:1px solid #1485CC;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+#omb-homepage .omb-contenu .omb-virement{
+    border:1px solid #00B233;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+#omb-homepage .omb-contenu .omb-carte{
+    border:1px solid #FF0DFF;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+#omb-homepage .omb-contenu .omb-compte .omb-header{
+    background-color: #9F2528;
+}
+#omb-homepage .omb-contenu .omb-compte .fa-close:before,
+#omb-homepage .omb-contenu .omb-virement .fa-close:before,
+#omb-homepage .omb-contenu .omb-message .fa-close:before,
+#omb-homepage .omb-contenu .omb-carte .fa-close:before{
+    color: white;
+    padding: 5px;
+}
+#omb-homepage .omb-contenu .omb-compte .omb-header,
+#omb-homepage .omb-contenu .omb-virement .omb-header,
+#omb-homepage .omb-contenu .omb-message .omb-header,
+#omb-homepage .omb-contenu .omb-carte .omb-header{
+    color:#fff;
+    padding-left: 7px;
+}
+#omb-homepage .omb-contenu .omb-compte .omb-header .fa,
+#omb-homepage .omb-contenu .omb-virement .omb-header .fa,
+#omb-homepage .omb-contenu .omb-message .omb-header .fa,
+#omb-homepage .omb-contenu .omb-carte .omb-header .fa,
+#omb-homepage .omb-contenu .omb-compte .omb-footer .fa{
+    padding-right: 10px;
+}
+#omb-homepage .omb-contenu .omb-virement .omb-header{
+    background-color: #00B233;
+}
+#omb-homepage .omb-contenu .omb-message .omb-header{
+    background-color: #1485CC;
+}
+#omb-homepage .omb-contenu .omb-carte .omb-header{
+    background-color:#FF0DFF;
+}
+
+#omb-homepage .omb-contenu .omb-compte table td,
+#omb-homepage .omb-contenu .aucun
+{
+    padding:5px 5px;
+}
+#omb-homepage .omb-contenu .omb-compte table td a{
+    color:#000;
+}
+#omb-homepage .omb-contenu .omb-compte table tr,
+#omb-homepage .omb-contenu .omb-virement table tr,
+#omb-homepage .omb-contenu .omb-message table tr,
+#omb-homepage .omb-contenu .omb-carte table tr{
+    border-bottom: 1px solid #ccc;
+}
+#omb-homepage .omb-contenu .omb-compte .omb-footer a{
+    color:#9F2528;
+    font-size:13px;
+}
+#omb-homepage .omb-contenu .omb-compte .omb-footer{
+    margin-top: 10px;
+    padding-left: 5px
+}
+footer{
+    background-color: #DCDCDC; 
+}
+footer .omb-liens ul li{
+    display: inline-block;
+}
+footer .omb-liens ul li a{
+   color:#000;
+}
