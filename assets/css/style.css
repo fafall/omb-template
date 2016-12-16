@@ -6,9 +6,18 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family:helvetica,arial,sans-serif !important;  
 }
-/** entete**/
-
-.omb-entete .omb-logo{
+/** header**/
+header .navbar-default{
+    background-color: #fff;
+    border:none;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 55px;
+}
+.navbar-right {
+    margin-right: 46px;
+}
+/*.omb-entete .omb-logo{
     padding: 5px 15px 5px 0;
     margin-left: 0px;
 }
@@ -27,18 +36,18 @@ h1,h2,h3,h4,h5,h6{
 }
 /*.entete .icone ul{
     float:right;
-}*/
+}
 .omb-entete .omb-icone ul li a{
     margin:10px;
-}
+}*/
 .omb-infos .omb-welcome p{
     color:#E3212E;
     font-weight:bold;
    padding-left: 112px;
 }
 /** détails**/
-.container .omb-infos{
-    padding-left: 75px;
+.omb-infos{
+    float:right;
 }
 .omb-infos small{
     padding:10px 20px;
@@ -61,7 +70,8 @@ h1,h2,h3,h4,h5,h6{
 }
 #omb-homepage .omb-menu{
     padding-top:50px;
-    padding-right: 40px;
+    padding-left:0;
+    
 }
 #omb-homepage .omb-menu ul li a{
     color:#000;
@@ -82,7 +92,8 @@ h1,h2,h3,h4,h5,h6{
     margin-top:53px;
 }
 #omb-homepage .omb-pub{
-    margin-left:36px;
+    margin-left:30px;
+
     margin-top: 30px;
 }
 #omb-homepage .omb-contenu .btn-red{
