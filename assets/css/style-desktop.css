@@ -40,7 +40,7 @@
 
 
 
-body{
+body#omb-login-page{
 	background-image:url('../images/login_bg.png') ;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -51,50 +51,49 @@ body{
 	font-size: 16px;
 	
 }
-header{
+#omb-login-page header{
 	height: 50px;
 }
 
-header .navbar-default{
+#omb-login-page header .navbar-default{
 	background:#000;
 	opacity: .62;
 	border:none;
 	border-radius:0;
 }
 
-header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+#omb-login-page header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
 	border:none;
 }
 
 header .omb-logo,
-header .navbar-header:hover{
+ header .navbar-header:hover{
 	padding: 0;
 	background: #fafafa;
 	opacity:1;
 }
 
-
 .navbar-brand img{
 	width: 70%;
 }
-header .navbar-default .navbar-nav>li>a{
+#omb-login-page header .navbar-default .navbar-nav>li>a{
 	color:#fff;
 	font-family:'Roboto-Bold', sans-serif;
 	border-right: 1px solid rgba(255,255,255,.5);
 	opacity:1;
 }
-header .navbar-right li a{
+#omb-login-page header .navbar-right li a{
 	border:none !important;
 
 }
-header .navbar-default .navbar-nav>li>a:hover{
+#omb-login-page header .navbar-default .navbar-nav>li>a:hover{
 	color:#b10021;
 }
 
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus,
- .navbar-default .navbar-nav>.active>a:hover{
+#omb-login-page .navbar-default .navbar-nav>.active>a, 
+#omb-login-page .navbar-default .navbar-nav>.active>a:focus,
+#omb-login-page .navbar-default .navbar-nav>.active>a:hover{
  	background:#b10021;
  	color:#fff;
  }
@@ -103,16 +102,16 @@ header .navbar-default .navbar-nav>li>a:hover{
  /*
  ** login bloc 
  */
- #omb-content{
+ #omb-login-page #omb-content{
  	margin-top: 5%;
  }
-#omb-content .omb-login-bloc{
+#omb-login-page #omb-content .omb-login-bloc{
  	background:rgba(0,0,0, .62);
  	padding: 2% 0;
  	text-align: center;
  }
- #omb-content .omb-container-login{ opacity:1; }
-  #omb-content h2{
+ #omb-login-page #omb-content .omb-container-login{ opacity:1; }
+  #omb-login-page #omb-content h2{
   	color:#e3212e;
   	text-transform: uppercase;
   	opacity:1;
@@ -120,12 +119,12 @@ header .navbar-default .navbar-nav>li>a:hover{
   	margin-bottom: 30px;
   	font-family: 'Roboto-Bold', sans-serif;
   }
-   #omb-content label{
+  #omb-login-page #omb-content label{
    	color:#fff;
    	font-size:1.2em;
   
    }
-   #omb-content .form-control{
+  #omb-login-page #omb-content .form-control{
    	height: 40px;
    	border:1px solid #fff;
    	background:#fff;
@@ -140,16 +139,16 @@ header .navbar-default .navbar-nav>li>a:hover{
 
    /** icon dans champ input **/
 
-   .has-feedback label~.form-control-feedback{
+  #omb-login-page .has-feedback label~.form-control-feedback{
    	top: 45px;
    }
-   .form-control-feedback{
+  #omb-login-page .form-control-feedback{
    	left: 15%;
    }
 
    /**texte help champ input **/
 
-   #omb-content .text-muted{
+ #omb-login-page  #omb-content .text-muted{
    	color:#fff;
   }
   small{
@@ -158,33 +157,9 @@ header .navbar-default .navbar-nav>li>a:hover{
   	display: none;
   }
 
-/*   **pavé numerique **/
-/*  #omb-content ul{
-	text-align: left;
-	list-style: none;
-	background:#000;
-	border:1px solid #ccc;
-	width: 70%;
-	margin: 30px auto 0;
-	padding: 0;
-}
- #omb-content ul li{
- 	background:#fff;
-  display:inline-block;
- 	width: 18.99%;
- 	text-align: center;
- 	border-bottom:1px solid #000;
- 	height: 50px;
-}
-   #omb-content ul li a{
-   	text-decoration: none;
-   	font-size: 1.2em;
-   	color:#e3212e;
-   	font-weight: 700;
-   } */
 
 
-   #omb-content .omb-pave {
+ #omb-login-page  #omb-content .omb-pave {
 	text-align: left;
 	list-style: none;
 	background:#000;
@@ -193,10 +168,10 @@ header .navbar-default .navbar-nav>li>a:hover{
 	margin: 30px auto 0;
 	padding: 0;
 }
- #omb-content .omb-pave .ligne{
+#omb-login-page #omb-content .omb-pave .ligne{
  	margin: 0;
  }
- #omb-content .omb-pave div{
+#omb-login-page  #omb-content .omb-pave div{
  	background:#fff;
     text-align: center;
  	border-bottom:1px solid rgba(0,0,0,.62);
@@ -205,14 +180,14 @@ header .navbar-default .navbar-nav>li>a:hover{
  	 line-height: 45px;
  	 vertical-align: middle;
 }
-   #omb-content .omb-pave div a{
+ #omb-login-page  #omb-content .omb-pave div a{
    	text-decoration: none;
    	font-size: 1.2em;
    	color:#e3212e;
    	font-weight: 700;
    }
    /** bouton valider **/
-     #omb-content .omb-login-bloc .submit-button{
+#omb-login-page     #omb-content .omb-login-bloc .submit-button{
      	background:#e3212e;
      	color:#fff;
      	text-transform: uppercase;
@@ -223,27 +198,52 @@ header .navbar-default .navbar-nav>li>a:hover{
      	margin-bottom: 20px;
      	font-weight: 700;
      }
-      #omb-content .omb-login-bloc .submit-button:hover{
+#omb-login-page #omb-content .omb-login-bloc .submit-button:hover{
       	background:#fff;
       	 color:#e3212e;
       }
 
      /** lien d'oubli mot de passe */
-      #omb-content .omb-login-bloc .omb-oubli-connexion a{
+#omb-login-page #omb-content .omb-login-bloc .omb-oubli-connexion a{
       	color:#fff;
       font-size: 1em;
       text-decoration:underline;
       }
-      #omb-content .omb-login-bloc .omb-oubli-connexion a:hover{
+#omb-login-page #omb-content .omb-login-bloc .omb-oubli-connexion a:hover{
       	color:#e3212e;
       }
+/*
+**********  Page ouverture compte ******************
+*/
+/* header */
+#omb-ouverture-compte .navbar-default,
+ #omb-ouverture-compte .omb-logo{
+	background: transparent;
+	border:none;
+ }
 
-     .vertical-align{
-     	display: -webkit-flex;
-     	display: -moz-flex;
-     	display: -ms-flex;
-     	display: -o-flex;
-     	display: flex;
-     	align-items: center;
-     	align-content: center;
-     }
+  #omb-ouverture-compte .glyphicon:before{
+  	font-size: 1.5em;
+  }
+
+   #omb-ouverture-compte  .omb-welcome-bloc{
+ /*   	background:#e8e6e6; */
+   	    background-image: -webkit-linear-gradient(right,#5f6062,#e8e6e6);
+   	border:1px solid #e8e6e6;
+   	    -webkit-box-sizing: border-box;
+   	   /*  box-shadow: 1px 2px 1px #e8e6e6; */
+   	   position:relative;
+   	   display: block;
+   }
+   #omb-ouverture-compte  .omb-welcome-bloc:before {
+	top: 10px;
+	left: 8px;
+	width: 50%;
+	height: 130px;
+	position: absolute;
+	
+	box-shadow: -7px 0 10px #555;
+	transform: rotate(-5deg);
+}
+ #omb-ouverture-compte  .omb-welcome-bloc:after { display: none; }
+
