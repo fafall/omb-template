@@ -5,11 +5,13 @@
 
 
 <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../assets/css/style-desktop.css">
 <link rel="stylesheet" href="../assets/css/style-mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
 <body id="omb-login-page">
+<div class="omb-container">
 
 <header>
 <div class="omb-container-header">
@@ -43,7 +45,7 @@
 		      </ul>
 	    
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#" alt="Ouvrir un nouveau compte"><span class="glyphicon glyphicon-user"></span></a></li>
+		        <li><a href="#" alt="Ouvrir un nouveau compte"><span class="fa fa-user fa-2x"></span></a></li>
 		        
 		     </ul>
 	    </div><!-- /.navbar-collapse -->
@@ -65,7 +67,7 @@
 		<form>
 		  <div class="form-group has-feedback ">
 		    <label for="num-client" class="control-label">Numéro Client</label>
-		     <span class="form-control-feedback glyphicon glyphicon-pencil"></span>
+		     <span class="form-control-feedback fa fa-pencil"></span>
             <input type="text" class="form-control" id="num-client" aria-describedby="num-client" placeholder="identifiant">
 		    
 		    <small id="omb-num-client-help" class="form-text text-muted">Veuillez renseigner vos Ids de connexion en chiffres</small>
@@ -73,7 +75,7 @@
 			  <div class="form-group has-feedback">
 				    <label for="code-secret">Code Secret</label>
 				    <input type="password" class="form-control" id="code-secret" placeholder="Code secret"/>
-				    <span class="form-control-feedback glyphicon glyphicon-lock"></span>
+				    <span class="form-control-feedback fa fa-lock"></span>
 				    <small id="omb-code-secret-help" class="form-text text-muted">Veuillez choisir le code via le pavé
 				    </small>
 			     <div class="omb-pave">
@@ -121,6 +123,6 @@
 <script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-
+</div>
 </body>
 </html>
