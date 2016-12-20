@@ -7,39 +7,14 @@ h1,h2,h3,h4,h5,h6{
   font-family:helvetica,arial,sans-serif !important;  
 }
 /** header**/
-header .navbar-default{
+header .navbar-default, #omb-homepage .omb-menu{
     background-color: #fff;
     border:none;
 }
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+/*.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: 55px;
 }
-.navbar-right {
-    margin-right: 46px;
-}
-/*.omb-entete .omb-logo{
-    padding: 5px 15px 5px 0;
-    margin-left: 0px;
-}
-.omb-entete .omb-icone , .omb-entete .omb-logo {
-     margin-top:10px;
-}
-.omb-entete .omb-icone {
-    padding-left:185px;
-}
-.omb-entete .omb-icone ul li {
-    display: inline-block;
-    padding-left: 10px;
-}
-.omb-entete .omb-icone ul li a{
-    color:#5F6062;
-}
-/*.entete .icone ul{
-    float:right;
-}
-.omb-entete .omb-icone ul li a{
-    margin:10px;
-}*/
+*/
 .omb-infos .omb-welcome p{
     color:#E3212E;
     font-weight:bold;
@@ -48,6 +23,7 @@ header .navbar-default{
 /** détails**/
 .omb-infos{
     float:right;
+    margin-right:29px;
 }
 .omb-infos small{
     padding:10px 20px;
@@ -92,8 +68,6 @@ header .navbar-default{
     margin-top:53px;
 }
 #omb-homepage .omb-pub{
-    margin-left:30px;
-
     margin-top: 30px;
 }
 #omb-homepage .omb-contenu .btn-red{
@@ -192,4 +166,11 @@ footer .omb-liens ul li{
 }
 footer .omb-liens ul li a{
    color:#000;
+}
+footer .omb-liens ul{
+    margin-top:10px;
+    text-align: center;
+}
+footer .omb-liens p{
+    text-align:center;
 }
