@@ -43,7 +43,7 @@
 == Page login
 ** ============================================================================================================================ */
 
-.omb-container{
+.omb-wrapper{
 	width: 80%;
 	margin:auto;
 
@@ -74,7 +74,7 @@ body#omb-login-page{
 #omb-login-page header .navbar-default .navbar-collapse{
 	    border: none;
     background: rgba(0,0,0,.62);
-    margin-left: 21.5%;
+    margin-left: 22.7%;
     height: 30px !important;
     margin-top: 15px;
     padding-left: 0;
@@ -237,12 +237,27 @@ header .omb-logo,
 /* ============================================================================================================================
 == Page ouverture compte
 ** ============================================================================================================================ */
+ 
+
  .omb-no-padding{
  	padding:0;
  }
+  .omb-no-margin{
+  	margin: 0;
+  }
 
 body#omb-ouverture-compte{
 	overflow-x:hidden; 
+
+}
+#omb-ouverture-compte .omb-wrapper{
+	 /*    box-shadow: 0 0 10px #ccc; */
+  
+      background:#fff;
+       box-shadow: 10px 10px 5px #888888,-10px -10px 5px #888888;
+    /*     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow:0 3px 8 0 rgba(0,0,0,0.2), 0 0 0 1px rgba();
+        transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1); */
 }
 /* header */
 #omb-ouverture-compte .navbar-default,
