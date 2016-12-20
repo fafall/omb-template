@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User management</title>
+
+		<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container wrapper">
+			<header class="row omb-user">
+	            <nav class="navbar navbar-default">
+	              <div class="container-fluid">
+	                    <!-- Brand and toggle get grouped for better mobile display -->
+	                    <div class="navbar-header">
+	                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                            <span class="sr-only">Toggle navigation</span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                          </button>
+	                          <a class="navbar-brand" href="#"><img src="../assets/images/mylogo.png" alt="SENEGAL"></a>
+	                    </div>
+
+	                    <!-- Collect the nav links, forms, and other content for toggling -->
+	                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                           <ul class="nav navbar-nav navbar-right">
+	                              
+	                                 <li> 
+	                                     <a href="#"><span class="glyphicon glyphicon-home">Accueil  </span></a>
+	                                                </li>
+	                                                 <li> 
+	                                                    <a href="#"><span class="glyphicon glyphicon-th-list">Entités</span></a>
+	                                                </li>
+	                                                <li> 
+	                                                    <a href="#"><span class="glyphicon glyphicon-user">Compte </span></a>
+	                                                </li>
+	                                                <li> 
+	                                                    <a href="#"><span class="glyphicon glyphicon-tower"></span>Administration</i></a>
+	                                                </li>
+	                            					<li class="dropdown"> 
+	                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	                                                    	<span class="glyphicon glyphicon-flag">Langue</span>
+	                                                    	<span class="caret"></span>
+	                                                    </a>                          
+	                                                    <ul class="dropdown-menu">
+           													<li><a href="#">Action</a></li>
+            												<li><a href="#">Another action</a></li>
+          												</ul>
+	                                                </li>
+	                          </ul>
+	                    </div><!-- /.navbar-collapse -->
+	                </div><!-- /.container-fluid -->
+	            </nav>
+        	</header>
+        	<div id="omb-usermanagement">
+        		<div class="container-fluid">
+	        		<h2>Utilisateurs</h2>
+	        		<div class="row">
+	        			<button type="button" class="btn btn-red " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-flash"></span> Créer un nouvel utilisateur </button>
+	        		</div>
+	        		<div class="row">
+	        			<table class="table table-striped">
+	        				<thead class="thead-inverse">
+		        				<tr>
+		        					<th>Id</th>
+		        					<th>Login</th>
+		        					<th>Email</th>
+		        					<th>Activation</th>
+		        					<th>Langue</th>
+		        					<th>Droits</th>
+		        					<th>Créé le</th>
+		        					<th>Modifié par</th>
+		        					<th>Modifié le</th>
+		        					<th>Actions</th>
+		        				</tr>
+		        			</thead>
+		        			<tbody>
+		        				<tr>
+		        					<td>1</td>
+		        					<td>system</td>
+		        					<td>system@localhost</td>
+		        					<td><button type="button" class="btn btn-green">Activé</button></td>
+		        					<td>fr</td>
+		        					<td><button type="button" class="btn btn-blue">rôle user</button> 
+		        						 <button type="button" class="btn btn-blue">rôle admin</button>
+		        					</td>
+		        					<td>06/12/2016 à 09:37</td>
+		        					<td>admin</td>
+		        					<td>07/12/2016 15:54</td>
+		        					<td><span class="glyphicon glyphicon-eye-open"></span>
+		        						<span class="glyphicon glyphicon-pencil"></span> 
+		        						<span class="glyphicon glyphicon-remove-circle"></span>
+		        					</td>
+		        				</tr>
+		        				<tr>
+		        					<td>2</td>
+		        					<td>admin</td>
+		        					<td>admin@localhost</td>
+		        					<td><button type="button" class="btn btn-green">Activé</button></td>
+		        					<td>fr</td>
+		        					<td><button type="button" class="btn btn-blue">rôle user</button> 
+		        						 <button type="button" class="btn btn-blue">rôle admin</button>
+		        					</td>
+		        					<td>06/12/2016 à 09:37</td>
+		        					<td>system</td>
+		        					<td></td>
+		        					<td><span class="glyphicon glyphicon-eye-open"></span>
+		        						<span class="glyphicon glyphicon-pencil"></span> 
+		        						<span class="glyphicon glyphicon-remove-circle"></span>
+		        					</td>
+		        				</tr>
+		        				<tr>
+		        					<td>3</td>
+		        					<td>user</td>
+		        					<td>user@localhost</td>
+		        					<td><button type="button" class="btn btn-green">Activé</button></td>
+		        					<td>fr</td>
+		        					<td><button type="button" class="btn btn-blue">rôle user</button></td>
+		        					<td>06/12/2016 à 09:37</td>
+		        					<td>system</td>
+		        					<td></td>
+		        					<td><span class="glyphicon glyphicon-eye-open"></span>
+		        						<span class="glyphicon glyphicon-pencil"></span> 
+		        						<span class="glyphicon glyphicon-remove-circle"></span>
+		        					</td>
+		        				</tr>
+		        				<tr>
+		        					<td>4</td>
+		        					<td>seye</td>
+		        					<td>seye@localhost</td>
+		        					<td><button type="button" class="btn btn-green">Activé</button></td>
+		        					<td>fr</td>
+		        					<td><button type="button" class="btn btn-blue">rôle admin</button></td>
+		        					<td>06/12/2016 à 09:37</td>
+		        					<td>admin</td>
+		        					<td></td>
+		        					<td><span class="glyphicon glyphicon-eye-open"></span>
+		        						<span class="glyphicon glyphicon-pencil"></span> 
+		        						<span class="glyphicon glyphicon-remove-circle"></span>
+		        					</td>
+		        				</tr>
+		        			</tbody>
+	        			</table>
+	        		</div>
+
+	        		<div class="omb-pagination">
+	        			<ul class="pagination">
+						  <li><a href="#"><</a></li>
+						  <li><a href="#"><<</a></li>
+						  <li><a href="#" class="activate">1</a></li>
+						  <li><a href="#">></a></li>
+						  <li><a href="#">>></a></li>
+						</ul>
+	        		</div>
+	        	</div>
+        	</div>
+		</div>
+		<script src="../assets/bootstrap/js/npm.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
