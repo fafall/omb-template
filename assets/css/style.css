@@ -205,7 +205,7 @@ header .navbar-default{
 .omb-homepage .omb-contenu .omb-compte .omb-footer a{
     color:#9F2528;
     font-size:13px;
-    font-family: 'Roboto-Bold', sans-serif;
+    font-family: 'Roboto-Bold', 'sans-serif';
 }
 .omb-homepage .omb-contenu .omb-compte .omb-footer{
     margin-top: 10px;
@@ -254,7 +254,7 @@ footer .omb-liens p{
     color:#fff;
     margin-bottom: 20px;
 }
-.omb-usermanagement table {
+.omb-usermanagement .table-responsive {
     webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     -ms-box-shadow: 0 0 10px #ccc;
