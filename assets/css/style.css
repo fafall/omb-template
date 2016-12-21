@@ -261,9 +261,8 @@ footer .omb-liens p{
     -o-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
 }
-.omb-usermanagement table tr{
-    font-size: 13px;
-}.omb-usermanagement table thead{
+
+.omb-usermanagement table thead{
     background-color: #B7B8BC;
 }
 .omb-usermanagement table tbody .btn-green{
