@@ -275,8 +275,14 @@ footer .omb-liens p{
     padding: 0 5px;
     color: #fff;
 }
-.omb-usermanagement table tbody  .glyphicon{
+.omb-usermanagement table tbody  .glyphicon-eye-open,
+.omb-usermanagement table tbody  .glyphicon-pencil,
+.omb-usermanagement table tbody  .glyphicon-remove-circle{
     color:#9F2528;
+}
+.omb-usermanagement table tbody  .omb-transparent{
+    background-color: transparent;
+    border: none;
 }
 .omb-usermanagement .omb-pagination{
     text-align: center;
@@ -298,4 +304,56 @@ footer .omb-liens p{
 }
 .omb-contain{
     margin: 30px;
+}
+/** modal**/
+.modal-header{
+    background-color: #B7B8BC;
+}
+.modal-content h3{
+    text-align: center;
+    color:#fff;
+}
+.omb-usermanagement .modal-content .form-control {
+    border: 1px solid #B7B8BC;
+    background: #fff;
+    opacity: 1;
+    border-radius: 0;
+}
+.omb-usermanagement .modal-content .form-control:focus{
+   
+    border-radius: 0;
+    box-shadow:1px 1px 1px 1px #A81C35;
+}
+.omb-usermanagement .modal-content select  option:hover,
+.omb-usermanagement .modal-content select  option:focus,
+.omb-usermanagement .modal-content select  option:active{
+    background-color: #A81C35;
+    color:#fff;
+    outline:none;
+}
+.omb-usermanagement .form-horizontal .control-label{
+    color: #A81C35;
+}
+.omb-usermanagement .modal-header .close{
+    font-size: 50px;
+    color:#fff;
+}
+.omb-usermanagement .form-footer,
+.omb-usermanagement .form-ombfooter{
+    margin-top:42px;
+}
+.omb-usermanagement .form-ombfooter{
+    text-align: center;
+}
+.omb-usermanagement .btn-save{
+    margin-left:48px;
+    color:#fff;
+    background-color: #1485CC;
+}
+.omb-usermanagement .form-footer .btn-red{
+    margin-right: 48px;
+}
+.omb-usermanagement .form-ombfooter .omb-btnred{
+    background-color: #9F2528;
+    color:#fff;
 }
