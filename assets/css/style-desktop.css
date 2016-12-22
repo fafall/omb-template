@@ -4,10 +4,11 @@
       
       
 }
+
 /** font clair **/
 @font-face {
   font-family: 'roboto light';
-    src:  url('../fonts/roboto/Roboto-Light.ttf')  format('truetype'),
+    src: url('../fonts/roboto/Roboto-Light.ttf')  format('truetype'),
         url('../fonts/roboto/Roboto-LightItalic.ttf')  format('truetype');
     }
 
@@ -44,7 +45,7 @@
 ** ============================================================================================================================ */
 
 .omb-wrapper{
-	width: 80%;
+	width: 70%;
 	margin:auto;
 
 }
@@ -87,9 +88,11 @@ header .omb-logo,
 	opacity:1;
 }
 
-.navbar-brand img{
-	width: 90%;
+ .navbar-brand img{
+	width: 70%;
+	display: inline-block;
 }
+
 #omb-login-page header .navbar-default .navbar-nav>li>a{
 	color:#fff;
 	font-family:'Roboto-Bold', sans-serif;
@@ -185,7 +188,7 @@ header .omb-logo,
 	list-style: none;
 	background:#000;
 	width: 60%;
-	margin: 20px auto 0;
+	margin: 20px auto ;
 	padding: 0;
 }
 #omb-login-page #omb-content .omb-pave .ligne{
@@ -237,8 +240,10 @@ header .omb-logo,
 /* ============================================================================================================================
 == Page ouverture compte
 ** ============================================================================================================================ */
- 
-
+/*  
+.fixed{
+	position: fixed;
+} */
  .omb-no-padding{
  	padding:0;
  }
@@ -254,16 +259,17 @@ body#omb-ouverture-compte{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
       background:#fff;
-       box-shadow: 10px 10px 5px #888888,-10px -10px 5px #888888;
+       box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
     /*     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow:0 3px 8 0 rgba(0,0,0,0.2), 0 0 0 1px rgba();
         transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1); */
 }
 /* header */
 #omb-ouverture-compte .navbar-default,
- #omb-ouverture-compte .omb-logo{
+ #omb-ouverture-compte  header .omb-logo{
 	background: transparent;
 	border:none;
+	margin-left: 0;
  }
 
   #omb-ouverture-compte .glyphicon:before{
@@ -281,7 +287,7 @@ body#omb-ouverture-compte{
       -webkit-transform:rotate(-3deg);
     -moz-transform:rotate(-3deg);
      transform: rotate(-3deg); 
-	padding: 5px 20px;
+	padding: 0px 20px;
 	float:right;
 	display: inline-block;
 	text-align: center;
@@ -289,6 +295,9 @@ body#omb-ouverture-compte{
 	border-radius:5px;
    }
 
+     #omb-ouverture-compte  .omb-welcome-bloc h2{
+     	margin-top: 10px;
+     }
    #omb-ouverture-compte  .omb-welcome-bloc .omb-date{
     	font-weight: 700;
     	
@@ -309,16 +318,13 @@ body#omb-ouverture-compte{
    } 
    /*  ./header */ 
 
-  /** left menu + horizontal sous menu**/
-	#omb-ouverture-compte .omb-container .omb-left-menu{
-		height: 100vh;
-	}
+ 
      #omb-ouverture-compte .omb-container .omb-left-menu,
       .omb-container .omb-sous-menu {
      	background:rgba(95,96,98,0.2);
      	padding: 1% 0;
 
-     }
+    }
       .omb-container .omb-sous-menu {
       	padding: 0;
       }
@@ -369,27 +375,36 @@ body#omb-ouverture-compte{
   #omb-ouverture-compte .omb-container  .omb-left-menu li.active a{
 	color:#fff;
 }
-/* .omb-container .omb-sous-menu ul li.active a:after{
-	content:"123";
-} */
+
   #omb-ouverture-compte .omb-container  .omb-left-menu .navbar-collapse{
   	padding-right: 0;
+  	padding-left: 0;
   }
+
+  /** icone menu  **/
+
+ #omb-ouverture-compte header .omb-off{
+ 	color:#b10021;
+ }
 
   #omb-ouverture-compte .omb-container  .omb-left-menu li a,
   .omb-container .omb-sous-menu ul li a{
   	text-transform: uppercase;
   	color:#000;
   	transition:all .6s ease;
-  	letter-spacing: 2px;
+  	letter-spacing: 1.5px;
   	overflow: hidden;
     border-bottom:1px solid rgba(95,96,98,.3);
   	text-decoration: none;
-  	padding: 12px 0px 12px 13px;
+  	padding: 12px 0px 12px 0px;
   	margin: 0px 0 12px 0;
   	display: block;
   	position: relative;
+  	font-size: 0.85em;
+  	text-align: center;
+
 }
+
   #omb-ouverture-compte .omb-container  .omb-left-menu li:last-child a{
   	border-bottom:none;
   }
@@ -420,12 +435,213 @@ body#omb-ouverture-compte{
 			}
 
  #omb-ouverture-compte .omb-container  .omb-left-menu li a i{
- 	padding-right: 2%;
+ 	
+ 	    padding-right: 5%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
  }
 
 
 
  /**  ./left menu + horizontal sous menu**/
 
+ /** content modifiable **/
+   #omb-ouverture-compte .omb-content{
+   	width: 90%;
+   	margin: 0 auto 8%;
+
+   }
+
+   #omb-ouverture-compte .omb-content h2{
+   	text-align: center;
+    color: #b10021;
+    text-transform: uppercase;
+    margin:8% auto 5% ;
+   }
+
+  #omb-ouverture-compte .omb-content .omb-asterix{
+  	font-size: 0.9em;
+  	margin-top: 10px;
+  }
+   #omb-ouverture-compte .omb-content .omb-asterix span{
+   	color:#b10021;
+   	font-weight: 700;
+   }
+
+    #omb-ouverture-compte .omb-content .omb-devise label{
+    	margin-right: 24px;
+    }
+     #omb-ouverture-compte .omb-content .omb-devise .form-control{
+     	display: inline-block;
+     	background:#5f6062;
+     	width: 50%;
+     	color:#fff;
+     }
+
+     #omb-ouverture-compte .omb-content .omb-group{
+     	border:1px solid rgba(0,0,0,.25);
+     	margin: 1% 0 5%;
+     	box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+     	border-left: 5px solid #000;
+     	box-sizing: border-box;
+        border-top-left-radius: 5px;
+     	border-bottom-left-radius: 5px;
+     }
+    #omb-ouverture-compte .omb-content .omb-group h3{
+    	background:#dcdcdc;
+    	margin: 0;
+    	padding:2% 1%;
+    	text-transform: uppercase;
+    	font-size: 1.3em;
+
+    }
+     #omb-ouverture-compte .omb-content .omb-type-de-compte{
+     	border-left-color:#b10021;
+     }
+    #omb-ouverture-compte .omb-content .omb-type-de-compte h3{
+    	color:#b10021;
+    }
+
+     #omb-ouverture-compte .omb-content .omb-epargne-choisi{
+     	border-left-color:#0083c3;
+     }
+    #omb-ouverture-compte .omb-content .omb-epargne-choisi h3{
+    	color:#0083c3;
+    }
+     #omb-ouverture-compte .omb-content .omb-type-de-virement{
+     	border-left-color:#b10021;
+     }
+    #omb-ouverture-compte .omb-content .omb-type-de-virement h3{
+    	color:#b10021;
+    }   
+      #omb-ouverture-compte .omb-content .omb-prelevement{
+     	border-left-color:#0083c3;
+     }
+    #omb-ouverture-compte .omb-content .omb-prelevement h3{
+    	color:#0083c3;
+    }   
+/* rgb(251,0,254) == rose
+#00b337= vert **/
+
+    #omb-ouverture-compte .omb-content .omb-group .wrapper{
+    	margin: 20px 0 10px;
+    	padding: 0 2%;
+    }
+
+     #omb-ouverture-compte .omb-content .omb-group label{
+   	margin-right: 22%;
+   }
+    #omb-ouverture-compte .omb-content .omb-group .form-control{
+    	display: inline-block;
+    	width: 45%;
+   
+    }
+    /** bloc epargne **/
+    #omb-ouverture-compte .omb-content .omb-epargne-choisi{
+    	position: relative;
+    }
+      #omb-ouverture-compte .omb-content .omb-epargne-choisi .form-control{
+      	width: 100%;
+      }
+    #omb-ouverture-compte .omb-content .omb-group  .input-group{
+    	width: 45%;
+    	left: 53%;
+        top: -27px;
+    
+    }
+
+  #omb-ouverture-compte .omb-content .omb-epargne-choisi .omb-important{
+        	color:#b10021;
+        	font-weight: 700;
+        	    top: 52px;
+                position: absolute;
+                right: 9px;
+
+        }
+     
+      #omb-ouverture-compte .omb-content .omb-group select{
+      	background:#5f6062;
+      	color:#fff;
+      }
+/* bloc type de virement **/
+
+  #omb-ouverture-compte .omb-content .omb-type-de-virement .wrapper{
+  	text-align: center;
+
+  }
+    #omb-ouverture-compte .omb-content .omb-type-de-virement label{
+    	margin:0 10%;
+    }
+    /** bloc frequence prelevement **/
+    #motifHelp{
+    	display: block;
+    	font-size: 0.8em;
+    	margin-left: 15px;
+
+    }
+       
+      #omb-ouverture-compte .omb-content .omb-prelevement .form-control{
+      	width:72%;
+      }
 
 
+#omb-ouverture-compte .omb-content .omb-prelevement label{
+margin-right: 8%;
+}
+
+/** boutons **/
+
+#omb-ouverture-compte .omb-content .omb-button .wrapper{
+	text-align: right;
+}
+#omb-ouverture-compte .omb-content .omb-button button{
+	width: 35%; 
+	padding-top:10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+
+
+}
+#omb-ouverture-compte .omb-content .omb-button button[type="reset"]{
+	margin-right: 10%;
+	background:#fff;
+	border-color:#b10021;
+	color:#b10021;
+}
+
+/** footer **/
+
+footer{
+	
+	background: rgba(95,96,98,0.2);
+	padding: 10px 0px 0;
+}
+footer .navbar-default .navbar-nav a{
+	color:#5f6061;
+	font-size: 0.9em;
+}
+footer .navbar-default .navbar-nav>.active>a, 
+footer .navbar-default .navbar-nav>.active>a:focus, 
+footer .navbar-default .navbar-nav>.active>a:hover
+{
+    color: #b10021;
+    background-color: transparent;
+   
+}
+
+footer img{
+	float:right;
+	position: relative;
+	top:-17px;
+
+}
+
+footer .omb-copyright{
+	text-align: center;
+	display: block;
+	font-weight: 700;
+	text-decoration: underline;
+}
