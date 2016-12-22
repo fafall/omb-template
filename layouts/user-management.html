@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<title>User management</title>
-
+		<meta charset="utf-8">
 		<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    	<link href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="../assets/css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -60,7 +62,87 @@
         		<div class="omb-contain">
 	        		<h2>Utilisateurs</h2>
 	        		<div class="row">
-	        			<button type="button" class="btn btn-red " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-flash"></span> Créer un nouvel utilisateur </button>
+	        			<button type="button" class="btn btn-red" id="myBtn"><span class="glyphicon glyphicon-flash"></span> Créer un nouvel utilisateur </button>
+	        			<!-- Modal -->
+			        						<div class="modal fade" id="myModal" role="dialog">
+												<div class="modal-dialog">
+
+											      	<!-- Modal content-->
+											    	<div class="modal-content">
+											       		<div class="modal-header">
+											          		<button type="button" class="close" data-dismiss="modal">
+											          			&times;
+											          		</button>
+											          		<h3>Créer un nouvel utilisateur </h3>
+											        	</div>
+											        <div class="modal-body">
+											        	<form role="form" class="form-horizontal">
+											            	<div class="form-group">
+											             		<label for="id" class="control-label col-sm-1">ID</label>
+											             		<div class="col-sm-10">
+											             	 		<input type="text" class="form-control" id="id">
+											             		</div>
+											            	</div>
+											            	<div class="form-group">
+											            		<label for="login" class="control-label col-sm-1">Login</label>
+											            		<div class="col-sm-10">
+											              			<input type="text" class="form-control" id="login">
+											            		</div>
+											            	</div>
+											            	<div class="form-group">
+											              		<label for="prenom" class="control-label col-sm-1">Prénom</label>
+											              		<div class="col-sm-10">
+											              			<input type="text" class="form-control" id="prenom">
+											           			</div>
+											           		</div>
+											            	<div class="form-group">
+											              		<label for="nom" class="control-label col-sm-1">Nom</label>
+											              		<div class="col-sm-10">
+											              			<input type="text" class="form-control" id="nom">
+											            		</div>
+											            	</div>
+											            	<div class="form-group">
+											              		<label for="email" class="control-label col-sm-1">Email</label>
+											              		<div class="col-sm-10">
+											              			<input type="text" class="form-control" id="email">
+											            		</div>
+											            	</div>
+											           		<div class="checkbox">
+											              		<label class="control-label"><input type="checkbox" value="" checked>Activé</label>
+											           		</div>
+											           		<div class="form-group">
+											              		<label for="langue" class="control-label col-sm-1">Langue</label>
+											              		<div class="col-sm-10">
+											             			<select  class="form-control" name="langue">
+											             				<option>Français</option>
+											             				<option>Anglais</option>
+											             			</select>
+											            		</div>
+											            	</div>
+											            	<div class="form-group">
+											              		<label for="droits" class="control-label col-sm-1">Droits</label>
+											              		<div class="col-sm-10">
+											              			<select  class="form-control" name="droits" size="2">
+											             				<option>ROLE_USER</option>
+											             				<option>ROLE_ADMIN</option>
+											             			</select>
+											            		</div>
+											            	</div>
+											            	<div class="form-footer">
+												            	<button type="submit" class="btn btn-save">
+												            		<span class="glyphicon glyphicon-save"></span> Enregistrer
+												            	</button>
+												            	<button type="submit" class="btn btn-red pull-right" data-dismiss="modal">
+												            		<span class="glyphicon glyphicon-remove"></span> Annuler
+												            	</button>
+												            </div>
+											          </form>
+											        </div>
+											      </div>
+											    </div>
+											  </div> 
+
+											  <!-- Fin Modal -->
 	        		</div>
 	        		<div class="row">
 	        			<div class="table-responsive">
@@ -70,7 +152,7 @@
 			        					<th>Id</th>
 			        					<th>Login</th>
 			        					<th>Email</th>
-			        					<th>Statut</th>
+			        					<th></th>
 			        					<th>Langue</th>
 			        					<th>Droits</th>
 			        					<th>Créé le</th>
@@ -92,9 +174,45 @@
 			        					<td>06/12/2016 à 09:37</td>
 			        					<td>admin</td>
 			        					<td>07/12/2016 15:54</td>
-			        					<td><span class="glyphicon glyphicon-eye-open"></span>
-			        						<span class="glyphicon glyphicon-pencil"></span> 
-			        						<span class="glyphicon glyphicon-remove-circle"></span>
+			        					<td>
+			        						<button type="button" class="omb-transparent" data-toggle="modal">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
+				        					<span class="glyphicon glyphicon-pencil"></span> 
+				        					<button type="button" class="omb-transparent" id="myButton">
+				        						<span class="glyphicon glyphicon-remove-circle"></span>
+				        					</button>
+				        						        			<!-- Modal -->
+			        						<div class="modal fade" id="mymodal" role="dialog">
+												<div class="modal-dialog">
+
+											      	<!-- Modal content-->
+											    	<div class="modal-content">
+											       		<div class="modal-header">
+											          		<button type="button" class="close" data-dismiss="modal">
+											          			&times;
+											          		</button>
+											          		<h3>Confirmation de suppression</h3>
+											        	</div>
+											        <div class="modal-body">
+											        	<div class="omb-container">
+											        	<h5>Etes-vous certain de vouloir supprimer l'utilisateur system?</h5>
+											        	
+											            	<div class="form-ombfooter">
+												            	<button type="submit" class="btn btn-grey" data-dismiss="modal">
+												            		<i class="fa fa-ban"></i> Annuler
+												            	</button>
+												            	<button type="submit" class="btn omb-btnred ">
+												            		<span class="glyphicon glyphicon-remove"></span> Supprimer
+												            	</button>
+												            </div>
+											          </div>
+											        </div>
+											      </div>
+											    </div>
+											  </div> 
+
+											  <!-- Fin Modal -->
 			        					</td>
 			        				</tr>
 			        				<tr>
@@ -109,7 +227,10 @@
 			        					<td>06/12/2016 à 09:37</td>
 			        					<td>system</td>
 			        					<td></td>
-			        					<td><span class="glyphicon glyphicon-eye-open"></span>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
 			        						<span class="glyphicon glyphicon-pencil"></span> 
 			        						<span class="glyphicon glyphicon-remove-circle"></span>
 			        					</td>
@@ -124,7 +245,10 @@
 			        					<td>06/12/2016 à 09:37</td>
 			        					<td>system</td>
 			        					<td></td>
-			        					<td><span class="glyphicon glyphicon-eye-open"></span>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
 			        						<span class="glyphicon glyphicon-pencil"></span> 
 			        						<span class="glyphicon glyphicon-remove-circle"></span>
 			        					</td>
@@ -139,7 +263,10 @@
 			        					<td>06/12/2016 à 09:37</td>
 			        					<td>admin</td>
 			        					<td></td>
-			        					<td><span class="glyphicon glyphicon-eye-open"></span>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
 			        						<span class="glyphicon glyphicon-pencil"></span> 
 			        						<span class="glyphicon glyphicon-remove-circle"></span>
 			        					</td>
@@ -164,6 +291,20 @@
 		<script src="../assets/bootstrap/js/npm.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
     	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    	<script>
+			$(document).ready(function(){
+			    $("#myBtn").click(function(){
+			        $("#myModal").modal();
+			    });
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+			    $("#myButton").click(function(){
+			        $("#mymodal").modal();
+			    });
+			});
+		</script>
 	</body>
 </html>
 
