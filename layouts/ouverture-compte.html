@@ -17,7 +17,7 @@
 	  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-header" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -30,18 +30,18 @@
 
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="navbar-collapse-header">
 			     <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#"><i class="glyphicon glyphicon-user  active"> </i></a>
+			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active" ></i></a>
                             </li>
                              <li> 
-                                <a href="#"><i class="glyphicon glyphicon-headphones"> </i></a>
+                                <a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones" > </i></a>
                             </li>
                             <li> 
-                                <a href="#"><i class="glyphicon glyphicon-envelope"> </i></a>
+                                <a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope" > </i></a>
                             </li>
                             <li> 
-                                <a href="#"><i class="glyphicon glyphicon-off"> </i></a>
+                                <a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off" > </i></a>
                             </li>
 			        
 			     </ul>
@@ -54,8 +54,8 @@
 				<h2>Bienvenue Mr Démo</h2>
 				<p><span class="glyphicon glyphicon-calendar"></span> Dernière connexion le:<span class="omb-date">16/12/2016 à 17h20</span> </p>
 				<div class=" omb-solde">
-					<p>Solde :<span>1234565</span></p>
-					<p>Crédits :<span>-23456</span></p>
+					<p>Solde : <span>4565</span></p>
+					<p>Crédit : <span>-23456</span></p>
 				</div>
 			</div><!-- omb-welcome-bloc -->
 		
@@ -94,11 +94,11 @@
 			                </li>  
 				                
 							<li>
-			                  <a href="#mises-a-disposition"><i class="fa fa-car fa-lg"></i>Mes mises à disposition<span class="arrow"></span></a>
+			                  <a href="#mises-a-disposition"><i class="fa fa-car fa-lg"></i><span class="omb-text">Mes mises à disposition</span></a>
 			                </li>
 				               
 			                <li>
-			                  <a href="#"><i class="fa fa-users fa-lg"></i>Mes béneficiaires</a>
+			                  <a href="#"><i class="fa fa-users fa-lg"></i>Mes bénéficiaires</a>
 			                  </li>
 			                <li>
 			                  <a href="#"><i class="fa fa-question-circle fa-lg"></i> Mes demandes </a>
@@ -137,17 +137,18 @@
 				</ul>
 	     	</div>
 	     	<div class="omb-content">
+	     	<form action="#">
 	     	    <div class="row">
-		     	    <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
+		     	    <div class="col-lg-12 ">
 		     	  	<h2>Ouvrir un compte</h2>
 		     	  </div>
 		     	  </div>
 		     	  <div class="row">
-			     	  <div class="col-lg-offset-1 col-lg-6">
-			     	  	<p>* les champs suivis d'un asterix (*) sont obligatoires</p>
+			     	  <div class="col-lg-7">
+			     	  	<p class="omb-asterix"><span>*</span>  les champs suivis d'un asterix (*) sont obligatoires</p>
 			     	  </div>
-		     	      <div class="col-lg-3 col-lg-offset-1">
-			     	    <div class="form-group">
+		     	      <div class="col-lg-offset-1 col-lg-4">
+			     	    <div class="form-group omb-devise">
 						    <label for="devise">Devise</label>
 						    <select class="form-control" id="devise">
 							    <option>XOF <span class="fa fa-chevron-down"></span></option>
@@ -159,73 +160,148 @@
 		     	     </div>
 		     	 </div>
 		     	<div class="row">
-		     	  <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
-			     	 <div class="form-group omb-type-de-compte">
-							<h2>Type de compte</h2>
-							<label for="omb-compte-select">Choisir un type de compte</label>
-							<select class="form-control" id="omb-compte-select">
-								<option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
-								<option>Compte Joint</option>
-								<option>Compte Bloqué</option>
-							</select>
+		     	  <div class=" col-lg-12">
+			     	 <div class="form-group omb-group omb-type-de-compte">
+							<h3>Type de compte</h3>
+							<div class="wrapper">
+								<label for="omb-compte-select">Choisir un type de compte</label>
+								<select class="form-control" id="omb-compte-select">
+									<option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
+									<option>Compte Joint</option>
+									<option>Compte Bloqué</option>
+								</select>
+							</div>
 			        </div>
 			        </div>
 		     	</div>
 		     	<div class="row">
-		     	 <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
-			     	 <div class="form-group omb-epargne-choisi">
-							<h2>Epargne</h2>
-							<label for="omb-montant-epargne">Saisir montant à épargner</label>
-							  <input type="text" class="form-control" id="omb-montant-epargne">
-							  <span>*</span>
-			        </div>
+		     	 <div class=" col-lg-12">
+			     	 <div class="form-group omb-group omb-epargne-choisi">
+							<h3>Epargne</h3>
+					 <div class="wrapper">
+						 <label for="omb-montant-epargne">Saisir montant à épargner</label>
+						 <div class="input-group">
+							<input type="text" placeholder="12345"class="form-control" id="omb-montant-epargne">
+							  <span class="input-group-addon">XOF</span>
+
+							</div>
+							  <span class="omb-important">*</span>
+							
+							
+			            </div>
+			         </div>
+			         </div> 
 		     	</div>
-		     	</div>
-		     	<div class="row">
-		     	 <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
-			     	 <div class="form-group omb-type-de-virement">
-							<h2>Type de virement</h2>
+		    	<div class="row">
+		     	 <div class=" col-lg-12 ">
+			     	 <div class="form-group omb-group omb-type-de-virement">
+							<h3>Type de virement</h3>
+						<div class="wrapper">
+							
 							<label for="permanent">Permanent
-							  <input type=radio  checked="checked" class="form-control" id="permanent" />
+							  <input type="radio" checked="checked" name="optradio" class="form-control" id="permanent" >
 							</label>
 							<label for="ponctuel">Ponctuel
-							  <input type=radio class="form-control" id="ponctuel" />
+							  <input type="radio" name="optradio" class="form-control" id="ponctuel" />
 							</label>
-							 
-			        </div>
+						
+						</div>
+					</div>
 		     	</div>
 		     	</div>
+
+
 		     <!-- 	frequence de prelevement -->
 		     	<div class="row">
-		     	 <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
-			     	 <div class="form-group omb-prelevement">
-							<h2>Fréquence de prélèvement</h2>
+		     	 <div class="col-lg-12 ">
+			     	 <div class="form-group omb-group omb-prelevement">
+							<h3>Fréquence de prélèvement</h3>
+						<div class="wrapper">
 							<div class="row">
-								<div class="col-lg-6">
-									<label for="motif">Motif
-								     <input type="text" class="form-control" id="motif">
-								    </label>
+								<div class="col-lg-5">
+									
+								    <textarea class="form-control" rows="3" id="motif"
+								    aria-describedby="motifHelp" placeholder="Motif Epargne"></textarea>
+								   <span id="motifHelp" class="form-text text-muted">120 caractères restants</span>
+								  
 								</div>
-								<div class="col-lg-6"></div>
+								<div class="col-lg-7">
+									<label for="omb-periode-select">Période</label>
+									<select class="form-control" id="omb-periode-select">
+										<option>Tous les mois<span class="fa fa-chevron-down"></span></option>
+										<option>Tous les 3 mois</option>
+										<option>Tous les 6 mois</option>
+							        </select>
+							  
+								</div>
 							</div>
-							
-							<label for="ponctuel">Ponctuel
-							  <input type=radio class="form-control" id="ponctuel" />
-							</label>
-							 
-			        </div>
+						</div>
+					</div>
 		     	</div>
 		     	</div>
-	    
-	        </div><!-- omb-content -->
-    </div><!-- col-sm-9 -->
-    	
+		     	<!-- submit button -->
+		     	<div class="row">
+		     		<div class="col-lg-offset-3 col-lg-9 omb-button">
+		     		<div class="wrapper">
+			     		<div class="form-group">
+			     		   <button type="reset" class="btn btn-primary">Réinitialiser</button>
+			     			<button type="submit" class="btn btn-primary">Confirmer</button>
 
-    	
-    </div><!-- row-->
+			     		</div>
+			     		</div>
+		     			
+		     		</div>
+                </div>
+	       </form>
+	   </div><!-- omb-content -->
+    </div><!-- col-sm-9 -->
+  </div><!-- row-->
 </div><!-- omb-container -->
 </section>
-    
+
+  <footer>
+  <div class="row">
+<div class="col-12">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+	  
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-collapse-footer">
+		      <ul class="nav navbar-nav navbar-center navbar-middle">
+		       
+		         <li class="active"><a href="#" >Visite guidée<span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Guide utilisateur</a></li>
+		        <li><a href="#">Sécurité</a></li>
+		        <li><a href="#">Mentions légales</a></li>
+		        
+		      </ul>
+		       <ul class="nav navbar-nav navbar-right">
+		     <li><a class="navbar-brand omb-logo" href="#">
+		        <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
+		      </a></li>
+		       
+		    </ul>
+	    
+		     
+	    </div><!-- /.navbar-collapse -->
+	    <span class="omb-copyright">&copy; Atos 2016</span>
+
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-footer" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     
+	    </div><!-- navbar-header -->
+
+  </div><!-- /.container-fluid -->
+</nav>	
+  	
+  </footer>  
 
 
 
@@ -252,6 +328,7 @@
 <script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
 </div><!-- omb-wrapper -->
 </body>
 </html>
