@@ -637,7 +637,14 @@ margin-right: 8%;
   .omb-no-margin{
   	margin: 0;
   }
-
+  
+  
+ .glyphicon-pencil {
+	font-size: xx-small;
+    margin-left: 10px;
+	color : #000000;
+  }
+  
 body#omb-solde-compte{
 	overflow-x:hidden; 
 
