@@ -42,17 +42,30 @@ body{
   color:#000;
   
   font-family: 'Roboto-Bold', 'sans-serif';
-  max-width: 80%;
+  max-width: 70%;
   width:100%;
   margin:0 auto;
+}
+.omb-homepage .test{
+    margin-right: 0;
+    margin-left:0;
+}
+#omb-dashboard{
+     /*    box-shadow: 0 0 10px #ccc; */
+  
+      background:#fff;
+       box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
+    /*     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow:0 3px 8 0 rgba(0,0,0,0.2), 0 0 0 1px rgba();
+        transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1); */
 }
 /** header**/
 #omb-dashboard .omb-header li a{
     font-size:25px;
 }
  .omb-homepage .omb-menu{
-    background-color: #fff;
-    border:none;
+        background:rgba(95,96,98,0.2);
+        padding: 1% 0;
 }
 header .navbar-default{
     background-color: transparent;
@@ -62,12 +75,49 @@ header .navbar-default{
 #omb-dashboard .omb-header li a:hover{
     color: #9F2528;
 }
-.omb-infos .omb-welcome p{
+.omb-homepage  .omb-welcome-bloc{
+     background:rgba(92,0,20,.7);
+    /* -moz-box-shadow: 0px 4px 6px #333;
+    -webkit-box-shadow: 0px 4px 6px #333;
+     box-shadow: 0px 4px 6px #333; */
+         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    -o-transform:rotate(-3deg);
+      -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+     transform: rotate(-3deg); 
+    padding: 0px 20px;
+    float:right;
+    display: inline-block;
+    text-align: center;
+    color:#fff; 
+    border-radius:5px;
+   }
+
+     .omb-homepage  .omb-welcome-bloc h2{
+        margin-top: 10px;
+     }
+   .omb-homepage  .omb-welcome-bloc .omb-date{
+        font-weight: 700;
+        
+    }
+    .omb-homepage  .omb-welcome-bloc .omb-solde p{
+        display: inline-block;
+        padding:0 20px;
+     }
+   .omb-homepage  .omb-welcome-bloc .omb-solde p:first-child{
+    border-right:1px solid rgba(255,255,255,.5);
+   }
+    .omb-homepage  .omb-welcome-bloc .omb-solde p span{
+        font-weight: 700;
+    }
+
+/*.omb-infos .omb-welcome p{
     color:#E3212E;
     font-weight:bold;
    padding-left: 112px;
 }
-/** détails**/
+/** détails**
 .omb-infos{
     float:right;
     margin-right:29px;
@@ -87,26 +137,85 @@ header .navbar-default{
     padding-bottom:10px;
 }
 /** menu**/
-.omb-homepage .omb-menu ul{
-    background-color: #DCDCDC;
-    height:500px;
-}
 .omb-homepage .omb-menu{
-    padding-top:50px;
     padding-left:0;
+    margin-top: 84px;
+    margin-left:-15px;
     
+}
+#omb-dashboard .omb-header .glyphicon-off{
+    color: #b10021;
+}
+.omb-homepage .omb-contenu-dash{
+    margin-left: 0;
 }
 .omb-homepage .omb-menu ul li a{
     color:#000;
      
 }
-.omb-homepage .omb-menu .nav-pills li a {
-    border:none;
-    border-radius: 0px;
+.omb-homepage .omb-menu  ul,
+.omb-homepage .omb-menu  li{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+ cursor: pointer;
 }
-.omb-homepage .omb-menu .nav-pills li a .fa{
-    font-size: 13px;
+ .omb-homepage .omb-dash  .omb-menu li.active{
+    background:#b10021;
+    position:relative;  
 }
+ .omb-homepage .omb-dash  .omb-menu  li.active a{
+    color:#fff;
+}
+ .omb-homepage .omb-dash  .omb-menu .navbar-collapse{
+    padding-right: 0;
+    padding-left: 0;
+  }
+ .omb-homepage .omb-dash  .omb-menu li a{
+    text-transform: uppercase;
+    color:#000;
+    transition:all .6s ease;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    border-bottom:1px solid rgba(95,96,98,.3);
+    text-decoration: none;
+    padding: 12px 0px 12px 0px;
+    margin: 0px 0 12px 0;
+    display: block;
+    position: relative;
+    font-size: 0.85em;
+    text-align: center;
+
+}
+ .omb-homepage .omb-dash  .omb-menu li:last-child a{
+    border-bottom:none;
+  }
+.omb-homepage .omb-dash  .omb-menu li a:hover{
+                background-color:rgba(95,96,98,.4);
+                 border-color:#fff;
+            }
+.omb-homepage .omb-dash  .omb-menu li a:after{
+                content: '';
+                display: block;
+                width: 10px; height: 100px;
+                position: absolute;
+                top: 0;left: -10px;
+                background:#b10021;
+                transition:left .5s ease;
+            }
+
+.omb-homepage .omb-dash  .omb-menu li a:hover:after{
+                left: 0;
+            }
+
+.omb-homepage .omb-dash  .omb-menu li a i{
+    
+        padding-right: 5%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+
 .omb-homepage .omb-contenu .omb-compte .fa-close:before,
 .omb-homepage .omb-contenu .omb-virement .fa-close:before,
 .omb-homepage .omb-contenu .omb-message .fa-close:before,
@@ -121,18 +230,13 @@ header .navbar-default{
 .omb-homepage .omb-contenu .omb-compte .omb-footer .fa{
     padding-right: 10px;
 }
-.omb-homepage .omb-menu .nav-pills li a:hover,
-.omb-homepage .omb-menu .nav-pills li a:focus,
-.omb-homepage .omb-menu .nav-pills li a:active{
-    background-color: #9F2528;
-    color:white;
-}
+
 /**contenu **/
 .omb-homepage .omb-contenu h2{
-    margin-top:53px;
+    margin-top:88px;
 }
 .omb-homepage .omb-pub{
-    margin-top: 30px;
+    margin-top: 85px;
 }
 .omb-homepage .omb-contenu .btn-red{
     float: right;
@@ -204,13 +308,15 @@ header .navbar-default{
 }
 .omb-homepage .omb-contenu .omb-compte .omb-footer a{
     color:#9F2528;
-    font-size:13px;
+    
+
     font-family: 'Roboto-Bold', 'sans-serif';
 }
 .omb-homepage .omb-contenu .omb-compte .omb-footer{
     margin-top: 10px;
     padding-left: 5px
 }
+/*
 footer{
     background-color: #DCDCDC; 
 }
@@ -226,6 +332,46 @@ footer .omb-liens ul{
 }
 footer .omb-liens p{
     text-align:center;
+}*/
+/** footer **/
+
+footer{
+    
+    background: rgba(95,96,98,0.2);
+    padding: 10px 0px 0;
+}
+footer .navbar-default .navbar-nav a{
+    color:#5f6061;
+}
+footer .navbar-default {
+    background-color: transparent;
+    border:none;
+}
+footer .navbar-brand img {
+    width: 70%;
+    display: inline-block
+}
+footer .navbar-default .navbar-nav>.active>a, 
+footer .navbar-default .navbar-nav>.active>a:focus, 
+footer .navbar-default .navbar-nav>.active>a:hover
+{
+    color: #b10021;
+    background-color: transparent;
+   
+}
+
+footer img{
+    float:right;
+    position: relative;
+    top:-17px;
+
+}
+
+footer .omb-copyright{
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 /** Page administration**/
@@ -325,6 +471,9 @@ footer .omb-liens p{
     margin-left: 30px;
     margin-right: 30px;
 }
+.omb-dash{
+    margin-left: 15px;
+}
 .omb-contain{
     margin: 40px;
 }
@@ -365,7 +514,7 @@ footer .omb-liens p{
 .omb-usermanagement .form-horizontal .control-label,
 .omb-rolemanagement .form-group .control-label{
     color: #A81C35;
-}
+}..
 .omb-usermanagement .modal-header .close,
 .omb-rolemanagement .modal-header .close{
     font-size: 50px;
