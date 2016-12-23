@@ -118,20 +118,20 @@
 			   	 <ul class="sub-menu " id="omb-compte">
 					<li ><a href="#">Solde des comptes</a></li>
 					<li><a href="#">Historique des operations</a></li>
-					<li ><a href="#">Echéancier de crédit</a></li>
-					<li  class="active"><a href="#">Ouverture de compte</a></li>
+					<li class="active"><a href="#">Echéancier de crédit</a></li>
+					<li  ><a href="#">Ouverture de compte</a></li>
 				</ul>
 		   	</div>
             <div id="mesvirements" class=" omb-sous-menu collapse">
 		   		<ul class="sub-menu " id="omb-virement">
 					<li>Virement1</li>
-					<li>Virement2</li>
+					<li class="active">Virement2</li>
 					<li>Virement3</li>
 				</ul>
 		   	</div>
             <div id="mises-a-disposition" class=" omb-sous-menu collapse">
 			   	<ul class="sub-menu " id="omb-mise-a-disposition">
-					<li>Disposition 1</li>
+					<li class="active">Disposition 1</li>
 					<li>Disposition 2</li>
 					<li>Disposition 3</li>
 				</ul>
@@ -140,15 +140,27 @@
 	     	<form action="#">
 	     	    <div class="row">
 		     	    <div class="col-lg-12 ">
-		     	  	<h2>Ouvrir un compte</h2>
+		     	    <div class="omb-utilities">
+		     	  		<span class="fa fa-save fa-lg"></span>
+		     	  		<span class="fa fa-print fa-lg"></span>
+		     	  	</div>
+		     	  	<h2>Echéancier de Crédit</h2>
+		     	  	
 		     	  </div>
 		     	  </div>
 		     	  <div class="row">
 			     	  <div class="col-lg-7">
-			     	  	<p class="omb-asterix"><span>*</span>  les champs suivis d'un asterix (*) sont obligatoires</p>
+			     	    <div class="form-group omb-select">
+						    <label for="type-credit">Type de crédit</label>
+						    <select class="form-control" id="type-credit">
+							    <option>Immobilier <span class="fa fa-chevron-down"></span></option>
+							    <option>Voiture</option>
+						   
+						    </select>
+		                </div>
 			     	  </div>
 		     	      <div class="col-lg-offset-1 col-lg-4">
-			     	    <div class="form-group omb-devise">
+			     	    <div class="form-group omb-select">
 						    <label for="devise">Devise</label>
 						    <select class="form-control" id="devise">
 							    <option>XOF <span class="fa fa-chevron-down"></span></option>
@@ -160,7 +172,55 @@
 		     	     </div>
 		     	 </div>
 		     	<div class="row">
-		     	  <div class=" col-lg-12">
+		     	   <div class="omb-recapitulatif-credit">
+		     	     <div class=" col-lg-12">
+		     	       <p><span class="fa fa-user-circle-o fa-lg"></span>Titulaire : <span class="omb-name">Mr Démo</span></p>
+		     	      </div>
+		     	      <div class="omb-table">
+						<!-- <div class="table-responsive">   -->        
+						  <table class="table">
+						    <tbody>
+						      <tr>
+						        <td><span class="fa fa-clock-o fa-lg"></span>Mois restants : <span class="omb-color">10 mois</span></td>
+						        <td><span class="fa fa-money fa-lg"></span>Montant crédit : <span class="omb-color">12345</span></td>
+						        
+						      </tr>
+						      <tr>
+						        <td>1</td>
+						        <td>Anna</td>
+						        
+						      </tr>
+						      <tr>
+						        <td>1</td>
+						        <td>Anna</td>
+						        
+						      </tr>
+						    </tbody>
+						  </table>
+						  <!-- </div> -->
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			     	 <div class="form-group omb-group omb-type-de-compte">
 							<h3>Type de compte</h3>
 							<div class="wrapper">
