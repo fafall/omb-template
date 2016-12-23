@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User management</title>
+		<meta charset="utf-8">
+		<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    	<link href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../assets/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="omb-gestionrole">
+			<div class="omb-header">
+				<div class="omb-container">
+					<header class="row omb-role">
+						 <nav class="navbar navbar-default">
+			             
+			                    <!-- Brand and toggle get grouped for better mobile display -->
+			                    <div class="navbar-header">
+			                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			                            <span class="sr-only">Toggle navigation</span>
+			                            <span class="icon-bar"></span>
+			                            <span class="icon-bar"></span>
+			                            <span class="icon-bar"></span>
+			                          </button>
+			                          <a class="navbar-brand" href="#"><img src="../assets/images/mylogo.png" alt="SENEGAL"></a>
+			                    </div>
+
+			                    <!-- Collect the nav links, forms, and other content for toggling -->
+			                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			                           <ul class="nav navbar-nav navbar-right">
+			                              
+			                                 <li> 
+			                                     <a href="#"><span class="glyphicon glyphicon-home">Accueil  </span></a>
+			                                                </li>
+			                                                 <li> 
+			                                                    <a href="#"><span class="glyphicon glyphicon-th-list">Entités</span></a>
+			                                                </li>
+			                                                <li> 
+			                                                    <a href="#"><span class="glyphicon glyphicon-user">Compte </span></a>
+			                                                </li>
+			                                                <li> 
+			                                                    <a href="#"><span class="glyphicon glyphicon-tower"></span>Administration</i></a>
+			                                                </li>
+			                            					<li class="dropdown"> 
+			                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			                                                    	<span class="glyphicon glyphicon-flag">Langue</span>
+			                                                    	<span class="caret"></span>
+			                                                    </a>                          
+			                                                    <ul class="dropdown-menu">
+		           													<li><a href="#">Action</a></li>
+		            												<li><a href="#">Another action</a></li>
+		          												</ul>
+			                                                </li>
+			                          </ul>
+			                    </div><!-- /.navbar-collapse -->
+			            </nav>
+        			</header>
+        		</div><!-- /.container -->
+        	</div>
+        	<div class="omb-rolemanagement">
+        		<div class="omb-contain">
+	        		<h2>Rôles</h2>
+	        		<div class="row">
+	        			<button type="button" class="btn btn-red" id="myBtn"><span class="glyphicon glyphicon-flash"></span> Créer un nouveau rôle </button>
+	        			<!-- Modal -->
+			        						<div class="modal fade" id="myModal" role="dialog">
+												<div class="modal-dialog">
+
+											      	<!-- Modal content-->
+											    	<div class="modal-content">
+											       		<div class="modal-header">
+											          		<button type="button" class="close" data-dismiss="modal">
+											          			&times;
+											          		</button>
+											          		<h3>Créer un nouveau rôle </h3>
+											        	</div>
+											        <div class="modal-body">
+											        	<form role="form" >
+											            	<div class="form-group">
+											             		<label for="id" class="control-label">Code rôle</label>
+											             		<div >
+											             	 		<input type="text" class="form-control" id="code-role">
+											             		</div>
+											            	</div>
+											            	<div class="form-group">
+											            		<label for="login" class="control-label" >Libelle</label>
+											            		<div >
+											              			<input type="text" class="form-control" id="libelle">
+											            		</div>
+											            	</div>
+											            	<div class="form-footer">
+												            	<button type="submit" class="btn btn-red" data-dismiss="modal">
+												            		<span class="glyphicon glyphicon-remove"></span> Annuler
+												            	</button>
+												            	<button type="submit" class="btn btn-save pull-right">
+												            		<span class="glyphicon glyphicon-save"></span> Sauvegarder
+												            	</button>
+												            </div>
+											          </form>
+											        </div>
+											      </div>
+											    </div>
+											  </div> 
+
+											  <!-- Fin Modal -->
+						<form class="navbar-form navbar-right">
+        					<div class="form-group">
+        						<input type="text" class="form-control" placeholder="Zone de recherche">
+       						</div>
+      					</form>
+	        		</div>
+	        		<div class="row">
+	        			<div class="table-responsive">
+		        			<table class="table table-striped col-sm-3 col-lg-12">
+		        				<thead class="thead-inverse">
+			        				<tr>
+			        					<th>Code Rôle</th>
+			        					<th>Libelle</th>
+			        					<th>Actions</th>
+			        				</tr>
+			        			</thead>
+			        			<tbody>
+			        				<tr>
+			        					<td>12</td>
+			        					<td>Code de modification</td>
+			        					<td>
+			        						<button type="button" class="omb-transparent" data-toggle="modal">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
+				        					<span class="glyphicon glyphicon-pencil"></span> 
+				        					<button type="button" class="omb-transparent" id="myButton">
+				        						<span class="glyphicon glyphicon-remove-circle"></span>
+				        					</button>
+				        						        			<!-- Modal -->
+			        						<div class="modal fade" id="mymodal" role="dialog">
+												<div class="modal-dialog">
+
+											      	<!-- Modal content-->
+											    	<div class="modal-content">
+											       		<div class="modal-header">
+											          		<button type="button" class="close" data-dismiss="modal">
+											          			&times;
+											          		</button>
+											          		<h3>Confirmation de suppression</h3>
+											        	</div>
+											        <div class="modal-body">
+											        	<div class="omb-container">
+											        	<h5>Etes-vous certain de vouloir supprimer le rôle 12?</h5>
+											        	
+											            	<div class="form-ombfooter">
+												            	<button type="submit" class="btn btn-grey" data-dismiss="modal">
+												            		<i class="fa fa-ban"></i> Annuler
+												            	</button>
+												            	<button type="submit" class="btn omb-btnred ">
+												            		<span class="glyphicon glyphicon-remove"></span> Supprimer
+												            	</button>
+												            </div>
+											          </div>
+											        </div>
+											      </div>
+											    </div>
+											  </div> 
+
+											  <!-- Fin Modal -->
+			        					</td>
+			        				</tr>
+			        				<tr>
+			        					<td>12</td>
+			        					<td>Code de modification</td>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
+			        						<span class="glyphicon glyphicon-pencil"></span> 
+			        						<span class="glyphicon glyphicon-remove-circle"></span>
+			        					</td>
+			        				</tr>
+			        				<tr>
+			        					<td>25BC</td>
+			        					<td>Un nouveau test</td>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
+			        						<span class="glyphicon glyphicon-pencil"></span> 
+			        						<span class="glyphicon glyphicon-remove-circle"></span>
+			        					</td>
+			        				</tr>
+			        				<tr>
+			        					<td>123</td>
+			        					<td>Code de modification</td>
+			        					<td>
+			        						<button type="button" data-toggle="modal" class="omb-transparent" id="myBtn">
+			        							<span class="glyphicon glyphicon-eye-open"></span>
+			        						</button>
+			        						<span class="glyphicon glyphicon-pencil"></span> 
+			        						<span class="glyphicon glyphicon-remove-circle"></span>
+			        					</td>
+			        				</tr>
+			        			</tbody>
+		        			</table>
+	        			</div>
+	        		</div>
+
+	        		<div class="omb-pagination">
+	        			<ul class="pagination">
+						  <li><a href="#"><</a></li>
+						  <li><a href="#"><<</a></li>
+						  <li><a href="#" class="activate">1</a></li>
+						  <li><a href="#">></a></li>
+						  <li><a href="#">>></a></li>
+						</ul>
+	        		</div>
+	        	</div>
+        	</div>
+		</div>
+		<script src="../assets/bootstrap/js/npm.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    	<script>
+			$(document).ready(function(){
+			    $("#myBtn").click(function(){
+			        $("#myModal").modal();
+			    });
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+			    $("#myButton").click(function(){
+			        $("#mymodal").modal();
+			    });
+			});
+		</script>
+	</body>
+</html>
+
+
