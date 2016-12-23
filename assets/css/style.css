@@ -230,31 +230,44 @@ footer .omb-liens p{
 
 /** Page administration**/
 
-.omb-user .navbar-default .navbar-nav li a{
+/** gestion des utilisateurs et des rôles**/
+
+.omb-user .navbar-default .navbar-nav li a,
+.omb-role .navbar-default .navbar-nav li a{
     font-size:15px;
     font-family: 'Roboto-Bold', sans-serif;
 }
-.omb-user .navbar-default .navbar-nav li a:hover{
+.omb-user .navbar-default .navbar-nav li a:hover,
+.omb-role .navbar-default .navbar-nav li a:hover{
     color: #9F2528;
 }
-.omb-user .navbar-default .navbar-nav li a span:before{
+.omb-user .navbar-default .navbar-nav li a span:before,
+.omb-role .navbar-default .navbar-nav li a span:before{
     margin-right:5px;
 }
-.omb-user .navbar-default .navbar-collapse{
+.omb-user .navbar-default .navbar-collapse,
+.omb-role .navbar-default .navbar-collapse{
     margin-top: 13px;
     background-color: transparent;
 }
-.omb-usermanagement{
+.omb-usermanagement,
+.omb-rolemanagement{
     margin-top: 80px;
-}#omb-gestionuser, #omb-dashboard{
+}
+#omb-gestionuser, #omb-dashboard,
+#omb-gestionrole{
     background-color: #fff;
 }
 .omb-usermanagement .btn-red{
-    background-color: #9F2528;
-    color:#fff;
     margin-bottom: 20px;
 }
-.omb-usermanagement .table-responsive {
+.omb-usermanagement .btn-red,
+.omb-rolemanagement .btn-red{
+    background-color: #9F2528;
+    color:#fff;
+}
+.omb-usermanagement .table-responsive,
+.omb-rolemanagement .table-responsive {
     webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     -ms-box-shadow: 0 0 10px #ccc;
@@ -262,7 +275,8 @@ footer .omb-liens p{
     box-shadow: 0 0 10px #ccc;
 }
 
-.omb-usermanagement table thead{
+.omb-usermanagement table thead,
+.omb-rolemanagement table thead{
     background-color: #B7B8BC;
 }
 .omb-usermanagement table tbody .btn-green{
@@ -270,31 +284,40 @@ footer .omb-liens p{
     padding: 0 8px;
     color: #fff;
 }
-.omb-usermanagement table tbody .btn-blue{
+.omb-usermanagement table tbody .btn-blue,
+.omb-rolemanagement table tbody .btn-blue{
     background-color: #1485CC;
     padding: 0 5px;
     color: #fff;
 }
 .omb-usermanagement table tbody  .glyphicon-eye-open,
 .omb-usermanagement table tbody  .glyphicon-pencil,
-.omb-usermanagement table tbody  .glyphicon-remove-circle{
+.omb-usermanagement table tbody  .glyphicon-remove-circle,
+.omb-rolemanagement table tbody  .glyphicon-eye-open,
+.omb-rolemanagement table tbody  .glyphicon-pencil,
+.omb-rolemanagement table tbody  .glyphicon-remove-circle{
     color:#9F2528;
 }
-.omb-usermanagement table tbody  .omb-transparent{
+.omb-usermanagement table tbody  .omb-transparent,
+.omb-rolemanagement table tbody  .omb-transparent{
     background-color: transparent;
     border: none;
 }
-.omb-usermanagement .omb-pagination{
+.omb-usermanagement .omb-pagination,
+.omb-rolemanagement .omb-pagination{
     text-align: center;
 }
-.omb-usermanagement .omb-pagination ul li a{
+.omb-usermanagement .omb-pagination ul li a,
+.omb-rolemanagement .omb-pagination ul li a{
     color:#000;
 }
-.omb-usermanagement .omb-pagination ul li:hover{
+.omb-usermanagement .omb-pagination ul li:hover,
+.omb-rolemanagement .omb-pagination ul li:hover{
     background-color:#9F2528;
     color: #9F2528;
 }
-.omb-usermanagement .omb-pagination ul li .activate{
+.omb-usermanagement .omb-pagination ul li .activate,
+.omb-rolemanagement .omb-pagination ul li .activate{
     background-color:#323232;
     color:#fff;
 }
@@ -303,7 +326,10 @@ footer .omb-liens p{
     margin-right: 30px;
 }
 .omb-contain{
-    margin: 30px;
+    margin: 40px;
+}
+.omb-contain h2{
+    margin-left: -12px;
 }
 /** modal**/
 .modal-header{
@@ -313,28 +339,35 @@ footer .omb-liens p{
     text-align: center;
     color:#fff;
 }
-.omb-usermanagement .modal-content .form-control {
+.omb-usermanagement .modal-content .form-control,
+.omb-rolemanagement .modal-content .form-control {
     border: 1px solid #B7B8BC;
     background: #fff;
     opacity: 1;
     border-radius: 0;
 }
-.omb-usermanagement .modal-content .form-control:focus{
+.omb-usermanagement .modal-content .form-control:focus,
+.omb-rolemanagement .modal-content .form-control:focus{
    
     border-radius: 0;
     box-shadow:1px 1px 1px 1px #A81C35;
 }
 .omb-usermanagement .modal-content select  option:hover,
 .omb-usermanagement .modal-content select  option:focus,
-.omb-usermanagement .modal-content select  option:active{
+.omb-usermanagement .modal-content select  option:active,
+.omb-rolemanagement.modal-content select  option:hover,
+.omb-rolemanagement .modal-content select  option:focus,
+.omb-rolemanagement .modal-content select  option:active{
     background-color: #A81C35;
     color:#fff;
     outline:none;
 }
-.omb-usermanagement .form-horizontal .control-label{
+.omb-usermanagement .form-horizontal .control-label,
+.omb-rolemanagement .form-group .control-label{
     color: #A81C35;
 }
-.omb-usermanagement .modal-header .close{
+.omb-usermanagement .modal-header .close,
+.omb-rolemanagement .modal-header .close{
     font-size: 50px;
     color:#fff;
 }
@@ -342,10 +375,12 @@ footer .omb-liens p{
 .omb-usermanagement .form-ombfooter{
     margin-top:42px;
 }
-.omb-usermanagement .form-ombfooter{
+.omb-usermanagement .form-ombfooter,
+.omb-rolemanagement .form-ombfooter{
     text-align: center;
 }
-.omb-usermanagement .btn-save{
+.omb-usermanagement .btn-save,
+.omb-rolemanagement .btn-save{
     margin-left:48px;
     color:#fff;
     background-color: #1485CC;
@@ -353,7 +388,8 @@ footer .omb-liens p{
 .omb-usermanagement .form-footer .btn-red{
     margin-right: 48px;
 }
-.omb-usermanagement .form-ombfooter .omb-btnred{
+.omb-usermanagement .form-ombfooter .omb-btnred,
+.omb-rolemanagement .form-ombfooter .omb-btnred{
     background-color: #9F2528;
     color:#fff;
 }
