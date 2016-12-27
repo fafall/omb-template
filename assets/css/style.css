@@ -50,7 +50,9 @@ body{
     margin-right: 0;
     margin-left:0;
 }
-#omb-dashboard{
+#omb-dashboard,
+#omb-gestionuser,
+#omb-gestionrole{
      /*    box-shadow: 0 0 10px #ccc; */
   
       background:#fff;
@@ -424,6 +426,9 @@ footer .omb-copyright{
 .omb-usermanagement table thead,
 .omb-rolemanagement table thead{
     background-color: #B7B8BC;
+}
+.omb-usermanagement table thead tr{
+    font-size:12px;
 }
 .omb-usermanagement table tbody .btn-green{
     background-color: #59A61F;
