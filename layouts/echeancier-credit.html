@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Ouverture compte</title>
+<title>Echéancier de crédit</title>
 
 
 <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
@@ -23,9 +23,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand omb-logo" href="#">
-			        <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
-			      </a>
+			      
 		    </div><!-- navbar-header -->
 
 
@@ -49,7 +47,12 @@
 	  </div><!-- /.container-fluid -->
 	</nav>	
 	<div class="row">
-		<div class="col-lg-5 col-lg-offset-7">
+		<div class="col-lg-2">
+			<p><a class="navbar-brand omb-logo" href="#">
+				        <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
+				      </a></p>
+		</div>
+		<div class="col-lg-5 col-lg-offset-5">
 			<div class="omb-welcome-bloc">
 				<h2>Bienvenue Mr Démo</h2>
 				<p><span class="glyphicon glyphicon-calendar"></span> Dernière connexion le:<span class="omb-date">16/12/2016 à 17h20</span> </p>
@@ -115,11 +118,11 @@
    <div class="col-sm-9 omb-no-padding">
 	   
 		   	<div class="omb-sous-menu" id="mescomptes">
-			   	 <ul class="sub-menu " id="omb-compte">
+			   	<ul class="sub-menu " id="omb-compte">
 					<li ><a href="#">Solde des comptes</a></li>
 					<li><a href="#">Historique des operations</a></li>
 					<li class="active"><a href="#">Echéancier de crédit</a></li>
-					<li  ><a href="#">Ouverture de compte</a></li>
+					<li><a href="#">Ouverture de compte</a></li>
 				</ul>
 		   	</div>
             <div id="mesvirements" class=" omb-sous-menu collapse">
@@ -137,44 +140,41 @@
 				</ul>
 	     	</div>
 	     	<div class="omb-content">
-	     	<form action="#">
 	     	    <div class="row">
 		     	    <div class="col-lg-12 ">
-		     	    <div class="omb-utilities">
-		     	  		<span class="fa fa-save fa-lg"></span>
-		     	  		<span class="fa fa-print fa-lg"></span>
+			     	    <div class="omb-utilities">
+			     	  		<span class="fa fa-save fa-lg"></span>
+			     	  		<span class="fa fa-print fa-lg"></span>
+			     	  	</div>
+		     	  	   <h2>Echéancier de Crédit</h2>
 		     	  	</div>
-		     	  	<h2>Echéancier de Crédit</h2>
-		     	  	
-		     	  </div>
-		     	  </div>
-		     	  <div class="row">
+		     	</div>
+		     	<div class="row">
 			     	  <div class="col-lg-7">
 			     	    <div class="form-group omb-select">
 						    <label for="type-credit">Type de crédit</label>
 						    <select class="form-control" id="type-credit">
 							    <option>Immobilier <span class="fa fa-chevron-down"></span></option>
 							    <option>Voiture</option>
+							    <option>Consommation</option>
 						   
 						    </select>
 		                </div>
 			     	  </div>
 		     	      <div class="col-lg-offset-1 col-lg-4">
-			     	    <div class="form-group omb-select">
+			     	      <div class="form-group omb-select">
 						    <label for="devise">Devise</label>
 						    <select class="form-control" id="devise">
 							    <option>XOF <span class="fa fa-chevron-down"></span></option>
 							    <option>EURO</option>
-						   
 						    </select>
-		                </div>
-		     	  	
-		     	     </div>
-		     	 </div>
+		                  </div>
+		     	  	    </div>
+		     	</div>
 		     	<div class="row">
 		     	   <div class="omb-recapitulatif-credit">
 		     	     <div class=" col-lg-12">
-		     	       <p><span class="fa fa-user-circle-o fa-lg"></span>Titulaire : <span class="omb-name">Mr Démo</span></p>
+		     	       <p class="omb-center"><span class="fa fa-user-circle-o fa-lg"></span>Titulaire : <span class="omb-name omb-color">Mr Démo</span></p>
 		     	      </div>
 		     	      <div class="omb-table">
 						<!-- <div class="table-responsive">   -->        
@@ -186,134 +186,94 @@
 						        
 						      </tr>
 						      <tr>
-						        <td>1</td>
-						        <td>Anna</td>
+						       
+						        <td><span class="fa fa-money fa-lg"></span>Solde restant <br> après remboursement : <span class="omb-color">10345</span></td>
+						        <td><span class="fa fa-percent fa-lg"></span>Taux : <span class="omb-color">8</span></td>
 						        
 						      </tr>
 						      <tr>
-						        <td>1</td>
-						        <td>Anna</td>
+						        <td><span class="fa fa-calendar fa-lg"></span>Date de fin de remboursement : </br><span class="omb-color omb-left" >Le XX/XX/XX</span></td>
+						        <td><span class="fa fa-calendar fa-lg"></span>Prochain échéance : </br><span class="omb-color omb-left" >Le XX/XX/XX</span></td>
 						        
 						      </tr>
 						    </tbody>
 						  </table>
 						  <!-- </div> -->
-						</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			     	 <div class="form-group omb-group omb-type-de-compte">
-							<h3>Type de compte</h3>
-							<div class="wrapper">
-								<label for="omb-compte-select">Choisir un type de compte</label>
-								<select class="form-control" id="omb-compte-select">
-									<option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
-									<option>Compte Joint</option>
-									<option>Compte Bloqué</option>
-								</select>
-							</div>
-			        </div>
-			        </div>
+					</div><!-- omb-table -->
+                    </div>
 		     	</div>
 		     	<div class="row">
-		     	 <div class=" col-lg-12">
-			     	 <div class="form-group omb-group omb-epargne-choisi">
-							<h3>Epargne</h3>
-					 <div class="wrapper">
-						 <label for="omb-montant-epargne">Saisir montant à épargner</label>
-						 <div class="input-group">
-							<input type="text" placeholder="12345"class="form-control" id="omb-montant-epargne">
-							  <span class="input-group-addon">XOF</span>
+			     	<div class=" col-lg-12">
+			     	<p class="omb-link omb-center"><a href="#omb-liste-credit" alt="recapitulatif échéance">Voir le récapitulatif des échéances</a>
+				     </div></p>
+				     	
+				     
+			    </div>
+                <div class="row">
+		     	   <div id="omb-liste-credit">
 
-							</div>
-							  <span class="omb-important">*</span>
-							
-							
+		     	        <div class="omb-table">
+		     	        <div class=" col-lg-12 omb-no-padding">
+				        <div class="form-group omb-select">
+							    <label for="omb-mois">Afficher les : </label>
+							    <select class="form-control" id="devise">
+								    <option>3 derniers mois <span class="fa fa-chevron-down"></span></option>
+								    <option>6 derniers mois</option>
+								    <option>9 derniers mois</option>
+							   
+							    </select>
 			            </div>
-			         </div>
-			         </div> 
-		     	</div>
-		    	<div class="row">
-		     	 <div class=" col-lg-12 ">
-			     	 <div class="form-group omb-group omb-type-de-virement">
-							<h3>Type de virement</h3>
-						<div class="wrapper">
-							
-							<label for="permanent">Permanent
-							  <input type="radio" checked="checked" name="optradio" class="form-control" id="permanent" >
-							</label>
-							<label for="ponctuel">Ponctuel
-							  <input type="radio" name="optradio" class="form-control" id="ponctuel" />
-							</label>
-						
-						</div>
-					</div>
-		     	</div>
-		     	</div>
 
-
-		     <!-- 	frequence de prelevement -->
-		     	<div class="row">
-		     	 <div class="col-lg-12 ">
-			     	 <div class="form-group omb-group omb-prelevement">
-							<h3>Fréquence de prélèvement</h3>
-						<div class="wrapper">
-							<div class="row">
-								<div class="col-lg-5">
-									
-								    <textarea class="form-control" rows="3" id="motif"
-								    aria-describedby="motifHelp" placeholder="Motif Epargne"></textarea>
-								   <span id="motifHelp" class="form-text text-muted">120 caractères restants</span>
-								  
-								</div>
-								<div class="col-lg-7">
-									<label for="omb-periode-select">Période</label>
-									<select class="form-control" id="omb-periode-select">
-										<option>Tous les mois<span class="fa fa-chevron-down"></span></option>
-										<option>Tous les 3 mois</option>
-										<option>Tous les 6 mois</option>
-							        </select>
-							  
-								</div>
+				     </div>
+						  <!-- <div class="table-responsive">   -->        
+						  <table class="table">
+						        <thead>
+							        <tr>
+							        <th>Date <span class="fa fa-sort fa-lg"></span></th>
+							        <th>Montant</th>
+							        <th>Solde restant <span class="fa fa-sort fa-lg"></span></th>
+							       </tr>
+						  	
+						        </thead>
+						    
+							    <tbody>
+							      <tr>
+							        <td>05/11/2016</td>
+							        <td>5000</td>
+							        <td>30000</td>
+							        
+							      </tr>
+							      <tr>
+							        <td>05/10/2016</td>
+							        <td>5000</td>
+							        <td>35000</td>
+							        
+							      </tr>
+							      <tr>
+							        <td>05/09/2016</td>
+							        <td>5000</td>
+							        <td>40000</td>
+							        
+							      </tr>
+							    </tbody>
+							   
+						  </table>
+						   <div class="col-lg-12">
+						   <div class="omb-pagination omb-center">
+						  	    <ul class="pagination pagination-sm">
+								  <li class="active"><a href="#">1</a></li>
+								  <li><a href="#">2</a></li>
+								  <li><a href="#">3</a></li>
+								  <li><a href="#">4</a></li>
+								  <li><a href="#">5</a></li>
+								</ul>
 							</div>
-						</div>
-					</div>
+						    </div>
+						  <!-- </div> -->
+						</div><!-- omb-table -->
+                    </div><!-- omb-liste-credit -->
 		     	</div>
-		     	</div>
-		     	<!-- submit button -->
-		     	<div class="row">
-		     		<div class="col-lg-offset-3 col-lg-9 omb-button">
-		     		<div class="wrapper">
-			     		<div class="form-group">
-			     		   <button type="reset" class="btn btn-primary">Réinitialiser</button>
-			     			<button type="submit" class="btn btn-primary">Confirmer</button>
-
-			     		</div>
-			     		</div>
-		     			
-		     		</div>
-                </div>
-	       </form>
-	   </div><!-- omb-content -->
+         </div><!-- omb-content -->
     </div><!-- col-sm-9 -->
   </div><!-- row-->
 </div><!-- omb-container -->
@@ -360,30 +320,7 @@
 
   </div><!-- /.container-fluid -->
 </nav>	
-  	
-  </footer>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
+</footer>  
 
 <script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
