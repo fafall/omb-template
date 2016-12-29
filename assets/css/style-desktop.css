@@ -680,9 +680,14 @@ body#omb-solde-compte{
 	border:none;
 	margin-left: 0;
  }
+ #omb-solde-compte header .navbar-default .container-fluid{
+      background: #5f6062;
+    padding-left: 0;
+    padding-right: 0;
+ }
 
   #omb-solde-compte .glyphicon:before{
-  	font-size: 1.5em;
+  	font-size: 1.2em;
   }
 
    #omb-solde-compte  .omb-welcome-bloc{
@@ -857,7 +862,12 @@ body#omb-solde-compte{
    box-shadow: 0px 0px 10px #000000;
 }
 
-
+#omb-solde-compte header .navbar-right li a{
+  padding: 5px 15px ;
+}
+#omb-solde-compte header .navbar-right li a i{
+  color: #fff;
+}
  /**  ./left menu + horizontal sous menu**/
 
  /** content modifiable **/
