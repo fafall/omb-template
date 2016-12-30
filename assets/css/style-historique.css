@@ -43,6 +43,11 @@
 .omb-internal .omb-content .omb-historique .entete {
     margin-bottom: 10px;
 }
+.omb-internal .omb-content .omb-historique .milieu{
+    margin-left: 296px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .omb-internal .omb-pagination,
 .omb-internal .omb-pagination{
     text-align: center;
@@ -60,4 +65,8 @@
 .omb-internal .omb-pagination ul li .activate{
     background-color:#323232;
     color:#fff;
+}
+.omb-internal .omb-button{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
