@@ -11,8 +11,9 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
 <body id="omb-login-page">
+<div class="omb-overlay">
 
-<div class="omb-wrapper">
+
 
 <header>
 <div class="omb-container-header">
@@ -57,6 +58,7 @@
 
 </div><!-- omb-container-header -->
 </header>
+<div class="omb-wrapper">
 <section id="omb-content">
 	<div class="row ">
 	<div class=" col-xs-offset-2 col-sm-offset-2 col-md-offset-3 col-md-6 col-md-offset-3 col-xs-8 col-sm-8 
@@ -69,13 +71,13 @@
 		  <div class="form-group has-feedback ">
 		    <label for="num-client" class="control-label">Numéro Client</label>
 		     <span class="form-control-feedback fa fa-pencil"></span>
-            <input type="text" class="form-control" id="num-client" aria-describedby="num-client" placeholder="identifiant">
+            <input type="text" class="form-control" id="num-client" aria-describedby="num-client" >
 		    
 		    <small id="omb-num-client-help" class="form-text text-muted">Veuillez renseigner vos Ids de connexion en chiffres</small>
 		  </div>
 			 <div class="form-group has-feedback">
-			 				    <label for="code-secret">Code Secret</label>
-			 				    <input type="password" class="form-control" id="code-secret" placeholder="Code secret"/>
+			 				    <label for="code-secret" class="control-label" >Code Secret</label>
+			 				    <input type="password" class="form-control" id="code-secret" />
 			 				    <span class="form-control-feedback fa fa-lock"></span>
 			 				    <small id="omb-code-secret-help" class="form-text text-muted">Veuillez choisir le code via le pavé
 			 				    </small>
@@ -131,6 +133,8 @@
 <script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
 </div>
+</div> <!-- ./overlay -->
 </body>
 </html>
