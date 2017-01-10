@@ -386,8 +386,8 @@ body.omb-internal{
       	padding: 0;
       }
     .omb-internal .omb-container .omb-left-menu ul,
-  .omb-internal .omb-container  .omb-left-menu li,
-   .omb-container .omb-sous-menu ul,
+    .omb-internal .omb-container  .omb-left-menu li,
+    .omb-container .omb-sous-menu ul,
     .omb-container .omb-sous-menu ul li{
   list-style: none;
   padding: 0px;
@@ -408,6 +408,7 @@ body.omb-internal{
     text-align: center;
     vertical-align: middle;
 }
+
  .omb-container .omb-sous-menu ul li:last-child {
      	border-right:none;
      }
@@ -1144,4 +1145,143 @@ footer .omb-copyright{
 .omb-historique .omb-button{
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+/** Page type virement**/
+
+.omb-internal .omb-sous-menu-virement ul{
+  margin-top: 30px;
+  margin-left:25px;
+}
+.omb-internal .omb-sous-menu-virement ul li.active a{
+  color:#b10021;
+  background-color: transparent;
+}
+
+.omb-internal .omb-sous-menu-virement ul li a{
+  background-color: transparent;
+   color:#000;
+}
+.omb-internal .omb-sous-menu-virement ul li a:hover{
+ color: #b10021;
+}
+.omb-internal .omb-sous-menu-virement ul li.active{
+   /* border: 1px solid rgba(95,96,98,0.2);*/
+   border-top:1px solid #b10021;
+   border-right:1px solid #b10021;
+   border-left:1px solid #b10021;
+   border-bottom: 3px solid #b10021;
+
+    }
+        .omb-internal .omb-sous-menu-virement ul li{
+         border:1px solid rgba(95,96,98,0.2); 
+        }
+    .omb-internal .omb-sous-menu-virement ul li:hover{
+      border-top: 1px solid #b10021;
+      border-left: 1px solid #b10021;
+      border-right: 1px solid #b10021;
+      background-color: transparent;
+    }
+    .omb-type-virement .omb-devise .form-control{
+      width:45%;
+      display: inline-block;
+      background-color: #5f6062;
+      color:#fff;
+      margin-top:25px;
+    
+    }
+     .omb-type-virement .omb-devise label{
+      margin-right: 9%;
+     }
+
+     .omb-internal .omb-content .omb-button .wrapper{
+  text-align: right;
+}
+.omb-internal .omb-content .omb-validation{
+  margin-top: 50px;
+}
+.omb-internal .omb-content .omb-recapitulatif{
+  margin-top: 25px;
+}
+.omb-internal .omb-content .omb-validation button{
+   width: 27%; 
+}
+.omb-internal .omb-content .omb-validation button,
+.omb-internal .omb-content .omb-recapitulatif button{
+ 
+  padding-top:5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  background:#b10021;
+  border:1px solid #fff;
+
+}
+.omb-internal .omb-content .omb-validation button[type="reset"]{
+  margin-right: 10%;
+  background:#fff;
+  border-color:#b10021;
+  color:#b10021;
+}
+/**Résumé virement **/
+.omb-internal .omb-content .omb-resume-virement{
+
+  margin-top: 40px;
+  padding-left:5px;
+}
+.omb-internal .omb-content .omb-resume-date{
+    border-top: solid 2px #dcdfe0;
+    border-bottom: solid 2px #dcdfe0;
+    border-left: solid 2px #dcdfe0;
+    padding: 1rem 1.5rem 1rem 1rem;
+    overflow: hidden;
+}
+.omb-internal .omb-content .omb-resume-motif{
+    border-top: solid 2px #dcdfe0;
+    
+    border-bottom: solid 2px #dcdfe0;
+    border-right: solid 2px #dcdfe0;
+    padding: 1rem 1.5rem 1rem 1rem;
+    overflow: hidden;
+}
+.omb-internal .omb-content .omb-resume-compte{
+  background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+    padding: 1rem 1.5rem 1rem 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.omb-internal .omb-content .omb-resume-compte:hover{
+  border:2px solid #b10021;
+}
+.omb-internal .omb-content .omb-resume-compte strong{
+  color:#b10021;
+}
+.omb-internal .omb-content .omb-resume-date strong,
+.omb-internal .omb-content .omb-resume-motif strong{
+  color:grey;
+}
+.omb-internal .omb-content .omb-resume-compte p,
+.omb-internal .omb-content .omb-resume-date p,
+.omb-internal .omb-content .omb-resume-motif p{
+  font-weight: bold;
+  margin-top: 5px;
+}
+/** confirmation **/
+.omb-internal .omb-content .omb-icone-confirmation{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: #b10021;
+}
+.omb-internal .omb-content .omb-big{
+  font-size: 18px;
+  text-align: center;
+}
+.omb-internal .omb-content .omb-light,
+.omb-internal .omb-content .omb-bold{
+  font-size:15px;
+  text-align: center;
 }
