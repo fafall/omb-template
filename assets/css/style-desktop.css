@@ -1206,9 +1206,13 @@ footer .omb-copyright{
 .omb-internal .omb-content .omb-validation button{
    width: 27%; 
 }
+.omb-internal .omb-content .omb-validation button a,
+.omb-internal .omb-content .omb-recapitulatif button a{
+  color:#fff;
+  text-decoration: none;
+}
 .omb-internal .omb-content .omb-validation button,
 .omb-internal .omb-content .omb-recapitulatif button{
- 
   padding-top:5px;
   padding-bottom: 5px;
   text-transform: uppercase;

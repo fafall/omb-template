@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Confirmation Virement ponctuel entre mes comptes</title>
+<title>Validation Virement ponctuel entre mes comptes</title>
 
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -128,8 +128,8 @@
 			</div>
 	        <div id="mesvirements" class=" omb-sous-menu ">
 			   		<ul class="sub-menu " id="omb-virement">
-						<li class="active"><a href="#">Entre mes comptes</a></li>
-						<li><a href="#">Vers d'autres comptes</a></li>
+						<li><a href="#">Entre mes comptes</a></li>
+						<li class="active"><a href="#">Vers d'autres comptes</a></li>
 						<li ><a href="#">Mes historiques</a></li>
 						<li><a href="#">Mes béneficiaires</a></li>
 					</ul>
@@ -143,8 +143,8 @@
 		    </div>
 		    <div class="omb-sous-menu-virement">
                       <ul class="nav nav-pills">
-                        <li role="presentation" class="active"><a href="ponctuel-entre-mes-comptes.html">Virement ponctuel</a></li>
-                        <li role="presentation"><a href="permanent-entre-mes-comptes.html">Virement permanent</a></li>
+                        <li role="presentation" ><a href="ponctuel-entre-mes-comptes.html">Virement ponctuel</a></li>
+                        <li role="presentation" class="active"><a href="permanent-entre-mes-comptes.html">Virement permanent</a></li>
                       </ul>
                       
                     </div>
@@ -155,23 +155,38 @@
 		    <div class="omb-content">
                     <form role="form">
                         <div class="row">
-                        	<div class="omb-icone-confirmation">
-                        		<i class="glyphicon glyphicon-ok-circle"></i>
-                        	</div>	   
+                        	<div class="col-lg-12 omb-resume-virement">
+                        		<div class="col-lg-5 omb-resume-compte">
+                        			<strong>COMPTE COURANT </strong>
+                        			<p>25011 00500 05001234564 90</p>
+                        		</div>
+                        		<div class="col-lg-5 col-lg-offset-1 omb-resume-compte">
+                        			<strong>COMPTE EPARGNE </strong>
+                        			<p>25011 00500 05009874537 90</p>
+                        		</div>
+                        	</div>   
                         </div> 
                         <div class="row">
-	                        <p class="omb-big">Mr  Démo <br> Votre demande de virement a bien été prise en compte.</p>
-	                        <p class="omb-light">Votre demande a été enregistrée le 28/06/2015 à 11:35:14 sous la référence ZZOUERR2FA10OHT4</p>
-	                        <p class="omb-bold">Ce virement sera executé le 28/06/2016 (date d’exécution indicative)</p>
+                        	<div class="col-lg-12 omb-resume-virement">
+                        		<div class="col-lg-6 omb-resume-date">
+                        			<strong>Montant et date du virement </strong>
+                        			<p>500 000 XOF  28/12/2016</p>
+                        		</div>
+                        		<div class="col-lg-5  omb-resume-motif">
+                        			<strong>Motif </strong>
+                        			<p>Virement</p>
+                        		</div>
+                        	</div>
+                          
                         </div>
-                         
+                        
                        
                                 <div class="row">
                         	<div class="col-lg-offset-7 col-lg-5 omb-recapitulatif">
                         		<div class="wrapper">
                         			<div class="form-group ">
-                        				<button class="btn btn-primary">Effectuer un autre virement</button>
-                        				
+                        				<button class="btn btn-primary">Modifier</button>
+                        				<button class="btn btn-primary"><a href="confirmation-virement-permanent-vers-autres-comptes.html">Confirmer</a></button>
                         			</div>
                         		</div>
                         	</div>
@@ -235,7 +250,7 @@
   	
 </footer>  
 
-<script src="../assets/bootstrap/js/npm.js"></script>
+<script src="../../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../../assets/js/script.js"></script>
