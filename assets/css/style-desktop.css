@@ -1295,3 +1295,120 @@ footer .omb-copyright{
   font-size:15px;
   text-align: center;
 }
+
+
+
+/* ==============================================================================
+== Partie VIREMENT :Page Historique des virements
+** ============================================================================ */
+
+
+.omb-liste-virement .omb-recherche{
+  border-color:#dcdfe0;
+}
+.omb-liste-virement .btn-default{
+  background:#5f6265;
+  color:#fff;
+
+}
+.omb-liste-virement .btn-default:hover{
+  background:rgba(177,0,33,.7);
+  color:#006412;
+}
+ .omb-liste-virement ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #5f6265;
+  font-weight: 700;
+}
+ .omb-liste-virement ::-moz-placeholder { /* Firefox 19+ */
+  color: #5f6265;
+  font-weight: 700;
+}
+ .omb-liste-virement :-ms-input-placeholder { /* IE 10+ */
+  color: #5f6265;
+  font-weight: 700;
+}
+.omb-liste-virement :-moz-placeholder { /* Firefox 18- */
+  color: #5f6265;
+  font-weight: 700;
+}
+.omb-liste-virement ul{
+  padding-left: 0;
+  margin-top: 8%;
+}
+
+.omb-liste-virement ul li{
+  list-style: none;
+  border-bottom:1px solid #dcdfe0;
+  box-sizing: border-box;
+
+
+}
+.omb-liste-virement .omb-padding{
+  padding-top: 10px;
+}
+.omb-liste-virement .list-group-item-heading,
+.omb-liste-virement .montant{
+  font-size: 14px;
+  font-weight: 600;
+  color:#5f6062;
+  margin-bottom: 9px;
+}
+
+.omb-liste-virement .list-group-item-text,
+.omb-liste-virement .date{
+  font-size: 12px;
+  color:#999;
+
+}
+.omb-liste-virement .omb-direction{
+  font-size: 25px;
+  color:#999;
+  margin-top: 10px;
+}
+.omb-liste-virement .omb-statut .omb-rejete,
+.omb-liste-virement .omb-detail .omb-ligne .omb-rejete{
+color:#b1230f;
+text-align: center;
+}
+.omb-liste-virement .omb-statut .omb-accepte,
+.omb-liste-virement .omb-detail .omb-ligne .omb-accepte{
+  color:#1ae40f;
+  text-align: center;
+}
+.omb-liste-virement .omb-statut span{
+ font-size: 20px;
+}
+.omb-liste-virement .omb-voir-plus .omb-btn{
+   display: inline-block;
+    height: 84px;
+    padding: 10px;
+    line-height: 57px;
+    background:#a9abae;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+.omb-liste-virement .omb-detail{
+  background:#a9abae;
+  color:#5f6062;
+  padding: 20px;
+ display: none;
+ transition:all 1s ease-in-out;
+}
+.omb-liste-virement .omb-collapse{
+  display: block;
+  width: 101.4%;
+}
+.omb-liste-virement .omb-detail .row{
+  border-bottom:1px solid #dcdcdc;
+  padding: 10px 0;
+}
+.omb-liste-virement .omb-detail .row:last-child{
+  border:none;
+}
+.omb-liste-virement .omb-detail .omb-ligne div:nth-child(1){
+
+  font-size:14px;
+  font-weight: 700;
+letter-spacing: 1.5px
+}
+/* #1ae40f/b1230f */
