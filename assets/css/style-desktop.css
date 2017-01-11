@@ -1177,9 +1177,7 @@ footer .omb-copyright{
          border:1px solid rgba(95,96,98,0.2); 
         }
     .omb-internal .omb-sous-menu-virement ul li:hover{
-      border-top: 1px solid #b10021;
-      border-left: 1px solid #b10021;
-      border-right: 1px solid #b10021;
+      
       background-color: transparent;
     }
     .omb-type-virement .omb-devise .form-control{
@@ -1188,7 +1186,6 @@ footer .omb-copyright{
       background-color: #5f6062;
       color:#fff;
       margin-top:25px;
-    
     }
      .omb-type-virement .omb-devise label{
       margin-right: 9%;
@@ -1216,10 +1213,19 @@ footer .omb-copyright{
   padding-top:5px;
   padding-bottom: 5px;
   text-transform: uppercase;
-  background:#b10021;
-  border:1px solid #fff;
-
 }
+.omb-internal .omb-content .omb-recapitulatif .omb-btn2,
+.omb-internal .omb-content .omb-validation button{
+    background:#b10021;
+    border-color: #b10021;
+  
+}
+.omb-internal .omb-content .omb-recapitulatif .omb-btn1{
+    background:#fff;
+  border-color:#b10021;
+  color:#b10021;
+}
+
 .omb-internal .omb-content .omb-validation button[type="reset"]{
   margin-right: 10%;
   background:#fff;
@@ -1278,7 +1284,7 @@ footer .omb-copyright{
   margin-top: 40px;
   text-align: center;
   font-size: 35px;
-  color: #b10021;
+  color: #5cc569;
 }
 .omb-internal .omb-content .omb-big{
   font-size: 18px;
