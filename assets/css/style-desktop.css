@@ -1055,7 +1055,6 @@ footer .omb-copyright{
 .omb-internal .omb-pagination li.active a{
 	background:#b10021;
 	color:#fff;
-	border:none;
 }
 
 
@@ -1325,12 +1324,14 @@ footer .omb-copyright{
   color: #5f6265;
   font-weight: 700;
 }
-.omb-liste-virement ul{
+.omb-liste-virement ul,
+.omb-liste-beneficiaire ul{
   padding-left: 0;
   margin-top: 8%;
 }
 
-.omb-liste-virement ul li{
+.omb-liste-virement ul li,
+.omb-liste-beneficiaire ul li{
   list-style: none;
   border-bottom:1px solid #dcdfe0;
   box-sizing: border-box;
@@ -1381,7 +1382,8 @@ text-align: center;
     box-sizing: border-box;
     cursor:pointer;
 }
-.omb-liste-virement .omb-detail{
+.omb-liste-virement .omb-detail,
+.omb-liste-beneficiaire .omb-detail{
   background:#a9abae;
   color:#5f6062;
   padding: 20px;
@@ -1406,3 +1408,72 @@ text-align: center;
 letter-spacing: 1.5px
 }
 /* #1ae40f/b1230f */
+
+
+/* ==============================================================================
+== Partie VIREMENT :Liste bénéficiaires
+** ============================================================================ */
+
+
+.omb-liste-beneficiaire .btn-default{
+/*  background:rgba(177,0,33,.7); */
+    color: rgba(92,0,20,.7);
+   background:#fff;
+    border:1px dotted rgba(92,0,20,.7) ;
+
+}
+.omb-liste-beneficiaire .btn-default .fa-user-plus{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.omb-liste-beneficiaire .btn-default:hover{
+  color:#000;
+/* color:#006412; */
+}
+
+.omb-liste-beneficiaire .omb-entete{
+  background:#5f6062;
+  color:#fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom:2px solid #b10021;
+}
+.omb-liste-beneficiaire .omb-entete div.col{
+  padding:10px 0;
+  border-right:1px solid rgba(255,255,255,.7);
+  text-align: center;
+  text-transform: uppercase;
+}
+.omb-liste-beneficiaire .omb-entete div.col:last-child{
+  border: none;
+}
+.omb-liste-beneficiaire .omb-content-list{
+  padding: 10px 0; 
+  border-bottom:1px dotted #000;
+  text-align: center;
+
+}
+.omb-liste-beneficiaire .omb-content-list div.col{
+  font-size: 12px;
+  padding-top: 10px;
+ 
+}
+.omb-liste-beneficiaire .omb-edit{
+  color:#000;
+  font-size: 14px;
+  font-weight: 700;
+  width: 20%;
+  text-align: center;
+  position: absolute;
+  right: 23px;
+  top: 3px;
+  cursor:pointer;
+}
+
+/**** ajout beneficiaire **/
+
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal {
+  background:#fff;
+  width: 35%;
+  margin: 15% auto 0;
+}
