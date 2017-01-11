@@ -142,7 +142,8 @@
 
 
 			    <!--contenu -->
-			    <div class="omb-content">
+			<div class="omb-content">
+			    <div class="omb-liste-virement">
 				    <div class="row">
 				        <div class="col-lg-12">
 					     	<h2>Historique des virements <span class="badge">10</span></h2>
@@ -151,19 +152,19 @@
 					<div class="row">
 					    <div class="col-lg-12">
 					     	    <div class="input-group">
-							      <input type="text" class="form-control" placeholder="Rechercher un virement par : numéro de compte,montant, statut...">
+							      <input type="text" class="omb-recherche form-control" placeholder="Rechercher un virement par : numéro de compte,montant, statut...">
 							      <span class="input-group-btn">
 							        <button class="btn btn-default" type="button"><span class="fa fa-search fa-lg"></span></button>
 							      </span>
 							    </div><!-- /input-group -->
 						</div><!-- /.col-lg-12 -->
 					</div><!-- /.row -->
-					<div class="omb-liste-virement">
+					
 					    <ul>
 	                        <li>
 		                        <div class="omb-content-list">
 		                            <div class="row">
-			                            <div class="col-lg-8">
+			                            <div class="col-lg-8 omb-padding">
 			                        		<div class="row">
 			                        			<div class="col-lg-5">
 			                        				<div class="omb-compteDeb">
@@ -179,32 +180,34 @@
 			                        			</div>
 			                        			<div class="col-lg-5">
 			                        				<div class="omb-compteCre">
-			                        				<span>2501105001234564 32
-			                        				</span>
-			                        				</div>
+				                        			<div class="list-group">
+														<h4 class="list-group-item-heading">Compte Courant</h4>
+														<p class="list-group-item-text">25011 22222 05001234564 90</p>
+													</div>
+			                        		    </div>
 			                        					
 			                        			</div>
 			                        		</div>
 			                        	</div>
 			                        	<div class="col-lg-4">
 				                        	<div class="row">
-					                        	<div class="col-lg-7">
-					                        		<div class="omb-montantD">
+					                        	<div class="col-lg-5">
+					                        		<div class="omb-montantD omb-padding">
 						                        		<p class="montant">1000
                                                           <span class="date">xx/xx/xxxx
 						                        		  </span>
 						                        		</p>
 						                        	</div>
 					                        	</div>
-					                        	<div class="col-lg-3">
-					                        		<div class="omb-statut">
-					                        		<p><span class="fa fa-times"></span>rejete</p>
+					                        	<div class="col-lg-4">
+					                        		<div class="omb-statut omb-padding">
+					                        		<p class="omb-rejete"><span class="fa  fa-times"></span>rejete</p>
 					                        		</div>
 					                        	</div>
-					                        	<div class="col-lg-2">
+					                        	<div class="col-lg-3">
 					                        		<div class="omb-voir-plus">
-					                        			<button class="omb-btn"><span class="fa fa-plus fa-lg"></span>
-					                        			</button>
+					                        			<div class="omb-btn"><span class="fa fa-plus fa-lg"></span>
+					                        			</div>
 					                        		</div>
 					                        	</div>
 				                        	</div>
@@ -213,16 +216,32 @@
 		                        </div> <!-- /.omb-content-list -->
 		                        <div class="omb-detail">
 		                        	<div class="row">
-			                        	<div class="motif">
+			                        	<div class="omb-ligne">
 			                        		<div class="col-lg-3">Motif</div>
 			                        		<div class="col-lg-9">xxxxx</div>
 
 			                        	</div>
 		                        	</div>
 		                        	<div class="row">
-			                        	<div class="date-exec">
+			                        	<div class="omb-ligne">
 			                        		<div class="col-lg-3">Date d'execution</div>
 			                        		<div class="col-lg-9">xx/xx/xxxx</div>
+			                        	</div>	
+		                        	</div>
+		                        	<div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">
+			                        			<p>Numéro transaction</p>
+			                        		</div>
+			                        		<div class="col-lg-9">
+			                        			<p>NCTFEEEE</p>
+			                        		</div>
+			                        	</div>
+			                        </div>
+			                        <div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">Signature </div>
+			                        		<div class="col-lg-9"><span class="fa omb-rejete  fa-times-circle"> Non</span></div>
 			                        	</div>	
 		                        	</div>
 		                        </div><!-- omb-detail -->
@@ -230,7 +249,7 @@
 	                        <li>
 		                        <div class="omb-content-list">
 		                          <div class="row">
-		                        	<div class="col-lg-8">
+		                        	<div class="col-lg-8 omb-padding">
 		                        		<div class="row">
 		                        			<div class="col-lg-5">
 		                        				<div class="omb-compteDeb">
@@ -246,30 +265,33 @@
 			                        		</div>
 		                        			<div class="col-lg-5">
 			                        			<div class="omb-compteCre">
-			                        			<p>05001234564 </p>
-			                        			</div>
+				                        			<div class="list-group">
+														<h4 class="list-group-item-heading">Compte Courant</h4>
+														<p class="list-group-item-text">25011 12345 05001234564 90</p>
+													</div>
+			                        		    </div>
 		                        			</div>
 		                        		</div>
 		                        	</div>
 		                        	<div class="col-lg-4">
 			                        	<div class="row">
-			                        		<div class="col-lg-7">
-				                        		<div class="omb-montantD">
+			                        		<div class="col-lg-5">
+				                        		<div class="omb-montantD omb-padding">
 				                        		   <p class="montant">1000
                                                        <span class="date">xx/xx/xxxx
 						                        	   </span>
 						                        	</p>
 				                        		</div>
 			                        		</div>
-			                        		<div class="col-lg-3">
-				                        		<div class="omb-statut">
-				                        			<p><span class="fa fa-check"></span>accepté</p>
+			                        		<div class="col-lg-4">
+				                        		<div class="omb-statut omb-padding">
+				                        			<p class="omb-accepte"><span class="fa  fa-check"></span>accepté</p>
 				                        		</div>
 			                        		</div>
-			                        		<div class="col-lg-2">
+			                        		<div class="col-lg-3">
 				                        		<div class="omb-voir-plus">
-				                        			<button class="omb-btn"><span class="fa fa-plus fa-lg"></span>
-				                        			</button>
+				                        			<div class="omb-btn"><span class="fa fa-plus fa-lg"></span>
+				                        			</div>
 				                        		</div>
 			                        		</div>
 			                        	</div>
@@ -278,16 +300,33 @@
 		                        </div><!-- /.omb-content-list -->
 		                          <div class="omb-detail">
 		                        	<div class="row">
-			                        	<div class="motif">
+		                        	    <div class="omb-ligne">
 			                        		<div class="col-lg-3">Motif</div>
 			                        		<div class="col-lg-9">xxxxx</div>
 
 			                        	</div>
 		                        	</div>
-		                        	<div class="row">
-			                        	<div class="date-exec">
+                                    <div class="row">
+		                        	    <div class="omb-ligne">
 			                        		<div class="col-lg-3">Date d'execution</div>
 			                        		<div class="col-lg-9">xx/xx/xxxx</div>
+			                        	</div>	
+			                        </div>
+		                        
+		                        	<div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">
+			                        			<p>Numéro transaction</p>
+			                        		</div>
+			                        		<div class="col-lg-9">
+			                        			<p>NCTFAAAA</p>
+			                        		</div>
+			                        	</div>
+			                        </div>
+			                        <div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">Signature </div>
+			                        		<div class="col-lg-9"><span class="fa  omb-accepte fa-check-circle"> Oui</span></div>
 			                        	</div>	
 		                        	</div>
 		                        </div><!-- omb-detail -->
@@ -295,7 +334,7 @@
 	                        <li>
 		                        <div class="omb-content-list">
 		                          <div class="row">
-		                        	<div class="col-lg-8">
+		                        	<div class="col-lg-8 omb-padding">
 		                        		<div class="row">
 		                        			<div class="col-lg-5">
 		                        				<div class="omb-compteDeb">
@@ -310,30 +349,33 @@
 			                        		</div>
 		                        			<div class="col-lg-5">
 			                        			<div class="omb-compteCre">
-			                        			<p>05001234564</p>
-			                        			</div>
+				                        			<div class="list-group">
+														<h4 class="list-group-item-heading">Compte Cheque</h4>
+														<p class="list-group-item-text">25011 12345 05001234564 90</p>
+													</div>
+			                        		    </div>
 		                        			</div>
 		                        		</div>
 		                        	</div>
 		                        	<div class="col-lg-4">
-			                        	<div class="row">
-			                        		<div class="col-lg-7">
-				                        		<div class="omb-montantD">
+			                        	<div class="row ">
+			                        		<div class="col-lg-5">
+				                        		<div class="omb-montantD omb-padding">
 					                        		<p class="montant">1000
 	                                                   <span class="date">xx/xx/xxxx
 							                        	</span>
 							                        </p>
 				                        		</div>
 			                        		</div>
-			                        		<div class="col-lg-3">
-				                        		<div class="omb-statut">
-				                        		<p><span class="fa fa-times"></span>rejete</p>
+			                        		<div class="col-lg-4">
+				                        		<div class="omb-statut omb-padding">
+				                        		<p class="omb-rejete"><span class="fa fa-times"></span>rejete</p>
 				                        		</div>
 			                        		</div>
-			                        		<div class="col-lg-2">
+			                        		<div class="col-lg-3">
 				                        		<div class="omb-voir-plus">
-				                        			<button class="omb-btn"><span class="fa fa-plus fa-lg"></span>
-				                        		   </button>
+				                        			<div class="omb-btn"><span class="fa fa-plus fa-lg"></span>
+				                        		   </div>
 				                        		</div>
 			                        		</div>
 			                        	</div>
@@ -342,22 +384,38 @@
 		                        </div><!-- /.omb-content-list -->
 		                          <div class="omb-detail">
 		                        	<div class="row">
-			                        	<div class="motif">
+			                        	<div class="omb-ligne">
 			                        		<div class="col-lg-3">Motif</div>
 			                        		<div class="col-lg-9">xxxxx</div>
 
 			                        	</div>
 		                        	</div>
 		                        	<div class="row">
-			                        	<div class="date-exec">
+			                        	<div class="omb-ligne">
 			                        		<div class="col-lg-3">Date d'execution</div>
 			                        		<div class="col-lg-9">xx/xx/xxxx</div>
+			                        	</div>	
+		                        	</div>
+		                        	<div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">
+			                        			<p>Numéro transaction</p>
+			                        		</div>
+			                        		<div class="col-lg-9">
+			                        			<p>NCTFBBBB</p>
+			                        		</div>
+			                        	</div>
+			                        </div>
+		                        	<div class="row">
+			                        	<div class="omb-ligne">
+			                        		<div class="col-lg-3">Signature </div>
+			                        		<div class="col-lg-9"><span class="fa omb-rejete fa-times-circle"></span> Non</div>
 			                        	</div>	
 		                        	</div>
 		                        </div><!-- omb-detail -->
 	                        </li>
 	                    </ul>
-	                </div><!-- omb-liste-virement -->
+	         </div><!-- omb-liste-virement -->
 	                <div class="row">
 	                    <div class="col-lg-12">
 									<div class="omb-pagination omb-center">
