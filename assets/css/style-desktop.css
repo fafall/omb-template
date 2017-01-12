@@ -1472,8 +1472,61 @@ letter-spacing: 1.5px
 
 /**** ajout beneficiaire **/
 
-#omb-modal-ajout-beneficiaire .omb-wrapper-modal {
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal{
   background:#fff;
   width: 35%;
-  margin: 15% auto 0;
+  margin: 20% auto 0;
 }
+
+#omb-modal-ajout-beneficiaire h2{
+  color:#5f6062 !important;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-couleur{
+  color:#b10021;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-wrapper-input{
+
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal label{
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit{
+  width: 70%;
+  margin-top: 10%;
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit .input-group{
+  width: 40%;
+  display: inline-table;
+
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit .input-group:last-child{
+  margin-left: 17%;
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit input[type="submit"],
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit .omb-conf{
+  background:#5f6062;
+  color:#fff;
+  border:1px solid #fff;
+
+
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit .omb-conf{
+  border-right:none;
+}
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit input[type="reset"],
+#omb-modal-ajout-beneficiaire .omb-wrapper-modal .omb-submit .omb-annul{
+ border-color:#5f6062;
+}
+

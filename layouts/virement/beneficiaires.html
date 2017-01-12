@@ -221,27 +221,53 @@
 	                    </ul>
 	                    <div id="omb-modal-ajout-beneficiaire" class="modal fade" role="dialog">
 		                    <div class="omb-wrapper-modal">
-				                   <div class="row">
+				                <div class="row">
 					                   <div class="col-lg-12">
-                                        	<h2>Ajouter un bénéficiaire</h2>
+                                        	<h2><span class="fa omb-couleur fa-users"></span>Ajouter un bénéficiaire</h2>
                                         </div>
                                         <div class="col-lg-12">
-                                        	<div class="input-group">
-												<label for="nom-prenom">Nom et prénom  beneficiare:
-												</label>
-												<span class="input-group-addon"><i class="fa fa-user"></i></span>
-												<input type="text" class="form-control" id="nom-prenom" />
-											</div>
-											<div class="form-group">
-												<span class="fa fa-"></span><label for="compte">Numero de compte:</label>
-												<input type="text" class="form-control" id="compte">
-											</div>
-											<div class="form-group">
-												<label for="adresse">Adresse béneficiaire:</label>
-												<span class="fa fa-user"></span><input type="text" class="form-control" id="adresse">
-											</div>
-                                        </div>
-			                      </div>
+	                                        <div class="omb-wrapper-input">    
+	                                           <label for="nom-prenom">Nom et prénom  beneficiare:
+											 	</label>
+	                                        	<div class="input-group">
+													<span class="input-group-addon omb-couleur"><i class="fa fa-user"></i></span>
+													<input type="text" class="form-control" id="nom-prenom" />
+												</div>
+										    </div><!-- omb-wrapper-input -->
+									        <div class="omb-wrapper-input"> 
+										        <label for="compte">Numero de compte:</label> 
+												<div class="input-group">
+													<span class="input-group-addon omb-couleur">
+														<i class="fa fa-credit-card"></i>
+													</span>
+													<input type="text" class="form-control" id="compte">
+												</div>
+										    </div><!-- omb-wrapper-input -->					<div class="omb-wrapper-input"> 						<label for="adresse">Adresse béneficiaire:
+									        	</label>
+												<div class="input-group">
+													<span class=" input-group-addon omb-couleur">
+														<i class="fa fa-address-card"></i>
+													</span>
+													<input type="text" class="form-control" id="adresse" />
+												</div>
+										 	</div><!-- omb-wrapper-input-->
+										 	<div class="omb-wrapper-input omb-submit">
+										     	<div class="input-group">
+													<span class=" input-group-addon omb-annul"><i class="fa fa-ban"></i>
+													</span>
+													<input type="reset" class="form-control" value="Annuler" />
+												</div>
+												<div class="input-group">
+													<span class="input-group-addon omb-conf"><i class="fa fa-check"></i>
+													</span>
+													<input type="submit" class="form-control" value="Confirmer" />
+												</div>
+
+										    </div><!-- omb-wrapper-input-->
+
+										</div>
+                                </div>
+			                    
 			                </div><!-- omb-wrapper-modal -->
 			                       
 		                </div><!-- omb-detail -->
