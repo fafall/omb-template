@@ -221,10 +221,17 @@
 	                    </ul>
 	                    <div id="omb-modal-ajout-beneficiaire" class="modal fade" role="dialog">
 		                    <div class="omb-wrapper-modal">
+			                    
+	        
+	     
 				                <div class="row">
+				                	<div class="modal-header">
+	                               		<button type="button" class="close" data-dismiss="modal"><span class="fa fa-close"></span></button>
 					                   <div class="col-lg-12">
                                         	<h2><span class="fa omb-couleur fa-users"></span>Ajouter un bénéficiaire</h2>
                                         </div>
+                                    </div>
+                                    <div id="omb-etape1">
                                         <div class="col-lg-12">
 	                                        <div class="omb-wrapper-input">    
 	                                           <label for="nom-prenom">Nom et prénom  beneficiare:
@@ -260,12 +267,26 @@
 												<div class="input-group">
 													<span class="input-group-addon omb-conf"><i class="fa fa-check"></i>
 													</span>
-													<input type="submit" class="form-control" value="Confirmer" />
+													<input id="btn-etape1" type="submit" class="form-control" value="Confirmer" />
 												</div>
 
 										    </div><!-- omb-wrapper-input-->
+                        				</div>
+                        			</div>
+                        			<div id="omb-etape2" class="hide">
+                        				<div class="col-lg-12">
 
-										</div>
+                        				   <span class="fa fa-check-circle fa-2x"></span>
+                        				   <p> Merci.</p>
+                        				   <p>le bénéficiaire sera rajouté après verification,<br/> Un email vous sera adressé ultérieurement.</p>
+                        				   <div class="input-group">
+												
+												</span>
+												<input id="btn-etape2" type="submit" class="form-control" value="Ok" data-dismiss="modal" />
+											</div>
+                        					
+                        				</div>
+                        			</div>
                                 </div>
 			                    
 			                </div><!-- omb-wrapper-modal -->

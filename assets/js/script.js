@@ -44,29 +44,25 @@ $('.omb-liste-virement .omb-btn').click(function(){
     clique++;
 });
 
-/*$('.omb-liste-virement .omb-btn').click(function(){
-   var $this=$(this).parents('.omb-content-list').siblings('.omb-detail').addClass('omb-collapse');$(this);        
-   if($this.is(':hidden'))
-    {
-      $this.show('');
-    }else{
-      $this.hide('');
+$('#omb-modal-ajout-beneficiaire').on('hidden.bs.modal', function () {
+    if( $("#omb-etape1").hasClass('hide')){
+         $("#omb-etape1").removeClass('hide');
+         $("#omb-etape2").addClass('hide');
+        
     }
- });
-*/
+});
 
+/*** page intermédiare dans popup! ***/
+$("#btn-etape1").click(function () {
+    $("#omb-etape1").addClass('hide');
+    $("#omb-etape2").removeClass('hide');
+});
+/*$("#btn-etape2").click(function () {
 
-  /*   if($(this).parents('.omb-content-list').siblings('.omb-detail :visible')){
-        console.log('visible');
-        $(this).parents('.omb-content-list').siblings('.omb-detail').removeClass('omb-collapse');
-     }
-     else{
-        console.log('hide');
-        $(this).parents('.omb-content-list').siblings('.omb-detail').addClass('omb-collapse');
-
-     }
-}
-*/
- 
+});*/
+/*$("#btnEndStep3").click(function () {
+    // Whatever your final validation and form submission requires
+    $("#sampleModal").modal("hide");
+});*/
 
 });
