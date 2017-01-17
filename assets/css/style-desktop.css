@@ -1295,6 +1295,12 @@ footer .omb-copyright{
   text-align: center;
 }
 
+/** Demandes Coficash **/
+
+.omb-demandes-coficash .omb-liste-demandes button {
+  background-image: url(../images/cheque.png) no-repeat;
+ 
+}
 
 
 /* ==============================================================================
@@ -1579,5 +1585,12 @@ font-size: 14px;
   border-bottom: none !important;
 }
 
+/** Commander coficash**/
 
+.omb-internal .omb-content .omb-commande-coficash h3{
+  background-color: #dcdcdc;
+  padding: 3% 2%;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
 
