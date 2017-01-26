@@ -1,3 +1,4 @@
+
 @media (max-width: 768px){
 	
 	header .navbar-default
@@ -36,14 +37,44 @@
     .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
    }
-
-
+	.omb-internal .omb-content .image-demande
+{
+  width: 100px;
+  height:100px;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay span
+{  
+  display: none;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+ font-size:9px;
+ float:left;
+}
+.omb-internal .omb-content .descript-demande a{
+  font-size: 16px;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+  margin:20px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service{
+  margin:20px 28px 0px;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash{
+  margin:20px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
+  margin:20px 0 0;
+}
 }/** end media 768px **/
 
 
 /** small devices **/
 
-@media (max-width:468px){
+@media (max-width:480px){
+
 	.navbar-brand img{
 		width: 55%;
 	}
