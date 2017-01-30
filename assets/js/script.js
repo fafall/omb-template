@@ -1,12 +1,12 @@
 $(document).ready(function(){
-
+/*
  $heightContainer=$('.omb-internal .omb-container').height();
   console.log($heightContainer);
   $('.omb-internal .omb-left-menu ').height($heightContainer);
 
   $heighthomepage=$('.omb-homepage .omb-dash').height();
   console.log($heighthomepage);
-  $('.omb-homepage .omb-menu ').height($heighthomepage);
+  $('.omb-homepage .omb-menu ').height($heighthomepage);*/
     /** input trigger **/
 
     $('  #omb-login-page #omb-content .form-control').keypress(function(){

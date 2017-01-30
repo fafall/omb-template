@@ -554,10 +554,16 @@ body.omb-internal{
      }
 
      .omb-internal .omb-content .omb-group{
-     	
+     	border:1px solid rgba(0,0,0,.25);
      	margin: 1% 0 5%;
+     	box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+     	border-left: 5px solid #000;
+     	box-sizing: border-box;
+        border-top-left-radius: 5px;
+     	border-bottom-left-radius: 5px;
      }
     .omb-internal .omb-content .omb-group h3{
+    	background:#dcdcdc;
     	margin: 0;
     	padding:1% 1%;
     	text-transform: uppercase;
@@ -572,23 +578,39 @@ body.omb-internal{
 	
      #omb-ouverture-compte .omb-content .omb-type-de-compte{
 	 }
+
+     .omb-internal .omb-content .omb-type-de-compte{
+
+     	border-left-color:#b10021;
+     }
+    .omb-internal .omb-content .omb-type-de-compte h3{
+    	color:#b10021;
+    }
+
      .omb-internal .omb-content .omb-epargne-choisi{
      	border-left-color:#0083c3;
      }
-    .omb-internal .omb-content .omb-epargne-choisi h3, 
-    .omb-internal .omb-content .omb-type-de-virement h3,
-     .omb-internal .omb-content .omb-prelevement h3,
-      .omb-internal .omb-content .omb-type-de-compte h3{
-    	color: grey;
-    font-weight: bold;
+    .omb-internal .omb-content .omb-epargne-choisi h3{
+    	color:#0083c3;
     }
-  
+     .omb-internal .omb-content .omb-type-de-virement{
+     	border-left-color:#b10021;
+     }
+    .omb-internal .omb-content .omb-type-de-virement h3{
+    	color:#b10021;
+    }   
+      .omb-internal .omb-content .omb-prelevement{
+     	border-left-color:#0083c3;
+     }
+    .omb-internal .omb-content .omb-prelevement h3{
+    	color:#0083c3;
+    }   
 /* rgb(251,0,254) == rose
 #00b337= vert **/
 
     .omb-internal .omb-content .omb-group .wrapper{
     	margin: 10px 0 10px;
-    	padding: 2% 2%;
+    	padding: 0 2%;
     }
 
      .omb-internal .omb-content .omb-group label{
@@ -620,13 +642,19 @@ body.omb-internal{
 
         }
      
+      .omb-internal .omb-content .omb-group select{
+      	background:#5f6062;
+      	color:#fff;
+      }
 /* bloc type de virement **/
 
   .omb-internal .omb-content .omb-type-de-virement .wrapper{
   	text-align: center;
 
   }
-   
+    .omb-internal .omb-content .omb-type-de-virement label{
+    	margin:0 10%;
+    }
     /** bloc frequence prelevement **/
     #motifHelp{
     	display: block;
@@ -1322,7 +1350,7 @@ footer .omb-copyright{
 .omb-liste-virement ul,
 .omb-liste-beneficiaire ul{
   padding-left: 0;
-  margin-top: 4%;
+  margin-top: 8%;
 }
 
 .omb-liste-virement ul li,
@@ -1452,7 +1480,7 @@ text-decoration: none;
   border: none;
 }
 .omb-liste-beneficiaire .omb-content-list{
-  padding: 5px 0; 
+  padding: 10px 0; 
   border-bottom:1px dotted #000;
   text-align: center;
 
@@ -1693,160 +1721,6 @@ padding:7px 14px;
   margin-bottom: 0;
 }
 
-
-
-/* ==============================================================================
-== Partie Demandes : Mes cartes
-** ============================================================================ */
-
-.omb-internal .omb-content .omb-mes-cartes{
-	margin-top : 20px;
-
-}
-
-.omb-internal .omb-content .omb-mes-cartes button{
-	
-	color: #000;
-	border-color : #dcdfe0;
-	width : 100%;
-	background-color: #fff;
-    border-top: solid 1px #dcdfe0;
-    border-right: solid 1px #dcdfe0;
-    border-bottom: solid 1px #dcdfe0;
-    border-left: solid 3px #b10021;
-   
-}
-
-.omb-internal .omb-content .omb-mes-cartes button p{
-
-	text-align : left;
-}
-
-.omb-internal .omb-content .omb-mes-cartes2 button{
-	
-	color: #000;
-	border-color : #dcdfe0;
-	width : 100%;
-	background-color: #fff;
-    border-top: solid 1px #dcdfe0;
-    border-right: solid 1px #dcdfe0;
-    border-bottom: solid 1px #dcdfe0;
-    border-left: solid 3px #b10021;
-   
-}
-
-.omb-internal .omb-content .omb-mes-cartes2 button p{
-
-	text-align : left;
-}
-
-.omb-internal .omb-content .form-group select{
-	background : #5f6062;
-	color : #fff;
-	width : 100%;
-	margin-top : 30px;
-}
-
-/* .omb-internal  .omb-content .navbar-form {
-	
-	margin-top : 20px;
-} */
-
-
-/* BEGIN*/
-
-/* enable absolute positioning */
-.inner-addon { 
-    position: relative;
-	margin-top : 30px;	
-}
-
-/* style icon */
-.inner-addon .glyphicon {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
-}
-
-/* align icon */
-.left-addon .glyphicon  { left:  0px;}
-.right-addon .glyphicon { right: 0px;}
-
-/* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
-
-/* END */
-
-.omb-internal  .omb-content .btn-group{
-	border-left: solid 3px #b10021;
-	
-}
-
-.omb-internal  .omb-content .btn-group button{
-	margin-left : 10px;
-	margin-top : 10px;
-	
-}
-
-.omb-internal  .omb-content .MonCollapse2 button{
-	margin-bottom : 20px; 
-}
-
-
-
-/* ==============================================================================
-== Partie Demandes : Mes cartes : oppsition carte
-** ============================================================================ */
-
-.hr {
-	
-	border: 1px solid #b10021;	
-}
-
-.omb-internal  .omb-content h3{
-
-	color : #b10021;
-}
-
-.modal-header{
-	
-	background-color : #B7B8BC;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 .omb-internal .omb-content .omb-commande-coficash .wrapper{
     margin: 10px 0 10px;
     padding: 0 2%;
@@ -1899,4 +1773,3 @@ padding:7px 14px;
 .omb-demandes-coficash .omb-content .omb-trait{
   border-bottom: solid 1px #dcdfe0;
 }
->>>>>>> 579a093f23a408b2ba01c38a6d5302ee8185097b

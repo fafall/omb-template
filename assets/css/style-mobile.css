@@ -42,7 +42,7 @@
     	/** page de login **/
 
     	.navbar-right{
-    		margin-top:-33px;
+    		margin-top:8px;
     	}
     	.navbar-nav{
     		float: none;
@@ -84,7 +84,7 @@
 		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
 		.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
 		.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
-		 font-size:9px;
+		 font-size:8px;
 		 float:left;
 		}
 		.omb-internal .omb-content .descript-demande a{
@@ -102,7 +102,7 @@
 		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
 		  margin:20px 0 0;
 		}
-
+		
 		/** login page **/
 		header .navbar-default
 		{
@@ -121,14 +121,7 @@
 		width: 80%;
 	   }
 
-	  	#omb-login-page header .navbar-default .navbar-collapse{
-	   	     background: #000;
-	       opacity: .62;
-	      text-align: center;
-	      border: none;
-	      margin-left: 0;
-			height: auto !important;
-	   }  
+	  	
 	   .navbar-default .navbar-toggle,
 	   .navbar-default .navbar-toggle:focus, 
 	   .navbar-default .navbar-toggle:hover{
@@ -141,15 +134,18 @@
 	    background-color: #fff;
 	   }	
 
-
-
-
 	   .navbar-nav{
     		float: none;
     		font-size: 11px;
     	}
-    	.navbar-right{
-    		margin-top:-33px;
+    	
+    	
+    	/**tableau de bord **/
+    	
+    	  /** tableau de bord**/
+          .omb-homepage .omb-menu{
+    		width: 25%;
+    		border:none;
     	}
     }
 
@@ -161,9 +157,14 @@
     @media only screen and (max-width : 480px) {
 
           /** tableau de bord**/
-
+          .omb-homepage .omb-menu{
+    		width: 100%;
+    		border:none;
+    	}
+    	
+       
     	.omb-homepage .omb-contenu h2 {
-    		font-size:20px;
+    		font-size:15px;
     	}
     	.omb-homepage .omb-contenu .btn-red {
     		margin-right: 10px;
@@ -178,6 +179,34 @@
     		}
 
     	/** Login page **/
+    	.navbar-right,.navbar-center{
+    		margin-top:6px;
+    		
+	     
+	      margin-left: 0;
+			height: auto !important;
+    	}
+
+    	#omb-login-page header .navbar-default .navbar-collapse{
+	   	     background: #000;
+	       opacity: .62;
+	      text-align: center;
+	      border: none;
+	      margin-left: 0;
+			height: auto !important;
+	   }  
+	   #omb-dashboard footer .navbar-default .navbar-collapse{
+    		border:none;
+    		background-color: #5f6062;
+    		height: auto !important;
+    		
+    	}
+    	#omb-dashboard  footer .navbar-default .navbar-collapse a{
+    		color:#fff;
+    	}
+    	    	#omb-dashboard footer .navbar-default .navbar-collapse a:hover{
+    		color:#b10021;
+    	}
     	.navbar-brand img{
 			width: 55%;
 		}
