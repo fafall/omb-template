@@ -363,9 +363,9 @@ body.omb-internal{
      	display: inline-block;
      	padding:0 20px;
      }
-   .omb-internal  .omb-welcome-bloc .omb-solde p:first-child{
+  /* .omb-internal  .omb-welcome-bloc .omb-solde p:first-child{
    	border-right:1px solid rgba(255,255,255,.5);
-   }
+   }*/
     .omb-internal  .omb-welcome-bloc .omb-solde p span{
     	font-weight: 700;
     }
@@ -510,7 +510,9 @@ body.omb-internal{
    	margin: 0 auto 8%;
 
    }
-
+  .omb-internal .omb-content .omb-titre-demande h2{
+    font-size:30px;
+  }
    .omb-internal .omb-content h2{
    	text-align: center;
     color: #b10021;
@@ -1298,7 +1300,7 @@ footer .omb-copyright{
 /** Demandes Coficash **/
 
 .omb-demandes-coficash .omb-liste-demandes button {
-  background-image: url(../images/cheque.png) no-repeat;
+  margin-bottom: 20px;
  
 }
 
@@ -1427,20 +1429,29 @@ letter-spacing: 1.5px
 ** ============================================================================ */
 
 
-.omb-liste-beneficiaire .btn-default{
+.omb-liste-beneficiaire .btn-default,
+.omb-demandes-coficash .omb-liste-demandes .btn-default{
 /*  background:rgba(177,0,33,.7); */
     color: rgba(92,0,20,.7);
    background:#fff;
     border:1px dotted rgba(92,0,20,.7) ;
 
 }
+.omb-demandes-coficash .omb-liste-demandes .btn-default a{
+   color: rgba(92,0,20,.7); 
+   margin-left:8px;
+   text-transform: uppercase;
+
+}
 .omb-liste-beneficiaire .btn-default .fa-user-plus{
   font-size: 30px;
   margin-right: 10px;
 }
-.omb-liste-beneficiaire .btn-default:hover{
+.omb-liste-beneficiaire .btn-default:hover,
+.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover{
   color:#000;
 /* color:#006412; */
+text-decoration: none;
 }
 
 .omb-liste-beneficiaire .omb-entete{
@@ -1585,14 +1596,123 @@ font-size: 14px;
   border-bottom: none !important;
 }
 
-/** Commander coficash**/
+/** demandes**/
+
+.omb-demandes-coficash .omb-liste-demandes .btn-default img{
+    width:30px;
+    height: 30px;
+}
+
+/** accueil **/
+.omb-internal .omb-content .image-demande
+{
+  width: 220px;
+  height:220px;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay{
+  position:absolute;
+  top:0px;
+  left:0px;
+  overflow:hidden;
+  width:300px;
+  height:300px;
+  opacity:0;
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out;
+   padding-top:40px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background:rgba(95,96,98,.4); 
+  cursor: pointer;
+
+}
+.omb-internal .omb-content .omb-demande .omb-overlay span
+{
+  color:#fff;
+  position:relative;
+  font-size:14px;
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service{
+  margin:8px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash{
+  margin:20px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
+  margin:38px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+  text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+border-radius: 4px;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:7px 14px;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+  margin:87px 0 0;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service:hover {
+  box-shadow:0 0 5px #fff;
+}
+.omb-internal .omb-content .omb-demande:hover .omb-overlay,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+.omb-internal .omb-content .omb-demande:hover .omb-overlay .info-carte {
+  opacity:1;
+}
+
+.omb-internal .omb-content .omb-demande{
+    margin-top: 35px;
+    text-align: center;
+    overflow:hidden;
+    position:relative;
+    cursor:default;
+}
+
+.omb-internal .omb-content .descript-demande{
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family:'Roboto-Bold', sans-serif;
+  text-align: center;
+}
+.omb-internal .omb-content .descript-demande a{
+  color:#000;
+  text-decoration: none;
+}
+
+
+/** Formulaire de commande **/
 
 .omb-internal .omb-content .omb-commande-coficash h3{
   background-color: #dcdcdc;
-  padding: 3% 2%;
+  padding: 2% 2%;
   text-transform: uppercase;
   font-size: 1.3em;
+  margin-top:0;
+  margin-bottom: 0;
 }
+
 
 
 /* ==============================================================================
@@ -1746,3 +1866,57 @@ font-size: 14px;
 
 
 
+=======
+.omb-internal .omb-content .omb-commande-coficash .wrapper{
+    margin: 10px 0 10px;
+    padding: 0 2%;
+}
+/** Historiquue coficash **/
+.omb-demandes-coficash .omb-content .omb-historique-entete h5{
+  background-color: #dcdcdc;
+  padding: 2% 2%;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color:grey;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu,
+.omb-demandes-coficash .omb-content .omb-type-compte{
+  padding-left:15px;
+  list-style-type:none;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu li{
+  padding:2% 2%;
+  margin-right:0px;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-cheque img{
+  width:30px;
+  height:30px;
+}
+.omb-demandes-coficash .omb-content .infos-cheques{
+  padding-left: 0;
+}
+.omb-demandes-coficash .omb-content  .infos-cheques .omb-paragraphe{
+  padding-left: 50px;
+  margin-top:10px;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-enveloppe span,
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-bank span{
+  font-size:27px;
+  color:#CD0127;
+  margin-right:15px;
+}
+.omb-demandes-coficash .omb-content  .infos-suite{
+  border-left: solid 1px #dcdfe0;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu .up{
+  text-transform: uppercase;
+}
+.omb-demandes-coficash .omb-content .omb-ombre{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+}
+.omb-demandes-coficash .omb-content .omb-trait{
+  border-bottom: solid 1px #dcdfe0;
+}
+>>>>>>> 579a093f23a408b2ba01c38a6d5302ee8185097b

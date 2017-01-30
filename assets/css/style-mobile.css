@@ -1,78 +1,223 @@
-@media (max-width: 768px){
-	
-	header .navbar-default
-	{
-		background:transparent;
-		opacity:1;
-		width: 90%;
-		margin:0 auto;
-	}
-	header .omb-logo,
-    header .navbar-header:hover{
-		background: transparent;
-	
-   }
+/* Large Devices, Wide Screens */
 
-   .navbar-brand img{
-	width: 80%;
-   }
+  @media only screen and (max-width : 1200px) {
 
-  	#omb-login-page header .navbar-default .navbar-collapse{
-   	     background: #000;
-       opacity: .62;
-      text-align: center;
-      border: none;
-      margin-left: 0;
-		height: auto !important;
-   }  
-   .navbar-default .navbar-toggle,
-   .navbar-default .navbar-toggle:focus, 
-   .navbar-default .navbar-toggle:hover{
-    border-color: #5f6062;
-    background: #5f6062;
-    opacity: 1;
+    /** tableau de bord**/
+
+  	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: 0px;
+    	}
+    		.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}
+    /** page de login **/
+
+    	.navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+    	.navbar-right{
+    		margin-top:-33px;
+    	}
     }
 
-    .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-   }
+
+    /* Medium Devices, Desktops */
+
+    @media only screen and (max-width : 992px) {
+
+          /** tableau de bord**/
+
+    	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: 0px;
+    	}
+    		.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}
+
+    	/** page de login **/
+
+    	.navbar-right{
+    		margin-top:-33px;
+    	}
+    	.navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+
+    /* Small Devices, Tablets */
+
+    @media only screen and (max-width : 768px) {
+
+          /** tableau de bord**/
+
+    	.omb-homepage .omb-contenu h2 {
+    		font-size:25px;
+    	}
+    	.omb-homepage .omb-contenu .btn-red {
+    		margin-right: 10px;
+    	}
+    	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: 0px;
+    	}
+    		.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}
+    	/** mes demandes accueil **/
+    	
+		 .omb-internal .omb-content .image-demande
+		{
+		  width: 100px;
+		  height:100px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay span
+		{  
+		  display: none;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+		 font-size:9px;
+		 float:left;
+		}
+		.omb-internal .omb-content .descript-demande a{
+		  font-size: 16px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+		  margin:20px 0 0;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-service{
+		  margin:20px 28px 0px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash{
+		  margin:20px 0 0;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
+		  margin:20px 0 0;
+		}
+
+		/** login page **/
+		header .navbar-default
+		{
+			background:transparent;
+			opacity:1;
+			width: 90%;
+			margin:0 auto;
+		}
+		header .omb-logo,
+	    header .navbar-header:hover{
+			background: transparent;
+		
+	   }
+
+	   .navbar-brand img{
+		width: 80%;
+	   }
+
+	  	#omb-login-page header .navbar-default .navbar-collapse{
+	   	     background: #000;
+	       opacity: .62;
+	      text-align: center;
+	      border: none;
+	      margin-left: 0;
+			height: auto !important;
+	   }  
+	   .navbar-default .navbar-toggle,
+	   .navbar-default .navbar-toggle:focus, 
+	   .navbar-default .navbar-toggle:hover{
+	    border-color: #5f6062;
+	    background: #5f6062;
+	    opacity: 1;
+	    }
+
+	    .navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	   }	
 
 
-}/** end media 768px **/
 
 
-/** small devices **/
+	   .navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+    	.navbar-right{
+    		margin-top:-33px;
+    	}
+    }
 
-@media (max-width:468px){
-	.navbar-brand img{
-		width: 55%;
-	}
-	#omb-content{
-		margin-top: 10%;
-	}
+    /* Extra Small Devices, Phones */ 
 
-	#omb-content h2{
-		font-size: 1em; 
-		margin-bottom: 15px;
-	}
-	#omb-content label{
-		font-size: 0.8em;
-	}
-	#omb-content .form-control{
-		height: 30px;
-	}
-	/*icone input */
-	.has-feedback label~.form-control-feedback {
-		top: 33px;
-	}
-	#omb-content .omb-pave div{
-		height: 35px;
-		line-height: 35px;
-	}
-	#omb-content .omb-login-bloc .submit-button{
-		font-size: 1em;
-	}
-	#omb-content .omb-login-bloc .omb-oubli-connexion a{
-		font-size: 0.8em;
-	}
-}
+      /** tableau de bord**/
+
+
+    @media only screen and (max-width : 480px) {
+
+          /** tableau de bord**/
+
+    	.omb-homepage .omb-contenu h2 {
+    		font-size:20px;
+    	}
+    	.omb-homepage .omb-contenu .btn-red {
+    		margin-right: 10px;
+    	}
+    	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: 0px;
+    	}
+    		.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}
+
+    	/** Login page **/
+    	.navbar-brand img{
+			width: 55%;
+		}
+		#omb-content{
+			margin-top: 10%;
+		}
+
+		#omb-content h2{
+			font-size: 1em; 
+			margin-bottom: 15px;
+		}
+		#omb-content label{
+			font-size: 0.8em;
+		}
+		#omb-content .form-control{
+			height: 30px;
+		}
+		/*icone input */
+		.has-feedback label~.form-control-feedback {
+			top: 33px;
+		}
+		#omb-content .omb-pave div{
+			height: 35px;
+			line-height: 35px;
+		}
+		#omb-content .omb-login-bloc .submit-button{
+			font-size: 1em;
+		}
+		#omb-content .omb-login-bloc .omb-oubli-connexion a{
+			font-size: 0.8em;
+		}	
+	    
+          /** mes demandes Accueil **/		
+    }
+
+    /* Custom, iPhone Retina */ 
+
+    @media only screen and (max-width : 320px) {
+    	
+        
+    }
+
+
