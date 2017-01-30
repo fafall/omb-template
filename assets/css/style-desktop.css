@@ -1594,3 +1594,155 @@ font-size: 14px;
   font-size: 1.3em;
 }
 
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes
+** ============================================================================ */
+
+.omb-internal .omb-content .omb-mes-cartes{
+	margin-top : 20px;
+
+}
+
+.omb-internal .omb-content .omb-mes-cartes button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content .omb-mes-cartes button p{
+
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-mes-cartes2 button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content .omb-mes-cartes2 button p{
+
+	text-align : left;
+}
+
+.omb-internal .omb-content .form-group select{
+	background : #5f6062;
+	color : #fff;
+	width : 100%;
+	margin-top : 30px;
+}
+
+/* .omb-internal  .omb-content .navbar-form {
+	
+	margin-top : 20px;
+} */
+
+
+/* BEGIN*/
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative;
+	margin-top : 30px;	
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* END */
+
+.omb-internal  .omb-content .btn-group{
+	border-left: solid 3px #b10021;
+	
+}
+
+.omb-internal  .omb-content .btn-group button{
+	margin-left : 10px;
+	margin-top : 10px;
+	
+}
+
+.omb-internal  .omb-content .MonCollapse2 button{
+	margin-bottom : 20px; 
+}
+
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : oppsition carte
+** ============================================================================ */
+
+.hr {
+	
+	border: 1px solid #b10021;	
+}
+
+.omb-internal  .omb-content h3{
+
+	color : #b10021;
+}
+
+.modal-header{
+	
+	background-color : #B7B8BC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
