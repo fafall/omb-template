@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Ouverture compte</title>
+<title>Demande d'ouverture compte</title>
 
 
 <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
@@ -148,27 +148,23 @@
 	     	<form action="#">
 	     	    <div class="row">
 		     	    <div class="col-lg-12 ">
-		     	  	<h2>Ouvrir un compte</h2>
+		     	  	<h2>Demande d'ouverture de compte</h2>
 		     	  </div>
 		     	  </div>
-		     	  <div class="row">
-			     	  <div class="col-lg-7">
-			     	  	<p class="omb-asterix"><span>*</span>  les champs suivis d'un asterix (*) sont obligatoires</p>
-			     	  </div>
-		     	      <div class="col-lg-offset-1 col-lg-4">
-			     	    <div class="form-group omb-select">
-						    <label for="devise">Devise</label>
-						    <select class="form-control" id="devise">
-							    <option>XOF <span class="fa fa-chevron-down"></span></option>
-							    <option>EURO</option>
-						   
-						    </select>
-		                </div>
-		     	  	
-		     	     </div>
-		     	 </div>
-		     	<div class="row">
+
+		     	
+			         <div class="row">
 		     	  <div class=" col-lg-6">
+			     	 <div class="form-group omb-group omb-type-de-compte">
+							<h3>Numéro de compte</h3>
+							<div class="wrapper">
+								<select class="form-control" id="omb-compte-grise">
+									<option>25011245784526<span class="fa fa-chevron-down"></span></ option>
+								</select>
+							</div>
+			        </div>
+			      </div>
+			        <div class=" col-lg-6">
 			     	 <div class="form-group omb-group omb-type-de-compte">
 							<h3>Type de compte</h3>
 							<div class="wrapper">
@@ -179,66 +175,20 @@
 								</select>
 							</div>
 			        </div>
-			        </div>
-			        <div class=" col-lg-6">
-				     	 <div class="form-group omb-group omb-epargne-choisi">
-								<h3>Montant Epargne</h3>
-							 <div class="wrapper">
-								 <div class="input-group">
-									<input type="text" placeholder="12345"class="form-control" id="omb-montant-epargne">
-									  <span class="input-group-addon">XOF</span>
-
-									</div>
-									  <span class="omb-important">*</span>
-									
-									
-					            </div>
-				         </div>
-			         </div> 
+			        </div> 
 		     	</div>
+		     		 <div class="row">
+		     	  		<div class=" col-lg-6">
+			     	 		<div class="form-group omb-group omb-type-de-compte">
+			     	 			<h5>Agence : 00500 ROUME ENTREPRISES</h5>
+								<h5>Titulaire du compte : Mr Démo</h5>
+								<h5>Solde : 5 000 000 XOF </h5>
+			        		</div>
+			      </div> 
+		     	</div>
+		     
 		     	
-		    	<div class="row">
-		     	 	<div class=" col-lg-6 ">
-			     	 <div class="form-group omb-group omb-type-de-virement">
-							<h3>Type de virement</h3>
-						<div class="wrapper">
-							
-							<label for="permanent">Permanent
-							  <input type="radio" checked="checked" name="optradio" class="form-control" id="permanent" >
-							</label>
-							<label for="ponctuel">Ponctuel
-							  <input type="radio" name="optradio" class="form-control" id="ponctuel" />
-							</label>
-						
-						</div>
-						</div>
-		     		</div>
-		     		<div class="col-lg-6">
-			     	 <div class="form-group omb-group omb-prelevement">
-							<h3>Fréquence de prélèvement</h3>
-						<div class="wrapper">
-							<div class="row">
-								<div class="col-lg-6">
-									
-								    <textarea class="form-control" rows="3" id="motif"
-								    aria-describedby="motifHelp" placeholder="Motif Epargne"></textarea>
-								   <span id="motifHelp" class="form-text text-muted">120 caractères restants</span>
-								  
-								</div>
-								<div class="col-lg-6">
-									
-									<select class="form-control" id="omb-periode-select">
-										<option>Tous les mois<span class="fa fa-chevron-down"></span></option>
-										<option>Tous les 3 mois</option>
-										<option>Tous les 6 mois</option>
-							        </select>
-							  
-								</div>
-							</div>
-						</div>
-					</div>
-		     	</div>
-		     	</div>
+		     	
 
 		     	<!-- submit button -->
 		     	<div class="row">
