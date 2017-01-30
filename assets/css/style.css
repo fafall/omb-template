@@ -48,7 +48,7 @@ body{
 }
 .omb-homepage .test{
     margin-right: 0;
-    margin-left:0;
+ 
 }
 #omb-dashboard,
 #omb-gestionuser,
@@ -63,9 +63,9 @@ body{
 }
 /** header**/
 #omb-dashboard .omb-header li a{
-    font-size:17px;
+    font-size: 1em;
     color:#fff;
-    padding:5px 15px;
+    padding:0px 15px;
 }
 #omb-dashboard header .navbar-default .container-fluid {
     background: #5f6062;
@@ -79,35 +79,37 @@ body{
 header .navbar-default{
     background-color: transparent;
     border: none;
+    margin-bottom: 0px;
 }
 
 #omb-dashboard .omb-header li a:hover{
     color: #9F2528;
 }
 .omb-homepage  .omb-welcome-bloc{
-     background:rgba(92,0,20,.7);
+    background: rgba(95,96,98,0.2);
     /* -moz-box-shadow: 0px 4px 6px #333;
     -webkit-box-shadow: 0px 4px 6px #333;
      box-shadow: 0px 4px 6px #333; */
          box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    -o-transform:rotate(-3deg);
-      -webkit-transform:rotate(-3deg);
-    -moz-transform:rotate(-3deg);
-     transform: rotate(-3deg); 
     padding: 0px 20px;
     float:right;
     display: inline-block;
     text-align: center;
-    color:#fff; 
+    color:#000;
+    margin-right: 11px; 
     border-radius:5px;
    }
 
-     .omb-homepage  .omb-welcome-bloc h2{
+     .omb-homepage  .omb-welcome-bloc h5{
         margin-top: 10px;
+        font-weight: bold;
+        color: #b10021;
+     }
+     .omb-homepage  .omb-welcome-bloc p{
+        font-size: 12px;
      }
      .omb-homepage .glyphicon:before {
-    font-size: 1.2em;
+    font-size: 12px;
     }
    .omb-homepage  .omb-welcome-bloc .omb-date{
         font-weight: 700;
@@ -117,9 +119,7 @@ header .navbar-default{
         display: inline-block;
         padding:0 20px;
      }
-   .omb-homepage  .omb-welcome-bloc .omb-solde p:first-child{
-    border-right:1px solid rgba(255,255,255,.5);
-   }
+
     .omb-homepage  .omb-welcome-bloc .omb-solde p span{
         font-weight: 700;
     }
@@ -151,12 +151,14 @@ header .navbar-default{
 /** menu**/
 .omb-homepage .omb-menu{
     padding-left:0;
-    margin-top: 48px;
-    margin-left:-15px;
-    
+    margin-top: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 23%;
 }
 .omb-homepage .omb-contenu-dash{
     margin-left: 0;
+        
 }
 .omb-homepage .omb-menu ul li a{
     color:#000;
@@ -184,26 +186,24 @@ header .navbar-default{
     text-transform: uppercase;
     color:#000;
     transition:all .6s ease;
-    letter-spacing: 1.5px;
     overflow: hidden;
     border-bottom:1px solid rgba(95,96,98,.3);
     text-decoration: none;
-    padding: 12px 0px 12px 0px;
-    margin: 0px 0 12px 0;
+    padding: 10px 0px 10px 0px;
     display: block;
     position: relative;
     font-size: 0.85em;
-    text-align: center;
+    
 
 }
- .omb-homepage .omb-dash  .omb-menu li:last-child a{
+ .omb-homepage .omb-dash  .omb-menu #menu-content li:last-child a{
     border-bottom:none;
   }
-.omb-homepage .omb-dash  .omb-menu li a:hover{
+.omb-homepage .omb-dash  .omb-menu #menu-content li a:hover{
                 background-color:rgba(95,96,98,.4);
                  border-color:#fff;
             }
-.omb-homepage .omb-dash  .omb-menu li a:after{
+.omb-homepage .omb-dash  .omb-menu #menu-content li a:after{
                 content: '';
                 display: block;
                 width: 10px; height: 100px;
@@ -213,16 +213,17 @@ header .navbar-default{
                 transition:left .5s ease;
             }
 
-.omb-homepage .omb-dash  .omb-menu li a:hover:after{
+.omb-homepage .omb-dash  .omb-menu #menu-content li a:hover:after{
                 left: 0;
             }
 
-.omb-homepage .omb-dash  .omb-menu li a i{
+.omb-homepage .omb-dash  .omb-menu #menu-content li a i{
     
-        padding-right: 5%;
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
+        padding-right: 8%;
+        padding-left:5%;
+    /*display: block;*/
+        margin-bottom: 2px;
+        margin-top:2px;
  }
 
 .omb-homepage .omb-contenu .omb-compte .fa-close:before,
@@ -242,16 +243,21 @@ header .navbar-default{
 
 /**contenu **/
 .omb-homepage .omb-contenu h2{
-    margin-top:53px;
+    margin-top:34px;
+    font-size: 1.50em;
 }
 .omb-homepage .omb-pub{
     margin-top: 50px;
+}
+.omb-homepage .omb-contenu{
+    margin-bottom:50px;
 }
 .omb-homepage .omb-contenu .btn-red{
     float: right;
     background-color: #9F2528;
     color:#fff;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    border-radius:0px;
 }
 .omb-homepage .omb-contenu .omb-compte,
 .omb-homepage .omb-contenu .omb-message,
@@ -347,19 +353,21 @@ footer .omb-liens p{
 footer{
     
     background: rgba(95,96,98,0.2);
-    padding: 10px 0px 0;
+    
+    height:35px;
+   
 }
 footer .navbar-default .navbar-nav a{
     color:#5f6061;
+    padding: 7px 3px;
+    font-size:12px;
 }
 footer .navbar-default {
     background-color: transparent;
     border:none;
+    margin-bottom: 0px;
 }
-footer .navbar-brand img {
-    width: 70%;
-    display: inline-block
-}
+
 footer .navbar-default .navbar-nav>.active>a, 
 footer .navbar-default .navbar-nav>.active>a:focus, 
 footer .navbar-default .navbar-nav>.active>a:hover
@@ -369,18 +377,12 @@ footer .navbar-default .navbar-nav>.active>a:hover
    
 }
 
-footer img{
-    float:right;
-    position: relative;
-    top:-17px;
-
-}
 
 footer .omb-copyright{
-    text-align: center;
-    display: block;
+    
+  
     font-weight: 700;
-    text-decoration: underline;
+  
 }
 
 /** Page administration**/
@@ -493,8 +495,12 @@ footer .omb-copyright{
 .omb-dash .logo .omb-logo{
     float: none;
 }
+.omb-dash .logo .omb-logo img{
+    width: 172px;
+}
+
 .omb-dash .logo{
-    padding-left: 0;
+    
     margin-top: -22px;
 }
 .omb-contain{
@@ -510,6 +516,7 @@ footer .omb-copyright{
 .modal-content h3{
     text-align: center;
     color:#fff;
+
 }
 .omb-usermanagement .modal-content .form-control,
 .omb-rolemanagement .modal-content .form-control {

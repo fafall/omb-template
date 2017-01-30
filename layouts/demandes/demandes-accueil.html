@@ -57,7 +57,7 @@
 			</div>
 		   <div class="col-lg-5 col-lg-offset-5">
 			<div class="omb-welcome-bloc">
-				<h2>Bienvenue Mr Démo</h2>
+				<h5>Bienvenue Mr Démo</h5>
 				<p><span class="glyphicon glyphicon-calendar"></span> Dernière connexion le:<span class="omb-date">16/12/2016 à 17h20</span> </p>
 				<div class=" omb-solde">
 					<p>Solde : <span>4565</span></p>
@@ -72,8 +72,8 @@
 <section>
 	<div class="omb-container">
 	 <div class="row omb-no-margin">
-	    <div class="col-sm-3 omb-no-padding">
-			<div class="omb-left-menu fixed">
+	    <div class="omb-no-padding">
+			<div class="col-sm-3 omb-left-menu navbar-default">
 				<div class="nav-side-menu">
 				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						    <span class="sr-only">Toggle navigation</span>
@@ -109,6 +109,11 @@
 				                <li>
 				                  <a href="#"><i class="fa fa-ban fa-lg"></i> Mes annulations </a>
 				                </li>
+				                 <li>
+                              <a href="#">
+                                  <i class="fa fa-bullhorn fa-lg"></i> Mes services
+                               </a>
+                            </li>
 				            </ul><!-- menu-content -->
 				        </div><!-- menu-list -->
 				    </div>
@@ -131,7 +136,7 @@
 
 								<img class="image-demande" src="../../mockup_lot2/svg/icone-coficash.svg">
 								<div class="omb-overlay">
-									<span>Un coficash est un produit spécifique commercialisé chez COFINA. C’est un carnet de dix(10) à (20) feuillets de mise à disposition de fonds pour soi-même ou pour un tiers interne ou externe.</span>
+									<!--<span>Un coficash est un produit spécifique commercialisé chez COFINA. C’est un carnet de dix(10) à (20) feuillets de mise à disposition de fonds pour soi-même ou pour un tiers interne ou externe.</span>-->
 									<a href="demandes-coficash.html" class="info-coficash">Effectuer une commande</a>
 								</div>
 								
@@ -144,7 +149,7 @@
 							<div class="omb-demande">
 								<img class="image-demande" src="../../mockup_lot2/svg/icone-feuille.svg">
 								<div class="omb-overlay">
-									<span>Le client peut télécharger un type de relevé de compte en format PDF ou faire une demande pour recevoir une version papier conforme et normalisé par COFINA.</span>
+									<!--<span>Le client peut télécharger un type de relevé de compte en format PDF ou faire une demande pour recevoir une version papier conforme et normalisé par COFINA.</span>-->
 									<a href="#" class="info-releve">Retrouver les relevés</a>
 								</div>
 							</div>
@@ -158,7 +163,7 @@
 							<div class="omb-demande">
 								<img class="image-demande" src="../../mockup_lot2/svg/icone-carte.svg">
 								<div class="omb-overlay">
-									<span>Le client pourra faire une demande de cartes (prépayées ou autres).</span>
+									<!--<span>Le client pourra faire une demande de cartes (prépayées ou autres).</span>-->
 									<a href="#" class="info-carte">Commander une carte</a>
 								</div>
 							</div>
@@ -170,7 +175,7 @@
 							<div class="omb-demande">
 								<img class="image-demande" src="../../mockup_lot2/svg/icone-service.svg">
 								<div class="omb-overlay">
-									<span>Le client pourra faire une demande d’abonnement sur un autre de ses comptes ouverts dans nos livres pour lui permettre de faire des transactions sur ce compte. L’effectivité de l’abonnement du compte lui sera notifiée par mail ou SMS.</span>
+									<!--<span>Le client pourra faire une demande d’abonnement sur un autre de ses comptes ouverts dans nos livres pour lui permettre de faire des transactions sur ce compte. L’effectivité de l’abonnement du compte lui sera notifiée par mail ou SMS.</span>-->
 									<a href="#" class="info-service">S'abonner</a>
 								</div>
 							</div>
@@ -194,50 +199,42 @@
 </section>
 
 <footer>
-	<div class="row">
-		<div class="col-12">
-			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
-				  
+        <div class="container-fluid">
+            <div class="col-lg-10 col-lg-offset-3 col-xs-12 col-sm-12 col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                           <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-footer" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                          </button>
+                 
+                        </div><!-- navbar-header -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-footer">
+                            <ul class="nav navbar-nav navbar-center navbar-middle">
+                               
+                                <li class="active"><a href="#" >Visite guidée<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Guide utilisateur</a></li>
+                                <li><a href="#">Sécurité</a></li>
+                                <li><a href="#">Mentions légales</a></li>
+                                <li><a class="omb-copyright">&copy; Atos 2016</a ></li>
+                                
+                            </ul>
+                           
+                        </div><!-- /.navbar-collapse -->
+                        
+                     
 
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="navbar-collapse-footer">
-					      <ul class="nav navbar-nav navbar-center navbar-middle">
-					       
-					         <li class="active"><a href="#" >Visite guidée<span class="sr-only">(current)</span></a></li>
-					        <li><a href="#">Guide utilisateur</a></li>
-					        <li><a href="#">Sécurité</a></li>
-					        <li><a href="#">Mentions légales</a></li>
-					        
-					      </ul>
-					       <ul class="nav navbar-nav navbar-right">
-					     <li><a class="navbar-brand omb-logo" href="#">
-					        <img src="../../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
-					      </a></li>
-					       
-					    </ul>
-				    
-					     
-				    </div><!-- /.navbar-collapse -->
-				    <span class="omb-copyright">&copy; Atos 2016</span>
-
-				      <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-footer" aria-expanded="false">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					     
-				    </div><!-- navbar-header -->
-
-			  </div><!-- /.container-fluid -->
-			</nav>	
-		</div>
-    </div>
-  	
-</footer>  
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>  
+        </footer>    
+  
 
 <script src="../../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
