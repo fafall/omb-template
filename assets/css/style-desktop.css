@@ -542,13 +542,16 @@ body.omb-internal{
    	text-align: center;
     color: #b10021;
     text-transform: uppercase;
-    margin:5% auto 5% ;
-    margin-bottom: 10px;
+    margin:4% auto 5% ;
+    margin-bottom: 15px;
    }
 
   .omb-internal .omb-content .omb-asterix{
   	font-size: 0.9em;
   	margin-top: 10px;
+  }
+  .omb-internal .omb-content #omb-compte-grise{
+    background-color: #dcdcdc
   }
    .omb-internal .omb-content .omb-asterix span{
    	color:#b10021;
@@ -1196,6 +1199,7 @@ footer .omb-copyright{
 }
 .omb-internal .omb-content .omb-recapitulatif{
   margin-top: 25px;
+  padding-left:0px;
 }
 .omb-internal .omb-content .omb-validation button{
    width: 27%; 
@@ -1260,11 +1264,24 @@ footer .omb-copyright{
     overflow: hidden;
     cursor: pointer;
 }
+.omb-internal .omb-content .omb-resume-adresse{
+  background-color: #dcdcdc;
+  font-weight: bold;
+  color:grey;
+}
+.omb-internal .omb-content .omb-warning .fa-warning{
+  margin-right:10px;
+}
+.omb-internal .omb-content .omb-warning p{
+  color:#CD0127;
+  margin-top:18px;
+}
 .omb-internal .omb-content .omb-resume-compte:hover{
   border:2px solid #b10021;
 }
 .omb-internal .omb-content .omb-resume-compte strong{
   color:#b10021;
+  text-transform: uppercase;
 }
 .omb-internal .omb-content .omb-resume-date strong,
 .omb-internal .omb-content .omb-resume-motif strong{
@@ -1696,14 +1713,6 @@ padding:7px 14px;
 
 /** Formulaire de commande **/
 
-.omb-internal .omb-content .omb-commande-coficash h3{
-  background-color: #dcdcdc;
-  padding: 1% 2%;
-  text-transform: uppercase;
-  font-size: 1em;
-  margin-top:0;
-  margin-bottom: 0;
-}
 
 
 
@@ -1712,7 +1721,8 @@ padding:7px 14px;
     padding: 0 2%;
 }
 /** Historiquue coficash **/
-.omb-demandes-coficash .omb-content .omb-historique-entete h5{
+.omb-demandes-coficash .omb-content .omb-historique-entete h5,
+.omb-internal .omb-content .omb-commande-coficash h5{
   background-color: #dcdcdc;
   padding: 1% 2%;
   text-transform: uppercase;
@@ -1726,13 +1736,44 @@ padding:7px 14px;
   padding-left:15px;
   list-style-type:none;
 }
-.omb-demandes-coficash .omb-content .omb-historique-contenu li{
+.omb-demandes-coficash .omb-content .omb-historique-contenu li,
+.omb-demandes-coficash .omb-content .omb-type-compte  li{
   padding:1% 2%;
   margin-right:0px;
 }
-.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-cheque img{
+
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-cheque img,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon img{
   width:30px;
   height:30px;
+}
+
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-enveloppe span,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-bank span{
+  color:#CD0127;
+  font-size: 27px;
+  margin-left: 110px;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-enveloppe .text,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-bank .text{
+  text-align: center;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon img{
+  margin-left:60px;
+}
+
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over:hover h5,
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over:hover img{
+  cursor: pointer;
+  color:#CD0127;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over.active{
+  background-color: #dcdcdc;
+  border-radius: 4px;
+  color:grey;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon .text{
+  text-align: center;
 }
 .omb-demandes-coficash .omb-content .infos-cheques{
   padding-left: 0;
