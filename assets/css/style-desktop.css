@@ -49,6 +49,13 @@
 	margin:auto;
 
 }
+
+.marge {  /* Classe de <section> afin de fixer le container à la taille de l'écran */
+
+	padding-bottom : 20%;
+	
+}
+
 h2{
   font-size: 23px;
 }
@@ -264,6 +271,7 @@ footer .navbar-brand img,
 	width: 60%;
 	margin: 30px auto ;
 	padding:0;
+	
 }
 #omb-login-page #omb-content .omb-pave .ligne{
  	margin: 0;
@@ -271,11 +279,13 @@ footer .navbar-brand img,
 #omb-login-page  #omb-content .omb-pave div{
  	background:#fff;
     text-align: center;
- 	border-bottom:1px solid rgba(0,0,0,.62);
+	border-bottom:1px solid rgba(0,0,0,.62);
+ 	border-top:1px solid rgba(0,0,0,.62);
  	border-right:1px solid rgba(0,0,0,.62);
- 	 height: 45px;
- 	 line-height: 45px;
- 	 vertical-align: middle;
+	border-left:1px solid rgba(0,0,0,.62);
+ 	height: 45px;
+ 	line-height: 45px;
+ 	vertical-align: middle;
 }
  #omb-login-page  #omb-content .omb-pave div a{
    	text-decoration: none;
@@ -302,6 +312,8 @@ footer .navbar-brand img,
       font-size:1em;
 
      }
+		
+	 
 #omb-login-page #omb-content .omb-login-bloc .submit-button:hover{
       	background:#fff;
       	 color:#e3212e;
@@ -1744,6 +1756,8 @@ padding:7px 14px;
 /** Formulaire de commande **/
 
 
+
+
 .omb-internal .omb-content .omb-commande-coficash .wrapper{
     margin: 10px 0 10px;
     padding: 0 2%;
@@ -1828,3 +1842,279 @@ padding:7px 14px;
 .omb-demandes-coficash .omb-content .omb-trait{
   border-bottom: solid 1px #dcdfe0;
 }
+
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes
+** ============================================================================ */
+
+.omb-internal .omb-content .omb-mes-cartes{
+	margin-top : 20px;
+
+}
+
+.omb-internal .omb-content h2 {
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-mes-cartes button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content .omb-mes-cartes button p{
+
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-mes-cartes2 button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content .omb-mes-cartes2 button p{
+
+	text-align : left;
+}
+
+.omb-internal .omb-content .form-group select{
+	background : #5f6062;
+	color : #fff;
+	width : 100%;
+	margin-top : 30px;
+}
+
+/* .omb-internal  .omb-content .navbar-form {
+	
+	margin-top : 20px;
+} */
+
+
+/* BEGIN*/
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative;
+	margin-top : 30px;	
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* END */
+
+.omb-internal  .omb-content .btn-group{
+	border-left: solid 3px #b10021;
+	
+}
+
+.omb-internal  .omb-content .btn-group button{
+	margin-left : 10px;
+	margin-top : 10px;
+	
+}
+
+.omb-internal  .omb-content .MonCollapse2 button{
+	margin-bottom : 20px; 
+}
+
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Modale opposition carte
+** ============================================================================ */
+
+.hr {
+	
+	border: 1px solid #b10021;	
+}
+
+.omb-internal  .omb-content .omb-mes-cartes h2{
+
+	color : #b10021;
+	text-align : center;
+}
+
+.omb-internal  .omb-content h3{
+
+	color : #b10021;
+}
+
+.modal-header{
+	
+	background-color : #B7B8BC;
+}
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Modale gérer mes plafonds
+** ============================================================================ */
+
+.plafonds-table {
+	
+	border : 0;
+	width : 100%;
+}
+
+.plafonds-table thead, .plafonds-table tbody {
+	background-color : #fff;
+	color : #b10021;	
+	box-shadow : none;
+	
+}
+
+.plafonds-table thead tr th{
+	background : #fff;
+	text-align : center; 
+}
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Demander carte
+** ============================================================================ */
+
+.demande-carte{
+	
+	border : 0;
+	width : 100%;
+}
+
+.omb-internal  .omb-content .demande-carte tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
+
+.omb-internal  .omb-content .demande-carte select{
+	margin-top : 0;
+	width : 60%;
+}
+
+.omb-internal  .omb-content .demande-carte td{
+	margin-bottom : 10px;
+}
+
+
+/* ==============================================================================
+== Changement de mot de passe
+** ============================================================================ */
+
+.changer-mdp{
+	
+	border : 0;
+	width : 100%;
+}
+
+.changer-mdp tbody {
+	background-color : #fff;
+	color : #b10021;	
+	box-shadow : none;
+}
+
+.omb-changement-mdp .omb-content .omb-pave {
+	background : rgba(95,96,98,0.2);
+	
+	
+}
+
+.pave {
+	border:1px solid black;
+	width:80%;
+	text-align : center;	
+	margin : auto;
+	margin-top : 20px;
+}
+
+.pave tbody td {
+	border:1px solid black;
+}
+
+ .pave tbody {
+	background-color : #fff;
+	box-shadow : none;
+	border : 1px;
+	margin : auto;
+	
+}
+
+.omb-changement-mdp .omb-content .omb-pave a{
+	color : #5f6062;
+	text-decoration: none;
+   	font-size: 1.2em;
+   	font-weight: 700;
+}
+
+.omb-changement-mdp .omb-content .submit-button{
+     	background:#5f6062;
+     	color:#fff;
+     	text-transform: uppercase;
+     	text-align: center;
+     	width: 60%;
+     	letter-spacing: 1.2px;
+     	border:none;
+     	font-size:1em;
+     	font-weight: 700;
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+		margin-top : 20px;
+		margin-bottom : 20px;
+     }
+		
+	 
+.omb-changement-mdp .omb-content .submit-button:hover{
+      	background:#fff;
+      	color:#5f6062;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
