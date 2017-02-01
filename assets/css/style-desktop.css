@@ -43,10 +43,17 @@
 /* ============================================================================================================================
 == Page login
 ** ============================================================================================================================ */
-
+body,html{
+  height: 100%;
+}
+body{
+  max-width: 940px;
+  width: 100%;
+  margin:auto;
+    background:#f5f5f5;
+}
 .omb-wrapper{
-	width: 70%;
-	margin:auto;
+	min-height: calc(100% - 35px);
 
 }
 
@@ -351,10 +358,22 @@ body.omb-internal{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
       background:#fff;
-       box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
+       /*box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
     /*     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow:0 3px 8 0 rgba(0,0,0,0.2), 0 0 0 1px rgba();
         transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1); */
+        border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -ms-box-shadow: 0 0 10px #ccc;
+    -o-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    -webkit-animation: appear 0.7s;
+    -moz-animation: appear 0.7s;
+    -ms-animation: appear 0.7s;
+    -o-animation: appear 0.7s;
+    animation: appear 0.7s;
 }
 /* header */
 .omb-internal .navbar-default,
@@ -979,27 +998,30 @@ body#omb-solde-compte{
 
 
 /** footer **/
-html, body{
-  height: 100%;
-}
-.omb-wrapper{
-  
-   min-height: calc(100% - 35px);
-   position: relative;
-}
+
 
 footer{
-  background: rgba(95,96,98,0.2);
-  height:35px;
-  position: absolute;
-  bottom: 0; 
-  left:0;
-  width: 100%; 
+  background: #5f6062;
+  height: 35px; 
 
 }
-
+footer .navbar-default{
+ min-height: auto;
+  width: 100%;
+  text-align: center;
+}
+footer .navbar-default ul{
+  display: table;
+  width: 70%;
+  margin:auto;
+  float: none;
+}
+footer .navbar-default ul li{
+  display: table-cell;
+  width: 20%;
+}
 footer .navbar-default .navbar-nav a{
-    color:#5f6061;
+    color:#fff;
     padding: 7px 3px;
     font-size:12px;
 }
@@ -1854,9 +1876,9 @@ padding:7px 14px;
 
 }
 
-.omb-internal .omb-content h2 {
+/*.omb-internal .omb-content h2 {
 	text-align : left;
-}
+}*/
 
 .omb-internal .omb-content .omb-mes-cartes button{
 	
