@@ -240,6 +240,7 @@ footer .navbar-brand img,
 		   	border-radius:0;
 		   	width: 60%;
 		   	margin:auto ;
+			margin-top : 0px;
   /*  	color:#b20; */
 	   /* ++ */ color:#fff;
 	   	padding-left: 42.5px;
@@ -1876,9 +1877,10 @@ padding:7px 14px;
 
 }
 
-/*.omb-internal .omb-content h2 {
+
+.omb-internal .omb-content .card_h2 {
 	text-align : left;
-}*/
+}
 
 .omb-internal .omb-content .omb-mes-cartes button{
 	
@@ -1911,22 +1913,24 @@ padding:7px 14px;
    
 }
 
-.omb-internal .omb-content .omb-mes-cartes2 button p{
 
-	text-align : left;
-}
-
-.omb-internal .omb-content .form-group select{
+.omb-internal .omb-content .form-group #omb-compte-select{
 	background : #5f6062;
 	color : #fff;
 	width : 100%;
-	margin-top : 30px;
+	
 }
 
-/* .omb-internal  .omb-content .navbar-form {
+.omb-internal .omb-content .form-group #omb-debit-autorise {
 	
-	margin-top : 20px;
-} */
+}
+
+.omb-internal .omb-content .form-group  #omb-tri-compte{
+	margin-top : 30px;
+	background : #5f6062;
+	color : #fff;
+	width : 100%;
+}
 
 
 /* BEGIN*/
@@ -2037,14 +2041,19 @@ padding:7px 14px;
 	width : 100%;	
 }
 
-.omb-internal  .omb-content .demande-carte select{
-	margin-top : 0;
+.omb-internal  .omb-content .form-group  #omb-compte-select{
+	background : #5f6062;
 	width : 60%;
+	color : #fff;
 }
 
-.omb-internal  .omb-content .demande-carte td{
-	margin-bottom : 10px;
+.omb-internal  .omb-content .form-group #omb-debit-autorise {
+	width : 60%;
+	height : 34px;
+	
+	border-radius : 4px;
 }
+
 
 
 /* ==============================================================================
