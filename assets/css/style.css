@@ -36,15 +36,15 @@
     src:   url('../fonts/roboto/Roboto-Black.ttf')  format('truetype'),
         url('../fonts/roboto/Roboto-BlackItalic.ttf')  format('truetype');
     }
-
+body,html{
+  height: 100%;
+}
 body{
   background:#f5f5f5; 
   color:#000;
-  
-  
-  max-width: 70%;
-  width:100%;
-  margin:0 auto;
+   max-width: 940px;
+  width: 100%;
+  margin:auto;
 }
 .omb-homepage .test{
     margin-right: 0;
@@ -250,7 +250,7 @@ header .navbar-default{
     margin-top: 50px;
 }
 .omb-homepage .omb-contenu{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .omb-homepage .omb-contenu .btn-red{
     float: right;
@@ -336,26 +336,44 @@ header .navbar-default{
   height: 100%;
 }*/
 
+
 footer{
-  background: rgba(95,96,98,0.2);
-  height:35px ;
-  position: absolute;
-  bottom: 0; 
-  width: 100%; 
+  background: #5f6062;
+  height: 35px; 
 
 }
-
 #omb-dashboard{
     min-height: calc(100% - 35px);
-    position: relative;
+     border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -ms-box-shadow: 0 0 10px #ccc;
+    -o-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    -webkit-animation: appear 0.7s;
+    -moz-animation: appear 0.7s;
+    -ms-animation: appear 0.7s;
+    -o-animation: appear 0.7s;
+    animation: appear 0.7s;
 }
-html,body{
-    height: 100%;
+footer .navbar-default{
+ min-height: auto;
+  width: 100%;
+  text-align: center;
 }
-
-
+footer .navbar-default ul{
+  display: table;
+  width: 70%;
+  margin:auto;
+  float: none;
+}
+footer .navbar-default ul li{
+  display: table-cell;
+  width: 20%;
+}
 footer .navbar-default .navbar-nav a{
-    color:#5f6061;
+    color:#fff;
     padding: 7px 3px;
     font-size:12px;
 }
@@ -373,6 +391,10 @@ footer .navbar-default .navbar-nav>.active>a:hover
     background-color: transparent;
    
 }
+/*.omb-wrapper{
+    position: relative;
+    min-height: calc(100% - 35px);
+}*/
 
 
 footer .omb-copyright{
@@ -381,6 +403,7 @@ footer .omb-copyright{
     font-weight: 700;
   
 }
+
 
 /** Page administration**/
 
