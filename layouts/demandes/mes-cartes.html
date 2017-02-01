@@ -156,20 +156,18 @@
 			    </div>
 
 			    <div class="omb-content">
-			    	<h2> Mes cartes </h2>
+			    	<h2 class="card_h2"> Mes cartes </h2>
 			    	<div class="row">
 			    		<div class="col-lg-8"> 
 					    	<div class="inner-addon right-addon">
-		        					
-		        						<input type="text" class="form-control" placeholder="Recherche">
-		        						<span class="glyphicon glyphicon-search"></span>	
-		       						
+		        				<input type="text" class="form-control" placeholder="Recherche">
+		        				<span class="glyphicon glyphicon-search"></span>		       						
 		      				</div>
 	      				</div>
 
 	      				<div class="col-lg-4">
 	                       	<div class="form-group"> 
-	                            <select class="form-control" id="omb-compte-select">
+	                            <select class="form-control" id="omb-tri-compte">
 	                                <option>Trier par compte<span class="fa fa-chevron-down"></span></option>
 	                                <option>Trier par titulaire</option>
 	                            </select>
@@ -203,26 +201,24 @@
 															<h2> Opposition sur carte </h3>
 														</div>
 														<div class="modal-body">
-															<h3> Vous avez reçu un SMS qui vous alerte qu'une opération a été effectuée ?</h3>
+															<h3 class="modal-h3"> Vous avez reçu un SMS qui vous alerte qu'une opération a été effectuée ?</h3>
 											    			<p> Attention, il peut s'agir :
 																<ul>
 																	<li>d'une simple demande d'autorisation de paiement par carte (par exemple pour le dépôt d'une caution de location de voiture)</li>
 																	<li>d'un montant autorisé supérieur au montant réel d'achat (achat de carburant)</li>
 																</ul>
-																<p> Si vous réalisez un achat à l'étranger ou sur internet, ou un retrait en devises le montant indiqué dans le message SMS est un montant converti en euros et estimé au taux de change du jour. Si vous n'êtes pas à l'origine de ce paiement nous vous demandons de faire immédiatement opposition.</p>
-															</p>										
+																<p> Si vous réalisez un achat à l'étranger ou sur internet, ou un retrait en devises le montant indiqué dans le message SMS est un montant converti en fcfa et estimé au taux de change du jour. Si vous n'êtes pas à l'origine de ce paiement nous vous demandons de faire immédiatement opposition.</p>
+															</p>
+															<div class="form-group col-lg-offset-5">
+						                        				<button type="submit" class="omb-retour"><a href="mes-cartes.html">Retour</a>
+						                        				</button>                        				
+                        									</div>										
 															<div class="hr"> <!-- insère une ligne de séparation --> </div>
-															<h3>Vous souhaitez faire opposition à votre carte en cas de perte ou vol ?</h3>
-															<ul>
-																<li>Prévenez immédiatement votre Agence ou votre conseiller de clientèle dès connaissance
-																de la survenance d’une des conditions de l’opposition ci-dessus visées au +221 839 55 95.</li>
-																<li>En cas de perte de la carte faites aussitôt une déclaration à la police ou déposez une
-																plainte en cas de vol ou de fraude sur la carte.</li>
-																<li>Adressez à votre Agence ou votre conseiller clientèle une lettre de confirmation dans les
-																vingt-quatre (24) heures suivant l’opposition faite par appel téléphonique, en joignant en
-																annexes les pièces justificatives ainsi que le certificat de perte ou, suivant le cas, le
-																récépissé de dépôt de la plainte.</li>
-															</ul>
+															<h3 class="modal-h3">Vous souhaitez faire opposition à votre carte en cas de perte ou vol ?</h3>
+															<div class="form-group col-lg-offset-5">
+						                        				<button type="submit" class="omb-envoyer"><a href="confirmation-opposition-carte.html">Envoyer</a>
+						                        				</button>                        				
+                        									</div>
 														</div>
 													</div>
 												</div>

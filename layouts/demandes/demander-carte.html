@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Mes cartes</title>
+<title>Demander une carte bancaire</title>
 
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -160,56 +160,75 @@
 									<table class="demande-carte">
 										<tbody>
 											<tr>									
-												<td><label>Compte *</label></td>							             		
-												<td><select id="compte">
+												<td><p><label>Compte <span class="obligatoire">*</span></label></p></td>												
+												<td><p><select class="form-control" id="omb-compte-select">
 											        	<option>Sélectionnez votre compte</option>
 											            <option>COMPTES PRIORITAIRES PARTIC. XXXXXXXXX YYY XYXY <span class="fa fa-chevron-down"></span></option>
 											            <option>EPARGNE XXXXYYYYYYXXX XXX </option>
-				      								</select> </td>	
+				      								</select></p>
+				      							</td>	
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Agence</label></p></td>
+				      							<td><p>XXXXX COFINA YY</p></td>
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Titulaire du compte</label></p></td>
+				      							<td><p>CLIENT DEMO</p></td>
 				      						</tr>
 											<tr>									
-												<td><label>Type de commande</label></td>
+												<td><p><label>Type de commande</label></p></td>
 				      							<td><p><input type="radio" name ="type_cmde" checked>Première acquisition</p>
 				      								<p><input type="radio" name ="type_cmde">Carte complémentaire</p>
 				      							</td>
 				      						</tr>
 				      						<tr>									
-												<td><label>Type de carte</label></td>										             		
-												<td><select id="crd_type">
+												<td><p><label>Type de carte</label></p></td>								             		
+												<td><p><select class="form-control" id="omb-compte-select">
 											        	<option>Azur</option>
 											            <option>Visa Premier Business<span class="fa fa-chevron-down"></span></option>
 											            <option>Visa Electron DB immédiat</option>
 											            <option>Visa Premier Particuliers</option>
 											            <option>Visa Classic Particuliers</option>
 											            <option>Visa Classic Business</option>
-				      								</select> 
+				      								</select></p> 
 				      							</td>	
 				      						</tr>
 				      						<tr>									
-												<td><label>Type d'utilisation</label></td>
+												<td><p><label>Titulaire de la carte <span class="obligatoire">*</span></label></p></td>
+				      							<td><p><input type="text" value="CLIENT DEMO" id ="titulaire"></p></td>
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Type d'utilisation</label></p></td>
 				      							<td><p><input type="radio" name ="type_use" checked>Affaire</p>
 				      								<p><input type="radio" name ="type_use">Personnelle</p>
 				      							</td>
 				      						</tr>
 				      						<tr>
-				      							<td><label>Type de débit</label></td>									
-												<td><select id="type_debit">
+				      							<td><p><label>Type de débit</label></p></td>									
+												<td><p><select class="form-control" id="omb-compte-select">
 											        	<option>Immédiat</option>
 											            <option>Différé début de mois<span class="fa fa-chevron-down"></span></option>
 											            <option>Différé fin de mois</option>
-											    	</select> 
+											    	</select></p>
 											    </td>
 				      						</tr>
 				      						<tr>			
-													<td><label>Montant débit autorisé</label></td>		
-													<td><input type="text" placeholder="0.00" id="omb-debit-autorise">XOF</td>
-												
-				      						</tr>
+												<td><p><label>Montant débit autorisé</label></p></td>		
+												<td><p><input type="text" placeholder="0.00" id="omb-debit-autorise">XOF</p></td>				
+				      						</tr>				      						
 				      					</tbody>
-									</table>										             	
+									</table>
+									<div class="col-lg-offset-2 col-lg-9 omb-boutons">
+										<button type="submit" class="btn btn-primary">Valider</button>
+										<button type="reset" class="btn btn-primary">Annuler</button>
+										<button type="submit" class="btn btn-primary" id="btn-retour">Retour</button>
+									</div>	             	
 								</div> <!-- form-group -->
-			    			
-
+			    				
+								<div class="col-lg-offset-9 col-lg-4">
+									<i class="obligatoire">* Champ obligatoire</i>
+								</div>
 			    		</div> <!-- col-lg-8 -->
 			    	</div> <!-- row -->
 			    </div>  <!-- omb-content -->
