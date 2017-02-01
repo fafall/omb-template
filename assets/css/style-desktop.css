@@ -63,18 +63,17 @@ body#omb-login-page{
 	background-image:url('../images/login_bg.png') ;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
-	width: auto;
+		width: auto;
 	overflow-x: hidden; 
 	font-family: 'roboto thin', 'sans-serif';
 	font-size: 15px;
 	
 }
 
-#omb-login-page .omb-overlay{
+/*#omb-login-page .omb-overlay{
 	background:rgba(0,0,0,.1);
 	height: 100vh;
-}
+}*/
 #omb-login-page header{
 	background:#fff;
 
@@ -151,19 +150,50 @@ footer .navbar-brand img,
  #omb-login-page #omb-content{
  	margin-top: 8%;
  }
-#omb-login-page #omb-content .omb-login-bloc{
+#omb-login-page #omb-content .omb-login-bloc,
+#omb-login-page #omb-content .omb-retrouver{
  	background:rgba(0,0,0, .62);
  	padding: 1% 0;
- 	text-align: center;
+ 	
  	border-radius: 5px;
   box-shadow: 0 2px 4px #000; 
-  width: 80%;
+
   margin: auto;
  }
-
+ #omb-login-page #omb-content .omb-login-bloc{
+    width: 80%;
+    text-align: center;
+ }
+ #omb-login-page #omb-content .omb-retrouver .text p{
+  color:#fff;
+  font-size:13px;
+  background: rgba(0,0,0,0.2);
+  padding: 14px;
+  line-height: 23px;
+  height:115px;
+ }
+  #omb-login-page #omb-content .omb-retrouver span{
+    color: #fff;
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    font-size: 25px;
+    padding: 1px;
+  }
+ #omb-login-page #omb-content  .omb-retrouver h2{
+  text-align: center;
+ }
  #omb-login-page #omb-content .omb-login-bloc .form-group{
  	margin-top: 40px;
  }
+  #omb-login-page #omb-content .omb-login-bloc .omb-num{
+    margin-bottom:40px;
+  }
+  #omb-login-page #omb-content .omb-login-bloc p{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
  #omb-login-page #omb-content .omb-container-login{ opacity:1; }
   #omb-login-page #omb-content h2{
   	/* color:#e3212e; */
@@ -265,17 +295,23 @@ footer .navbar-brand img,
    	font-weight: 700;
    }
    /** bouton valider **/
-#omb-login-page     #omb-content .omb-login-bloc .submit-button{
-     	background:#e3212e;
-     	color:#fff;
-     	text-transform: uppercase;
-     	text-align: center;
-     	width: 60%;
-     	letter-spacing: 1.2px;
-     	border:none;
-     	font-size:1em;
-     	margin-bottom: 20px;
-     	font-weight: 700;
+#omb-login-page     #omb-content .omb-login-bloc .submit-button,
+#omb-login-page     #omb-content .omb-retrouver .submit-button{
+     background:#e3212e;
+     color:#fff;
+     width:100%;
+     text-align: center;
+     font-size: 12px;
+     letter-spacing: 1.2px;
+     border:none;
+     margin-bottom: 20px;
+     font-weight: 700;
+     }
+     #omb-login-page     #omb-content .omb-login-bloc .submit-button{
+      text-transform: uppercase;
+      width: 60%;
+      font-size:1em;
+
      }
 		
 	 
@@ -698,7 +734,9 @@ margin-right: 8%;
   .omb-no-margin{
   	margin: 0;
   }
-  
+  .omb-internal .omb-content .omb-solde-compte a{
+    color:#b10021;
+  }
   
  .glyphicon-pencil {
 	font-size: xx-small;
@@ -942,14 +980,25 @@ body#omb-solde-compte{
 
 
 /** footer **/
+html, body{
+  height: 100%;
+}
+.omb-wrapper{
+  
+   min-height: calc(100% - 35px);
+   position: relative;
+}
 
 footer{
-    
-    background: rgba(95,96,98,0.2);
-    
-    height:35px;
-   
+  background: rgba(95,96,98,0.2);
+  height:35px;
+  position: absolute;
+  bottom: 0; 
+  left:0;
+  width: 100%; 
+
 }
+
 footer .navbar-default .navbar-nav a{
     color:#5f6061;
     padding: 7px 3px;
@@ -969,6 +1018,10 @@ footer .navbar-default .navbar-nav>.active>a:hover
     background-color: transparent;
    
 }
+/*.omb-wrapper{
+    position: relative;
+    min-height: calc(100% - 35px);
+}*/
 
 
 footer .omb-copyright{
@@ -1629,8 +1682,7 @@ font-size: 14px;
   opacity:0;
   -webkit-transition:all .4s ease-in-out;
   transition:all .4s ease-in-out;
-   padding-top:40px;
-  padding-left: 20px;
+   padding-top:30px;
   padding-bottom: 10px;
   background:rgba(95,96,98,.4); 
   cursor: pointer;
@@ -1648,15 +1700,7 @@ font-size: 14px;
   transition:all .2s ease-in-out;
   
 }
-.omb-internal .omb-content .omb-demande .omb-overlay .info-service{
-  margin:8px 0 0;
-}
-.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash{
-  margin:20px 0 0;
-}
-.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
-  margin:38px 0 0;
-}
+
 .omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-service,
@@ -1674,9 +1718,7 @@ filter:alpha(opacity=0);
 transition:all .2s ease-in-out;
 padding:7px 14px;
 }
-.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
-  margin:87px 0 0;
-}
+
 .omb-internal .omb-content .omb-demande .omb-overlay .info-coficash:hover,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-releve:hover,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-carte:hover,
