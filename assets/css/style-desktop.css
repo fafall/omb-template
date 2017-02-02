@@ -730,6 +730,13 @@ margin-right: 8%;
 	border:1px solid #fff;
 
 }
+.omb-internal .omb-content .btn-filtre{
+  background:#dcdcdc;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
 .omb-internal .omb-content .btn-historique{
   margin-bottom:15px;
 }
