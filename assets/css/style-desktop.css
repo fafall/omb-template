@@ -54,39 +54,41 @@ body{
 }
 .omb-wrapper{
 	min-height: calc(100% - 35px);
-
-}
-
-.marge {  /* Classe de <section> afin de fixer le container à la taille de l'écran */
-
-	padding-bottom : 20%;
 	
 }
+
 
 h2{
   font-size: 23px;
 }
-body#omb-login-page{
-	background-image:url('../images/login_bg.png') ;
+body#omb-login-page .omb-overlay{
+	background-image:url('../images/login_bg2.png') ;
 	background-size: cover;
 	background-repeat: no-repeat;
 		width: auto;
 	overflow-x: hidden; 
+	overflow-y: hidden;
 	font-family: 'roboto thin', 'sans-serif';
 	font-size: 15px;
+	min-height:calc(100% - 35px);
 	
+	;
+  
+ 
 }
 
-/*#omb-login-page .omb-overlay{
-	background:rgba(0,0,0,.1);
-	height: 100vh;
-}*/
-#omb-login-page header{
+ #omb-login-page .navbar-header{
+	margin-left : 20px;
+	
+} 
+
+/* #omb-login-page header{
 	background:#fff;
 
-}
+} */
+
 #omb-login-page .omb-container-header{
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding-top: 8px;
 }
@@ -114,12 +116,15 @@ header .omb-logo,
 	opacity:1;
 }
 
-footer .navbar-brand img,
-#omb-login-page .navbar-brand img{
+footer .navbar-brand img{
 	width: 70%;
 	display: inline-block;
 }
 
+#omb-login-page .navbar-brand img{
+	width: 100%;
+	display: inline-block;
+}
 
 #omb-login-page header .navbar-default .navbar-nav>li>a{
 	color:#000;
@@ -154,8 +159,8 @@ footer .navbar-brand img,
  /*
  ** login bloc 
  */
- #omb-login-page #omb-content{
- 	margin-top: 8%;
+ #omb-login-page .login{
+ 	margin-top : 0;
  }
 #omb-login-page #omb-content .omb-login-bloc,
 #omb-login-page #omb-content .omb-retrouver{
@@ -170,6 +175,7 @@ footer .navbar-brand img,
  #omb-login-page #omb-content .omb-login-bloc{
     width: 80%;
     text-align: center;
+	margin-top : 89px;
  }
  #omb-login-page #omb-content .omb-retrouver .text p{
   color:#fff;
@@ -2194,14 +2200,17 @@ padding:7px 14px;
 }
 
 .omb-changement-mdp  .omb-content #pave-btn{
-	margin-top : 10px;	 
 	
 	text-transform: uppercase;
-	background:#b10021;
-	border:1px solid #fff;
-	margin-left : 50px;
-	
-
+	background:#e3212e;
+     color:#fff;
+     width:60%;
+     text-align: center;
+     font-size: 12px;
+     letter-spacing: 1.2px;    
+    border:1px solid #fff;
+     font-weight: 700;
+	margin-top : 10px
 }
 
 
