@@ -62,7 +62,7 @@ h2{
   font-size: 23px;
 }
 body#omb-login-page .omb-overlay{
-	background-image:url('../images/login_bg2.png') ;
+	background-image:url('../images/login_bg.png') ;
 	background-size: cover;
 	background-repeat: no-repeat;
 		width: auto;
@@ -162,16 +162,20 @@ footer .navbar-brand img{
  #omb-login-page .login{
  	margin-top : 0;
  }
+ #omb-login-page #omb-content .omb-login-bloc{
+   margin: auto;
+ }
 #omb-login-page #omb-content .omb-login-bloc,
 #omb-login-page #omb-content .omb-retrouver{
  	background:rgba(0,0,0, .62);
  	padding: 1% 0;
- 	
  	border-radius: 5px;
   box-shadow: 0 2px 4px #000; 
-
-  margin: auto;
  }
+ #omb-login-page #omb-content .omb-retrouver{
+   margin-top:89px;  
+ }
+
  #omb-login-page #omb-content .omb-login-bloc{
     width: 80%;
     text-align: center;
