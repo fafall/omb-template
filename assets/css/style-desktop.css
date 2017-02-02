@@ -284,6 +284,7 @@ footer .navbar-brand img,
 #omb-login-page #omb-content .omb-pave .ligne{
  	margin: 0;
  }
+ 
 #omb-login-page  #omb-content .omb-pave div{
  	background:#fff;
     text-align: center;
@@ -2153,57 +2154,55 @@ padding:7px 14px;
 	
 }
 
-.pave {
-	border:1px solid black;
-	width:80%;
-	text-align : center;	
-	margin : auto;
-	margin-top : 20px;
+.omb-changement-mdp  .omb-content .omb-pave{
+	width : 60%;
+	text-align: left;
+	list-style: none;
+	padding:0;
+}
+ 
+.omb-changement-mdp  .omb-content .omb-pave div{
+	background:#fff;
+    text-align: center;
+	border-bottom:1px solid rgba(0,0,0,.62);
+ 	border-top:1px solid rgba(0,0,0,.62);
+ 	border-right:1px solid rgba(0,0,0,.62);
+	border-left:1px solid rgba(0,0,0,.62);
+ 	height: 45px;
+ 	line-height: 45px;
+ 	vertical-align: middle;
+
 }
 
-.pave tbody td {
-	border:1px solid black;
-}
-
- .pave tbody {
-	background-color : #fff;
-	box-shadow : none;
-	border : 1px;
-	margin : auto;
-	
-}
-
-.omb-changement-mdp .omb-content .omb-pave a{
-	color : #5f6062;
-	text-decoration: none;
+.omb-changement-mdp  .omb-content .omb-pave div a{
+   	text-decoration: none;
    	font-size: 1.2em;
+   	color:#e3212e;
    	font-weight: 700;
+   }
+   
+.omb-changement-mdp  .omb-content.omb-pave .ligne{
+ 	margin: 0;
+ }
+ 
+.omb-changement-mdp  .omb-content .mdp-h2{
+	text-align : left;
 }
 
-.omb-changement-mdp .omb-content .submit-button{
-     	background:#5f6062;
-     	color:#fff;
-     	text-transform: uppercase;
-     	text-align: center;
-     	width: 60%;
-     	letter-spacing: 1.2px;
-     	border:none;
-     	font-size:1em;
-     	font-weight: 700;
-		display : block;
-		margin-left : auto;
-		margin-right : auto;
-		margin-top : 20px;
-		margin-bottom : 20px;
-     }
-		
-	 
-.omb-changement-mdp .omb-content .submit-button:hover{
-      	background:#fff;
-      	color:#5f6062;
-      }
+.omb-changement-mdp  .omb-content #mdp-input {
+	width : 60%;
+}
 
+.omb-changement-mdp  .omb-content #pave-btn{
+	margin-top : 10px;	 
+	
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	margin-left : 50px;
+	
 
+}
 
 
 
