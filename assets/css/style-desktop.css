@@ -735,6 +735,25 @@ margin-right: 8%;
 	background:#b10021;
 	border:1px solid #fff;
 
+}
+.omb-internal .omb-content .btn-filtre{
+  background:#dcdcdc;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+.omb-internal .omb-content .btn-historique{
+  margin-bottom:15px;
+}
+.omb-internal .omb-content .btn-historique button{
+  width: 30%; 
+  padding-top:5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  background:#b10021;
+  border:1px solid #fff;
+
 
 }
 .omb-internal .omb-content .omb-button button[type="reset"]{
@@ -744,6 +763,12 @@ margin-right: 8%;
 	color:#b10021;
 }
 
+.omb-internal .omb-content .btn-historique button[type="reset"]{
+  margin-right: 10%;
+  background:#fff;
+  border-color:#b10021;
+  color:#b10021;
+}
 
 
 /* ============================================================================================================================
@@ -1151,8 +1176,8 @@ footer .omb-copyright{
 /** Historique des opérations **/
 
  .omb-historique .form-group{
-        border:1px solid rgba(0,0,0,.25);
-        margin: 1% 0 5%;
+       /* border:1px solid rgba(0,0,0,.25);*/
+            margin: 3% 0 1%;
         /*box-shadow: 0 6px 20px 0 rgba(0,0,0,.25); */
         box-sizing: border-box;
         
@@ -1171,18 +1196,21 @@ footer .omb-copyright{
         color:#b10021;
 
     }
-.omb-historique .form-group label {
-    margin-right: 22%;
+    .omb-historique .form-group label{
+      margin-top:3px;
+    }
+.omb-historique .form-group label,
+.omb-historique .form-group input {
+    margin-right: 10%;
 }
+
 .omb-historique .omb-devise label {
     margin-right: 27%;
 }
 .omb-historique .form-group .periode {
     margin-right: 40%;
 }
-.omb-historique .form-group .date{
-    margin-right: 5%;
-}
+
 .omb-historique .form-group .omb-date {
     margin-left: 10%;
 }
@@ -1190,6 +1218,11 @@ footer .omb-copyright{
 .omb-historique .form-group .form-control {
     display: inline-block;
     width: 45%;
+}
+.omb-historique .form-group .omb-form-control {
+    width: 100%;
+    height:25px;
+
 }
 .omb-historique .form-group .wrapper {
     margin: 20px 0 10px;
@@ -2096,6 +2129,13 @@ padding:7px 14px;
 	background : #5f6062;
 	width : 80%;
 	color : #fff;
+}
+.omb-internal  .omb-content .form-group  #omb-historique-select{
+  background : #5f6062;
+  width: 100%;
+  color : #fff;
+  height: 25px;
+  padding: 0 12px;
 }
 
 .omb-internal  .omb-content .form-group #omb-debit-autorise {

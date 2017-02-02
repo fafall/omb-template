@@ -44,6 +44,7 @@ $('.omb-liste-virement .omb-btn').click(function(){
     clique++;
 });
 
+
 $('#omb-modal-ajout-beneficiaire').on('hidden.bs.modal', function () {
     if( $("#omb-etape1").hasClass('hide')){
          $("#omb-etape1").removeClass('hide');
