@@ -147,101 +147,94 @@
                             <h2>Historique des opérations</h2>
                           </div>
                           </div>
-                          <div class="row">
-                             
-                              <div class="col-lg-offset-8 col-lg-4">
-                                <div class="form-group omb-devise">
-                                    <label for="devise">Devise</label>
-                                    <select class="form-control" id="devise">
-                                        <option>XOF <span class="fa fa-chevron-down"></span></option>
-                                        <option>EURO</option>
-                                   
-                                    </select>
-                                </div>
-                            
-                             </div>
-                         </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Compte</h3>
-                                    <div class="wrapper">
-                                        <label for="omb-compte-select">Sélectionner un compte</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
-                                            <option>Compte Joint</option>
-                                            <option>Compte Bloqué</option>
-                                        </select>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                         <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Date</h3>
-                                    <div class="wrapper">
-                                      <div class="entete">
-                                        <label for="omb-compte-select" class="periode">Période</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>30 derniers jours<span class="fa fa-chevron-down"></span></ option>
-                                            <option>60 derniers jours</option>
-                                            <option>90 derniers jours</option>
-                                        </select>
-                                      </div>
-                                      <div class="milieu">
-                                        <label>OU</label>
-                                      </div>
-                                      <div class="fin">
-                                         <label for="omb-compte-select" class="date ">Du:</label>
-                                        <input type="date"> <span class="glyphicon glyphicon-calendar"></span>
-                                        <label for="omb-compte-select" class="date omb-date">Au:</label>
-                                        <input type="date"> <span class="glyphicon glyphicon-calendar"></span>
-                                      </div>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Montant</h3>
-                                    <div class="wrapper">
-                                         <label for="omb-compte-select" class="date">Entre:</label>
-                                        <input type="text" >
-                                        <label for="omb-compte-select" class="date omb-date">Et:</label>
-                                        <input type="text">
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Débit/Crédit</h3>
-                                    <div class="wrapper">
-                                         <label for="omb-compte-select">Type d'opérations</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>Tous<span class="fa fa-chevron-down"></span></ option>
-                                           
-                                        </select>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
                        
-                        <div class="row">
-                            <div class="col-lg-offset-3 col-lg-9 omb-button">
-                            <div class="wrapper">
-                                <div class="form-group omb-submit">
-                                   <button type="reset" class="btn btn-primary">Réinitialiser</button>
-                                    <button type="submit" class="btn btn-primary">Rechercher</button>
-
-                                </div>
-                                </div>
-                                
+                         <div class="row">
+                              <div class="col-lg-6">
+                                    <div class="form-group">
+                                          <label for="omb-historique-select" class="control-label col-sm-2">Compte</label>
+                                          <div class="col-sm-8">
+                                            <select class="form-control" id="omb-historique-select">
+                                                        <option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
+                                                        <option>Compte Joint</option>
+                                                        <option>Compte Bloqué</option>
+                                                    </select>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class=" col-lg-6">
+                                 <div class="form-group">
+                                    <label for="omb-historique-select" class="date control-label col-sm-2">Date:</label>
+                                    <div class="col-sm-8">
+                                   
+                                      <input type="date" class="form-control omb-form-control"> 
+                                    </div>
+                                  </div>
+                              </div> 
+                          </div>
+                         
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                 <label for="omb-historique-select" class="date control-label col-sm-2">Debit:</label>       
+                                    <div class="col-sm-8">
+                                          <input type="text" class="form-control omb-form-control">
+                                    </div>
+                              </div>
                             </div>
+                            <div class=" col-lg-6 ">
+                                <div class="form-group">
+                                   <label for="omb-historique-select" class="date control-label col-sm-2">Crédit:</label>
+                                        
+                                    <div class="col-sm-8">
+                                    
+                                          <input type="text" class="form-control omb-form-control">
+                                    </div>
+                                </div>
+                            </div> 
+                          </div> 
+                          <div class="row">
+                              <div class=" col-lg-6 ">
+                                    <div class="form-group">
+                                        <label for="omb-historique-select" class="date control-label col-sm-2">Opération</label>
+                                                
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="omb-historique-select">
+                                                <option>Tous<span class="fa fa-chevron-down"></span>
+                                                </option>     
+                                            </select>
+                                        </div>
+                                    </div>
+                              </div> 
+                              <div class=" col-lg-6 ">
+                                    <div class="form-group">
+                                        <label for="omb-historique-select" class="date control-label col-sm-2">Devise</label>
+                                                
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="omb-historique-select">
+                                                <option>XOF <span class="fa fa-chevron-down"></span></option>
+                                                <option>EURO</option>
+                                   
+                                            </select>
+                                        </div>
+                                    </div>
+                              </div>
+                            
+                            
                         </div>
+                       <div class="row">
+                          <div class="col-lg-offset-3 col-lg-8 btn-historique">
+                          <div class="wrapper">
+                            <div class="form-group">
+                               <button type="reset" class="btn btn-primary">Réinitialiser</button>
+                              <button type="submit" class="btn btn-primary">Confirmer</button>
+
+                            </div>
+              </div>
+              
+            </div>
+                </div>            
+                               
+                        
                         <div class="row">
                             <div class="table-responsive col-lg-12">
                               <table class="table table-striped">
