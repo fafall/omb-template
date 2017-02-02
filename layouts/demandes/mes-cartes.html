@@ -223,49 +223,7 @@
 													</div>
 												</div>
 								    		<!-- Fin modale -->
-								    		</div> <!-- modal -->
-
-									    <button type="button" class="btn btn-default" id="plafonds">
-									    	<i class="fa fa-desktop" aria-hidden="true"></i><br/>
-									    	<p>Gérer mes plafonds<p>
-									    </button>
-									    	<!-- Modale -->
-										    <div class="modal fade" id="plaf-modal" role="dialog">
-												<div class="modal-dialog">
-													<!-- Modal content-->
-													<div class="modal-content">
-														<div class="modal-header">
-															<button type="button" class="close" data-dismiss="modal">
-															    &times;
-															</button>
-															<h2> Mes plafonds </h3>
-														</div>
-														<div class="modal-body">	
-															<table class="plafonds-table">
-																<thead>
-																	<tr>
-																		<th> Plafond de retrait </th>
-																		<th> Plafond de paiement </th>
-																		<th> <button type="button" class="btn btn-default"> Modifier mes plafonds </button> </th>
-																	</tr>
-																	<tr>
-																	 
-																	</tr>
-																	<tr>
-																	 
-																	</tr>
-																</thead>
-
-															</table>	
-														</div> <!-- modal-body -->
-													</div> <!-- modal-content -->
-												</div> <!-- modal-dialog -->
-											</div> <!-- modal fade -->
-
-										<button type="button" class="btn btn-default" id="newcard">
-									    	<i class="fa fa-credit-card" aria-hidden="true"></i><br/>
-									    	<p>Demander une carte<p>
-									    </button>
+								    		</div> <!-- modal -->									    
 
 									</div> <!-- btn-group -->							
 								</div> <!-- Mon collapse -->
@@ -285,14 +243,56 @@
 									    	<span class="glyphicon glyphicon-remove-sign"></span><br/>
 											<p>Faire opposition</p>
 									    </button>
-									    <button type="button" class="btn btn-default">
-									    	<i class="fa fa-desktop" aria-hidden="true"></i><br/>
-									    	<p>Gérer mes plafonds<p>
-									    </button>									    
-									</div>
-								</div>                        	
+									   										    	<!-- Modale -->
+								    		<div class="modal fade" id="opp-modal" role="dialog">
+												<div class="modal-dialog">
+													<!-- Modal content-->
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">
+															    &times;
+															</button>
+															<h2> Opposition sur carte </h3>
+														</div>
+														<div class="modal-body">
+															<h3 class="modal-h3"> Vous avez reçu un SMS qui vous alerte qu'une opération a été effectuée ?</h3>
+											    			<p> Attention, il peut s'agir :
+																<ul>
+																	<li>d'une simple demande d'autorisation de paiement par carte (par exemple pour le dépôt d'une caution de location de voiture)</li>
+																	<li>d'un montant autorisé supérieur au montant réel d'achat (achat de carburant)</li>
+																</ul>
+																<p> Si vous réalisez un achat à l'étranger ou sur internet, ou un retrait en devises le montant indiqué dans le message SMS est un montant converti en fcfa et estimé au taux de change du jour. Si vous n'êtes pas à l'origine de ce paiement nous vous demandons de faire immédiatement opposition.</p>
+															</p>
+															<div class="form-group col-lg-offset-5">
+						                        				<button type="submit" class="omb-retour"><a href="mes-cartes.html">Retour</a>
+						                        				</button>                        				
+                        									</div>										
+															<div class="hr"> <!-- insère une ligne de séparation --> </div>
+															<h3 class="modal-h3">Vous souhaitez faire opposition à votre carte en cas de perte ou vol ?</h3>
+															<div class="form-group col-lg-offset-5">
+						                        				<button type="submit" class="omb-envoyer"><a href="confirmation-opposition-carte.html">Envoyer</a>
+						                        				</button>                        				
+                        									</div>
+														</div>
+													</div>
+												</div>
+								    		<!-- Fin modale -->
+								    		</div> <!-- modal -->									    
+
+										
+
+									</div> <!-- btn-group -->							
+								</div> <!-- Mon collapse -->							    
+									                        	
                     </div>
-						
+
+                    <div class="col-lg-offset-9">
+	                    <button type="button" class="btn btn-default" id="newcard">
+							<i class="fa fa-credit-card" aria-hidden="true"></i><br/>
+							<p>Demander une carte<p>
+						</button>
+					</div>	
+
         		</div> 
     	</div>
 	</div>
