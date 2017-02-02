@@ -62,7 +62,7 @@ h2{
   font-size: 23px;
 }
 body#omb-login-page .omb-overlay{
-	background-image:url('../images/login_bg2.png') ;
+	background-image:url('../images/login_bg.png') ;
 	background-size: cover;
 	background-repeat: no-repeat;
 		width: auto;
@@ -162,16 +162,20 @@ footer .navbar-brand img{
  #omb-login-page .login{
  	margin-top : 0;
  }
+ #omb-login-page #omb-content .omb-login-bloc{
+   margin: auto;
+ }
 #omb-login-page #omb-content .omb-login-bloc,
 #omb-login-page #omb-content .omb-retrouver{
  	background:rgba(0,0,0, .62);
  	padding: 1% 0;
- 	
  	border-radius: 5px;
   box-shadow: 0 2px 4px #000; 
-
-  margin: auto;
  }
+ #omb-login-page #omb-content .omb-retrouver{
+   margin-top:89px;  
+ }
+
  #omb-login-page #omb-content .omb-login-bloc{
     width: 80%;
     text-align: center;
@@ -1469,7 +1473,12 @@ footer .omb-copyright{
   padding-left: 0;
   margin-top: 4%;
 }
-
+.omb-liste-demandes ul{
+  padding-left: 0;
+}
+.omb-liste-demandes ul li{
+  list-style: none;
+}
 .omb-liste-virement ul li,
 .omb-liste-beneficiaire ul li{
   list-style: none;
@@ -1841,10 +1850,35 @@ font-size: 14px;
   margin-bottom: 0px;
 }
 .omb-demandes-coficash .omb-content .omb-historique-contenu,
-.omb-demandes-coficash .omb-content .omb-type-compte{
-  padding-left:15px;
+.omb-demandes-coficash .omb-content .omb-type-compte,
+.omb-internal .omb-content .omb-rel{
+  padding-left:0px;
   list-style-type:none;
 }
+.omb-internal .omb-content .omb-releve-contenu{
+    padding: 1rem .5rem 1rem 25px;
+    border-bottom: solid 1px #dcdfe0;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.omb-internal .omb-content .omb-releve-contenu .omb-date{
+  padding-top: 5px;
+  font-weight: bold;
+  color:grey;
+}
+.omb-internal .omb-content .omb-liste-demandes h5{
+  font-weight: bold;
+}
+.omb-internal .omb-releve-contenu span{
+  padding-top: 5px;
+  color:#b10021;
+}
+.omb-liste-demandes .omb-releve-parent{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+    display: none;
+}
+
 .omb-demandes-coficash .omb-content .omb-historique-contenu li,
 .omb-demandes-coficash .omb-content .omb-type-compte  li{
   padding:1% 2%;
@@ -2184,6 +2218,25 @@ font-size: 14px;
 	border : 1px solid rgba(95,96,98,0.3);
 	background-color : #dcdcdc;
 	color : #000;
+}
+.omb-liste-demandes  .omb-content-list{
+  background-color: #dcdcdc;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.omb-liste-demandes  .omb-content-list .omb-btn{
+    display: inline-block;
+    padding-top:5px;
+    float: right;
+    cursor: pointer;
+}
+.omb-liste-demandes .omb-collapse{
+    display:block;
+    
 }
 
 

@@ -44,6 +44,28 @@ $('.omb-liste-virement .omb-btn').click(function(){
     clique++;
 });
 
+/** affichage details relevé **/
+
+   var clique = 0;
+$('.omb-liste-demandes .omb-btn').click(function(){
+
+   //$(this).parents('.omb-content-list').siblings('.omb-detail').addClass('omb-collapse');
+    if(clique % 2 == 0){
+
+      //console.log(clique);
+      $(this).parents('.omb-content-list').siblings('.omb-releve-parent').addClass('omb-collapse');
+   /* $(this).parents('.omb-content-list').siblings('.omb-detail').slideDown(1000);*/
+      $(this).html('<span class="fa fa-minus fa-lg"></span>');
+   }
+   else
+   {
+    $(this).parents('.omb-content-list').siblings('.omb-releve-parent').removeClass('omb-collapse');
+    /* $(this).parents('.omb-content-list').siblings('.omb-detail').slideUp(1000)*/
+      $(this).html('<span class="fa fa-plus fa-lg"></span>');
+     //console.log(clique);
+   }
+    clique++;
+});
 
 $('#omb-modal-ajout-beneficiaire').on('hidden.bs.modal', function () {
     if( $("#omb-etape1").hasClass('hide')){
