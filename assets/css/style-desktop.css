@@ -2357,8 +2357,41 @@ font-size: 14px;
     padding: 0 2%;
 }
 
+.omb-internal .omb-content .h2-coficash{
+	text-align : left;
+}
 
+.omb-internal .omb-content .omb-annul-coficash h5{
+  background-color: #dcdcdc;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:grey;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
 
+.omb-internal .omb-content .omb-annul-coficash h5 i{
+	font-size: 0.8em;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte{
+  padding-left:0px;
+  list-style-type:none;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte  li{
+  padding:1% 2%;
+  margin-right:0px;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte #infos-perte {
+	width : 100%;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte .ligne1{
+	margin-bottom : 10px;
+}
 
 
 
