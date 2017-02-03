@@ -661,11 +661,15 @@ body.omb-internal{
     .omb-internal .omb-content .omb-type-de-virement h3,
     .omb-internal .omb-content .omb-prelevement h3,
     .omb-internal .omb-content .omb-type-de-compte h3,
-    .omb-internal .omb-type-fonds h3
+    .omb-internal .omb-type-fonds h3,
+    .omb-internal .disposition-recap-content h3
       {
     	color: grey;
     font-weight: bold;
     }
+      .omb-internal .disposition-recap-content h3{
+        font-size: 15px;
+      }
   
 /* rgb(251,0,254) == rose
 #00b337= vert **/
@@ -1488,7 +1492,8 @@ footer .omb-copyright{
   list-style: none;
 }
 .omb-liste-virement ul li,
-.omb-liste-beneficiaire ul li{
+.omb-liste-beneficiaire ul li,
+.disposition-historique{
   list-style: none;
   border-bottom:1px solid #dcdfe0;
   box-sizing: border-box;
@@ -1499,7 +1504,9 @@ footer .omb-copyright{
   padding-top: 10px;
 }
 .omb-liste-virement .list-group-item-heading,
-.omb-liste-virement .montant{
+.omb-liste-virement .montant,
+.omb-mise-disposition .list-group-item-heading,
+.omb-mise-disposition .montant{
   font-size: 14px;
   font-weight: 600;
   color:#5f6062;
@@ -1507,18 +1514,23 @@ footer .omb-copyright{
 }
 
 .omb-liste-virement .list-group-item-text,
-.omb-liste-virement .date{
+.omb-liste-virement .date,
+.omb-mise-disposition .list-group-item-text,
+.omb-mise-disposition  .date{
   font-size: 12px;
   color:#999;
 
 }
-.omb-liste-virement .omb-direction{
+.omb-liste-virement .omb-direction,
+.omb-mise-disposition .omb-direction{
   font-size: 25px;
   color:#999;
   margin-top: 10px;
 }
 .omb-liste-virement .omb-statut .omb-rejete,
-.omb-liste-virement .omb-detail .omb-ligne .omb-rejete{
+.omb-liste-virement .omb-detail .omb-ligne .omb-rejete,
+.omb-mise-disposition .omb-statut .omb-rejete,
+.omb-mise-disposition .omb-detail .omb-ligne .omb-rejete{
 color:#b1230f;
 text-align: center;
 }
@@ -1527,10 +1539,12 @@ text-align: center;
   color:#1ae40f;
   text-align: center;
 }
-.omb-liste-virement .omb-statut span{
+.omb-liste-virement .omb-statut span,
+.omb-mise-disposition .omb-statut span{
  font-size: 20px;
 }
-.omb-liste-virement .omb-voir-plus .omb-btn{
+.omb-liste-virement .omb-voir-plus .omb-btn,
+.omb-mise-disposition .omb-voir-plus .omb-btn{
    display: inline-block;
     height: 84px;
     padding: 10px;
@@ -1540,25 +1554,30 @@ text-align: center;
     cursor:pointer;
 }
 .omb-liste-virement .omb-detail,
-.omb-liste-beneficiaire .omb-detail{
+.omb-liste-beneficiaire .omb-detail,
+.omb-mise-disposition .omb-detail{
   background:#a9abae;
   color:#5f6062;
   padding: 20px;
  display: none;
  transition:all 1s ease-in-out;
 }
-.omb-liste-virement .omb-collapse{
+.omb-liste-virement .omb-collapse,
+.omb-mise-disposition .omb-collapse{
   display: block;
-  width: 100.5%;
+  width: 101.5%;
 }
-.omb-liste-virement .omb-detail .row{
+.omb-liste-virement .omb-detail .row,
+.omb-mise-disposition .omb-detail .row{
   border-bottom:1px solid #dcdcdc;
   padding: 10px 0;
 }
-.omb-liste-virement .omb-detail .row:last-child{
+.omb-liste-virement .omb-detail .row:last-child,
+.omb-mise-disposition .omb-detail .row:last-child{
   border:none;
 }
-.omb-liste-virement .omb-detail .omb-ligne div:nth-child(1){
+.omb-liste-virement .omb-detail .omb-ligne div:nth-child(1),
+.omb-mise-disposition .omb-detail .omb-ligne div:nth-child(1){
 
   font-size:14px;
   font-weight: 700;
@@ -2345,6 +2364,20 @@ font-size: 14px;
     .omb-internal .omb-mise-disposition ul{
       list-style-type: none;
       padding-left: 0;
+    }
+.omb-internal .disposition-recap 
+    {
+       box-shadow: 0 2px 4px #000; 
+    }
+    .omb-internal .disposition-recap-content{
+      padding-left: 0;
+      margin-right: 0;
+      margin-left: 0;
+      border-bottom: solid 1px #dcdfe0;
+    padding: 1rem 0;
+    }
+    .omb-internal .recap-content-titre h5{
+      font-weight: bold;
     }
   
 
