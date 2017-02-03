@@ -659,8 +659,10 @@ body.omb-internal{
      }
     .omb-internal .omb-content .omb-epargne-choisi h3, 
     .omb-internal .omb-content .omb-type-de-virement h3,
-     .omb-internal .omb-content .omb-prelevement h3,
-      .omb-internal .omb-content .omb-type-de-compte h3{
+    .omb-internal .omb-content .omb-prelevement h3,
+    .omb-internal .omb-content .omb-type-de-compte h3,
+    .omb-internal .omb-type-fonds h3
+      {
     	color: grey;
     font-weight: bold;
     }
@@ -1420,6 +1422,12 @@ footer .omb-copyright{
   font-size: 35px;
   color: #5cc569;
 }
+.omb-internal .omb-content .omb-icone-echec{
+   margin-top: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: #b10021; 
+}
 .omb-internal .omb-content .omb-big{
   font-size: 18px;
   text-align: center;
@@ -1565,14 +1573,16 @@ letter-spacing: 1.5px
 
 
 .omb-liste-beneficiaire .btn-default,
-.omb-demandes-coficash .omb-liste-demandes .btn-default{
+.omb-demandes-coficash .omb-liste-demandes .btn-default,
+.omb-mise-disposition .btn-default{
 /*  background:rgba(177,0,33,.7); */
     color: rgba(92,0,20,.7);
    background:#fff;
     border:1px dotted rgba(92,0,20,.7) ;
 
 }
-.omb-demandes-coficash .omb-liste-demandes .btn-default a{
+.omb-demandes-coficash .omb-liste-demandes .btn-default a,
+.omb-mise-disposition .btn-default a{
    color: rgba(92,0,20,.7); 
    margin-left:8px;
    text-transform: uppercase;
@@ -1583,7 +1593,8 @@ letter-spacing: 1.5px
   margin-right: 10px;
 }
 .omb-liste-beneficiaire .btn-default:hover,
-.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover{
+.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover,
+.omb-mise-disposition .btn-default a:hover{
   color:#000;
 /* color:#006412; */
 text-decoration: none;
@@ -2306,6 +2317,26 @@ padding:7px 14px;
 	margin-top : 10px
 }
 
+/** Mise à disposition de fonds **/
+
+  .omb-internal .omb-titre-disposition h2{
+      margin: 0 auto 5%;
+    }
+    .omb-internal .omb-type-fonds input
+    {
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143
+    }
+    .omb-internal .omb-mise-disposition ul{
+      list-style-type: none;
+      padding-left: 0;
+    }
+  
 
 
 
