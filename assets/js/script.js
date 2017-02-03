@@ -44,6 +44,29 @@ $('.omb-liste-virement .omb-btn').click(function(){
     clique++;
 });
 
+/** affichage details mise à disposition **/
+
+   var clique = 0;
+$('.omb-mise-disposition .omb-btn').click(function(){
+
+   //$(this).parents('.omb-content-list').siblings('.omb-detail').addClass('omb-collapse');
+    if(clique % 2 == 0){
+
+      //console.log(clique);
+      $(this).parents('.omb-content-list').siblings('.omb-detail').addClass('omb-collapse');
+   /* $(this).parents('.omb-content-list').siblings('.omb-detail').slideDown(1000);*/
+      $(this).html('<span class="fa fa-minus fa-lg"></span>');
+   }
+   else
+   {
+    $(this).parents('.omb-content-list').siblings('.omb-detail').removeClass('omb-collapse');
+    /* $(this).parents('.omb-content-list').siblings('.omb-detail').slideUp(1000)*/
+      $(this).html('<span class="fa fa-plus fa-lg"></span>');
+     //console.log(clique);
+   }
+    clique++;
+});
+
 /** affichage details relevé **/
 
    var clique = 0;

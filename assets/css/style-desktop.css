@@ -1500,7 +1500,8 @@ footer .omb-copyright{
 
 
 }
-.omb-liste-virement .omb-padding{
+.omb-liste-virement .omb-padding,
+.omb-mise-disposition .omb-padding{
   padding-top: 10px;
 }
 .omb-liste-virement .list-group-item-heading,
@@ -1535,7 +1536,9 @@ color:#b1230f;
 text-align: center;
 }
 .omb-liste-virement .omb-statut .omb-accepte,
-.omb-liste-virement .omb-detail .omb-ligne .omb-accepte{
+.omb-liste-virement .omb-detail .omb-ligne .omb-accepte,
+.omb-mise-disposition .omb-statut .omb-accepte,
+.omb-mise-disposition .omb-detail .omb-ligne .omb-accepte{
   color:#1ae40f;
   text-align: center;
 }
@@ -1565,7 +1568,7 @@ text-align: center;
 .omb-liste-virement .omb-collapse,
 .omb-mise-disposition .omb-collapse{
   display: block;
-  width: 101.5%;
+  width: 101.4%;
 }
 .omb-liste-virement .omb-detail .row,
 .omb-mise-disposition .omb-detail .row{
@@ -2379,6 +2382,10 @@ font-size: 14px;
     }
     .omb-internal .recap-content-titre h5{
       font-weight: bold;
+    }
+    .omb-mise-disposition .search-disposition{
+      margin-top:10px;
+      margin-bottom:30px;
     }
   
 
