@@ -1593,8 +1593,10 @@ letter-spacing: 1.5px
   margin-right: 10px;
 }
 .omb-liste-beneficiaire .btn-default:hover,
-.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover,
+.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover, 
+.omb-mes-annulations .omb-liste-annulations .btn-default a:hover,
 .omb-mise-disposition .btn-default a:hover{
+
   color:#000;
 /* color:#006412; */
 text-decoration: none;
@@ -1742,19 +1744,19 @@ font-size: 14px;
   border-bottom: none !important;
 }
 
-/** demandes**/
+/** demandes et annulations**/
 
-.omb-demandes-coficash .omb-liste-demandes .btn-default img{
+.omb-demandes-coficash .omb-liste-demandes .btn-default img, .omb-mes-annulations .omb-liste-annulations .btn-default img{
     width:30px;
     height: 30px;
 }
 
-/** accueil **/
-.omb-internal .omb-content .image-demande
+/** accueil demandes et annulations **/
+.omb-internal .omb-content .image-demande, .omb-internal .omb-content .image-annulation
 {
   width:32%;
 }
-.omb-internal .omb-content .omb-demande .omb-overlay{
+.omb-internal .omb-content .omb-demande .omb-overlay {
   position:absolute;
   top:0px;
   left:0px;
@@ -1770,6 +1772,11 @@ font-size: 14px;
   cursor: pointer;
 
 }
+
+.omb-mes-annulations .omb-liste-annulations .omb-annulation .descript-annulation{
+	color : #000;
+}
+
 .omb-internal .omb-content .omb-demande .omb-overlay span
 {
   color:#fff;
@@ -1786,20 +1793,21 @@ font-size: 14px;
 .omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-service,
-.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
-  text-decoration:none;
-display:inline-block;
-text-transform:uppercase;
-color:#fff;
-border:1px solid #fff;
-border-radius: 4px;
-background-color:transparent;
-opacity:0;
-filter:alpha(opacity=0);
--webkit-transition:all .2s ease-in-out;
-transition:all .2s ease-in-out;
-padding:7px 14px;
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte {
+	text-decoration:none;
+	display:inline-block;
+	text-transform:uppercase;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 4px;
+	background-color:transparent;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	padding:7px 14px;
 }
+
 
 .omb-internal .omb-content .omb-demande .omb-overlay .info-coficash:hover,
 .omb-internal .omb-content .omb-demande .omb-overlay .info-releve:hover,
@@ -1815,7 +1823,7 @@ padding:7px 14px;
   opacity:1;
 }
 
-.omb-internal .omb-content .omb-demande{
+.omb-internal .omb-content .omb-demande, .omb-internal .omb-content .omb-annulation{
     margin-top: 35px;
     text-align: center;
     overflow:hidden;
@@ -1823,23 +1831,21 @@ padding:7px 14px;
     cursor:default;
 }
 
-.omb-internal .omb-content .descript-demande{
+.omb-internal .omb-content .descript-demande, .omb-internal .omb-content .descript-annulation{
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 15px;
   font-family:'Roboto-Bold', sans-serif;
   text-align: center;
 }
-.omb-internal .omb-content .descript-demande a{
+
+.omb-internal .omb-content .descript-demande a, .omb-internal .omb-content .descript-annulation a{
   color:#000;
   text-decoration: none;
 }
 
 
 /** Formulaire de commande **/
-
-
-
 
 .omb-internal .omb-content .omb-commande-coficash .wrapper{
     margin: 10px 0 10px;
@@ -1998,17 +2004,20 @@ padding:7px 14px;
    
 }
 
-
-/* .omb-internal .omb-content .form-group #omb-compte-select{
-	background : #5f6062;
-	color : #fff;
-	width : 100%;
-	
-} */
-
-.omb-internal .omb-content .form-group #omb-debit-autorise {
-	
+.omb-internal .omb-content #newcard{
+	margin-top : 20px;
+	margin-right : 0;
+	border : solid 1px #b10021;
+	color : #b10021;
+	padding-bottom : 0;
 }
+
+.omb-internal .omb-content #newcard:hover{
+	background-color : #b10021;
+	color : #fff;
+}
+
+
 
 .omb-internal .omb-content .form-group  #omb-tri-compte{
 	margin-top : 30px;
@@ -2243,6 +2252,7 @@ padding:7px 14px;
     
 }
 
+
 /* ==============================================================================
 == Changement de mot de passe
 ** ============================================================================ */
@@ -2306,7 +2316,7 @@ padding:7px 14px;
 .omb-changement-mdp  .omb-content #pave-btn{
 	
 	text-transform: uppercase;
-	background:#e3212e;
+	background:#b10021;
      color:#fff;
      width:60%;
      text-align: center;
@@ -2338,8 +2348,20 @@ padding:7px 14px;
     }
   
 
+/* ==============================================================================
+== Abonnement
+** ============================================================================ */
 
+.omb-internal  .omb-content .abonnement tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
 
+.omb-internal  .omb-content .abonnement tbody td{
+	width : 50%;
+}
 
 
 
