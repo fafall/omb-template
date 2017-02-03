@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
 
-<body class="omb-internal omb-mes-annulations">
+<body class="omb-internal omb-annulations-coficash">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
@@ -147,11 +147,11 @@
 		    	<div class="omb-liste-annulations">
 		    		<div class="row">
 				        <div class="col-lg-12">
-					     	<h2>Opposition sur Coficash</h2>
+					     	<h2 class="h2-coficash">Opposition sur des chèques signés</h2>
 					    </div>
 					</div><!-- /.row -->
 					<div class="row">
-						<div class=" col-lg-12">
+						<div class="col-lg-12">
 							<div class="omb-annul-coficash">
 								<h5>Sélectionnez le compte chèque correspondant</h5>
 							</div>
@@ -168,6 +168,71 @@
 						</li>
 					</ul>
 
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Renseignez le chèque à opposer</h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="col-lg-6" >
+								<label>Numéro de chèque</label><br/>
+								<input type="text" maxlength="7" minlength="7" required>
+							</div>
+							<div class="col-lg-6" >
+								<label>Montant</label><br/>
+								<input type="text" maxlength="7" minlength="7" required>
+							</div>
+						</li>
+					</ul>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Choisissez le motif</h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="">
+								<select class="form-control" id="">
+									<option>Perte<span class="fa fa-chevron-down"></span></option>
+									<option>Vol</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Informations complémentaires <i class="facultatif">(facultatives)</i></h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="col-lg-6 ligne1" >
+								<label>Date de la perte ou du vol</label><br/>
+								<input type="date" id ="infos-perte">
+							</div>
+							<div class="col-lg-6 ligne1" >
+								<label>Numéro du procès verbal</label><br/>
+								<input type="text" id ="infos-perte">
+							</div>
+							<div class="col-lg-6" >
+								<label>Bénéficiaire du chèque</label><br/>
+								<input type="text" id ="infos-perte">
+							</div>
+							<div class="col-lg-6">
+								<label>Date d'émission du chèque</label><br/>
+								<input type="date" id ="infos-perte">
+							</div>
+						</li>
+					</ul>
 
 				</div>  <!-- liste-annulations -->		
 		
