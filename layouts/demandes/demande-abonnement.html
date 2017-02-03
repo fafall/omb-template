@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Mes demandes coficash</title>
+<title>Abonnement</title>
 
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../assets/css/style-mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
-<body class="omb-internal omb-demandes-coficash">
+<body class="omb-internal omb-abonnement">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
@@ -26,23 +26,18 @@
 			     
 		    </div><!-- navbar-header -->
 
-
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-collapse-header">
-			     <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active" ></i></a>
-                            </li>
-                             <li> 
-                                <a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones" > </i></a>
-                            </li>
-                            <li> 
-                                <a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope" > </i></a>
-                            </li>
-                            <li> 
-                                <a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off" > </i></a>
-                            </li>
-			        
-			     </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active"></i></a>
+                    </li>
+                    <li><a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones"></i></a>
+                    </li>
+                    <li><a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope"></i></a>
+                    </li>
+                    <li><a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off"></i></a>
+                    </li>			        
+			    </ul>
 		    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>	
@@ -72,8 +67,8 @@
 <section>
 	<div class="omb-container">
 	 <div class="row omb-no-margin">
-	    <div class="omb-no-padding">
-			<div class="col-sm-3 omb-left-menu navbar-default">
+	    <div class=" omb-no-padding">
+			<div class="col-sm-3 omb-left-menu fixed">
 				<div class="nav-side-menu">
 				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						    <span class="sr-only">Toggle navigation</span>
@@ -121,88 +116,131 @@
 			  </div><!-- omb-left-menu -->
 	   	 </div>
 	   <div class="col-sm-9 omb-no-padding">
-	   		
-		    <!--contenu -->
-		    <div class="omb-content">
-		    	<div class="omb-liste-demandes">
-		    		<div class="row">
-				        <div class="col-lg-5 omb-titre-demande">
-					     	<h2>Mes demandes</h2>
-					    </div>
-					</div><!-- /.row -->
-					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-lg-6 ">
-							<div class="omb-demande ">
+	   		<!-- les differents menu -->
+			    <div class="omb-sous-menu collapse" id="mescomptes">
+					   	<ul class="sub-menu " id="omb-compte">
+							<li ><a href="solde-compte.html">Solde des comptes</a></li>
+							<li><a href="historique-operations.html">Historique des operations</a></li>
+							<li><a href="echeancier-credit.html">Echéancier de crédit</a></li>
+							<li  class="active"><a href="ouverture-compte.html">Ouverture de compte</a></li>
+						</ul>
+				</div>
+		        <div id="mesvirements" class=" omb-sous-menu collapse">
+				   		<ul class="sub-menu " id="omb-virement">
+							<li ><a href="#">Entre mes comptes</a></li>
+							<li><a href="#">Vers d'autres comptes</a></li>
+							<li class="active"><a href="historique-virement.html">Mes historiques</a></li>
+							<li><a href="beneficiaires.html">Mes béneficiaires</a></li>
+						</ul>
+				</div>
+		        <div id="mises-a-disposition" class=" omb-sous-menu collapse">
+					   	<ul class="sub-menu " id="omb-mise-a-disposition">
+							<li>Disposition 1</li>
+							<li>Disposition 2</li>
+							<li>Disposition 3</li>
+						</ul>
+			    </div>
 
-								<img class="image-demande" src="../../mockup_lot2/svg/icone-coficash.svg">
-								<div class="omb-overlay">
-									<!--<span>Un coficash est un produit spécifique commercialisé chez COFINA. C’est un carnet de dix(10) à (20) feuillets de mise à disposition de fonds pour soi-même ou pour un tiers interne ou externe.</span>-->
-									<a href="demandes-coficash.html" class="info-coficash">Effectuer une commande</a>
-								</div>
-								
-							</div>
-							<div class="descript-demande">
-								<a href="">coficash</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-6  col-lg-6">
-							<div class="omb-demande">
-								<img class="image-demande" src="../../mockup_lot2/svg/icone-feuille.svg">
-								<div class="omb-overlay">
-									<!--<span>Le client peut télécharger un type de relevé de compte en format PDF ou faire une demande pour recevoir une version papier conforme et normalisé par COFINA.</span>-->
-									<a href="#" class="info-releve">Retrouver les relevés</a>
-								</div>
-							</div>
-							<div class="descript-demande">
-								<a href="">relevé simple</a>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-lg-6">
-							<div class="omb-demande">
-								<img class="image-demande" src="../../mockup_lot2/svg/icone-carte.svg">
-								<div class="omb-overlay">
-									<!--<span>Le client pourra faire une demande de cartes (prépayées ou autres).</span>-->
-									<a href="#" class="info-carte">Commander une carte</a>
-								</div>
-							</div>
-							<div class="descript-demande">
-								<a href="">Carte</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-lg-6">
-							<div class="omb-demande">
-								<img class="image-demande" src="../../mockup_lot2/svg/icone-service.svg">
-								<div class="omb-overlay">
-									<!--<span>Le client pourra faire une demande d’abonnement sur un autre de ses comptes ouverts dans nos livres pour lui permettre de faire des transactions sur ce compte. L’effectivité de l’abonnement du compte lui sera notifiée par mail ou SMS.</span>-->
-									<a href="#" class="info-service">S'abonner</a>
-								</div>
-							</div>
-							<div class="descript-demande">
-								<a href="">abonnement</a>
-							</div>
-						</div>
-					</div>
-					
-					
-		    	</div>
-                    
-            </div><!-- omb-content -->
+			    <div id="mes-cartes" class="omb-sous-menu">
+			    	<ul class="sub-menu" id="omb-mes-cartes">
+			    		<li><a href="#">Coficash</a></li>
+			    		<li><a href="#">Relevé Simple</a></li>
+			    		<li><a href="#">Carte</a></li>
+			    		<li class="active"><a href="#">Abonnement</a></li>
+			    	</ul>
+			    </div>
 
-	        <!--  ./contenu -->
-
-
-	    </div><!-- col-sm-9 -->
-	  </div><!-- row-->
-	</div><!-- omb-container -->
+			    <div class="omb-content">
+			    	<h2> Demande d'abonnement </h2>
+			    	<div class="row">
+			    		<div class="col-lg-12">
+			    			<form role="form" >
+								<div class="form-group">
+									<table class="abonnement">
+										<tbody>
+											<tr>									
+												<td><p><label>Compte <span class="obligatoire">*</span></label></p></td>												
+												<td><p><select class="form-control" id="omb-compte-select">
+											        	<option>Sélectionnez votre compte</option>
+											            <option>COMPTES PRIORITAIRES PARTIC. XXXXXXXXX YYY XYXY <span class="fa fa-chevron-down"></span></option>
+											            <option>EPARGNE XXXXYYYYYYXXX XXX </option>
+				      								</select></p>
+				      							</td>	
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Agence</label></p></td>
+				      							<td><p>XXXXX COFINA YY</p></td>
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Titulaire du compte</label></p></td>
+				      							<td><p>CLIENT DEMO</p></td>
+				      						</tr>
+											<tr>									
+												<td><p><label>Type de commande</label></p></td>
+				      							<td><p><input type="radio" name ="type_cmde" checked>Première acquisition</p>
+				      								<p><input type="radio" name ="type_cmde">Carte complémentaire</p>
+				      							</td>
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Type de carte</label></p></td>								             		
+												<td><p><select class="form-control" id="omb-compte-select">
+											        	<option>Azur</option>
+											            <option>Visa Premier Business<span class="fa fa-chevron-down"></span></option>
+											            <option>Visa Electron DB immédiat</option>
+											            <option>Visa Premier Particuliers</option>
+											            <option>Visa Classic Particuliers</option>
+											            <option>Visa Classic Business</option>
+				      								</select></p> 
+				      							</td>	
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Titulaire de la carte <span class="obligatoire">*</span></label></p></td>
+				      							<td><p><input type="text" value="CLIENT DEMO" id ="titulaire"></p></td>
+				      						</tr>
+				      						<tr>									
+												<td><p><label>Type d'utilisation</label></p></td>
+				      							<td><p><input type="radio" name ="type_use" checked>Affaire</p>
+				      								<p><input type="radio" name ="type_use">Personnelle</p>
+				      							</td>
+				      						</tr>
+				      						<tr>
+				      							<td><p><label>Type de débit</label></p></td>									
+												<td><p><select class="form-control" id="omb-compte-select">
+											        	<option>Immédiat</option>
+											            <option>Différé début de mois<span class="fa fa-chevron-down"></span></option>
+											            <option>Différé fin de mois</option>
+											    	</select></p>
+											    </td>
+				      						</tr>
+				      						<tr>			
+												<td><p><label>Montant débit autorisé</label></p></td>		
+												<td><p><input type="text" placeholder="0.00" id="omb-debit-autorise">XOF</p></td>				
+				      						</tr>				      						
+				      					</tbody>
+									</table>
+									<div class="col-lg-offset-2 col-lg-9 omb-boutons">
+										<button type="submit" class="btn btn-primary">Valider</button>
+										<button type="reset" class="btn btn-primary">Annuler</button>
+										<button type="submit" class="btn btn-primary" id="btn-retour">Retour</button>
+									</div>	             	
+								</div> <!-- form-group -->
+			    				
+								<div class="col-lg-offset-9 col-lg-4">
+									<i class="obligatoire">* Champ obligatoire</i>
+								</div>
+			    		</div> <!-- col-lg-8 -->
+			    	</div> <!-- row -->
+			    </div>  <!-- omb-content -->
+    	</div>
+	</div>
 </section>
-
 
 <script src="../../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../../assets/js/script.js"></script>
+<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    	
 
 </div><!-- omb-wrapper -->
 <footer>

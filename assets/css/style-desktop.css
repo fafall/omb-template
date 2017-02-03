@@ -1858,11 +1858,10 @@ font-size: 14px;
   text-align: center;
 }
 
-.omb-internal .omb-content .descript-demande a, .omb-internal .omb-content .descript-annulation a{
+.omb-internal .omb-content .descript-demande a{
   color:#000;
   text-decoration: none;
 }
-
 
 /** Formulaire de commande **/
 
@@ -1870,6 +1869,8 @@ font-size: 14px;
     margin: 10px 0 10px;
     padding: 0 2%;
 }
+
+
 /** Historiquue coficash **/
 .omb-demandes-coficash .omb-content .omb-historique-entete h5,
 .omb-internal .omb-content .omb-commande-coficash h5{
@@ -1899,7 +1900,7 @@ font-size: 14px;
   font-weight: bold;
   color:grey;
 }
-.omb-internal .omb-content .omb-liste-demandes h5{
+.omb-internal .omb-content .omb-liste-demandes h5, .omb-internal .omb-content .omb-liste-annulations h5{
   font-weight: bold;
 }
 .omb-internal .omb-releve-contenu span{
@@ -1969,7 +1970,7 @@ font-size: 14px;
 .omb-demandes-coficash .omb-content .omb-historique-contenu .up{
   text-transform: uppercase;
 }
-.omb-demandes-coficash .omb-content .omb-ombre{
+.omb-demandes-coficash .omb-content .omb-ombre, .omb-annulations-coficash .omb-content .omb-ombre{
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
 }
 .omb-demandes-coficash .omb-content .omb-trait{
@@ -2397,11 +2398,66 @@ font-size: 14px;
 }
 
 
+/* ==============================================================================
+== Annulations : Accueil
+** ============================================================================ */
+
+.omb-mes-annulations .omb-liste-annulations .btn-default a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+.omb-internal .omb-liste-annulations .collapse #link-check{
+	color:#000;
+	text-decoration: none;
+}
 
 
 
+/* ==============================================================================
+== Annulations : Coficash
+** ============================================================================ */
 
+.omb-internal .omb-content .omb-annul-coficash .wrapper{
+    margin: 10px 0 10px;
+    padding: 0 2%;
+}
 
+.omb-internal .omb-content .h2-coficash{
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-annul-coficash h5{
+  background-color: #dcdcdc;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:grey;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+
+.omb-internal .omb-content .omb-annul-coficash h5 i{
+	font-size: 0.8em;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte{
+  padding-left:0px;
+  list-style-type:none;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte  li{
+  padding:1% 2%;
+  margin-right:0px;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte #infos-perte {
+	width : 100%;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte .ligne1{
+	margin-bottom : 10px;
+}
 
 
 
