@@ -2233,6 +2233,7 @@ font-size: 14px;
 	background-color : #dcdcdc;
 	color : #000;
 }
+
 .omb-liste-demandes  .omb-content-list{
   background-color: #dcdcdc;
     padding: 1% 2%;
@@ -2423,13 +2424,86 @@ font-size: 14px;
 }
 
 .omb-annulations-coficash .omb-content .omb-type-compte .ligne1{
-	margin-bottom : 10px;
+	margin-bottom : 20px;
+}
+
+.omb-annulations-coficash .omb-content #valid{
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	margin-left : 45%;
+	text-align : center;
+	
+}
+
+.omb-annulations-coficash .omb-content #back {
+	background : #fff;
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;	
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	text-align : center;
+	
 }
 
 
+.omb-annulations-coficash .omb-content #back a{
+	color:#000;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content #valid a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte  #recap{
+  padding:1% 2%;
+  text-align : center;
+  
+}
+
+.omb-annulations-coficash .omb-content #ok{
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	
+	text-align : center;
+	
+}
+
+.omb-annulations-coficash .omb-content #edit{
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	border:1px solid #fff;
+	margin-left : 45%;
+	text-align : center;
+	background:#fff;
+	border-color:#b10021;
+	color:#b10021;
+}
+
+.omb-annulations-coficash .omb-content #edit a{
+	color:#b10021;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content #ok a{
+	color:#fff;
+	text-decoration: none;
+}
 
 
-
+.omb-annulations-coficash .omb-content .retour{
+	width : 40%;
+}
 
 
 
