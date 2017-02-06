@@ -1920,6 +1920,7 @@ font-size: 14px;
 .omb-demandes-coficash .omb-content .omb-type-compte  li{
   padding:1% 2%;
   margin-right:0px;
+  margin-left: 0px;
 }
 
 .omb-demandes-coficash .omb-content .omb-historique-contenu .icone-cheque img,
