@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Mes cartes</title>
+<title>Confirmation opposition sur carte</title>
 
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../assets/css/style-mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
-<body class="omb-internal omb-mes-cartes">
+<body class="omb-internal">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
@@ -156,177 +156,42 @@
 			    </div>
 
 			    <div class="omb-content">
-			    	<h2 class="card_h2"> Mes cartes </h2>
-			    	<div class="row">
-			    		<div class="col-lg-8"> 
-					    	<div class="inner-addon right-addon">
-		        				<input type="text" class="form-control" placeholder="Recherche">
-		        				<span class="glyphicon glyphicon-search"></span>		       						
-		      				</div>
-	      				</div>
-
-	      				<div class="col-lg-4">
-	                       	<div class="form-group"> 
-	                            <select class="form-control" id="omb-tri-compte">
-	                                <option>Trier par compte<span class="fa fa-chevron-down"></span></option>
-	                                <option>Trier par titulaire</option>
-	                            </select>
+                    <form role="form">
+                        <div class="row">
+                        	<div class="omb-icone-confirmation">
+                        		<i class="glyphicon glyphicon-ok-circle"></i>
+                        	</div>	   
+                        </div> 
+                        
+                        <div class="row">
+	                        <p class="omb-big">Mr  Démo <br>Votre demande a été enregistrée le 01/02/2017 à 11:35:14 (GMT) </p>
+	                        <p class="omb-light">Référence de votre demande d’opposition : 04181935</p>
+	                        <p class="omb-bold">Opposition effectuée sur la carte N° 1234 **** **** 6497</p>
+                        </div>                 
+                       
+                        <div class="row">
+                        	<div class="col-lg-offset-6 col-lg-6 omb-recapitulatif">
+                        		<div class="wrapper">
+                        			<div class="form-group ">
+                        				<button class="btn btn-primary omb-btn2"><a href="../annulations/annulations-accueil.html">Effectuer une nouvelle opposition</a>
+                        				</button>                        				
+                        			</div>
+                        		</div>
                         	</div>
-                        </div>	
-                    </div>
 
-                    <div class="row">
-                        <div class="omb-mes-cartes">                    
-                        	<button data-target="#MonCollapse" data-toggle="collapse">
-								<p> <strong>CARTE VISA BUSINESS</strong></p>
-								<p>N 1234 **** **** 5678 | DÉBIT IMMÉDIAT, EXPIRE LE 04/2018<p>
-							</button>
-						</div>
-						<div id="MonCollapse" class="collapse">
-									<div class="btn-group">
-
-									    <button type="button" class="btn btn-default" id="opposition">
-									    	<span class="glyphicon glyphicon-remove-sign"></span><br/>
-											<p>Faire opposition</p>
-									    </button>
-									    	<!-- Modale -->
-								    		<div class="modal fade" id="opp-modal" role="dialog">
-												<div class="modal-dialog">
-													<!-- Modal content-->
-													<div class="modal-content">
-														<div class="modal-header">
-															<button type="button" class="close" data-dismiss="modal">
-															    &times;
-															</button>
-															<h2> Opposition sur carte </h3>
-														</div>
-														<div class="modal-body">
-															<h3 class="modal-h3"> Vous avez reçu un SMS qui vous alerte qu'une opération a été effectuée ?</h3>
-											    			<p> Attention, il peut s'agir :
-																<ul>
-																	<li>d'une simple demande d'autorisation de paiement par carte (par exemple pour le dépôt d'une caution de location de voiture)</li>
-																	<li>d'un montant autorisé supérieur au montant réel d'achat (achat de carburant)</li>
-																</ul>
-																<p> Si vous réalisez un achat à l'étranger ou sur internet, ou un retrait en devises le montant indiqué dans le message SMS est un montant converti en fcfa et estimé au taux de change du jour. Si vous n'êtes pas à l'origine de ce paiement nous vous demandons de faire immédiatement opposition.</p>
-															</p>
-															<div class="form-group col-lg-offset-5">
-						                        				<button type="submit" class="omb-retour"><a href="mes-cartes.html">Retour</a>
-						                        				</button>                        				
-                        									</div>										
-															<div class="hr"> <!-- insère une ligne de séparation --> </div>
-															<h3 class="modal-h3">Vous souhaitez faire opposition à votre carte en cas de perte ou vol ?</h3>
-															<div class="form-group col-lg-offset-5">
-						                        				<button type="submit" class="omb-envoyer"><a href="../annulations/annulation-carte.html">Envoyer</a>
-						                        				</button>                        				
-                        									</div>
-														</div>
-													</div>
-												</div>
-								    		<!-- Fin modale -->
-								    		</div> <!-- modal -->									    
-
-									</div> <!-- btn-group -->							
-								</div> <!-- Mon collapse -->
-                        	
-                    </div>
-
-                    <div class="row">
-                        	<div class="omb-mes-cartes">                    
-                        		<button data-target="#MonCollapse2" data-toggle="collapse">
-										<p> <strong>CARTE VISA CLASSIC</strong></p>								 
-										<p>N 1234 **** **** 5678 | DÉBIT IMMÉDIAT, CARTE OPPOSÉE LE 20/04<p>
-								</button>
-							</div>
-								<div id="MonCollapse2" class="collapse">
-									<div class="btn-group">
-									    <button type="button" class="btn btn-default" id="opposition2">
-									    	<span class="glyphicon glyphicon-remove-sign"></span><br/>
-											<p>Faire opposition</p>
-									    </button>
-									   										    	<!-- Modale -->
-								    		<div class="modal fade" id="opp-modal2" role="dialog">
-												<div class="modal-dialog">
-													<!-- Modal content-->
-													<div class="modal-content">
-														<div class="modal-header">
-															<button type="button" class="close" data-dismiss="modal">
-															    &times;
-															</button>
-															<h2> Opposition sur carte </h3>
-														</div>
-														<div class="modal-body">
-															<h3 class="modal-h3"> Vous avez reçu un SMS qui vous alerte qu'une opération a été effectuée ?</h3>
-											    			<p> Attention, il peut s'agir :
-																<ul>
-																	<li>d'une simple demande d'autorisation de paiement par carte (par exemple pour le dépôt d'une caution de location de voiture)</li>
-																	<li>d'un montant autorisé supérieur au montant réel d'achat (achat de carburant)</li>
-																</ul>
-																<p> Si vous réalisez un achat à l'étranger ou sur internet, ou un retrait en devises le montant indiqué dans le message SMS est un montant converti en fcfa et estimé au taux de change du jour. Si vous n'êtes pas à l'origine de ce paiement nous vous demandons de faire immédiatement opposition.</p>
-															</p>
-															<div class="form-group col-lg-offset-5">
-						                        				<button type="submit" class="omb-retour"><a href="mes-cartes.html">Retour</a>
-						                        				</button>                        				
-                        									</div>										
-															<div class="hr"> <!-- insère une ligne de séparation --> </div>
-															<h3 class="modal-h3">Vous souhaitez faire opposition à votre carte en cas de perte ou vol ?</h3>
-															<div class="form-group col-lg-offset-5">
-						                        				<button type="submit" class="omb-envoyer"><a href="confirmation-opposition-carte.html">Envoyer</a>
-						                        				</button>                        				
-                        									</div>
-														</div>
-													</div>
-												</div>
-								    		<!-- Fin modale -->
-								    		</div> <!-- modal -->									    
-
-										
-
-									</div> <!-- btn-group -->							
-								</div> <!-- Mon collapse -->							    
-									                        	
-                    </div>
-
-                    <div class="col-lg-offset-9">
-	                    <button type="button" class="btn btn-default" id="newcard">
-							<i class="fa fa-credit-card" aria-hidden="true"></i><br/>
-							<p>Demander une carte<p>
-						</button>
-					</div>	
-
-        		</div> 
-    	</div>
-	</div>
+                        </div>
+                       
+                   </form>
+               </div><!-- omb-content -->
+	    </div><!-- col-sm-9 -->
+	  </div><!-- row-->
+	</div><!-- omb-container -->
 </section>
 
-
-<script src="../../assets/bootstrap/js/npm.js"></script>
+<script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
-<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="../../assets/js/script.js"></script>
-
-    	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    	<script>
-			$(document).ready(function(){
-			    $("#opposition").click(function(){
-			        $("#opp-modal").modal();
-			    });
-			});
-		</script>
-		<script>
-			$(document).ready(function(){
-			    $("#opposition2").click(function(){
-			        $("#opp-modal2").modal();
-			    });
-			});
-		</script>	
-		<script>
-			$(document).ready(function(){
-			    $("#newcard").click(function(){
-			        document.location='demander-carte.html';
-			    });
-			});
-		</script>
-
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
 </div><!-- omb-wrapper -->
 <footer>
         <div class="row">
@@ -363,6 +228,12 @@
                 </nav>
             </div>
         </div>  
-        </footer>  
+        </footer>
+
+<script src="../assets/bootstrap/js/npm.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/js/script.js"></script>
+</div><!-- omb-wrapper -->
 </body>
 </html>

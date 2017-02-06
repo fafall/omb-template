@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Demander une carte bancaire</title>
-
-
-<link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../../assets/css/style-desktop.css">
-<link rel="stylesheet" href="../../assets/css/style-mobile.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
+	<meta charset="utf-8">	
+	<title>Mes annulations</title>
+	<link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../assets/css/style-desktop.css">
+	<link rel="stylesheet" href="../../assets/css/style-mobile.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
-<body class="omb-internal omb-demande-carte">
+
+<body class="omb-internal omb-annulations-coficash">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-header" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-header" aria-expanded="false">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    </button>
 			     
 		    </div><!-- navbar-header -->
-
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-collapse-header">
-			    <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active"></i></a>
-                    </li>
-                    <li><a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones"></i></a>
-                    </li>
-                    <li><a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope"></i></a>
-                    </li>
-                    <li><a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off"></i></a>
-                    </li>			        
-			    </ul>
+			     <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active" ></i></a>
+                            </li>
+                             <li> 
+                                <a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones" > </i></a>
+                            </li>
+                            <li> 
+                                <a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope" > </i></a>
+                            </li>
+                            <li> 
+                                <a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off" > </i></a>
+                            </li>
+			        
+			     </ul>
 		    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>	
@@ -63,7 +66,6 @@
     </div>
 
 </header>
-
 <section>
 	<div class="omb-container">
 	 <div class="row omb-no-margin">
@@ -98,10 +100,10 @@
 				                </li>
 					               
 				              
-				                <li class="active">
+				                <li>
 				                  <a href="#"><i class="fa fa-question-circle fa-lg"></i> Mes demandes </a>
 				                </li>
-				                <li>
+				                <li class="active">
 				                  <a href="#"><i class="fa fa-ban fa-lg"></i> Mes annulations </a>
 				                </li>
 				                 <li>
@@ -140,108 +142,110 @@
 							<li>Disposition 3</li>
 						</ul>
 			    </div>
-
-			    <div id="mes-cartes" class="omb-sous-menu">
-			    	<ul class="sub-menu" id="omb-mes-cartes">
-			    		<li><a href="#">Coficash</a></li>
-			    		<li><a href="#">Relevé Simple</a></li>
-			    		<li class="active"><a href="#">Carte</a></li>
-			    		<li><a href="#">Abonnement</a></li>
-			    	</ul>
-			    </div>
-
-			    <div class="omb-content">
-
-			    	<h2> Demande de carte bancaire </h2>
-			    	<div class="row">
-			    		<div class="col-lg-12">
-			    			<form role="form" >
-								<div class="form-group">
-									<table class="demande-carte">
-										<tbody>
-											<tr>									
-												<td><p><label>Compte <span class="obligatoire">*</span></label></p></td>												
-												<td><p><select class="form-control" id="omb-compte-select">
-											        	<option>Sélectionnez votre compte</option>
-											            <option>COMPTES PRIORITAIRES PARTIC. XXXXXXXXX YYY XYXY <span class="fa fa-chevron-down"></span></option>
-											            <option>EPARGNE XXXXYYYYYYXXX XXX </option>
-				      								</select></p>
-				      							</td>	
-				      						</tr>
-				      						<tr>									
-												<td><p><label>Agence</label></p></td>
-				      							<td><p>XXXXX COFINA YY</p></td>
-				      						</tr>
-				      						<tr>									
-												<td><p><label>Titulaire du compte</label></p></td>
-				      							<td><p>CLIENT DEMO</p></td>
-				      						</tr>
-											<tr>									
-												<td><p><label>Type de commande</label></p></td>
-				      							<td><p><input type="radio" name ="type_cmde" checked>Première acquisition</p>
-				      								<p><input type="radio" name ="type_cmde">Carte complémentaire</p>
-				      							</td>
-				      						</tr>
-				      						<tr>									
-												<td><p><label>Type de carte</label></p></td>								             		
-												<td><p><select class="form-control" id="omb-compte-select">
-											        	<option>Azur</option>
-											            <option>Visa Premier Business<span class="fa fa-chevron-down"></span></option>
-											            <option>Visa Electron DB immédiat</option>
-											            <option>Visa Premier Particuliers</option>
-											            <option>Visa Classic Particuliers</option>
-											            <option>Visa Classic Business</option>
-				      								</select></p> 
-				      							</td>	
-				      						</tr>
-				      						<tr>									
-												<td><p><label>Titulaire de la carte <span class="obligatoire">*</span></label></p></td>
-				      							<td><p><input type="text" value="CLIENT DEMO" id ="titulaire"></p></td>
-				      						</tr>
-				      						<tr>									
-												<td><p><label>Type d'utilisation</label></p></td>
-				      							<td><p><input type="radio" name ="type_use" checked>Affaire</p>
-				      								<p><input type="radio" name ="type_use">Personnelle</p>
-				      							</td>
-				      						</tr>
-				      						<tr>
-				      							<td><p><label>Type de débit</label></p></td>									
-												<td><p><select class="form-control" id="omb-compte-select">
-											        	<option>Immédiat</option>
-											            <option>Différé début de mois<span class="fa fa-chevron-down"></span></option>
-											            <option>Différé fin de mois</option>
-											    	</select></p>
-											    </td>
-				      						</tr>
-				      						<tr>			
-												<td><p><label>Montant débit autorisé</label></p></td>		
-												<td><p><input type="text" placeholder="0.00" id="omb-debit-autorise">XOF</p></td>				
-				      						</tr>				      						
-				      					</tbody>
-									</table>
-									<div class="col-lg-offset-2 col-lg-9 omb-boutons">
-										<button type="submit" class="btn btn-primary">Valider</button>
-										<button type="reset" class="btn btn-primary">Annuler</button>
-										<button type="submit" class="btn btn-primary" id="btn-retour">Retour</button>
-									</div>	             	
-								</div> <!-- form-group -->
-							</form>			    				
-							<div class="col-lg-offset-9 col-lg-4">
-								<i class="obligatoire">* Champ obligatoire</i>
+			  
+		    <div class="omb-content">
+		    	<div class="omb-liste-annulations">
+		    		<div class="row">
+				        <div class="col-lg-12">
+					     	<h2 class="h2-coficash">Opposition sur des chèques vierges</h2>
+					    </div>
+					</div><!-- /.row -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Sélectionnez le compte chèque correspondant</h5>
 							</div>
-			    		</div> <!-- col-lg-12 -->
-			    	</div> <!-- row -->
-			    </div>  <!-- omb-content -->
-    	</div>
-	</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="">
+								<select class="form-control" id="">
+									<option>Compte chèque<span class="fa fa-chevron-down"></span></option>
+									<option>Compte joint</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Renseignez le chèque à opposer</h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="col-lg-6" >
+								<label>Numéro du premier chèque</label><br/>
+								<input type="text">
+							</div>
+							<div class="col-lg-6" >
+								<label>Numéro du dernier chèque</label><br/>
+								<input type="text">
+							</div>
+						</li>
+					</ul>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Choisissez le motif</h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="">
+								<select class="form-control" id="">
+									<option>Perte<span class="fa fa-chevron-down"></span></option>
+									<option>Vol</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Informations complémentaires <i class="facultatif">(facultatives)</i></h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<li class="row omb-ombre">
+							<div class="col-lg-6 ligne1" >
+								<label>Date de la perte ou du vol</label><br/>
+								<input type="date" id ="infos-perte">
+							</div>
+							<div class="col-lg-6 ligne1" >
+								<label>Numéro du procès verbal</label><br/>
+								<input type="text" id ="infos-perte">
+							</div>
+						</li>
+					</ul>
+
+					<div class="col-lg-12">
+						<button type="submit" class="btn btn-primary" id="back"><a href="annulations-accueil.html">Retour</a></button>
+						<button type="submit" class="btn btn-primary" id="valid"><a href="recapitulatif-annulation-coficash-vierge.html">Valider</a></button>
+					</div>
+
+				</div>  <!-- liste-annulations -->		
+		
+
+			</div><!-- omb-content -->
+
+	        <!--  ./contenu -->
+
+
+	    </div><!-- col-sm-9 -->
+	  </div><!-- row-->
+	</div><!-- omb-container -->
 </section>
 
 <script src="../../assets/bootstrap/js/npm.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../../assets/js/script.js"></script>
-<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    	
 
 </div><!-- omb-wrapper -->
 <footer>

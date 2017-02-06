@@ -2325,7 +2325,7 @@ font-size: 14px;
    	font-size: 1.2em;
    	color:#e3212e;
    	font-weight: 700;
-   }
+}
    
 .omb-changement-mdp  .omb-content.omb-pave .ligne{
  	margin: 0;
@@ -2547,6 +2547,56 @@ font-size: 14px;
 	width : 40%;
 }
 
+
+/* ==============================================================================
+== Mon profil
+** ============================================================================ */
+
+.profil{
+	
+	border : 0;
+	width : 100%;
+}
+
+.omb-internal  .omb-content .profil tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
+
+.omb-internal  .omb-content .profil tbody td{
+	width : 50%;
+}
+
+.omb-internal  .omb-content #profil-textbox{
+	width : 80%;
+	height : 34px;
+	border-radius : 4px;
+}
+
+.omb-mon-profil  .omb-content .profil tbody td #link{
+   	font-size: 1em;
+   	color:#e3212e;
+   	font-weight: 600;
+	text-align : right;
+	cursor: pointer;
+	margin-left : 60px;
+	padding-top : 20px;
+	text-decoration: underline;
+}
+
+.omb-internal .omb-content #bouton-grise{
+    background-color: #dcdcdc;
+	border:1px solid #fff;
+	text-align : center;
+	text-transform: uppercase;
+	margin-left : 10px;
+	margin-top : 20px;
+	cursor: auto;
+	
+}
+  
 
 /** paiements de facture***/
 
