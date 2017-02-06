@@ -1975,7 +1975,7 @@ font-size: 14px;
 .omb-demandes-coficash .omb-content .omb-historique-contenu .up{
   text-transform: uppercase;
 }
-.omb-demandes-coficash .omb-content .omb-ombre, .omb-annulations-coficash .omb-content .omb-ombre{
+.omb-demandes-coficash .omb-content .omb-ombre, .omb-annulations-coficash .omb-content .omb-ombre, .omb-annulations-carte .omb-content .omb-ombre{
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
 }
 .omb-demandes-coficash .omb-content .omb-trait{
@@ -2425,10 +2425,10 @@ font-size: 14px;
 
 
 /* ==============================================================================
-== Annulations : Coficash
+== Annulations : Coficash / Carte
 ** ============================================================================ */
 
-.omb-internal .omb-content .omb-annul-coficash .wrapper{
+.omb-internal .omb-content .omb-annul-coficash .wrapper, .omb-internal .omb-content .omb-annul-carte .wrapper{
     margin: 10px 0 10px;
     padding: 0 2%;
 }
@@ -2437,7 +2437,7 @@ font-size: 14px;
 	text-align : left;
 }
 
-.omb-internal .omb-content .omb-annul-coficash h5{
+.omb-internal .omb-content .omb-annul-coficash h5, .omb-internal .omb-content .omb-annul-carte h5{
   background-color: #dcdcdc;
   padding: 1% 2%;
   text-transform: uppercase;
@@ -2447,21 +2447,21 @@ font-size: 14px;
   margin-bottom: 0px;
 }
 
-.omb-internal .omb-content .omb-annul-coficash h5 i{
+.omb-internal .omb-content .omb-annul-coficash h5 i, .omb-internal .omb-content .omb-annul-carte h5 i{
 	font-size: 0.8em;
 }
 
-.omb-annulations-coficash .omb-content .omb-type-compte{
+.omb-annulations-coficash .omb-content .omb-type-compte, .omb-annulations-carte .omb-content .omb-type-compte{
   padding-left:0px;
   list-style-type:none;
 }
 
-.omb-annulations-coficash .omb-content .omb-type-compte  li{
+.omb-annulations-coficash .omb-content .omb-type-compte  li, .omb-annulations-carte .omb-content .omb-type-compte  li{
   padding:1% 2%;
   margin-right:0px;
 }
 
-.omb-annulations-coficash .omb-content .omb-type-compte #infos-perte {
+.omb-annulations-coficash .omb-content .omb-type-compte #infos-perte, .omb-annulations-carte .omb-content .omb-type-compte #infos-perte{
 	width : 100%;
 }
 
@@ -2469,7 +2469,7 @@ font-size: 14px;
 	margin-bottom : 20px;
 }
 
-.omb-annulations-coficash .omb-content #valid{
+.omb-annulations-coficash .omb-content #valid, .omb-annulations-carte .omb-content #valid{
 	margin-top : 20px;	 
 	width: 25%; 
 	text-transform: uppercase;
@@ -2480,7 +2480,7 @@ font-size: 14px;
 	
 }
 
-.omb-annulations-coficash .omb-content #back {
+.omb-annulations-coficash .omb-content #back, .omb-annulations-carte .omb-content #back{
 	background : #fff;
 	border : 1px solid rgba(95,96,98,0.3);
 	background-color : #dcdcdc;
@@ -2493,34 +2493,33 @@ font-size: 14px;
 }
 
 
-.omb-annulations-coficash .omb-content #back a{
+.omb-annulations-coficash .omb-content #back a, .omb-annulations-carte .omb-content #back a{
 	color:#000;
 	text-decoration: none;
 }
 
-.omb-annulations-coficash .omb-content #valid a{
+.omb-annulations-coficash .omb-content #valid a, .omb-annulations-carte .omb-content #valid a{
 	color:#fff;
 	text-decoration: none;
 }
 
-.omb-annulations-coficash .omb-content .omb-type-compte  #recap{
+.omb-annulations-coficash .omb-content .omb-type-compte  #recap, .omb-annulations-carte .omb-content .omb-type-compte  #recap{
   padding:1% 2%;
   text-align : center;
   
 }
 
-.omb-annulations-coficash .omb-content #ok{
+.omb-annulations-coficash .omb-content #ok, .omb-annulations-carte .omb-content #ok {
 	margin-top : 20px;	 
 	width: 25%; 
 	text-transform: uppercase;
 	background:#b10021;
-	border:1px solid #fff;
-	
+	border:1px solid #fff;	
 	text-align : center;
 	
 }
 
-.omb-annulations-coficash .omb-content #edit{
+.omb-annulations-coficash .omb-content #edit, .omb-annulations-carte .omb-content #edit{
 	margin-top : 20px;	 
 	width: 25%; 
 	text-transform: uppercase;
@@ -2532,18 +2531,18 @@ font-size: 14px;
 	color:#b10021;
 }
 
-.omb-annulations-coficash .omb-content #edit a{
+.omb-annulations-coficash .omb-content #edit a, .omb-annulations-carte .omb-content #edit a{
 	color:#b10021;
 	text-decoration: none;
 }
 
-.omb-annulations-coficash .omb-content #ok a{
+.omb-annulations-coficash .omb-content #ok a, .omb-annulations-carte .omb-content #ok a{
 	color:#fff;
 	text-decoration: none;
 }
 
 
-.omb-annulations-coficash .omb-content .retour{
+.omb-annulations-coficash .omb-content .retour, .omb-annulations-carte .omb-content .retour{
 	width : 40%;
 }
 
@@ -2596,8 +2595,19 @@ font-size: 14px;
 	cursor: auto;
 	
 }
-  
 
+
+/* ==============================================================================
+== Ma messagerie
+** ============================================================================ */
+  
+omb-annulations-coficash .omb-content #ok{ !!!!HERE!!!
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;	
+	text-align : center;
 
 
 
