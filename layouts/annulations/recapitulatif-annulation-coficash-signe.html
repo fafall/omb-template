@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Confirmation opposition sur carte</title>
-
+<title>Récapitulatif opposition sur chèque signé</title>
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -10,7 +9,7 @@
 <link rel="stylesheet" href="../../assets/css/style-mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
-<body class="omb-internal">
+<body class="omb-internal omb-annulations-coficash">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
@@ -146,43 +145,31 @@
 						</ul>
 			    </div>
 
-			    <div id="mes-cartes" class="omb-sous-menu">
-			    	<ul class="sub-menu" id="omb-mes-cartes">
-			    		<li><a href="#">Coficash</a></li>
-			    		<li><a href="#">Relevé Simple</a></li>
-			    		<li class="active"><a href="#">Carte</a></li>
-			    		<li><a href="#">Abonnement</a></li>
-			    	</ul>
-			    </div>
-
 			    <div class="omb-content">
-                    <form role="form">
-                        <div class="row">
-                        	<div class="omb-icone-confirmation">
-                        		<i class="glyphicon glyphicon-ok-circle"></i>
-                        	</div>	   
-                        </div> 
-                        
-                        <div class="row">
-	                        <p class="omb-big">Mr  Démo <br>Votre demande a été enregistrée le 01/02/2017 à 11:35:14 (GMT) </p>
-	                        <p class="omb-light">Référence de votre demande d’opposition : 04181935</p>
-	                        <p class="omb-bold">Opposition effectuée sur la carte N° **** **** 6497</p>
-                        </div>                 
-                       
-                        <div class="row">
-                        	<div class="col-lg-offset-6 col-lg-6 omb-recapitulatif">
-                        		<div class="wrapper">
-                        			<div class="form-group ">
-                        				<button class="btn btn-primary omb-btn2"><a href="mes-cartes.html">Effectuer une nouvelle opposition</a>
-                        				</button>                        				
-                        			</div>
-                        		</div>
-                        	</div>
+			    	<div class="row">
+						<div class="col-lg-12">
+							<div class="omb-annul-coficash">
+								<h5>Récapitulatif de l'opposition</h5>
+							</div>
+						</div>
+					</div>
+					<ul class="omb-type-compte">
+						<div class="row omb-ombre">
+							<li id="recap">Chèque n° 1111501</li>
+							<li id="recap">Montant 1111501</li>
+							<li id="recap">Motif : perte</li>
+							<li id="recap">Compte joint n° ****6497</li>
+							<li id="recap">Date de la perte ou du vol : 11/12/2015</li>
+							<li id="recap">Numéro du procès verbal : 00052</li>
+						</div>
+					</ul>
 
-                        </div>
-                       
-                   </form>
-               </div><!-- omb-content -->
+					<div class="col-lg-12">
+						<button type="submit" class="btn btn-primary" id="edit"><a href="annulation-coficash-signe.html">Modifier</a></button>
+						<button type="submit" class="btn btn-primary" id="ok"><a href="confirmation-annulation-coficash.html">Valider</a></button>
+					</div>
+
+				</div><!-- omb-content -->
 	    </div><!-- col-sm-9 -->
 	  </div><!-- row-->
 	</div><!-- omb-container -->

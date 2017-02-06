@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
-<title>Confirmation opposition sur carte</title>
+<title>Confirmation opposition sur chèque signé</title>
 
 
 <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../assets/css/style-mobile.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,500i,700,700i" rel="stylesheet">
 </head>
-<body class="omb-internal">
+<body class="omb-internal omb-annulations-coficash">
 <div class="omb-wrapper">
 <header>
 	<nav class="navbar navbar-default">
@@ -69,7 +69,7 @@
 
 </header>
 
-<section class="marge">
+<section>
 	<div class="omb-container">
 	 <div class="row omb-no-margin">
 	    <div class=" omb-no-padding">
@@ -146,15 +146,6 @@
 						</ul>
 			    </div>
 
-			    <div id="mes-cartes" class="omb-sous-menu">
-			    	<ul class="sub-menu" id="omb-mes-cartes">
-			    		<li><a href="#">Coficash</a></li>
-			    		<li><a href="#">Relevé Simple</a></li>
-			    		<li class="active"><a href="#">Carte</a></li>
-			    		<li><a href="#">Abonnement</a></li>
-			    	</ul>
-			    </div>
-
 			    <div class="omb-content">
                     <form role="form">
                         <div class="row">
@@ -166,21 +157,14 @@
                         <div class="row">
 	                        <p class="omb-big">Mr  Démo <br>Votre demande a été enregistrée le 01/02/2017 à 11:35:14 (GMT) </p>
 	                        <p class="omb-light">Référence de votre demande d’opposition : 04181935</p>
-	                        <p class="omb-bold">Opposition effectuée sur la carte N° **** **** 6497</p>
+	                        <p class="omb-bold">Opposition effectuée sur le chèque N° **** **** 6497</p>
                         </div>                 
                        
-                        <div class="row">
-                        	<div class="col-lg-offset-6 col-lg-6 omb-recapitulatif">
-                        		<div class="wrapper">
-                        			<div class="form-group ">
-                        				<button class="btn btn-primary omb-btn2"><a href="mes-cartes.html">Effectuer une nouvelle opposition</a>
-                        				</button>                        				
-                        			</div>
-                        		</div>
-                        	</div>
-
-                        </div>
-                       
+                        <div class="row">                   	
+                        	<div class="col-lg-offset-4 col-lg-8">
+								<button type="submit" class="btn btn-primary" id="valid"><a href="annulations-accueil.html">Retour</a></button>
+	                        </div>               					
+                        </div>                       
                    </form>
                </div><!-- omb-content -->
 	    </div><!-- col-sm-9 -->
@@ -228,7 +212,7 @@
                 </nav>
             </div>
         </div>  
-        </footer>
+    </footer>
 
 <script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
