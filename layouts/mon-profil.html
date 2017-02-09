@@ -166,7 +166,75 @@
 												<td><p><label>Adresse électronique</span></label></p></td>
 				      							<td><p><input type="text" value="mamadoudemo@xyz.com" id ="profil-textbox"></p></td>
 				      						</tr>
-				      						<tr><td></td><td><a id="link">Modifier votre mot de passe</a></td></tr>      				
+				      						<tr><td></td>
+				      							<td id="open-modal">
+				      								<a class="link" id="modif-mdp">Modifier votre mot de passe</a>
+				      								<div class="modal fade" id="modif-mdp-modal" role="dialog">
+														<div class="modal-dialog">													
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">
+																	    &times;
+																	</button>
+																	<h2> Modifier mot de passe </h2>
+																</div>
+																<div class="modal-body">
+																	<!-- Début -->
+																	<div class="omb-login-bloc">
+																		<div class="omb-container-login">		
+																			<form>
+																			  	<div class="form-group has-feedback ">
+																			    	<label for="code-secret" class="control-label" >Ancien mot de passe</label>
+																				 	<input type="password" class="form-control" id="code-secret" />
+																				 	<span class="form-control-feedback fa fa-lock"></span>
+																				 	<small id="omb-code-secret-help" class="form-text text-muted">Veuillez choisir le code via le pavé
+																				 	</small>
+																			  	</div>
+																			  	<div class="form-group has-feedback">
+																				 	<label for="code-secret" class="control-label" >Nouveau mot de passe</label>
+																				 	<input type="password" class="form-control" id="code-secret" />
+																				 	<span class="form-control-feedback fa fa-lock"></span>
+																				 	<small id="omb-code-secret-help" class="form-text text-muted">Veuillez choisir le code via le pavé
+																				 	</small>
+																				</div>
+																				<div class="form-group has-feedback">
+																				 	<label for="code-secret" class="control-label" >Confirmer mot de passe</label>
+																				 	<input type="password" class="form-control" id="code-secret" />
+																				 	<span class="form-control-feedback fa fa-lock"></span>
+																				 	<small id="omb-code-secret-help" class="form-text text-muted">Veuillez choisir le code via le pavé
+																				 	</small>
+																				</div>
+																				<div class="omb-pave">
+																				   <div class="row ligne">
+																				    	<div class="col-xs-3"> <a href="#">2</a></div>
+																				    	<div class="col-xs-3"><a href="#">8</a></div>
+																				    	<div class="col-xs-3"><a href="#">7</a></div>
+																				    	<div class="col-xs-3"><a href="#">0</a></div>				
+																				    </div>
+																				    <div class="row ligne">
+																				    	<div class="col-xs-3"><a href="#">3</a></div>
+																				    	<div class="col-xs-3"><a href="#">5</a></div>
+																				    	<div class="col-xs-3"><a href="#"></a></div>
+																				    	<div class="col-xs-3"><a href="#">1</a></div>
+																				    </div>
+																				    <div class="row ligne">
+																						<div class="col-xs-3"><a href="#"></a></div>
+																				    	<div class="col-xs-3"><a href="#">6</a></div>
+																				    	<div class="col-xs-3"><a href="#">9</a></div>
+																				    	<div class="col-xs-3"><a href="#">4</a></div>
+																				    </div>
+																				</div>
+																				<button type="submit" class=" submit-button btn btn-primary">Valider</button>											   
+																	 		</form>
+																		</div><!-- omb-container-login -->
+																	</div><!-- omb-login-page -->
+																	<!-- Fin -->
+																</div>
+															</div>
+														</div>									    		
+									    			</div> <!-- Fin modal -->	
+				      							</td>
+				      						</tr>      				
 				      					</tbody>
 									</table>
 									<div class="col-lg-offset-8 col-lg-4">
@@ -185,6 +253,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../assets/js/script.js"></script>
+
+<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    	<script>
+			$(document).ready(function(){
+			    $("#modif-mdp").click(function(){
+			        $("#modif-mdp-modal").modal();
+			    });
+			});
+		</script>
+
 </div><!-- omb-wrapper -->
 <footer>
         <div class="row">
