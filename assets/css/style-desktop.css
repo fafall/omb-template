@@ -2282,6 +2282,9 @@ font-size: 14px;
 == Changement de mot de passe
 ** ============================================================================ */
 
+.omb-mon-profil header .navbar-right li a .active{
+	color : #e3212e;
+}
 
 .omb-mon-profil .omb-content .omb-login-bloc .modal-dialog{
 	width : 415px;
@@ -2719,6 +2722,10 @@ font-size: 14px;
 /* ==============================================================================
 == Ma messagerie
 ** ============================================================================ */
+  
+.omb-messagerie header .navbar-right li a .active{
+	color : #e3212e;
+}  
   
 .omb-messagerie .entete-msg{
 	max-width : 940px;
