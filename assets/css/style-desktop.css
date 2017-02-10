@@ -999,10 +999,10 @@ margin-right: 8%;
     margin-bottom: 10px;
  }
 
- table thead, table tbody {
-   background-color:#ffffff;
-   color:#000000;
-   box-shadow: 0px 0px 10px #000000;
+.omb-solde-compte table thead, .omb-solde-compte table tbody {
+   background-color:#fff;
+   color:#000;
+   box-shadow: 0px 0px 10px #000;
 }
 
 #omb-solde-compte header .navbar-right li a{
@@ -1029,14 +1029,13 @@ margin-right: 8%;
    #omb-solde-compte .omb-content .omb-devise label{
     	margin-right: 24px;
     }
-     #omb-solde-compte .omb-content .omb-devise .form-control,
+     #omb-solde-compte .omb-content .omb-devise .form-control
      {
-     	display: inline-block;
-     	background:#5f6062;
-     	width: 50%;
-     	color:#fff;
-		margin-top: 20px;
-		border-left-color : gray;
+     	width:45%;
+      display: inline-block;
+      background-color: #5f6062;
+      color:#fff;
+      margin-top:25px;
      }
 
 
@@ -2114,11 +2113,11 @@ font-size: 14px;
 	color : #b10021;
 }
 
-/*.modal-header{
+.modal-header{
 	
 	background-color : #B7B8BC;
 }
-*/
+
 .omb-internal  .omb-content .omb-envoyer{	
 	margin-top : 20px;	 
 	width: 25%; 
@@ -2283,32 +2282,130 @@ font-size: 14px;
 == Changement de mot de passe
 ** ============================================================================ */
 
-.changer-mdp{	
-	border : 0;
+.omb-mon-profil header .navbar-right li a .active{
+	color : #e3212e;
+}
+
+.omb-mon-profil  .omb-login-bloc .modal-dialog{
+	width : 415px;
+}
+
+.omb-mon-profil .modal-dialog .modal-body{
+	padding : 0px;
+}
+
+.omb-mon-profil  .modal-dialog .modal-content{
+	width : 415px;
+	border : 1px solid #999;
+	margin : auto;
+
+}
+
+.omb-mon-profil .omb-login-bloc{
+    width: 415px;
+    text-align: center;
+	margin : auto;
+	background:rgba(0,0,0, .62);
+ 	padding: 1% 0;
+	box-shadow: 0 2px 4px #000;
+}
+
+.omb-mon-profil  .omb-login-bloc .form-group{
+ 	margin-top: 40px;
+}
+  
+.omb-mon-profil  .omb-login-bloc p{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+  
+.omb-mon-profil  .omb-container-login{ 
+	opacity:1;
 	width : 100%;
-}
-
-.changer-mdp tbody {
-	background-color : #fff;
-	color : #b10021;	
-	box-shadow : none;
-}
-
-.omb-changement-mdp .omb-content .omb-pave {
-	background : rgba(95,96,98,0.2);
-	
 	
 }
 
-.omb-changement-mdp  .omb-content .omb-pave{
-	width : 60%;
+.omb-mon-profil  #open-modal h2{
+  	color : #fff;
+  	text-transform: uppercase;
+  	opacity:1;
+  	font-size:1.3em;
+  	margin-bottom: 30px;
+  	font-family: 'Roboto-Bold', sans-serif;
+}
+  
+.omb-mon-profil  #open-modal label{
+   	color:#fff;
+   	font-size: 13px;
+    position: absolute;
+    left: 32%;
+    top: 9px;
+    font-size: 16px;
+    transition:all ease .5s
+
+}
+    
+.omb-mon-profil  #open-modal label.omb-move{
+      	left: 23%;
+        top: -20px;
+        font-size: 10px;
+
+}
+     
+.omb-mon-profil .form-control{
+	border:none;
+	border-bottom: 2px solid #fff;
+    background:transparent;
+	opacity:1;
+	border-radius:0;
+	width: 60%;
+	margin:auto ;
+	margin-top : 0px;
+	color:#fff;
+	padding-left: 42.5px;
+	font-size: 20px;
+}
+   
+/** icône dans champ input **/
+
+.omb-mon-profil #open-modal .has-feedback label~.form-control-feedback{
+   	top: 9px;
+   	color:#fff;
+}
+
+.omb-mon-profil #open-modal .form-control-feedback{
+   	left: 20%;
+}
+
+/**texte help champ input **/
+
+.omb-mon-profil #open-modal .text-muted{
+   	color:#fff;
+}
+  
+ #open-modal small{
+  	font-size: 63%;
+  	text-align: left !important;
+  	display: none;
+}
+
+.omb-mon-profil .omb-pave {
 	text-align: left;
 	list-style: none;
+	background:#000;
+	width: 60%;
+	margin: 30px auto ;
 	padding:0;
+	
+}
+
+.omb-mon-profil  .omb-pave .ligne{
+ 	margin: 0;
 }
  
-.omb-changement-mdp  .omb-content .omb-pave div{
-	background:#fff;
+.omb-mon-profil .omb-pave div{
+ 	background:#fff;
     text-align: center;
 	border-bottom:1px solid rgba(0,0,0,.62);
  	border-top:1px solid rgba(0,0,0,.62);
@@ -2317,45 +2414,44 @@ font-size: 14px;
  	height: 45px;
  	line-height: 45px;
  	vertical-align: middle;
-
 }
 
-.omb-changement-mdp  .omb-content .omb-pave div a{
+.omb-mon-profil .omb-pave div a{
    	text-decoration: none;
    	font-size: 1.2em;
    	color:#e3212e;
    	font-weight: 700;
 }
-   
-.omb-changement-mdp  .omb-content.omb-pave .ligne{
- 	margin: 0;
- }
- 
-.omb-changement-mdp  .omb-content .mdp-h2{
-	text-align : left;
-}
-
-.omb-changement-mdp  .omb-content #mdp-input {
-	width : 60%;
-}
-
-.omb-changement-mdp  .omb-content #pave-btn{
-	
-	text-transform: uppercase;
-	background:#b10021;
+   /** bouton valider **/
+.omb-mon-profil .omb-login-bloc .submit-button{
+     background:#e3212e;
      color:#fff;
-     width:60%;
+     width:100%;
      text-align: center;
      font-size: 12px;
-     letter-spacing: 1.2px;    
-    border:1px solid #fff;
+     letter-spacing: 1.2px;
+     border:none;
+     margin-bottom: 20px;
      font-weight: 700;
-	margin-top : 10px
 }
+
+.omb-mon-profil .omb-login-bloc .submit-button{
+      text-transform: uppercase;
+      width: 60%;
+      font-size:1em;
+
+}		
+	 
+.omb-mon-profil .omb-login-bloc .submit-button:hover{
+      	background:#fff;
+      	 color:#e3212e;
+}
+
+
 
 /** Mise à disposition de fonds **/
 
-  .omb-internal .omb-titre-disposition h2{
+.omb-internal .omb-titre-disposition h2{
       margin: 0 auto 5%;
     }
     .omb-internal .omb-type-fonds input
@@ -2563,18 +2659,16 @@ font-size: 14px;
 	box-shadow : none;
 	width : 100%;	
 }
-
 .omb-mon-profil .profil tbody td{
 	width : 50%;
 }
-
 .omb-mon-profil #profil-textbox{
 	width : 80%;
 	height : 34px;
 	border-radius : 4px;
 }
 
-.omb-mon-profil  .profil tbody td #link{
+.omb-mon-profil  .profil tbody td .link{
    	font-size: 1em;
    	color:#e3212e;
    	font-weight: 600;
@@ -2627,11 +2721,173 @@ font-size: 14px;
 == Ma messagerie
 ** ============================================================================ */
   
-.omb-annulations-coficash .omb-content #ok{ !!!!HERE!!!
-	margin-top : 20px;	 
-	width: 25%; 
-	text-transform: uppercase;
-	background:#b10021;
-	border:1px solid #fff;	
-	text-align : center;
+.omb-messagerie header .navbar-right li a .active{
+	color : #e3212e;
+}  
+  
+.omb-messagerie .entete-msg{
+	max-width : 940px;
+	width : 100%;
+	height : 100%;
+	padding-top : 10px;
+	margin-top : 2px;
+	border : 1px solid #b10021;
+	border-radius: 5px;
+	padding-bottom : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	background-color : #b10021;
+	color : #fff;
+	font-size : 20px;
+	
 }
+
+.omb-messagerie .entete-msg #fermer{
+	margin-top : 10px;
+	margin-bottom : 10px;
+	color : #fff;
+	text-transform : none;
+	text-decoration : none;
+	padding-right : 8px;
+	padding-left : 8px;
+	padding-top : 2px;
+	padding-bottom : 2px;
+	border-radius: 50%;	
+	border: 2px solid white;
+	cursor : pointer;
+}
+ 
+.omb-messagerie .entete-msg .ligne{
+	margin-top : 10px;
+}
+
+.omb-messagerie .entete-msg .left{
+	text-transform : uppercase;
+}
+ 
+.omb-messagerie .entete-msg .right{
+	text-align : right;
+}
+
+.omb-messagerie .entete-msg  #small{	
+	font-size : 12px;
+	color : #fff;
+	text-decoration : none;
+}
+  
+.omb-messagerie section{
+	margin-top : 0px;
+}
+
+
+.omb-messagerie .omb-container .omb-left-menu{
+	background-color : #fff;
+}  
+
+.omb-messagerie #new-message{ 
+	margin : 20px;	 
+	width: 75%;	
+	background:rgb(95, 96, 98);
+	border:1px solid #b10021;	
+	text-align : center;
+	
+}
+
+
+.omb-messagerie .omb-container .omb-left-menu li a{
+	text-transform : none;
+	
+}
+
+.omb-messagerie .omb-container .omb-left-menu li a:after{
+	width : 0px;
+}
+
+.omb-messagerie #new-message a{ 
+	color : #fff;
+	text-decoration : none;
+}
+
+.omb-messagerie #filtre{
+	text-transform : uppercase;
+	margin : 10px;
+	cursor: auto;
+}
+
+.omb-messagerie .omb-container .omb-left-menu .fa-plus{
+	margin-left : 85px;
+	cursor : pointer;
+}
+
+.omb-messagerie .omb-container .omb-left-menu #nb-mess {
+	text-align : right;	
+	border-radius: 50%;
+	border: 2px solid red;
+}
+  
+.omb-messagerie .omb-container .omb-left-menu li input[type=radio]{
+	margin : 10px;
+	margin-right : 20px;
+}
+
+.omb-messagerie .omb-container .omb-content #long {
+	width : 75%;
+	padding : 20px;
+	
+}
+
+.omb-messagerie .omb-container .omb-content table{
+	color : #000;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.omb-messagerie .omb-container .omb-content table th{
+	background-color : #fff;
+}
+
+.omb-messagerie .omb-container .omb-content table th a{
+	color : #000;
+	text-decoration : non;
+	text-transform : none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

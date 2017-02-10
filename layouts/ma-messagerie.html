@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">	
 	<title>Ma messagerie</title>
+
 	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../assets/css/style-desktop.css">
@@ -29,13 +30,13 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-collapse-header">
 			     <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user  active" ></i></a>
+			        <li><a href="#" alt="Voir profil"><i class="glyphicon glyphicon-user" ></i></a>
                             </li>
                              <li> 
                                 <a href="#" alt="Mes contacts"><i class="glyphicon glyphicon-headphones" > </i></a>
                             </li>
                             <li> 
-                                <a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope" > </i></a>
+                                <a href="#" alt="Ma messagerie"><i class="glyphicon glyphicon-envelope active" > </i></a>
                             </li>
                             <li> 
                                 <a href="#" alt="Me déconnecter"><i class="glyphicon glyphicon-off omb-off" > </i></a>
@@ -46,25 +47,37 @@
 	  </div><!-- /.container-fluid -->
 	</nav>	
 	<div class="row">
-			<div class="col-lg-2">
+		<div class="col-lg-2">
 			<p>
-			 <a class="navbar-brand omb-logo" href="#">
-			        <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
-			      </a>
-			 </p>
-				
-			</div>
-		   <div class="col-lg-5 col-lg-offset-5">
+				<a class="navbar-brand omb-logo" href="#">
+				    <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
+				</a>
+			</p>				
+		</div>
+		<div class="col-lg-5 col-lg-offset-5">
 			<div class="omb-welcome-bloc">
 				<h5>Bienvenue Mr Démo</h5>
 				<p><span class="glyphicon glyphicon-calendar"></span> Dernière connexion le:<span class="omb-date">16/12/2016 à 17h20</span> </p>
 				<div class=" omb-solde">
 					<p>Solde : <span>4565</span></p>
 				</div>
-			</div><!-- omb-welcome-bloc -->
-		
-       </div>
+			</div><!-- omb-welcome-bloc -->		
+       	</div>
     </div>
+
+    <div class="entete-msg">
+    	<div class="row">
+    		<a href="tableau-de-bordV2.html" id="fermer">&times;</a> <a id="small" href="tableau-de-bordV2.html">Fermer</a>
+    	</div>
+		<div class="row ligne">
+			<div class="col-lg-6 left">
+				<span>Ma messagerie</span>		
+			</div>
+			<div class="col-lg-offset-3 col-lg-3 right">
+				<span>29</span> <span id="small">messages </span> <span>| 3</span> <span id="small"> non lus</span>		
+			</div>
+		</div>
+	</div>
 
 </header>
 
@@ -87,19 +100,108 @@
 					        <div class="menu-list">
 					   			<ul id="menu-content">
 					                <li class="active"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i>Reçus</a></li>
-					                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Envoyés</a></li>            
-						            <li><a href="#">Filtrer par<i class="fa fa-window-minimize" aria-hidden="true"></i></a></li>           
-					                <li><a href="#">Conseiller<span class="nb_mess">2</span></a></li>
-					                <li><a href="#">Comptes<span class="nb_mess">2</span></a></li>
-					                <li><a href="#">Bons plans<span class="nb_mess">2</span></a></li>
+					                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Envoyés</a></li>
+					                <li id="filtre" href="#MonCollapse" data-toggle="collapse">Filtrer par		                	
+						            	<i class="fa fa-plus" aria-hidden="true"></i>						            	
+					                </li>
+					                <div id="MonCollapse" class="collapse">
+					                	<form>	
+						                	<li><input type="radio" name="radio">Conseiller <span id="nb-mess">2</span></li>
+										    <li><input type="radio" name="radio">Comptes <span id="nb-mess">1</span></li>
+										    <li><input type="radio" name="radio">Bons plans <span id="nb-mess">3</span></li>
+										</form>
+									</div>						            
 					            </ul><!-- menu-content -->
 					        </div><!-- menu-list -->
 					    </div>
 				    </div><!-- nav-side-menu -->
 				</div><!-- omb-left-menu -->
-		   	</div><!-- om-no-padding -->
+		   	</div><!-- omb-no-padding -->
 	
 			<div class="omb-content">
+				<div class="row">
+                    <table id="corps-msg">
+                        <thead>
+                            <tr>
+                                <th id="long">Reçus</th>
+                                <th> 
+                                	<a href="#tri" data-toggle="collapse">
+                                		Trier par <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                	</a>
+                                	<ul id="tri" class="collapse">
+                                		<li>Les plus récents</li>
+                                		<li>Les plus anciens</li>
+                                		<li>Lus</li>
+                                		<li>Non lus</li>
+                                		<li>Objet</li>
+                                	</ul>
+                                </th>
+                                <th><a class="fa fa-trash" aria-hidden="true"></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>    
+                            <tr>
+                                <td colspan="3" id="annee">2017</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">Mme DUPONT / Agence Paris Exclusive</span><br/>
+                                	<span id="object">Retrait CB</span><br/>
+                                	<span id="apercu">Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte</span><br/><br/>
+                                </td>
+                                <td id="date">22 Avr</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">BNP Paribas</span><br/>
+                                	<span id="object">Votre virement a été effectué</span><br/>
+                                	<span id="apercu">BNP Paribas</span><br/><br/>
+                                </td>
+                                <td id="date">19 Avr</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">BNP Paribas</span><br/>
+                                	<span id="object">Opposition : confirmation de votre commande carte</span><br/>
+                                	<span id="apercu">BNP Paribas</span><br/><br/>
+                                </td>
+                                <td id="date">12 Avr</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">Mme DUPONT / Agence Paris Exclusive</span><br/>
+                                	<span id="object">Retrait CB</span><br/>
+                                	<span id="apercu">Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte</span><br/><br/>
+                                </td>
+                                <td id="date">10 Avr</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">BNP Paribas</span><br/>
+                                	<span id="object">Votre virement a été effectué</span><br/>
+                                	<span id="apercu">BNP Paribas</span><br/><br/>
+                                </td>
+                                <td id="date">7 Avr</td>                                                                         
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="msg">
+                                	<i class="fa fa-paperclip" aria-hidden="true"></i>
+                                	<span id="sender">BNP Paribas</span><br/>
+                                	<span id="object">Offre exclusive chez Sixt</span><br/>
+                                	<span id="apercu">Lorem ipsum dolor</span><br/><br/>
+                                </td>
+                                <td id="date">2 Avr</td>                                                                         
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
 			</div>
 		</div>
 	</div>
@@ -109,10 +211,10 @@
 
 
 
-<script src="../../assets/bootstrap/js/npm.js"></script>
+<script src="../assets/bootstrap/js/npm.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
-<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="../../assets/js/script.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
 
 </div><!-- omb-wrapper -->
 <footer>
