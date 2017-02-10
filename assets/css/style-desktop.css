@@ -2836,6 +2836,7 @@ font-size: 14px;
 	border-left : 1px solid rgb(220, 220, 220);
 	width : 79%;
 	
+	
 }
 
 .omb-messagerie .omb-container .omb-content table th{
@@ -2877,7 +2878,7 @@ font-size: 14px;
 	padding : 10px;	
 	border-top : 1px solid rgb(220, 220, 220);
 	width : 100%;
-
+	
 }
 
 .omb-messagerie .omb-container .omb-content table td a{
@@ -2899,13 +2900,27 @@ font-size: 14px;
 	
 }
 
-.omb-messagerie .omb-container .omb-content #new-msg-table td select{
-	width : 100%;
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #court{
+	width : 15%;	
 }
 
+.omb-messagerie .omb-container .omb-content #new-msg-table td select{
+	width : 100%;
+	border : 0;
+}
 
+.omb-messagerie .omb-container .omb-content #new-msg-table td input[type=text]{
+	width : 100%;
+	border : 0;
+	
+}
 
-
+.omb-messagerie .omb-container .omb-content #new-msg-table td textarea{
+	width : 100%;
+	height : 100%;
+	padding-bottom : 150px;
+	border : 0;
+}
 
 
 
