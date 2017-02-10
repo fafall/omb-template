@@ -196,6 +196,9 @@ header .navbar-default{
     
 
 }
+ body{
+    overflow-x:hidden;
+}
  .omb-homepage .omb-dash  .omb-menu #menu-content li:last-child a{
     border-bottom:none;
   }
@@ -391,11 +394,12 @@ footer .navbar-default .navbar-nav>.active>a:hover
     background-color: transparent;
    
 }
+
 /*.omb-wrapper{
     position: relative;
     min-height: calc(100% - 35px);
 }*/
-
+  
 
 footer .omb-copyright{
     
@@ -522,6 +526,7 @@ footer .omb-copyright{
 .omb-dash .logo{
     
     margin-top: -22px;
+
 }
 .omb-contain{
     margin: 40px;

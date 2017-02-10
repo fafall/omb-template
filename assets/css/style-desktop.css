@@ -179,8 +179,8 @@ footer .navbar-brand img{
  #omb-login-page #omb-content .omb-login-bloc{
     width: 80%;
     text-align: center;
-	margin-top : 60px;
-	margin-bottom: 10px;
+	margin-top : 40px;
+  margin-bottom: 10px;
  }
  #omb-login-page #omb-content .omb-retrouver .text p{
   color:#fff;
@@ -209,8 +209,8 @@ footer .navbar-brand img{
   }
   #omb-login-page #omb-content .omb-login-bloc p{
     color: #fff;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
  #omb-login-page #omb-content .omb-container-login{ opacity:1; }
   #omb-login-page #omb-content h2{
@@ -363,7 +363,7 @@ footer .navbar-brand img{
   	margin: 0;
   }
 
-body.omb-internal{
+body{
 	overflow-x:hidden; 
 
 }
@@ -418,6 +418,9 @@ body.omb-internal{
 }
  .omb-internal header .navbar-right li a i{
  	color:#fff;
+ }
+ .omb-internal header .navbar-right li a .active{
+  color:#b10021;
  }
 
   .omb-internal .glyphicon:before{
@@ -806,10 +809,7 @@ margin-right: 8%;
 	color : #000000;
   }
   
-body#omb-solde-compte{
-	overflow-x:hidden; 
 
-}
 #omb-solde-compte .omb-wrapper{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
@@ -1668,7 +1668,7 @@ text-decoration: none;
 #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
   background:#fff;
   width: 35%;
-  margin: 20% auto 0;
+  margin: 16% auto 0;
 }
 
 #omb-modal-ajout-beneficiaire h2{
@@ -2113,7 +2113,8 @@ font-size: 14px;
 	color : #b10021;
 }
 
-.modal-header{
+.omb-mes-cartes .modal-header,
+.omb-mon-profil .modal-header{
 	
 	background-color : #B7B8BC;
 }
@@ -2286,22 +2287,22 @@ font-size: 14px;
 	color : #e3212e;
 }
 
-.omb-mon-profil .omb-content .omb-login-bloc .modal-dialog{
+.omb-mon-profil  .omb-login-bloc .modal-dialog{
 	width : 415px;
 }
 
-.omb-mon-profil .omb-content .modal-dialog .modal-body{
+.omb-mon-profil .modal-dialog .modal-body{
 	padding : 0px;
 }
 
-.omb-mon-profil .omb-content .modal-dialog .modal-content{
+.omb-mon-profil  .modal-dialog .modal-content{
 	width : 415px;
 	border : 1px solid #999;
 	margin : auto;
 
 }
 
-.omb-mon-profil .omb-content .omb-login-bloc{
+.omb-mon-profil .omb-login-bloc{
     width: 415px;
     text-align: center;
 	margin : auto;
@@ -2310,23 +2311,23 @@ font-size: 14px;
 	box-shadow: 0 2px 4px #000;
 }
 
-.omb-mon-profil .omb-content .omb-login-bloc .form-group{
+.omb-mon-profil  .omb-login-bloc .form-group{
  	margin-top: 40px;
 }
   
-.omb-mon-profil .omb-content .omb-login-bloc p{
+.omb-mon-profil  .omb-login-bloc p{
     color: #fff;
     margin-bottom: 30px;
     margin-top: 20px;
 }
   
-.omb-mon-profil .omb-content .omb-container-login{ 
+.omb-mon-profil  .omb-container-login{ 
 	opacity:1;
 	width : 100%;
 	
 }
 
-.omb-mon-profil .omb-content #open-modal h2{
+.omb-mon-profil  #open-modal h2{
   	color : #fff;
   	text-transform: uppercase;
   	opacity:1;
@@ -2335,7 +2336,7 @@ font-size: 14px;
   	font-family: 'Roboto-Bold', sans-serif;
 }
   
-.omb-mon-profil .omb-content #open-modal label{
+.omb-mon-profil  #open-modal label{
    	color:#fff;
    	font-size: 13px;
     position: absolute;
@@ -2346,14 +2347,14 @@ font-size: 14px;
 
 }
     
-.omb-mon-profil .omb-content #open-modal label.omb-move{
+.omb-mon-profil  #open-modal label.omb-move{
       	left: 23%;
         top: -20px;
         font-size: 10px;
 
 }
      
-.omb-mon-profil .omb-content .form-control{
+.omb-mon-profil .form-control{
 	border:none;
 	border-bottom: 2px solid #fff;
     background:transparent;
@@ -2380,7 +2381,7 @@ font-size: 14px;
 
 /**texte help champ input **/
 
-.omb-mon-profil .omb-content #open-modal .text-muted{
+.omb-mon-profil #open-modal .text-muted{
    	color:#fff;
 }
   
@@ -2390,7 +2391,7 @@ font-size: 14px;
   	display: none;
 }
 
-.omb-mon-profil .omb-content .omb-pave {
+.omb-mon-profil .omb-pave {
 	text-align: left;
 	list-style: none;
 	background:#000;
@@ -2400,11 +2401,11 @@ font-size: 14px;
 	
 }
 
-.omb-mon-profil .omb-content .omb-pave .ligne{
+.omb-mon-profil  .omb-pave .ligne{
  	margin: 0;
 }
  
-.omb-mon-profil .omb-content .omb-pave div{
+.omb-mon-profil .omb-pave div{
  	background:#fff;
     text-align: center;
 	border-bottom:1px solid rgba(0,0,0,.62);
@@ -2416,14 +2417,14 @@ font-size: 14px;
  	vertical-align: middle;
 }
 
-.omb-mon-profil .omb-content .omb-pave div a{
+.omb-mon-profil .omb-pave div a{
    	text-decoration: none;
    	font-size: 1.2em;
    	color:#e3212e;
    	font-weight: 700;
 }
    /** bouton valider **/
-.omb-mon-profil .omb-content .omb-login-bloc .submit-button{
+.omb-mon-profil .omb-login-bloc .submit-button{
      background:#e3212e;
      color:#fff;
      width:100%;
@@ -2435,14 +2436,14 @@ font-size: 14px;
      font-weight: 700;
 }
 
-.omb-mon-profil .omb-content .omb-login-bloc .submit-button{
+.omb-mon-profil .omb-login-bloc .submit-button{
       text-transform: uppercase;
       width: 60%;
       font-size:1em;
 
 }		
 	 
-.omb-mon-profil .omb-content .omb-login-bloc .submit-button:hover{
+.omb-mon-profil .omb-login-bloc .submit-button:hover{
       	background:#fff;
       	 color:#e3212e;
 }
@@ -2653,24 +2654,22 @@ font-size: 14px;
 	width : 100%;
 }
 
-.omb-mon-profil  .omb-content .profil tbody {
+.omb-mon-profil .profil tbody {
 	background-color : #fff;
 	color : #000;	
 	box-shadow : none;
 	width : 100%;	
 }
-
-.omb-mon-profil  .omb-content .profil tbody td{
+.omb-mon-profil .profil tbody td{
 	width : 50%;
 }
-
-.omb-mon-profil  .omb-content #profil-textbox{
+.omb-mon-profil #profil-textbox{
 	width : 80%;
 	height : 34px;
 	border-radius : 4px;
 }
 
-.omb-mon-profil  .omb-content .profil tbody td .link{
+.omb-mon-profil  .profil tbody td .link{
    	font-size: 1em;
    	color:#e3212e;
    	font-weight: 600;
@@ -2681,8 +2680,8 @@ font-size: 14px;
 	text-decoration: underline;
 }
 
-.omb-internal .omb-content #bouton-grise{
-    background-color: #dcdcdc;
+.omb-mon-profil #bouton-grise{
+    background-color: #e3212e;
 	border:1px solid #fff;
 	text-align : center;
 	text-transform: uppercase;
