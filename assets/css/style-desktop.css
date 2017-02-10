@@ -2113,7 +2113,8 @@ font-size: 14px;
 	color : #b10021;
 }
 
-.modal-header{
+.omb-mes-cartes .modal-header,
+.omb-mon-profil .modal-header{
 	
 	background-color : #B7B8BC;
 }

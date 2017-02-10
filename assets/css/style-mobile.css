@@ -4,14 +4,13 @@
 
     /** tableau de bord**/
 
-  	.omb-homepage .omb-contenu .omb-message,
-    	.omb-homepage .omb-contenu .omb-virement,
-    	.omb-homepage .omb-contenu .omb-carte{
+  	.omb-homepage .omb-contenu .omb-droite .row{
     		margin-left: 0px;
+            padding-left: 15px;
     	}
-    		.omb-homepage .omb-contenu .omb-message{
+    		/*.omb-homepage .omb-contenu .omb-message{
     			margin-top: 15px;
-    		}
+    		}*/
     /** page de login **/
 
     	.navbar-nav{
@@ -35,10 +34,10 @@
     	.omb-homepage .omb-contenu .omb-carte{
     		margin-left: 0px;
     	}
-    		.omb-homepage .omb-contenu .omb-message{
+    		/*.omb-homepage .omb-contenu .omb-message{
     			margin-top: 15px;
     		}
-
+*/
     	/** page de login **/
 
     	.navbar-right{
@@ -54,9 +53,9 @@
         .omb-homepage .omb-dash .omb-menu li a, .omb-internal .omb-container .omb-left-menu li a{
             font-size: 0.7em;
          }
-         .omb-droite{
+        /* .omb-droite{
             float: right;
-         }
+         }*/
          
     }
 
@@ -74,13 +73,16 @@
     		margin-right: 10px;
     	}
     	.omb-homepage .omb-contenu .omb-message,
-    	.omb-homepage .omb-contenu .omb-virement,
-    	.omb-homepage .omb-contenu .omb-carte{
-    		margin-left: 0px;
-    	}
-    		.omb-homepage .omb-contenu .omb-message{
+        .omb-homepage .omb-contenu .omb-virement,
+        .omb-homepage .omb-contenu .omb-carte{
+            margin-left: -30px;
+        }
+        .omb-homepage .omb-contenu .omb-message{
+            margin-top:15px;
+        }
+    		/*.omb-homepage .omb-contenu .omb-message{
     			margin-top: 15px;
-    		}
+    		}*/
     	/** mes demandes accueil **/
     	
 		 .omb-internal .omb-content .image-demande
@@ -231,15 +233,15 @@
     	.omb-homepage .omb-contenu .omb-message,
     	.omb-homepage .omb-contenu .omb-virement,
     	.omb-homepage .omb-contenu .omb-carte{
-    		margin-left: 0px;
+    		margin-left: -30px;
     	}
-    		.omb-homepage .omb-contenu .omb-message{
+        .omb-homepage .omb-contenu .omb-message{
+            margin-top:15px;
+        }
+    		/*.omb-homepage .omb-contenu .omb-message{
     			margin-top: 15px;
-    		}
-            .omb-internal .omb-welcome-bloc{
-                /*margin-top:20px;
-                /*margin-right: 23px;*/
-            }
+    		}*/
+           
     	/** Login page **/
     	/*#omb-login-page .navbar-right,.navbar-center{
     		margin-top:6px;
