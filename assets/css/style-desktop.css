@@ -179,7 +179,7 @@ footer .navbar-brand img{
  #omb-login-page #omb-content .omb-login-bloc{
     width: 80%;
     text-align: center;
-	margin-top : 60px;
+	margin-top : 40px;
   margin-bottom: 10px;
  }
  #omb-login-page #omb-content .omb-retrouver .text p{
@@ -209,8 +209,8 @@ footer .navbar-brand img{
   }
   #omb-login-page #omb-content .omb-login-bloc p{
     color: #fff;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
  #omb-login-page #omb-content .omb-container-login{ opacity:1; }
   #omb-login-page #omb-content h2{
@@ -363,7 +363,7 @@ footer .navbar-brand img{
   	margin: 0;
   }
 
-body.omb-internal{
+body{
 	overflow-x:hidden; 
 
 }
@@ -418,6 +418,9 @@ body.omb-internal{
 }
  .omb-internal header .navbar-right li a i{
  	color:#fff;
+ }
+ .omb-internal header .navbar-right li a .active{
+  color:#b10021;
  }
 
   .omb-internal .glyphicon:before{
@@ -806,10 +809,7 @@ margin-right: 8%;
 	color : #000000;
   }
   
-body#omb-solde-compte{
-	overflow-x:hidden; 
 
-}
 #omb-solde-compte .omb-wrapper{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
@@ -1669,7 +1669,7 @@ text-decoration: none;
 #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
   background:#fff;
   width: 35%;
-  margin: 20% auto 0;
+  margin: 16% auto 0;
 }
 
 #omb-modal-ajout-beneficiaire h2{
@@ -2114,11 +2114,11 @@ font-size: 14px;
 	color : #b10021;
 }
 
-.modal-header{
+/*.modal-header{
 	
 	background-color : #B7B8BC;
 }
-
+*/
 .omb-internal  .omb-content .omb-envoyer{	
 	margin-top : 20px;	 
 	width: 25%; 
@@ -2557,24 +2557,24 @@ font-size: 14px;
 	width : 100%;
 }
 
-.omb-internal  .omb-content .profil tbody {
+.omb-mon-profil .profil tbody {
 	background-color : #fff;
 	color : #000;	
 	box-shadow : none;
 	width : 100%;	
 }
 
-.omb-internal  .omb-content .profil tbody td{
+.omb-mon-profil .profil tbody td{
 	width : 50%;
 }
 
-.omb-internal  .omb-content #profil-textbox{
+.omb-mon-profil #profil-textbox{
 	width : 80%;
 	height : 34px;
 	border-radius : 4px;
 }
 
-.omb-mon-profil  .omb-content .profil tbody td #link{
+.omb-mon-profil  .profil tbody td #link{
    	font-size: 1em;
    	color:#e3212e;
    	font-weight: 600;
@@ -2585,8 +2585,8 @@ font-size: 14px;
 	text-decoration: underline;
 }
 
-.omb-internal .omb-content #bouton-grise{
-    background-color: #dcdcdc;
+.omb-mon-profil #bouton-grise{
+    background-color: #e3212e;
 	border:1px solid #fff;
 	text-align : center;
 	text-transform: uppercase;

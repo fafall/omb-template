@@ -18,9 +18,9 @@
     		float: none;
     		font-size: 11px;
     	}
-    	.navbar-right{
+    	/*.navbar-right{
     		margin-top:-33px;
-    	}
+    	}*/
     }
 
 
@@ -48,10 +48,22 @@
     		float: none;
     		font-size: 11px;
     	}
+        footer .navbar-default ul {
+            width:100%;
+        }
+        .omb-homepage .omb-dash .omb-menu li a, .omb-internal .omb-container .omb-left-menu li a{
+            font-size: 0.7em;
+         }
+         .omb-droite{
+            float: right;
+         }
+         
+    }
 
     /* Small Devices, Tablets */
 
     @media only screen and (max-width : 768px) {
+
 
           /** tableau de bord**/
 
@@ -108,7 +120,7 @@
 		{
 			background:transparent;
 			opacity:1;
-			width: 90%;
+			/*width: 90%;*/
 			margin:0 auto;
 		}
 		header .omb-logo,
@@ -116,6 +128,9 @@
 			background: transparent;
 		
 	   }
+       header .navbar-default li a{
+        text-align: center;
+       }
 
 	   .navbar-brand img{
 		width: 80%;
@@ -139,14 +154,36 @@
     		font-size: 11px;
     	}
     	
-    	
+    	/*footer .navbar-default ul {
+            width:100%;
+        }*/
+         footer .navbar-toggle{
+            top:-8px;
+        }
+        footer .navbar-collapse{
+            background-color: #5f6062;
+        }
+        footer .navbar-default ul li {
+            display: block;
+            position: relative;
+            width: auto;
+        }
     	/**tableau de bord **/
     	
-    	  /** tableau de bord**/
-          .omb-homepage .omb-menu{
+           .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu {
     		width: 25%;
     		border:none;
     	}
+         .omb-homepage .omb-dash .omb-menu li a, .omb-internal .omb-container .omb-left-menu li a{
+            font-size: 0.7em;
+         }
+          .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu{
+            width: 100%;
+            border:none;
+        }
+         .omb-dash .logo{
+           padding-left: 0px;
+        }
     }
 
     /* Extra Small Devices, Phones */ 
@@ -157,11 +194,33 @@
     @media only screen and (max-width : 480px) {
 
           /** tableau de bord**/
-          .omb-homepage .omb-menu{
+
+          .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu{
     		width: 100%;
     		border:none;
     	}
-    	
+        .omb-left-menu .navbar-toggle{
+            top:-40px;
+        }
+        footer .navbar-toggle{
+            top:-8px;
+        }
+        footer .navbar-collapse{
+            background-color: #5f6062;
+        }
+        footer .navbar-default ul li {
+            display: block;
+            position: relative;
+            width: auto;
+        }
+        .omb-dash .logo{
+           padding-left: 0px;
+        }
+        
+    	.navbar-default .navbar-collapse,
+        .navbar-default .navbar-form{
+            border-color: transparent;
+        } 
        
     	.omb-homepage .omb-contenu h2 {
     		font-size:15px;
@@ -177,12 +236,13 @@
     		.omb-homepage .omb-contenu .omb-message{
     			margin-top: 15px;
     		}
-
+            .omb-internal .omb-welcome-bloc{
+                /*margin-top:20px;
+                /*margin-right: 23px;*/
+            }
     	/** Login page **/
-    	.navbar-right,.navbar-center{
+    	/*#omb-login-page .navbar-right,.navbar-center{
     		margin-top:6px;
-    		
-	     
 	      margin-left: 0;
 			height: auto !important;
     	}
@@ -195,18 +255,19 @@
 	      margin-left: 0;
 			height: auto !important;
 	   }  
-	   #omb-dashboard footer .navbar-default .navbar-collapse{
+	   /*#omb-dashboard footer .navbar-default .navbar-collapse{
     		border:none;
     		background-color: #5f6062;
     		height: auto !important;
     		
     	}
+
     	#omb-dashboard  footer .navbar-default .navbar-collapse a{
     		color:#fff;
     	}
     	    	#omb-dashboard footer .navbar-default .navbar-collapse a:hover{
     		color:#b10021;
-    	}
+    	}*/
     	.navbar-brand img{
 			width: 55%;
 		}
@@ -239,6 +300,9 @@
 			font-size: 0.8em;
 		}	
 	    
+        #omb-login-page #omb-content  .omb-retrouver h2{
+            font-size: 0.8em;
+        }
           /** mes demandes Accueil **/		
     }
 
@@ -246,7 +310,14 @@
 
     @media only screen and (max-width : 320px) {
     	
-        
+      .omb-dash .logo{
+            padding-left: 0px;
+        }
+       
+        #omb-login-page #omb-content h2{
+            font-size: 1em;
+        }
+ 
     }
 
 
