@@ -86,13 +86,13 @@
 							    <span class="icon-bar"></span>
 						</button>
 
-						<button type="submit" class="btn btn-primary" id="new-message"><a href="nouveau-message.html">Nouveau message</a></button>
+						<button type="submit" class="btn btn-primary" id="new-message"><a href="#">Nouveau message</a></button>
 				  
 					   	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					        <div class="menu-list">
 					   			<ul id="menu-content">
-					                <li class="active"><a id="btn-inbox"><i class="fa fa-inbox" aria-hidden="true"></i>Reçus</a></li>
-					                <li><a id="btn-sent"><i class="fa fa-paper-plane" aria-hidden="true"></i>Envoyés</a></li>
+					                <li class="active"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i>Reçus</a></li>
+					                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Envoyés</a></li>
 					                <li id="filtre" href="#MonCollapse" data-toggle="collapse">Filtrer par		                	
 						            	<i class="fa fa-plus" aria-hidden="true"></i>						            	
 					                </li>
@@ -111,90 +111,35 @@
 		   	</div><!-- omb-no-padding -->
 	
 			<div class="omb-content">
-				<div class="row">
+
+                <div class="row">
                     <table id="inbox" class="corps-msg">
                         <thead>
                             <tr>
-                                <th id="long">Reçus</th>
-                                <th id="tri"> 
-                                    <form>
-                                        <select>
-                                            <option>Trier par <i class="fa fa-chevron-down" aria-hidden="true"></i></option>
-                                            <option>Les plus récents</option>
-                                            <option>Les plus anciens</option>
-                                            <option>Lus</option>
-                                            <option>Non lus</option>
-                                            <option>Objet</option>
-                                        </select>
-                                    </form>
-                                </th>
+                                <th colspan="2" id="long"><button type="submit" class="btn btn-primary" id="btn-answer">Répondre</button></th>
                                 <th id="third"><a class="fa fa-trash" aria-hidden="true"></a></th>
                             </tr>
                         </thead>
                         <tbody>    
                             <tr>
-                                <th colspan="3" id="annee">2017</th>                                                                         
+                                <td colspan="2" id="msg-vue">                                                                            
+                                    <span id="object">Retrait CB</span><br/>
+                                    <span id="sender">De : Mme DUPONT / Agence Paris Exclusive</span><br/><br/>  
+                                    <a><i class="fa fa-paperclip" aria-hidden="true"> Superati periculose per prona discedunt</i></a>
+                                </td> 
+                                <td>22 Avr</td> 
                             </tr>
                             <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">Mme DUPONT / Agence Paris Exclusive</span><br/>
-                                	<span id="object">Retrait CB</span><br/><br/>
-                                	<i id="apercu">Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte</i><br/><br/></a>
+                                <td colspan="3" id="msg-vue">
+                                    <span id="apercu"><br/>      
+                                    Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte. Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</span>
                                 </td>
-                                <td id="date">22 Avr</td>                                                                         
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">BNP Paribas</span><br/>
-                                	<span id="object">Votre virement a été effectué</span><br/><br/>
-                                	<i id="apercu">BNP Paribas</i><br/><br/></a>
-                                </td>
-                                <td id="date">19 Avr</td>                                                                         
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">BNP Paribas</span><br/>
-                                	<span id="object">Opposition : confirmation de votre commande carte</span><br/><br/>
-                                	<i id="apercu">BNP Paribas</i><br/><br/></a>
-                                </td>
-                                <td id="date">12 Avr</td>                                                                         
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">Mme DUPONT / Agence Paris Exclusive</span><br/>
-                                	<span id="object">Retrait CB</span><br/><br/>
-                                	<i id="apercu">Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte</i><br/><br/></a>
-                                </td>
-                                <td id="date">10 Avr</td>                                                                         
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">BNP Paribas</span><br/>
-                                	<span id="object">Votre virement a été effectué</span><br/><br/>
-                                	<i id="apercu">BNP Paribas</i><br/><br/></a>
-                                </td>
-                                <td id="date">7 Avr</td>                                                                         
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="msg">
-                                	<a><i class="fa fa-paperclip" aria-hidden="true"></i>
-                                	<span id="sender">BNP Paribas</span><br/>
-                                	<span id="object">Offre exclusive chez Sixt</span><br/><br/>
-                                	<i id="apercu">Lorem ipsum dolor</i><br/><br/></a>
-                                </td>
-                                <td id="date">2 Avr</td>                                                                         
                             </tr>
                         </tbody>
                     </table>
+                </div> <!-- row -->
 
-
-
-			</div>
+			</div><!-- omb-content -->
 		</div>
 	</div>
 </section>
@@ -203,19 +148,6 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../../assets/js/script.js"></script>
-
-<script>
-$(document).ready(function(){   
-    $("#btn-sent").click(function(){
-        $("#inbox").text("Welcome to the sentbox");
-    });  
-
-    $("#btn-inbox").click(function(){
-        $("#sent").text("Welcome to the inbox");
-    });
-
-});
-</script>
 
 </div><!-- omb-wrapper -->
 <footer>

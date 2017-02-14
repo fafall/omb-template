@@ -2874,14 +2874,12 @@ font-size: 14px;
 	text-align : center;
 }
 
-.omb-messagerie .omb-container .omb-content table td{
+.omb-messagerie .omb-container .omb-content table #msg{
 	padding : 10px;	
-	border-top : 1px solid rgb(220, 220, 220);
-	width : 100%;
-	
+	border-top : 1px solid rgb(220, 220, 220);	
 }
 
-.omb-messagerie .omb-container .omb-content table td a{
+.omb-messagerie .omb-container .omb-content table #msg a{
 	color : #000;
 	text-transform : none;
 	cursor : pointer;
@@ -2896,12 +2894,16 @@ font-size: 14px;
 }
 
 .omb-messagerie .omb-container .omb-content .corps-msg tbody #date{	
-	text-align : right;
-	
+	text-align : right;	
+	border-top : 1px solid rgb(220, 220, 220);
 }
 
 .omb-messagerie .omb-container .omb-content .corps-msg tbody #court{
 	width : 15%;	
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #sender{	
+	font-weight : bold;	
 }
 
 .omb-messagerie .omb-container .omb-content #new-msg-table td select{
@@ -2922,16 +2924,46 @@ font-size: 14px;
 	border : 0;
 }
 
+.omb-messagerie  .omb-content #btn-send{	
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+	margin-bottom : 30px;
+	margin-left :50px;
+}
+	
+
+.omb-internal  .omb-content  #btn-pj {	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	margin-bottom : 30px;	
+	margin-left : 467%;
+}
+
+.omb-internal  .omb-content  #insert-pj {
+	margin-left : 25%;
+}
 
 
+.omb-messagerie  .omb-content #btn-answer{
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+}
 
+.omb-messagerie .omb-container .omb-content table #msg-vue{
+	padding : 20px;	
+	border-top : 1px solid rgb(220, 220, 220);	
+}
 
-
-
-
-
-
-
+.omb-messagerie .omb-container .omb-content table #msg-vue a i{
+	color : #000;	
+	cursor : pointer;
+	text-decoration : underline;
+	
+}
 
 
 
