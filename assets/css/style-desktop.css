@@ -2899,7 +2899,9 @@ font-size: 14px;
 }
 
 .omb-messagerie .omb-container .omb-content .corps-msg tbody #court{
-	width : 15%;	
+	
+	padding : 10px;
+	border-bottom : 1px solid rgb(220, 220, 220);
 }
 
 .omb-messagerie .omb-container .omb-content .corps-msg tbody #sender{	
@@ -2922,6 +2924,7 @@ font-size: 14px;
 	height : 100%;
 	padding-bottom : 150px;
 	border : 0;
+	padding-top : 20px;
 }
 
 .omb-messagerie  .omb-content #btn-send{	
@@ -2961,9 +2964,33 @@ font-size: 14px;
 .omb-messagerie .omb-container .omb-content table #msg-vue a i{
 	color : #000;	
 	cursor : pointer;
-	text-decoration : underline;
+	text-decoration : underline;	
+}
+
+.omb-messagerie .omb-container .omb-content table tbody tr td #apercu{
+	
+	color : grey;
+}
+
+.omb-messagerie .omb-container .omb-content table #text-area{
+	border-top : 1px solid rgb(220, 220, 220);
+}
+
+.omb-internal  .omb-content  #select-fic{	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	
 	
 }
+
+
+
+
+
+
+
 
 
 

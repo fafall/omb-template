@@ -113,26 +113,29 @@
 			<div class="omb-content">
 
                 <div class="row">
-                    <table id="inbox" class="corps-msg">
+                    <table id="new-msg-table" class="corps-msg">
                         <thead>
                             <tr>
-                                <th colspan="2" id="long"><button type="submit" class="btn btn-primary" id="btn-answer">Répondre</button></th>
+                                <th colspan="2" id="long"><button type="submit" class="btn btn-primary" id="btn-answer">Envoyer</button></th>
                                 <th id="third"><a class="fa fa-trash" aria-hidden="true"></a></th>
                             </tr>
                         </thead>
                         <tbody>    
                             <tr>
-                                <td colspan="2" id="msg-vue">                                                                            
-                                    <span id="object">Retrait CB</span><br/>
-                                    <span id="sender">De : Mme DUPONT / Agence Paris Exclusive</span><br/><br/>  
-                                    <a><i class="fa fa-paperclip" aria-hidden="true"> Superati periculose per prona discedunt</i></a>
-                                </td> 
-                                <td>22 Avr</td> 
+                                <td colspan="3" id="msg-vue">
+	                                <span>À :  Mme DUPONT / Agence Paris Exclusive</span><br/>
+	                                <span>Re : Retrait CB</span><br/>
+	                                <button type="submit" class="btn btn-primary" id="select-fic">Sélect. fichiers</button><br/>
+	                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" id="text-area"><textarea placeholder="Votre message"></textarea></td>
                             </tr>
                             <tr>
                                 <td colspan="3" id="msg-vue">
-                                    <span><br/>      
-                                    Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte. Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</span>
+                                    <i id="apercu">
+                                    Le 22 avril Elisabeth Nicol à écrit :<br/><br/>     
+                                    Bonjour Monsieur Démo, je fais suite à votre message concernant votre carte. Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</i>
                                 </td>
                             </tr>
                         </tbody>
