@@ -419,9 +419,9 @@ body{
  .omb-internal header .navbar-right li a i{
  	color:#fff;
  }
- .omb-internal header .navbar-right li a .active{
+ /*.omb-internal header .navbar-right li a .active{
   color:#b10021;
- }
+ }*/
 
   .omb-internal .glyphicon:before{
   	font-size: 1em;
@@ -688,7 +688,7 @@ body{
    }
     .omb-internal .omb-content .omb-group .form-control{
     	display: inline-block;
-    	width: 90%;
+    	width: 80%;
    
     }
     /** bloc epargne **/
@@ -2704,7 +2704,7 @@ font-size: 14px;
   margin-bottom: 50px;
 }
 .omb-liste-services .omb-input{
-    width: 96%;
+    width: 80%;
     border-radius: 4px;
     border: 1px solid #ccc;
     height: 34px;

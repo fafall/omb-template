@@ -56,6 +56,9 @@
         /* .omb-droite{
             float: right;
          }*/
+          #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 60%;
+        }
          
     }
 
@@ -186,6 +189,12 @@
          .omb-dash .logo{
            padding-left: 0px;
         }
+         .omb-left-menu .navbar-toggle{
+            top:-40px;
+        }
+         #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 80%;
+        }
     }
 
     /* Extra Small Devices, Phones */ 
@@ -196,6 +205,9 @@
     @media only screen and (max-width : 480px) {
 
           /** tableau de bord**/
+          #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 100%;
+        }
 
           .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu{
     		width: 100%;
