@@ -2831,35 +2831,159 @@ font-size: 14px;
 	margin-right : 20px;
 }
 
-.omb-messagerie .omb-container .omb-content #long {
-	width : 75%;
-	padding : 20px;
+.omb-messagerie .omb-container .omb-content .corps-msg{
+	color : #000;
+	border-left : 1px solid rgb(220, 220, 220);
+	width : 79%;
+	
 	
 }
 
-.omb-messagerie .omb-container .omb-content table{
-	color : #000;
-	box-shadow: 0px 0px 10px #000;
-}
-
 .omb-messagerie .omb-container .omb-content table th{
-	background-color : #fff;
+	color : rgb(95, 96, 98);
+	padding : 20px;
+	background-color : rgba(128, 128, 128, 0.1);
+	border-bottom : 1px solid rgb(220, 220, 220);
 }
 
-.omb-messagerie .omb-container .omb-content table th a{
-	color : #000;
-	text-decoration : non;
+.omb-messagerie .omb-container .omb-content .corps-msg thead a{
+	color : rgb(95, 96, 98);
+	cursor : pointer;
 	text-transform : none; 
 }
 
+.omb-messagerie .omb-container .omb-content #long {
+	width : 70%;	
+}
+
+.omb-messagerie .omb-container .omb-content #tri{
+	width : 20%;	
+}
+
+.omb-messagerie .omb-container .omb-content #tri select{
+	width : 85%;	
+	border : 0;
+	border-right : 2px solid rgb(220, 220, 220);
+	border-left : 2px solid rgb(220, 220, 220);
+	background-color : rgba(128, 128, 128, 0);
+	cursor : pointer;
+}
+
+.omb-messagerie .omb-container .omb-content #third {
+	width : 10%;	
+	text-align : center;
+}
+
+.omb-messagerie .omb-container .omb-content table #msg{
+	padding : 10px;	
+	border-top : 1px solid rgb(220, 220, 220);	
+}
+
+.omb-messagerie .omb-container .omb-content table #msg a{
+	color : #000;
+	text-transform : none;
+	cursor : pointer;
+	text-decoration : none;
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody th {
+	padding : 20px;
+	text-align : center;
+	color : rgb(95, 96, 98);
+	
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #date{	
+	text-align : right;	
+	border-top : 1px solid rgb(220, 220, 220);
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #court{
+	
+	padding : 10px;
+	border-bottom : 1px solid rgb(220, 220, 220);
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #sender{	
+	font-weight : bold;	
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td select{
+	width : 100%;
+	border : 0;
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td input[type=text]{
+	width : 100%;
+	border : 0;
+	
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td textarea{
+	width : 100%;
+	height : 100%;
+	padding-bottom : 150px;
+	border : 0;
+	padding-top : 20px;
+}
+
+.omb-messagerie  .omb-content #btn-send{	
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+	margin-bottom : 30px;
+	margin-left :50px;
+}
+	
+
+.omb-internal  .omb-content  #btn-pj {	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	margin-bottom : 30px;	
+	margin-left : 467%;
+}
+
+.omb-internal  .omb-content  #insert-pj {
+	margin-left : 25%;
+}
 
 
+.omb-messagerie  .omb-content #btn-answer{
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+}
 
+.omb-messagerie .omb-container .omb-content table #msg-vue{
+	padding : 20px;	
+	border-top : 1px solid rgb(220, 220, 220);	
+}
 
+.omb-messagerie .omb-container .omb-content table #msg-vue a i{
+	color : #000;	
+	cursor : pointer;
+	text-decoration : underline;	
+}
 
+.omb-messagerie .omb-container .omb-content table tbody tr td #apercu{
+	
+	color : grey;
+}
 
+.omb-messagerie .omb-container .omb-content table #text-area{
+	border-top : 1px solid rgb(220, 220, 220);
+}
 
-
+.omb-internal  .omb-content  #select-fic{	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	
+	
+}
 
 
 
