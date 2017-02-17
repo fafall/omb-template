@@ -190,9 +190,11 @@
 		                            		<div class="col-lg-1">
 		                            			<span class="fa fa-download"></span>
 		                            		</div>
-		                            		<div class="col-lg-1">
-		                            			<span class="fa fa-eye"></span>
-		                            		</div>
+		                            		<a href="../../assets/images/test.pdf">
+			                            		<div class="col-lg-1">
+										    		<span class="fa fa-eye" id="voir"></span>	
+			                            		</div>
+		                            		</a>
 		                            	</div>
 		                            	<div class="row omb-releve-contenu">
 		                            		<div class="col-lg-2 omb-date">
@@ -354,5 +356,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	 
 		<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 		<script src="../../assets/js/script.js"></script>	
+		<script>
+			$(document).ready(function(){
+			    $("#voir").click(function(){
+			        $("#opp-modal").modal();
+			    });
+			});
+		</script>
 	</body>
 </html>

@@ -1906,9 +1906,13 @@ font-size: 14px;
 .omb-internal .omb-content .omb-liste-demandes h5, .omb-internal .omb-content .omb-liste-annulations h5{
   font-weight: bold;
 }
-.omb-internal .omb-releve-contenu span{
+.omb-internal .omb-releve-contenu span,
+.omb-internal .omb-releve-contenu button{
   padding-top: 5px;
   color:#b10021;
+}
+.omb-internal .omb-releve-contenu button{
+  border:none;
 }
 .omb-liste-demandes .omb-releve-parent{
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
