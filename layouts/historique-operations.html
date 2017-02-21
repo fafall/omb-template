@@ -54,11 +54,10 @@
               </div>
               <div class="col-lg-5 col-lg-offset-5">
                   <div class="omb-welcome-bloc">
-                      <h2>Bienvenue Mr Démo</h2>
+                      <h5>Bienvenue Mr Démo</h5>
                       <p><span class="glyphicon glyphicon-calendar"></span> Dernière connexion le:<span class="omb-date">16/12/2016 à 17h20</span> </p>
                       <div class=" omb-solde">
                           <p>Solde : <span>4565</span></p>
-                          <p>Crédit : <span>-23456</span></p>
                       </div>
                   </div><!-- omb-welcome-bloc -->
               
@@ -69,8 +68,8 @@
       <section>
         <div class="omb-container">
          <div class="row omb-no-margin">
-            <div class="col-sm-3 omb-no-padding">
-                <div class="omb-left-menu fixed">
+            <div class=" omb-no-padding">
+                <div class="col-sm-3 omb-left-menu navbar-default">
                     <div class="nav-side-menu">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -106,6 +105,11 @@
                                     <li>
                                       <a href="#"><i class="fa fa-ban fa-lg"></i> Mes annulations </a>
                                     </li>
+                                     <li>
+                              <a href="#">
+                                  <i class="fa fa-bullhorn fa-lg"></i> Mes services
+                               </a>
+                            </li>
                                 </ul><!-- menu-content -->
                             </div><!-- menu-list -->
                         </div>
@@ -143,112 +147,112 @@
                             <h2>Historique des opérations</h2>
                           </div>
                           </div>
-                          <div class="row">
-                             
-                              <div class="col-lg-offset-8 col-lg-4">
-                                <div class="form-group omb-devise">
-                                    <label for="devise">Devise</label>
-                                    <select class="form-control" id="devise">
-                                        <option>XOF <span class="fa fa-chevron-down"></span></option>
-                                        <option>EURO</option>
-                                   
-                                    </select>
-                                </div>
-                            
-                             </div>
-                         </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Compte</h3>
-                                    <div class="wrapper">
-                                        <label for="omb-compte-select">Sélectionner un compte</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
-                                            <option>Compte Joint</option>
-                                            <option>Compte Bloqué</option>
-                                        </select>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                         <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Date</h3>
-                                    <div class="wrapper">
-                                      <div class="entete">
-                                        <label for="omb-compte-select" class="periode">Période</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>30 derniers jours<span class="fa fa-chevron-down"></span></ option>
-                                            <option>60 derniers jours</option>
-                                            <option>90 derniers jours</option>
-                                        </select>
-                                      </div>
-                                      <div class="milieu">
-                                        <label>OU</label>
-                                      </div>
-                                      <div class="fin">
-                                         <label for="omb-compte-select" class="date ">Du:</label>
-                                        <input type="date"> <span class="glyphicon glyphicon-calendar"></span>
-                                        <label for="omb-compte-select" class="date omb-date">Au:</label>
-                                        <input type="date"> <span class="glyphicon glyphicon-calendar"></span>
-                                      </div>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Montant</h3>
-                                    <div class="wrapper">
-                                         <label for="omb-compte-select" class="date">Entre:</label>
-                                        <input type="text" >
-                                        <label for="omb-compte-select" class="date omb-date">Et:</label>
-                                        <input type="text">
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class=" col-lg-12">
-                              <div class="form-group ">
-                                    <h3>Débit/Crédit</h3>
-                                    <div class="wrapper">
-                                         <label for="omb-compte-select">Type d'opérations</label>
-                                        <select class="form-control" id="omb-compte-select">
-                                            <option>Tous<span class="fa fa-chevron-down"></span></ option>
-                                           
-                                        </select>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                       
-                        <div class="row">
-                            <div class="col-lg-offset-3 col-lg-9 omb-button">
-                            <div class="wrapper">
-                                <div class="form-group omb-submit">
-                                   <button type="reset" class="btn btn-primary">Réinitialiser</button>
-                                    <button type="submit" class="btn btn-primary">Rechercher</button>
-
-                                </div>
-                                </div>
-                                
+                       <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                              <button class="btn-filtre">Activer les filtres</button>
                             </div>
+                          
                         </div>
+                        
+                       </div>
+                       <div class="filtre">
+                           <div class="row">
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label for="omb-historique-select" class="control-label col-sm-2">Compte</label>
+                                            <div class="col-sm-8">
+                                              <select class="form-control" id="omb-historique-select">
+                                                          <option>Compte Epargne<span class="fa fa-chevron-down"></span></ option>
+                                                          <option>Compte Joint</option>
+                                                          <option>Compte Bloqué</option>
+                                                      </select>
+                                            </div>
+                                      </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                   <div class="form-group">
+                                      <label for="omb-historique-select" class="date control-label col-sm-2">Date:</label>
+                                      <div class="col-sm-8">
+                                     
+                                        <input type="date" class="form-control omb-form-control"> 
+                                      </div>
+                                    </div>
+                                </div> 
+                            </div>
+                           
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="form-group">
+                                   <label for="omb-historique-select" class="date control-label col-sm-2">Debit:</label>       
+                                      <div class="col-sm-8">
+                                            <input type="text" class="form-control omb-form-control">
+                                      </div>
+                                </div>
+                              </div>
+                              <div class=" col-lg-6 ">
+                                  <div class="form-group">
+                                     <label for="omb-historique-select" class="date control-label col-sm-2">Crédit:</label>
+                                          
+                                      <div class="col-sm-8">
+                                      
+                                            <input type="text" class="form-control omb-form-control">
+                                      </div>
+                                  </div>
+                              </div> 
+                            </div> 
+                            <div class="row">
+                                <div class=" col-lg-6 ">
+                                      <div class="form-group">
+                                          <label for="omb-historique-select" class="date control-label col-sm-2">Opération</label>
+                                                  
+                                          <div class="col-sm-8">
+                                              <select class="form-control" id="omb-historique-select">
+                                                  <option>Tous<span class="fa fa-chevron-down"></span>
+                                                  </option>     
+                                              </select>
+                                          </div>
+                                      </div>
+                                </div> 
+                                <div class=" col-lg-6 ">
+                                      <div class="form-group">
+                                          <label for="omb-historique-select" class="date control-label col-sm-2">Devise</label>
+                                                  
+                                          <div class="col-sm-8">
+                                              <select class="form-control" id="omb-historique-select">
+                                                  <option>XOF <span class="fa fa-chevron-down"></span></option>
+                                                  <option>EURO</option>
+                                     
+                                              </select>
+                                          </div>
+                                      </div>
+                                </div>
+                              
+                              
+                          </div>
+                         <div class="row">
+                            <div class="col-lg-offset-3 col-lg-8 btn-historique">
+                            <div class="wrapper">
+                              <div class="form-group">
+                                 <button type="reset" class="btn btn-primary">Réinitialiser</button>
+                                <button type="submit" class="btn btn-primary">Confirmer</button>
+
+                              </div>
+                        </div>
+              
+                    </div>
+                    </div>            
+               </div> <!-- filtre -->               
+                        
                         <div class="row">
                             <div class="table-responsive col-lg-12">
                               <table class="table table-striped">
                                 <thead class="thead-inverse">
                                   <tr>
                                     <th>Date</th>
-                                    <th>Libellé</th>
-                                    <th>Description</th>
-                                    <th>Retrait</th>
-                                    <th>Dépôt</th>
-                                    <th>Solde</th>
+                                    <th>Opération</th>
+                                    <th>Débit</th>
+                                    <th>Crédit</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -256,33 +260,25 @@
                                     <td>18/11/2016</td>
                                     <td>Sxxxxxxxxx</td>
                                     <td>Retrait xxxxxx</td>
-                                    <td>Retrait xxxxxx</td>
                                     <td>blllidhdhdf</td>
-                                    <td>2547889</td>
                                   </tr>
                                   <tr>
                                     <td>26/11/2016</td>
                                     <td>Pxxxxxxxxx</td>
-                                    <td>ghjlms xxxxxx</td>
                                     <td>hdyiljn xxxxxx</td>
                                     <td>bloiudhdhdf</td>
-                                    <td>78542</td>
                                   </tr>
                                   <tr>
                                     <td>18/11/2016</td>
                                     <td>Sxxxxxxxxx</td>
                                     <td>Retrait xxxxxx</td>
-                                    <td>Retrait xxxxxx</td>
                                     <td>blllidhdhdf</td>
-                                    <td>2547889</td>
                                   </tr>
                                   <tr>
                                     <td>26/11/2016</td>
                                     <td>Pxxxxxxxxx</td>
-                                    <td>ghjlms xxxxxx</td>
                                     <td>hdyiljn xxxxxx</td>
                                     <td>bloiudhdhdf</td>
-                                    <td>78542</td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -304,55 +300,48 @@
         </div><!-- omb-container -->
       </section>
 
-      <footer>
-        <div class="row">
-            <div class="col-12">
-              <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    
-
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse" id="navbar-collapse-footer">
-                            <ul class="nav navbar-nav navbar-center navbar-middle">
-                             
-                               <li class="active"><a href="#" >Visite guidée<span class="sr-only">(current)</span></a></li>
-                              <li><a href="#">Guide utilisateur</a></li>
-                              <li><a href="#">Sécurité</a></li>
-                              <li><a href="#">Mentions légales</a></li>
-                              
-                            </ul>
-                             <ul class="nav navbar-nav navbar-right">
-                           <li><a class="navbar-brand omb-logo" href="#">
-                              <img src="../assets/images/logo-cofina.png" alt="Aller à l'accueil" />
-                            </a></li>
-                             
-                          </ul>
-                      
-                           
-                      </div><!-- /.navbar-collapse -->
-                      <span class="omb-copyright">&copy; Atos 2016</span>
-
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-footer" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                            </button>
-                           
-                      </div><!-- navbar-header -->
-
-                </div><!-- /.container-fluid -->
-              </nav>  
-            </div>
-        </div>
-      </footer>  
+          
 
       <script src="../assets/bootstrap/js/npm.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
       <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
       <script src="../assets/js/script.js"></script>
     </div><!-- omb-wrapper -->
+     <footer>
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                           <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-footer" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                          </button>
+                 
+                        </div><!-- navbar-header -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-footer">
+                            <ul class="nav navbar-nav navbar-center navbar-middle">
+                               
+                                <li><a href="#" >Visite guidée<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Guide utilisateur</a></li>
+                                <li><a href="#">Sécurité</a></li>
+                                <li><a href="#">Mentions légales</a></li>
+                                <li><a class="omb-copyright">&copy; Atos 2016</a ></li>
+                                
+                            </ul>
+                           
+                        </div><!-- /.navbar-collapse -->
+                        
+                     
+
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>  
+        </footer>  
   </body>
 </html>

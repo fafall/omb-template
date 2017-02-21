@@ -1,78 +1,337 @@
-@media (max-width: 768px){
-	
-	header .navbar-default
-	{
-		background:transparent;
-		opacity:1;
-		width: 90%;
-		margin:0 auto;
-	}
-	header .omb-logo,
-    header .navbar-header:hover{
-		background: transparent;
-	
-   }
+/* Large Devices, Wide Screens */
 
-   .navbar-brand img{
-	width: 80%;
-   }
+  @media only screen and (max-width : 1200px) {
 
-  	#omb-login-page header .navbar-default .navbar-collapse{
-   	     background: #000;
-       opacity: .62;
-      text-align: center;
-      border: none;
-      margin-left: 0;
-		height: auto !important;
-   }  
-   .navbar-default .navbar-toggle,
-   .navbar-default .navbar-toggle:focus, 
-   .navbar-default .navbar-toggle:hover{
-    border-color: #5f6062;
-    background: #5f6062;
-    opacity: 1;
+    /** tableau de bord**/
+
+  	.omb-homepage .omb-contenu .omb-droite .row{
+    		margin-left: 0px;
+            padding-left: 15px;
+    	}
+    		/*.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}*/
+    /** page de login **/
+
+    	.navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+    	/*.navbar-right{
+    		margin-top:-33px;
+    	}*/
     }
 
-    .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-   }
+
+    /* Medium Devices, Desktops */
+
+    @media only screen and (max-width : 992px) {
+
+          /** tableau de bord**/
+
+    	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: 0px;
+    	}
+    		/*.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}
+*/
+    	/** page de login **/
+
+    	.navbar-right{
+    		margin-top:8px;
+    	}
+    	.navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+        footer .navbar-default ul {
+            width:100%;
+        }
+        .omb-homepage .omb-dash .omb-menu li a, .omb-internal .omb-container .omb-left-menu li a{
+            font-size: 0.7em;
+         }
+        /* .omb-droite{
+            float: right;
+         }*/
+          #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 60%;
+        }
+         
+    }
+
+    /* Small Devices, Tablets */
+
+    @media only screen and (max-width : 768px) {
 
 
-}/** end media 768px **/
+          /** tableau de bord**/
+
+    	.omb-homepage .omb-contenu h2 {
+    		font-size:25px;
+    	}
+    	.omb-homepage .omb-contenu .btn-red {
+    		margin-right: 10px;
+    	}
+    	.omb-homepage .omb-contenu .omb-message,
+        .omb-homepage .omb-contenu .omb-virement,
+        .omb-homepage .omb-contenu .omb-carte{
+            margin-left: -30px;
+        }
+        .omb-homepage .omb-contenu .omb-message{
+            margin-top:15px;
+        }
+    		/*.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}*/
+    	/** mes demandes accueil **/
+    	
+		 .omb-internal .omb-content .image-demande
+		{
+		  width: 100px;
+		  height:100px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay span
+		{  
+		  display: none;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+		 font-size:8px;
+		 float:left;
+		}
+		.omb-internal .omb-content .descript-demande a{
+		  font-size: 16px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-carte{
+		  margin:20px 0 0;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-service{
+		  margin:20px 28px 0px;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash{
+		  margin:20px 0 0;
+		}
+		.omb-internal .omb-content .omb-demande .omb-overlay .info-releve{
+		  margin:20px 0 0;
+		}
+		
+		/** login page **/
+		header .navbar-default
+		{
+			background:transparent;
+			opacity:1;
+			/*width: 90%;*/
+			margin:0 auto;
+		}
+		header .omb-logo,
+	    header .navbar-header:hover{
+			background: transparent;
+		
+	   }
+       header .navbar-default li a{
+        text-align: center;
+       }
+
+	   .navbar-brand img{
+		width: 80%;
+	   }
+
+	  	
+	   .navbar-default .navbar-toggle,
+	   .navbar-default .navbar-toggle:focus, 
+	   .navbar-default .navbar-toggle:hover{
+	    border-color: #5f6062;
+	    background: #5f6062;
+	    opacity: 1;
+	    }
+
+	    .navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	   }	
+
+	   .navbar-nav{
+    		float: none;
+    		font-size: 11px;
+    	}
+    	
+    	/*footer .navbar-default ul {
+            width:100%;
+        }*/
+         footer .navbar-toggle{
+            top:-8px;
+        }
+        footer .navbar-collapse{
+            background-color: #5f6062;
+        }
+        footer .navbar-default ul li {
+            display: block;
+            position: relative;
+            width: auto;
+        }
+    	/**tableau de bord **/
+    	
+           .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu {
+    		width: 25%;
+    		border:none;
+    	}
+         .omb-homepage .omb-dash .omb-menu li a, .omb-internal .omb-container .omb-left-menu li a{
+            font-size: 0.7em;
+         }
+          .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu{
+            width: 100%;
+            border:none;
+        }
+         .omb-dash .logo{
+           padding-left: 0px;
+        }
+         .omb-left-menu .navbar-toggle{
+            top:-40px;
+        }
+         #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 80%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+
+      /** tableau de bord**/
 
 
-/** small devices **/
+    @media only screen and (max-width : 480px) {
 
-@media (max-width:468px){
-	.navbar-brand img{
-		width: 55%;
-	}
-	#omb-content{
-		margin-top: 10%;
-	}
+          /** tableau de bord**/
+          #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
+            width: 100%;
+        }
 
-	#omb-content h2{
-		font-size: 1em; 
-		margin-bottom: 15px;
-	}
-	#omb-content label{
-		font-size: 0.8em;
-	}
-	#omb-content .form-control{
-		height: 30px;
-	}
-	/*icone input */
-	.has-feedback label~.form-control-feedback {
-		top: 33px;
-	}
-	#omb-content .omb-pave div{
-		height: 35px;
-		line-height: 35px;
-	}
-	#omb-content .omb-login-bloc .submit-button{
-		font-size: 1em;
-	}
-	#omb-content .omb-login-bloc .omb-oubli-connexion a{
-		font-size: 0.8em;
-	}
-}
+          .omb-homepage .omb-menu, .omb-internal .omb-container .omb-left-menu{
+    		width: 100%;
+    		border:none;
+    	}
+        .omb-left-menu .navbar-toggle{
+            top:-40px;
+        }
+        footer .navbar-toggle{
+            top:-8px;
+        }
+        footer .navbar-collapse{
+            background-color: #5f6062;
+        }
+        footer .navbar-default ul li {
+            display: block;
+            position: relative;
+            width: auto;
+        }
+        .omb-dash .logo{
+           padding-left: 0px;
+        }
+        
+    	.navbar-default .navbar-collapse,
+        .navbar-default .navbar-form{
+            border-color: transparent;
+        } 
+       
+    	.omb-homepage .omb-contenu h2 {
+    		font-size:15px;
+    	}
+    	.omb-homepage .omb-contenu .btn-red {
+    		margin-right: 10px;
+    	}
+    	.omb-homepage .omb-contenu .omb-message,
+    	.omb-homepage .omb-contenu .omb-virement,
+    	.omb-homepage .omb-contenu .omb-carte{
+    		margin-left: -30px;
+    	}
+        .omb-homepage .omb-contenu .omb-message{
+            margin-top:15px;
+        }
+    		/*.omb-homepage .omb-contenu .omb-message{
+    			margin-top: 15px;
+    		}*/
+           
+    	/** Login page **/
+    	/*#omb-login-page .navbar-right,.navbar-center{
+    		margin-top:6px;
+	      margin-left: 0;
+			height: auto !important;
+    	}
+
+    	#omb-login-page header .navbar-default .navbar-collapse{
+	   	     background: #000;
+	       opacity: .62;
+	      text-align: center;
+	      border: none;
+	      margin-left: 0;
+			height: auto !important;
+	   }  
+	   /*#omb-dashboard footer .navbar-default .navbar-collapse{
+    		border:none;
+    		background-color: #5f6062;
+    		height: auto !important;
+    		
+    	}
+
+    	#omb-dashboard  footer .navbar-default .navbar-collapse a{
+    		color:#fff;
+    	}
+    	    	#omb-dashboard footer .navbar-default .navbar-collapse a:hover{
+    		color:#b10021;
+    	}*/
+    	.navbar-brand img{
+			width: 55%;
+		}
+		#omb-content{
+			margin-top: 10%;
+		}
+
+		#omb-content h2{
+			font-size: 1em; 
+			margin-bottom: 15px;
+		}
+		#omb-content label{
+			font-size: 0.8em;
+		}
+		#omb-content .form-control{
+			height: 30px;
+		}
+		/*icone input */
+		.has-feedback label~.form-control-feedback {
+			top: 33px;
+		}
+		#omb-content .omb-pave div{
+			height: 35px;
+			line-height: 35px;
+		}
+		#omb-content .omb-login-bloc .submit-button{
+			font-size: 1em;
+		}
+		#omb-content .omb-login-bloc .omb-oubli-connexion a{
+			font-size: 0.8em;
+		}	
+	    
+        #omb-login-page #omb-content  .omb-retrouver h2{
+            font-size: 0.8em;
+        }
+          /** mes demandes Accueil **/		
+    }
+
+    /* Custom, iPhone Retina */ 
+
+    @media only screen and (max-width : 320px) {
+    	
+      .omb-dash .logo{
+            padding-left: 0px;
+        }
+       
+        #omb-login-page #omb-content h2{
+            font-size: 1em;
+        }
+ 
+    }
+
+

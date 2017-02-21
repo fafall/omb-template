@@ -43,37 +43,52 @@
 /* ============================================================================================================================
 == Page login
 ** ============================================================================================================================ */
-
+body,html{
+  height: 100%;
+}
+body{
+  max-width: 940px;
+  width: 100%;
+  margin:auto;
+    background:#f5f5f5;
+}
 .omb-wrapper{
-	width: 70%;
-	margin:auto;
-
-}
-h2{
-  font-size: 23px;
-}
-body#omb-login-page{
-	background-image:url('../images/login_bg.png') ;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	width: auto;
-	overflow-x: hidden; 
-	font-family: 'roboto thin', 'sans-serif';
-	font-size: 16px;
+	min-height: calc(100% - 35px);
 	
 }
 
-#omb-login-page .omb-overlay{
-	background:rgba(0,0,0,.1);
-	height: 100vh;
+
+h2{
+  font-size: 23px;
 }
-#omb-login-page header{
+body#omb-login-page .omb-overlay{
+	background-image:url('../images/login_bg.png') ;
+	background-size: cover;
+	background-repeat: no-repeat;
+		width: auto;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+	font-family: 'roboto thin', 'sans-serif';
+	font-size: 15px;
+	min-height:calc(100% - 35px);
+	
+	;
+  
+ 
+}
+
+ #omb-login-page .navbar-header{
+	margin-left : 20px;
+	
+} 
+
+/* #omb-login-page header{
 	background:#fff;
 
-}
+} */
+
 #omb-login-page .omb-container-header{
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding-top: 8px;
 }
@@ -101,12 +116,15 @@ header .omb-logo,
 	opacity:1;
 }
 
-footer .navbar-brand img,
-#omb-login-page .navbar-brand img{
+footer .navbar-brand img{
 	width: 70%;
 	display: inline-block;
 }
 
+#omb-login-page .navbar-brand img{
+	width: 100%;
+	display: inline-block;
+}
 
 #omb-login-page header .navbar-default .navbar-nav>li>a{
 	color:#000;
@@ -141,22 +159,59 @@ footer .navbar-brand img,
  /*
  ** login bloc 
  */
- #omb-login-page #omb-content{
- 	margin-top: 14%;
+ #omb-login-page .login{
+ 	margin-top : 0;
  }
-#omb-login-page #omb-content .omb-login-bloc{
+ #omb-login-page #omb-content .omb-login-bloc{
+   margin: auto;
+ }
+#omb-login-page #omb-content .omb-login-bloc,
+#omb-login-page #omb-content .omb-retrouver{
  	background:rgba(0,0,0, .62);
  	padding: 1% 0;
- 	text-align: center;
  	border-radius: 5px;
   box-shadow: 0 2px 4px #000; 
-  width: 80%;
-  margin: auto;
+ }
+ #omb-login-page #omb-content .omb-retrouver{
+   margin-top:89px;  
  }
 
+ #omb-login-page #omb-content .omb-login-bloc{
+    width: 80%;
+    text-align: center;
+	margin-top : 40px;
+  margin-bottom: 10px;
+ }
+ #omb-login-page #omb-content .omb-retrouver .text p{
+  color:#fff;
+  font-size:13px;
+  background: rgba(0,0,0,0.2);
+  padding: 14px;
+  line-height: 23px;
+  height:115px;
+ }
+  #omb-login-page #omb-content .omb-retrouver span{
+    color: #fff;
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    font-size: 25px;
+    padding: 1px;
+  }
+ #omb-login-page #omb-content  .omb-retrouver h2{
+  text-align: center;
+ }
  #omb-login-page #omb-content .omb-login-bloc .form-group{
  	margin-top: 40px;
  }
+  #omb-login-page #omb-content .omb-login-bloc .omb-num{
+    margin-bottom:40px;
+  }
+  #omb-login-page #omb-content .omb-login-bloc p{
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
  #omb-login-page #omb-content .omb-container-login{ opacity:1; }
   #omb-login-page #omb-content h2{
   	/* color:#e3212e; */
@@ -196,6 +251,7 @@ footer .navbar-brand img,
 		   	border-radius:0;
 		   	width: 60%;
 		   	margin:auto ;
+			margin-top : 0px;
   /*  	color:#b20; */
 	   /* ++ */ color:#fff;
 	   	padding-left: 42.5px;
@@ -234,18 +290,22 @@ footer .navbar-brand img,
 	width: 60%;
 	margin: 30px auto ;
 	padding:0;
+	
 }
 #omb-login-page #omb-content .omb-pave .ligne{
  	margin: 0;
  }
+ 
 #omb-login-page  #omb-content .omb-pave div{
  	background:#fff;
     text-align: center;
- 	border-bottom:1px solid rgba(0,0,0,.62);
+	border-bottom:1px solid rgba(0,0,0,.62);
+ 	border-top:1px solid rgba(0,0,0,.62);
  	border-right:1px solid rgba(0,0,0,.62);
- 	 height: 45px;
- 	 line-height: 45px;
- 	 vertical-align: middle;
+	border-left:1px solid rgba(0,0,0,.62);
+ 	height: 45px;
+ 	line-height: 45px;
+ 	vertical-align: middle;
 }
  #omb-login-page  #omb-content .omb-pave div a{
    	text-decoration: none;
@@ -254,18 +314,26 @@ footer .navbar-brand img,
    	font-weight: 700;
    }
    /** bouton valider **/
-#omb-login-page     #omb-content .omb-login-bloc .submit-button{
-     	background:#e3212e;
-     	color:#fff;
-     	text-transform: uppercase;
-     	text-align: center;
-     	width: 60%;
-     	letter-spacing: 1.2px;
-     	border:none;
-     	font-size:1em;
-     	margin-bottom: 20px;
-     	font-weight: 700;
+#omb-login-page     #omb-content .omb-login-bloc .submit-button,
+#omb-login-page     #omb-content .omb-retrouver .submit-button{
+     background:#e3212e;
+     color:#fff;
+     width:100%;
+     text-align: center;
+     font-size: 12px;
+     letter-spacing: 1.2px;
+     border:none;
+     margin-bottom: 20px;
+     font-weight: 700;
      }
+     #omb-login-page     #omb-content .omb-login-bloc .submit-button{
+      text-transform: uppercase;
+      width: 60%;
+      font-size:1em;
+
+     }
+		
+	 
 #omb-login-page #omb-content .omb-login-bloc .submit-button:hover{
       	background:#fff;
       	 color:#e3212e;
@@ -295,7 +363,7 @@ footer .navbar-brand img,
   	margin: 0;
   }
 
-body.omb-internal{
+body{
 	overflow-x:hidden; 
 
 }
@@ -303,18 +371,41 @@ body.omb-internal{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
       background:#fff;
-       box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
+       /*box-shadow: 6px 5px 5px rgba(0,0,0,.25),-6px -5px 5px rgba(0,0,0,.25);
     /*     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow:0 3px 8 0 rgba(0,0,0,0.2), 0 0 0 1px rgba();
         transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1); */
+        border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -ms-box-shadow: 0 0 10px #ccc;
+    -o-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    -webkit-animation: appear 0.7s;
+    -moz-animation: appear 0.7s;
+    -ms-animation: appear 0.7s;
+    -o-animation: appear 0.7s;
+    animation: appear 0.7s;
 }
 /* header */
 .omb-internal .navbar-default,
  .omb-internal  header .omb-logo{
 	background: transparent;
 	border:none;
-	margin-left: 0;
+  margin-bottom:0px;
  }
+ .omb-internal .navbar-default,
+ {
+  margin-left: 0;
+ }
+ .omb-internal  header .omb-logo{
+  margin-left: 15px;
+ }
+ .omb-internal  header .omb-logo img{
+  width: 172px;
+ }
+
 
  .omb-internal header .navbar-default .container-fluid{
  	background:#5f6062;
@@ -323,38 +414,42 @@ body.omb-internal{
  }
 
  .omb-internal header .navbar-right li a{
-	padding: 5px 15px ;
+	padding: 0px 15px ;
 }
  .omb-internal header .navbar-right li a i{
  	color:#fff;
  }
+ /*.omb-internal header .navbar-right li a .active{
+  color:#b10021;
+ }*/
 
   .omb-internal .glyphicon:before{
-  	font-size: 1.2em;
+  	font-size: 1em;
   }
 
    .omb-internal  .omb-welcome-bloc{
-	 background:rgba(92,0,20,.7);
+    background: rgba(95,96,98,0.2);
 	/* -moz-box-shadow: 0px 4px 6px #333;
 	-webkit-box-shadow: 0px 4px 6px #333;
 	 box-shadow: 0px 4px 6px #333; */
 	     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    -o-transform:rotate(-3deg);
-      -webkit-transform:rotate(-3deg);
-    -moz-transform:rotate(-3deg);
-     transform: rotate(-3deg); 
 	padding: 0px 20px;
 	float:right;
 	display: inline-block;
+  margin-right: 11px;
 	text-align: center;
-	color:#fff; 
+	color:#000; 
 	border-radius:5px;
    }
 
-     .omb-internal  .omb-welcome-bloc h2{
+     .omb-internal  .omb-welcome-bloc h5{
      	margin-top: 10px;
+      font-weight: bold;
+      color:#b10021;
      }
+      .omb-internal  .omb-welcome-bloc p{
+        font-size:12px
+      }
    .omb-internal  .omb-welcome-bloc .omb-date{
     	font-weight: 700;
     	
@@ -363,15 +458,15 @@ body.omb-internal{
      	display: inline-block;
      	padding:0 20px;
      }
-   .omb-internal  .omb-welcome-bloc .omb-solde p:first-child{
+  /* .omb-internal  .omb-welcome-bloc .omb-solde p:first-child{
    	border-right:1px solid rgba(255,255,255,.5);
-   }
+   }*/
     .omb-internal  .omb-welcome-bloc .omb-solde p span{
     	font-weight: 700;
     }
 
    .omb-internal section{
-   	margin-top: 5%;
+   	margin-top: 30px;
    } 
    /*  ./header */ 
 
@@ -382,6 +477,13 @@ body.omb-internal{
      	padding: 1% 0;
 
     }
+    .omb-internal .omb-container .omb-left-menu{
+       padding-left: 0;
+       padding-bottom: 0px;
+       padding-top: 0px;
+       width: 23%;
+    }
+   
       .omb-container .omb-sous-menu {
       	padding: 0;
       }
@@ -450,18 +552,15 @@ body.omb-internal{
   	text-transform: uppercase;
   	color:#000;
   	transition:all .6s ease;
-  	letter-spacing: 1.5px;
   	overflow: hidden;
     border-bottom:1px solid rgba(95,96,98,.3);
   	text-decoration: none;
-  	padding: 12px 0px 12px 0px;
-  	margin: 0px 0 12px 0;
+  	padding: 10px 0px 10px 0px;
   	display: block;
   	position: relative;
   	font-size: 0.85em;
-  	text-align: center;
-
 }
+    
 
   .omb-internal .omb-container  .omb-left-menu li:last-child a{
   	border-bottom:none;
@@ -493,34 +592,37 @@ body.omb-internal{
 			}
 
  .omb-internal .omb-container  .omb-left-menu li a i{
- 	
- 	padding-right: 5%;
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 5%;
+    margin-bottom: 2px;
+    margin-top: 2px;
  }
-
-
-
  /**  ./left menu + horizontal sous menu**/
 
  /** content modifiable **/
    .omb-internal .omb-content{
    	width: 90%;
-   	margin: 0 auto 8%;
+   	margin: 0 auto 4%;
 
    }
-
+  .omb-internal .omb-content .omb-titre-demande h2{
+    font-size: 23px; 
+    margin: 1% auto 5%;
+  }
    .omb-internal .omb-content h2{
    	text-align: center;
     color: #b10021;
     text-transform: uppercase;
-    margin:8% auto 5% ;
+    margin:4% auto 5% ;
+    margin-bottom: 15px;
    }
 
   .omb-internal .omb-content .omb-asterix{
   	font-size: 0.9em;
   	margin-top: 10px;
+  }
+  .omb-internal .omb-content #omb-compte-grise{
+    background-color: #dcdcdc
   }
    .omb-internal .omb-content .omb-asterix span{
    	color:#b10021;
@@ -538,20 +640,14 @@ body.omb-internal{
      }
 
      .omb-internal .omb-content .omb-group{
-     	border:1px solid rgba(0,0,0,.25);
+     	
      	margin: 1% 0 5%;
-     	box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
-     	border-left: 5px solid #000;
-     	box-sizing: border-box;
-        border-top-left-radius: 5px;
-     	border-bottom-left-radius: 5px;
      }
     .omb-internal .omb-content .omb-group h3{
-    	background:#dcdcdc;
     	margin: 0;
-    	padding:2% 1%;
+    	padding:1% 1%;
     	text-transform: uppercase;
-    	font-size: 1.3em;
+    	font-size: 1em;
 
     }
 
@@ -562,39 +658,29 @@ body.omb-internal{
 	
      #omb-ouverture-compte .omb-content .omb-type-de-compte{
 	 }
-
-     .omb-internal .omb-content .omb-type-de-compte{
-
-     	border-left-color:#b10021;
-     }
-    .omb-internal .omb-content .omb-type-de-compte h3{
-    	color:#b10021;
-    }
-
      .omb-internal .omb-content .omb-epargne-choisi{
      	border-left-color:#0083c3;
      }
-    .omb-internal .omb-content .omb-epargne-choisi h3{
-    	color:#0083c3;
+    .omb-internal .omb-content .omb-epargne-choisi h3, 
+    .omb-internal .omb-content .omb-type-de-virement h3,
+    .omb-internal .omb-content .omb-prelevement h3,
+    .omb-internal .omb-content .omb-type-de-compte h3,
+    .omb-internal .omb-type-fonds h3,
+    .omb-internal .disposition-recap-content h3
+      {
+    	color: grey;
+    font-weight: bold;
     }
-     .omb-internal .omb-content .omb-type-de-virement{
-     	border-left-color:#b10021;
-     }
-    .omb-internal .omb-content .omb-type-de-virement h3{
-    	color:#b10021;
-    }   
-      .omb-internal .omb-content .omb-prelevement{
-     	border-left-color:#0083c3;
-     }
-    .omb-internal .omb-content .omb-prelevement h3{
-    	color:#0083c3;
-    }   
+      .omb-internal .disposition-recap-content h3{
+        font-size: 15px;
+      }
+  
 /* rgb(251,0,254) == rose
 #00b337= vert **/
 
     .omb-internal .omb-content .omb-group .wrapper{
-    	margin: 20px 0 10px;
-    	padding: 0 2%;
+    	margin: 10px 0 10px;
+    	padding: 2% 2%;
     }
 
      .omb-internal .omb-content .omb-group label{
@@ -602,7 +688,7 @@ body.omb-internal{
    }
     .omb-internal .omb-content .omb-group .form-control{
     	display: inline-block;
-    	width: 45%;
+    	width: 80%;
    
     }
     /** bloc epargne **/
@@ -613,9 +699,7 @@ body.omb-internal{
       	width: 100%;
       }
     .omb-internal .omb-content .omb-group  .input-group{
-    	width: 45%;
-    	left: 53%;
-        top: -27px;
+    	width: 90%;
     
     }
 
@@ -628,19 +712,13 @@ body.omb-internal{
 
         }
      
-      .omb-internal .omb-content .omb-group select{
-      	background:#5f6062;
-      	color:#fff;
-      }
 /* bloc type de virement **/
 
   .omb-internal .omb-content .omb-type-de-virement .wrapper{
   	text-align: center;
 
   }
-    .omb-internal .omb-content .omb-type-de-virement label{
-    	margin:0 10%;
-    }
+   
     /** bloc frequence prelevement **/
     #motifHelp{
     	display: block;
@@ -650,7 +728,7 @@ body.omb-internal{
     }
        
       .omb-internal .omb-content .omb-prelevement .form-control{
-      	width:72%;
+      	width:100%;
       }
 
 
@@ -671,6 +749,25 @@ margin-right: 8%;
 	background:#b10021;
 	border:1px solid #fff;
 
+}
+.omb-internal .omb-content .btn-filtre{
+  background:#dcdcdc;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+.omb-internal .omb-content .btn-historique{
+  margin-bottom:15px;
+}
+.omb-internal .omb-content .btn-historique button{
+  width: 30%; 
+  padding-top:5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  background:#b10021;
+  border:1px solid #fff;
+
 
 }
 .omb-internal .omb-content .omb-button button[type="reset"]{
@@ -680,6 +777,12 @@ margin-right: 8%;
 	color:#b10021;
 }
 
+.omb-internal .omb-content .btn-historique button[type="reset"]{
+  margin-right: 10%;
+  background:#fff;
+  border-color:#b10021;
+  color:#b10021;
+}
 
 
 /* ============================================================================================================================
@@ -691,11 +794,14 @@ margin-right: 8%;
 } */
  .omb-no-padding{
  	padding:0;
+    
  }
   .omb-no-margin{
   	margin: 0;
   }
-  
+  .omb-internal .omb-content .omb-solde-compte a{
+    color:#b10021;
+  }
   
  .glyphicon-pencil {
 	font-size: xx-small;
@@ -703,10 +809,7 @@ margin-right: 8%;
 	color : #000000;
   }
   
-body#omb-solde-compte{
-	overflow-x:hidden; 
 
-}
 #omb-solde-compte .omb-wrapper{
 	 /*    box-shadow: 0 0 10px #ccc; */
   
@@ -752,9 +855,6 @@ body#omb-solde-compte{
 	border-radius:5px;
    }
 
-     #omb-solde-compte  .omb-welcome-bloc h2{
-     	margin-top: 10px;
-     }
    #omb-solde-compte  .omb-welcome-bloc .omb-date{
     	font-weight: 700;
     	
@@ -796,7 +896,7 @@ body#omb-solde-compte{
 
 }
  .omb-container .omb-sous-menu ul{
- 	height: 47px;
+ 	height: 37px;
  	display: table;
  	width: 100%;
  }
@@ -899,10 +999,10 @@ body#omb-solde-compte{
     margin-bottom: 10px;
  }
 
- table thead, table tbody {
-   background-color:#ffffff;
-   color:#000000;
-   box-shadow: 0px 0px 10px #000000;
+.omb-solde-compte table thead, .omb-solde-compte table tbody {
+   background-color:#fff;
+   color:#000;
+   box-shadow: 0px 0px 10px #000;
 }
 
 #omb-solde-compte header .navbar-right li a{
@@ -929,29 +1029,51 @@ body#omb-solde-compte{
    #omb-solde-compte .omb-content .omb-devise label{
     	margin-right: 24px;
     }
-     #omb-solde-compte .omb-content .omb-devise .form-control,
+     #omb-solde-compte .omb-content .omb-devise .form-control
      {
-     	display: inline-block;
-     	background:#5f6062;
-     	width: 50%;
-     	color:#fff;
-		margin-top: 20px;
-		border-left-color : gray;
+     	width:45%;
+      display: inline-block;
+      background-color: #5f6062;
+      color:#fff;
+      margin-top:25px;
      }
 
 
 
 /** footer **/
 
+
 footer{
-	
-	background: rgba(95,96,98,0.2);
-	padding: 10px 0px 0;
+  background: #5f6062;
+  height: 35px; 
+
+}
+footer .navbar-default{
+ min-height: auto;
+  width: 100%;
+  text-align: center;
+}
+footer .navbar-default ul{
+  display: table;
+  width: 70%;
+  margin:auto;
+  float: none;
+}
+footer .navbar-default ul li{
+  display: table-cell;
+  width: 20%;
 }
 footer .navbar-default .navbar-nav a{
-	color:#5f6061;
-	font-size: 0.9em;
+    color:#fff;
+    padding: 7px 3px;
+    font-size:12px;
 }
+footer .navbar-default {
+    background-color: transparent;
+    border:none;
+    margin-bottom: 0px;
+}
+
 footer .navbar-default .navbar-nav>.active>a, 
 footer .navbar-default .navbar-nav>.active>a:focus, 
 footer .navbar-default .navbar-nav>.active>a:hover
@@ -960,21 +1082,18 @@ footer .navbar-default .navbar-nav>.active>a:hover
     background-color: transparent;
    
 }
+/*.omb-wrapper{
+    position: relative;
+    min-height: calc(100% - 35px);
+}*/
 
-footer img{
-	float:right;
-	position: relative;
-	top:-17px;
-
-}
 
 footer .omb-copyright{
-	text-align: center;
-	display: block;
-	font-weight: 700;
-	text-decoration: underline;
+    
+  
+    font-weight: 700;
+  
 }
-
 
 
 
@@ -1067,8 +1186,8 @@ footer .omb-copyright{
 /** Historique des opérations **/
 
  .omb-historique .form-group{
-        border:1px solid rgba(0,0,0,.25);
-        margin: 1% 0 5%;
+       /* border:1px solid rgba(0,0,0,.25);*/
+            margin: 3% 0 1%;
         /*box-shadow: 0 6px 20px 0 rgba(0,0,0,.25); */
         box-sizing: border-box;
         
@@ -1081,24 +1200,27 @@ footer .omb-copyright{
  .omb-historique .form-group h3{
         background:#dcdcdc;
         margin: 0;
-        padding:2% 1%;
+        padding:1% 1%;
         text-transform: uppercase;
-        font-size: 1.3em;
+        font-size: 1em;
         color:#b10021;
 
     }
-.omb-historique .form-group label {
-    margin-right: 22%;
+    .omb-historique .form-group label{
+      margin-top:3px;
+    }
+.omb-historique .form-group label,
+.omb-historique .form-group input {
+    margin-right: 10%;
 }
+
 .omb-historique .omb-devise label {
     margin-right: 27%;
 }
 .omb-historique .form-group .periode {
     margin-right: 40%;
 }
-.omb-historique .form-group .date{
-    margin-right: 5%;
-}
+
 .omb-historique .form-group .omb-date {
     margin-left: 10%;
 }
@@ -1106,6 +1228,11 @@ footer .omb-copyright{
 .omb-historique .form-group .form-control {
     display: inline-block;
     width: 45%;
+}
+.omb-historique .form-group .omb-form-control {
+    width: 100%;
+    height:25px;
+
 }
 .omb-historique .form-group .wrapper {
     margin: 20px 0 10px;
@@ -1194,10 +1321,11 @@ footer .omb-copyright{
   text-align: right;
 }
 .omb-internal .omb-content .omb-validation{
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .omb-internal .omb-content .omb-recapitulatif{
   margin-top: 25px;
+  padding-left:0px;
 }
 .omb-internal .omb-content .omb-validation button{
    width: 27%; 
@@ -1234,7 +1362,7 @@ footer .omb-copyright{
 /**Résumé virement **/
 .omb-internal .omb-content .omb-resume-virement{
 
-  margin-top: 40px;
+  margin-top: 28px;
   padding-left:5px;
 }
 .omb-internal .omb-content .omb-resume-date{
@@ -1262,11 +1390,24 @@ footer .omb-copyright{
     overflow: hidden;
     cursor: pointer;
 }
+.omb-internal .omb-content .omb-resume-adresse{
+  background-color: #dcdcdc;
+  font-weight: bold;
+  color:grey;
+}
+.omb-internal .omb-content .omb-warning .fa-warning{
+  margin-right:10px;
+}
+.omb-internal .omb-content .omb-warning p{
+  color:#CD0127;
+  margin-top:18px;
+}
 .omb-internal .omb-content .omb-resume-compte:hover{
   border:2px solid #b10021;
 }
 .omb-internal .omb-content .omb-resume-compte strong{
   color:#b10021;
+  text-transform: uppercase;
 }
 .omb-internal .omb-content .omb-resume-date strong,
 .omb-internal .omb-content .omb-resume-motif strong{
@@ -1285,6 +1426,12 @@ footer .omb-copyright{
   font-size: 35px;
   color: #5cc569;
 }
+.omb-internal .omb-content .omb-icone-echec{
+   margin-top: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: #b10021; 
+}
 .omb-internal .omb-content .omb-big{
   font-size: 18px;
   text-align: center;
@@ -1297,10 +1444,7 @@ footer .omb-copyright{
 
 /** Demandes Coficash **/
 
-.omb-demandes-coficash .omb-liste-demandes button {
-  background-image: url(../images/cheque.png) no-repeat;
- 
-}
+
 
 
 /* ==============================================================================
@@ -1339,22 +1483,31 @@ footer .omb-copyright{
 .omb-liste-virement ul,
 .omb-liste-beneficiaire ul{
   padding-left: 0;
-  margin-top: 8%;
+  margin-top: 4%;
 }
-
+.omb-liste-demandes ul{
+  padding-left: 0;
+}
+.omb-liste-demandes ul li{
+  list-style: none;
+}
 .omb-liste-virement ul li,
-.omb-liste-beneficiaire ul li{
+.omb-liste-beneficiaire ul li,
+.disposition-historique{
   list-style: none;
   border-bottom:1px solid #dcdfe0;
   box-sizing: border-box;
 
 
 }
-.omb-liste-virement .omb-padding{
+.omb-liste-virement .omb-padding,
+.omb-mise-disposition .omb-padding{
   padding-top: 10px;
 }
 .omb-liste-virement .list-group-item-heading,
-.omb-liste-virement .montant{
+.omb-liste-virement .montant,
+.omb-mise-disposition .list-group-item-heading,
+.omb-mise-disposition .montant{
   font-size: 14px;
   font-weight: 600;
   color:#5f6062;
@@ -1362,30 +1515,39 @@ footer .omb-copyright{
 }
 
 .omb-liste-virement .list-group-item-text,
-.omb-liste-virement .date{
+.omb-liste-virement .date,
+.omb-mise-disposition .list-group-item-text,
+.omb-mise-disposition  .date{
   font-size: 12px;
   color:#999;
 
 }
-.omb-liste-virement .omb-direction{
+.omb-liste-virement .omb-direction,
+.omb-mise-disposition .omb-direction{
   font-size: 25px;
   color:#999;
   margin-top: 10px;
 }
 .omb-liste-virement .omb-statut .omb-rejete,
-.omb-liste-virement .omb-detail .omb-ligne .omb-rejete{
+.omb-liste-virement .omb-detail .omb-ligne .omb-rejete,
+.omb-mise-disposition .omb-statut .omb-rejete,
+.omb-mise-disposition .omb-detail .omb-ligne .omb-rejete{
 color:#b1230f;
 text-align: center;
 }
 .omb-liste-virement .omb-statut .omb-accepte,
-.omb-liste-virement .omb-detail .omb-ligne .omb-accepte{
+.omb-liste-virement .omb-detail .omb-ligne .omb-accepte,
+.omb-mise-disposition .omb-statut .omb-accepte,
+.omb-mise-disposition .omb-detail .omb-ligne .omb-accepte{
   color:#1ae40f;
   text-align: center;
 }
-.omb-liste-virement .omb-statut span{
+.omb-liste-virement .omb-statut span,
+.omb-mise-disposition .omb-statut span{
  font-size: 20px;
 }
-.omb-liste-virement .omb-voir-plus .omb-btn{
+.omb-liste-virement .omb-voir-plus .omb-btn,
+.omb-mise-disposition .omb-voir-plus .omb-btn{
    display: inline-block;
     height: 84px;
     padding: 10px;
@@ -1395,25 +1557,30 @@ text-align: center;
     cursor:pointer;
 }
 .omb-liste-virement .omb-detail,
-.omb-liste-beneficiaire .omb-detail{
+.omb-liste-beneficiaire .omb-detail,
+.omb-mise-disposition .omb-detail{
   background:#a9abae;
   color:#5f6062;
   padding: 20px;
  display: none;
  transition:all 1s ease-in-out;
 }
-.omb-liste-virement .omb-collapse{
+.omb-liste-virement .omb-collapse,
+.omb-mise-disposition .omb-collapse{
   display: block;
-  width: 100.5%;
+  width: 101.4%;
 }
-.omb-liste-virement .omb-detail .row{
+.omb-liste-virement .omb-detail .row,
+.omb-mise-disposition .omb-detail .row{
   border-bottom:1px solid #dcdcdc;
   padding: 10px 0;
 }
-.omb-liste-virement .omb-detail .row:last-child{
+.omb-liste-virement .omb-detail .row:last-child,
+.omb-mise-disposition .omb-detail .row:last-child{
   border:none;
 }
-.omb-liste-virement .omb-detail .omb-ligne div:nth-child(1){
+.omb-liste-virement .omb-detail .omb-ligne div:nth-child(1),
+.omb-mise-disposition .omb-detail .omb-ligne div:nth-child(1){
 
   font-size:14px;
   font-weight: 700;
@@ -1427,20 +1594,34 @@ letter-spacing: 1.5px
 ** ============================================================================ */
 
 
-.omb-liste-beneficiaire .btn-default{
+.omb-liste-beneficiaire .btn-default,
+.omb-demandes-coficash .omb-liste-demandes .btn-default,
+.omb-mise-disposition .btn-default{
 /*  background:rgba(177,0,33,.7); */
     color: rgba(92,0,20,.7);
    background:#fff;
     border:1px dotted rgba(92,0,20,.7) ;
 
 }
+.omb-demandes-coficash .omb-liste-demandes .btn-default a,
+.omb-mise-disposition .btn-default a{
+   color: rgba(92,0,20,.7); 
+   margin-left:8px;
+   text-transform: uppercase;
+
+}
 .omb-liste-beneficiaire .btn-default .fa-user-plus{
   font-size: 30px;
   margin-right: 10px;
 }
-.omb-liste-beneficiaire .btn-default:hover{
+.omb-liste-beneficiaire .btn-default:hover,
+.omb-demandes-coficash .omb-liste-demandes .btn-default a:hover, 
+.omb-mes-annulations .omb-liste-annulations .btn-default a:hover,
+.omb-mise-disposition .btn-default a:hover{
+
   color:#000;
 /* color:#006412; */
+text-decoration: none;
 }
 
 .omb-liste-beneficiaire .omb-entete{
@@ -1460,7 +1641,7 @@ letter-spacing: 1.5px
   border: none;
 }
 .omb-liste-beneficiaire .omb-content-list{
-  padding: 10px 0; 
+  padding: 5px 0; 
   border-bottom:1px dotted #000;
   text-align: center;
 
@@ -1487,7 +1668,7 @@ letter-spacing: 1.5px
 #omb-modal-ajout-beneficiaire .omb-wrapper-modal{
   background:#fff;
   width: 35%;
-  margin: 20% auto 0;
+  margin: 16% auto 0;
 }
 
 #omb-modal-ajout-beneficiaire h2{
@@ -1585,12 +1766,1257 @@ font-size: 14px;
   border-bottom: none !important;
 }
 
-/** Commander coficash**/
+/** demandes et annulations**/
 
-.omb-internal .omb-content .omb-commande-coficash h3{
-  background-color: #dcdcdc;
-  padding: 3% 2%;
-  text-transform: uppercase;
-  font-size: 1.3em;
+.omb-demandes-coficash .omb-liste-demandes .btn-default img, .omb-mes-annulations .omb-liste-annulations .btn-default img{
+    width:30px;
+    height: 30px;
 }
 
+/** accueil demandes et annulations **/
+.omb-internal .omb-content .image-demande, .omb-internal .omb-content .image-annulation
+{
+  width:32%;
+}
+.omb-internal .omb-content .omb-demande .omb-overlay {
+  position:absolute;
+  top:0px;
+  left:0px;
+  overflow:hidden;
+  width:300px;
+  height:300px;
+  opacity:0;
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out;
+   padding-top:30px;
+  padding-bottom: 10px;
+  background:rgba(95,96,98,.4); 
+  cursor: pointer;
+
+}
+
+.omb-mes-annulations .omb-liste-annulations .omb-annulation .descript-annulation{
+	color : #000;
+}
+
+.omb-internal .omb-content .omb-demande .omb-overlay span
+{
+  color:#fff;
+  position:relative;
+  font-size:14px;
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  
+}
+
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte {
+	text-decoration:none;
+	display:inline-block;
+	text-transform:uppercase;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 4px;
+	background-color:transparent;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	padding:7px 14px;
+}
+
+
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-carte:hover,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service:hover {
+  box-shadow:0 0 5px #fff;
+}
+.omb-internal .omb-content .omb-demande:hover .omb-overlay,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-coficash,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-releve,
+.omb-internal .omb-content .omb-demande .omb-overlay .info-service,
+.omb-internal .omb-content .omb-demande:hover .omb-overlay .info-carte {
+  opacity:1;
+}
+
+.omb-internal .omb-content .omb-demande, .omb-internal .omb-content .omb-annulation{
+    margin-top: 35px;
+    text-align: center;
+    overflow:hidden;
+    position:relative;
+    cursor:default;
+}
+
+.omb-internal .omb-content .descript-demande, .omb-internal .omb-content .descript-annulation{
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family:'Roboto-Bold', sans-serif;
+  text-align: center;
+}
+
+.omb-internal .omb-content .descript-demande a{
+  color:#000;
+  text-decoration: none;
+}
+
+/** Formulaire de commande **/
+
+.omb-internal .omb-content .omb-commande-coficash .wrapper{
+    margin: 10px 0 10px;
+    padding: 0 2%;
+}
+
+
+/** Historiquue coficash **/
+.omb-demandes-coficash .omb-content .omb-historique-entete h5,
+.omb-internal .omb-content .omb-commande-coficash h5{
+  background-color: #dcdcdc;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:grey;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu,
+.omb-demandes-coficash .omb-content .omb-type-compte,
+.omb-internal .omb-content .omb-rel{
+  padding-left:0px;
+  list-style-type:none;
+}
+.omb-internal .omb-content .omb-releve-contenu{
+    padding: 1rem .5rem 1rem 25px;
+    border-bottom: solid 1px #dcdfe0;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.omb-internal .omb-content .omb-releve-contenu .omb-date{
+  padding-top: 5px;
+  font-weight: bold;
+  color:grey;
+}
+.omb-internal .omb-content .omb-liste-demandes h5, .omb-internal .omb-content .omb-liste-annulations h5{
+  font-weight: bold;
+}
+.omb-internal .omb-releve-contenu span,
+.omb-internal .omb-releve-contenu button{
+  padding-top: 5px;
+  color:#b10021;
+}
+.omb-internal .omb-releve-contenu button{
+  border:none;
+}
+.omb-liste-demandes .omb-releve-parent{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+    display: none;
+}
+
+.omb-demandes-coficash .omb-content .omb-historique-contenu li,
+.omb-demandes-coficash .omb-content .omb-type-compte  li{
+  padding:1% 2%;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-cheque img,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon img{
+  width:30px;
+  height:30px;
+}
+
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-enveloppe span,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-bank span{
+  color:#CD0127;
+  font-size: 27px;
+  margin-left: 110px;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-enveloppe .text,
+.omb-demandes-coficash .omb-content .omb-type-compte .icon-bank .text{
+  text-align: center;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon img{
+  margin-left:60px;
+}
+
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over:hover h5,
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over:hover img{
+  cursor: pointer;
+  color:#CD0127;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .omb-over.active{
+  background-color: #dcdcdc;
+  border-radius: 4px;
+  color:grey;
+}
+.omb-demandes-coficash .omb-content .omb-type-compte .icon .text{
+  text-align: center;
+}
+.omb-demandes-coficash .omb-content .infos-cheques{
+  padding-left: 0;
+}
+.omb-demandes-coficash .omb-content  .infos-cheques .omb-paragraphe{
+  padding-left: 50px;
+  margin-top:10px;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-enveloppe span,
+.omb-demandes-coficash .omb-content .omb-historique-contenu .icone-bank span{
+  font-size:27px;
+  color:#CD0127;
+  margin-right:15px;
+}
+.omb-demandes-coficash .omb-content  .infos-suite{
+  border-left: solid 1px #dcdfe0;
+}
+.omb-demandes-coficash .omb-content .omb-historique-contenu .up{
+  text-transform: uppercase;
+}
+.omb-demandes-coficash .omb-content .omb-ombre, .omb-annulations-coficash .omb-content .omb-ombre, .omb-annulations-carte .omb-content .omb-ombre{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.25);
+}
+.omb-demandes-coficash .omb-content .omb-trait{
+  border-bottom: solid 1px #dcdfe0;
+}
+
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes
+** ============================================================================ */
+
+.omb-internal .omb-content .omb-mes-cartes{
+	margin-top : 20px;
+
+}
+
+
+.omb-internal .omb-content .card_h2 {
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-mes-cartes button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content .omb-mes-cartes button p{
+
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-mes-cartes2 button{
+	
+	color: #000;
+	border-color : #dcdfe0;
+	width : 100%;
+	background-color: #fff;
+    border-top: solid 1px #dcdfe0;
+    border-right: solid 1px #dcdfe0;
+    border-bottom: solid 1px #dcdfe0;
+    border-left: solid 3px #b10021;
+   
+}
+
+.omb-internal .omb-content #newcard{
+	margin-top : 20px;
+	margin-right : 0;
+	border : solid 1px #b10021;
+	color : #b10021;
+	padding-bottom : 0;
+}
+
+.omb-internal .omb-content #newcard:hover{
+	background-color : #b10021;
+	color : #fff;
+}
+
+
+
+.omb-internal .omb-content .form-group  #omb-tri-compte{
+	margin-top : 30px;
+	background : #5f6062;
+	color : #fff;
+	width : 100%;
+}
+
+
+/* BEGIN*/
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative;
+	margin-top : 30px;	
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* END */
+
+.omb-internal  .omb-content .btn-group{
+	border-left: solid 3px #b10021;
+	
+}
+
+.omb-internal  .omb-content .btn-group button{
+	margin-left : 10px;
+	margin-top : 10px;
+	
+}
+
+.omb-internal  .omb-content .MonCollapse2 button{
+	margin-bottom : 20px; 
+}
+
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Modale opposition carte
+** ============================================================================ */
+
+.hr {
+	
+	border: 1px solid #b10021;	
+}
+
+.omb-internal  .omb-content .omb-mes-cartes h2{
+
+	color : #b10021;
+	text-align : center;
+}
+
+.omb-internal  .omb-content .modal-h3{
+
+	color : #b10021;
+}
+
+.omb-mes-cartes .modal-header,
+.omb-mon-profil .modal-header{
+	
+	background-color : #B7B8BC;
+}
+
+.omb-internal  .omb-content .omb-envoyer{	
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	margin-left: 60%;
+	text-align : center;
+	margin-bottom : 20px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	border-radius : 10px;
+}
+
+.omb-internal  .omb-content .form-group .omb-envoyer a{
+	color : #fff;
+	text-decoration : none;
+}
+
+.omb-internal  .omb-content .omb-retour {
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background : #fff;
+	border:1px solid #fff;
+	margin-left: 60%;
+	text-align : center;
+	margin-bottom : 20px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	border-radius : 10px;
+	border-color : #b10021;
+	color : #b10021;
+
+}
+
+.omb-internal  .omb-content .form-group .omb-retour a {
+	color : #b10021;
+	text-decoration : none;
+}
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Modale gérer mes plafonds
+** ============================================================================ */
+
+.plafonds-table {
+	
+	border : 0;
+	width : 100%;
+}
+
+.plafonds-table thead, .plafonds-table tbody {
+	background-color : #fff;
+	color : #b10021;	
+	box-shadow : none;
+	
+}
+
+.plafonds-table thead tr th{
+	background : #fff;
+	text-align : center; 
+}
+
+
+/* ==============================================================================
+== Partie Demandes : Mes cartes : Demander carte
+** ============================================================================ */
+
+.demande-carte{
+	
+	border : 0;
+	width : 100%;
+}
+
+.omb-internal  .omb-content .demande-carte tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
+
+.omb-internal  .omb-content .demande-carte tbody td{
+	width : 50%;
+}
+
+.omb-internal  .omb-content .form-group  #omb-compte-select{
+	background : #5f6062;
+	width : 80%;
+	color : #fff;
+}
+.omb-internal  .omb-content .form-group  #omb-historique-select{
+  background : #5f6062;
+  width: 100%;
+  color : #fff;
+  height: 25px;
+  padding: 0 12px;
+}
+
+.omb-internal  .omb-content .form-group #omb-debit-autorise {
+	width : 80%;
+	height : 34px;	
+	border-radius : 4px;
+}
+
+.omb-internal  .omb-content #titulaire {
+	width : 80%;
+	height : 34px;
+	border-radius : 4px;
+}
+
+.obligatoire {
+	color : red;
+}
+
+.omb-internal  .omb-content .form-group .omb-boutons button{	
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	margin-right: 3%;
+	text-align : center;
+	margin-bottom : 20px;
+}
+	
+.omb-internal  .omb-content .form-group .omb-boutons button[type="reset"] {	
+	background:#fff;
+	border-color:#b10021;
+	color:#b10021;	
+}
+	
+
+.omb-internal  .omb-content .form-group .omb-boutons  #btn-retour {
+	background : #fff;
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+}
+
+.omb-liste-demandes  .omb-content-list{
+  background-color: #dcdcdc;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.omb-liste-demandes  .omb-content-list .omb-btn{
+    display: inline-block;
+    padding-top:5px;
+    float: right;
+    cursor: pointer;
+}
+.omb-liste-demandes .omb-collapse{
+    display:block;
+    
+}
+
+
+/* ==============================================================================
+== Changement de mot de passe
+** ============================================================================ */
+
+.omb-mon-profil header .navbar-right li a .active{
+	color : #e3212e;
+}
+
+.omb-mon-profil  .omb-login-bloc .modal-dialog{
+	width : 415px;
+}
+
+.omb-mon-profil .modal-dialog .modal-body{
+	padding : 0px;
+}
+
+.omb-mon-profil  .modal-dialog .modal-content{
+	width : 415px;
+	border : 1px solid #999;
+	margin : auto;
+
+}
+
+.omb-mon-profil .omb-login-bloc{
+    width: 415px;
+    text-align: center;
+	margin : auto;
+	background:rgba(0,0,0, .62);
+ 	padding: 1% 0;
+	box-shadow: 0 2px 4px #000;
+}
+
+.omb-mon-profil  .omb-login-bloc .form-group{
+ 	margin-top: 40px;
+}
+  
+.omb-mon-profil  .omb-login-bloc p{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+  
+.omb-mon-profil  .omb-container-login{ 
+	opacity:1;
+	width : 100%;
+	
+}
+
+.omb-mon-profil  #open-modal h2{
+  	color : #fff;
+  	text-transform: uppercase;
+  	opacity:1;
+  	font-size:1.3em;
+  	margin-bottom: 30px;
+  	font-family: 'Roboto-Bold', sans-serif;
+}
+  
+.omb-mon-profil  #open-modal label{
+   	color:#fff;
+   	font-size: 13px;
+    position: absolute;
+    left: 32%;
+    top: 9px;
+    font-size: 16px;
+    transition:all ease .5s
+
+}
+    
+.omb-mon-profil  #open-modal label.omb-move{
+      	left: 23%;
+        top: -20px;
+        font-size: 10px;
+
+}
+     
+.omb-mon-profil .form-control{
+	border:none;
+	border-bottom: 2px solid #fff;
+    background:transparent;
+	opacity:1;
+	border-radius:0;
+	width: 60%;
+	margin:auto ;
+	margin-top : 0px;
+	color:#fff;
+	padding-left: 42.5px;
+	font-size: 20px;
+}
+   
+/** icône dans champ input **/
+
+.omb-mon-profil #open-modal .has-feedback label~.form-control-feedback{
+   	top: 9px;
+   	color:#fff;
+}
+
+.omb-mon-profil #open-modal .form-control-feedback{
+   	left: 20%;
+}
+
+/**texte help champ input **/
+
+.omb-mon-profil #open-modal .text-muted{
+   	color:#fff;
+}
+  
+ #open-modal small{
+  	font-size: 63%;
+  	text-align: left !important;
+  	display: none;
+}
+
+.omb-mon-profil .omb-pave {
+	text-align: left;
+	list-style: none;
+	background:#000;
+	width: 60%;
+	margin: 30px auto ;
+	padding:0;
+	
+}
+
+.omb-mon-profil  .omb-pave .ligne{
+ 	margin: 0;
+}
+ 
+.omb-mon-profil .omb-pave div{
+ 	background:#fff;
+    text-align: center;
+	border-bottom:1px solid rgba(0,0,0,.62);
+ 	border-top:1px solid rgba(0,0,0,.62);
+ 	border-right:1px solid rgba(0,0,0,.62);
+	border-left:1px solid rgba(0,0,0,.62);
+ 	height: 45px;
+ 	line-height: 45px;
+ 	vertical-align: middle;
+}
+
+.omb-mon-profil .omb-pave div a{
+   	text-decoration: none;
+   	font-size: 1.2em;
+   	color:#e3212e;
+   	font-weight: 700;
+}
+   /** bouton valider **/
+.omb-mon-profil .omb-login-bloc .submit-button{
+     background:#e3212e;
+     color:#fff;
+     width:100%;
+     text-align: center;
+     font-size: 12px;
+     letter-spacing: 1.2px;
+     border:none;
+     margin-bottom: 20px;
+     font-weight: 700;
+}
+
+.omb-mon-profil .omb-login-bloc .submit-button{
+      text-transform: uppercase;
+      width: 60%;
+      font-size:1em;
+
+}		
+	 
+.omb-mon-profil .omb-login-bloc .submit-button:hover{
+      	background:#fff;
+      	 color:#e3212e;
+}
+
+
+
+/** Mise à disposition de fonds **/
+
+.omb-internal .omb-titre-disposition h2{
+      margin: 0 auto 5%;
+    }
+    .omb-internal .omb-type-fonds input
+    {
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143
+    }
+    .omb-internal .omb-mise-disposition ul{
+      list-style-type: none;
+      padding-left: 0;
+    }
+.omb-internal .disposition-recap 
+    {
+       box-shadow: 0 2px 4px #000; 
+    }
+    .omb-internal .disposition-recap-content{
+      padding-left: 0;
+      margin-right: 0;
+      margin-left: 0;
+      border-bottom: solid 1px #dcdfe0;
+    padding: 1rem 0;
+    }
+    .omb-internal .recap-content-titre h5{
+      font-weight: bold;
+    }
+    .omb-mise-disposition .search-disposition{
+      margin-top:10px;
+      margin-bottom:30px;
+    }
+  
+
+/* ==============================================================================
+== Abonnement
+** ============================================================================ */
+
+.omb-internal  .omb-content .abonnement tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
+
+.omb-internal  .omb-content .abonnement tbody td{
+	width : 50%;
+}
+
+
+/* ==============================================================================
+== Annulations : Accueil
+** ============================================================================ */
+
+.omb-mes-annulations .omb-liste-annulations .btn-default a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+.omb-internal .omb-liste-annulations .collapse #link-check{
+	color:#000;
+	text-decoration: none;
+}
+
+
+
+/* ==============================================================================
+== Annulations : Coficash / Carte
+** ============================================================================ */
+
+.omb-internal .omb-content .omb-annul-coficash .wrapper, .omb-internal .omb-content .omb-annul-carte .wrapper{
+    margin: 10px 0 10px;
+    padding: 0 2%;
+}
+
+.omb-internal .omb-content .h2-coficash{
+	text-align : left;
+}
+
+.omb-internal .omb-content .omb-annul-coficash h5, .omb-internal .omb-content .omb-annul-carte h5{
+  background-color: #dcdcdc;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 1em;
+  color:grey;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+
+.omb-internal .omb-content .omb-annul-coficash h5 i, .omb-internal .omb-content .omb-annul-carte h5 i{
+	font-size: 0.8em;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte, .omb-annulations-carte .omb-content .omb-type-compte{
+  padding-left:0px;
+  list-style-type:none;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte  li, .omb-annulations-carte .omb-content .omb-type-compte  li{
+  padding:1% 2%;
+  margin-right:0px;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte #infos-perte, .omb-annulations-carte .omb-content .omb-type-compte #infos-perte{
+	width : 100%;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte .ligne1{
+	margin-bottom : 20px;
+}
+
+.omb-annulations-coficash .omb-content #valid, .omb-annulations-carte .omb-content #valid{
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;
+	margin-left : 45%;
+	text-align : center;
+	
+}
+
+.omb-annulations-coficash .omb-content #back, .omb-annulations-carte .omb-content #back{
+	background : #fff;
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;	
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	text-align : center;
+	
+}
+
+
+.omb-annulations-coficash .omb-content #back a, .omb-annulations-carte .omb-content #back a{
+	color:#000;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content #valid a, .omb-annulations-carte .omb-content #valid a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content .omb-type-compte  #recap, .omb-annulations-carte .omb-content .omb-type-compte  #recap{
+  padding:1% 2%;
+  text-align : center;
+  
+}
+
+.omb-annulations-coficash .omb-content #ok, .omb-annulations-carte .omb-content #ok {
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	background:#b10021;
+	border:1px solid #fff;	
+	text-align : center;
+	
+}
+
+.omb-annulations-coficash .omb-content #edit, .omb-annulations-carte .omb-content #edit{
+	margin-top : 20px;	 
+	width: 25%; 
+	text-transform: uppercase;
+	border:1px solid #fff;
+	margin-left : 45%;
+	text-align : center;
+	background:#fff;
+	border-color:#b10021;
+	color:#b10021;
+}
+
+.omb-annulations-coficash .omb-content #edit a, .omb-annulations-carte .omb-content #edit a{
+	color:#b10021;
+	text-decoration: none;
+}
+
+.omb-annulations-coficash .omb-content #ok a, .omb-annulations-carte .omb-content #ok a{
+	color:#fff;
+	text-decoration: none;
+}
+
+
+.omb-annulations-coficash .omb-content .retour, .omb-annulations-carte .omb-content .retour{
+	width : 40%;
+}
+
+
+/* ==============================================================================
+== Mon profil
+** ============================================================================ */
+
+.profil{
+	
+	border : 0;
+	width : 100%;
+}
+
+.omb-mon-profil .profil tbody {
+	background-color : #fff;
+	color : #000;	
+	box-shadow : none;
+	width : 100%;	
+}
+.omb-mon-profil .profil tbody td{
+	width : 50%;
+}
+.omb-mon-profil #profil-textbox{
+	width : 80%;
+	height : 34px;
+	border-radius : 4px;
+}
+
+.omb-mon-profil  .profil tbody td .link{
+   	font-size: 1em;
+   	color:#e3212e;
+   	font-weight: 600;
+	text-align : right;
+	cursor: pointer;
+	margin-left : 60px;
+	padding-top : 20px;
+	text-decoration: underline;
+}
+
+.omb-mon-profil #bouton-grise{
+    background-color: #e3212e;
+	border:1px solid #fff;
+	text-align : center;
+	text-transform: uppercase;
+	margin-left : 10px;
+	margin-top : 20px;
+	cursor: auto;
+	
+}
+
+/** paiements de facture***/
+
+
+.omb-liste-services img{
+  width:30%;
+}
+
+
+.omb-liste-services .titre-facture{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.omb-liste-services .omb-input{
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 34px;
+}
+.omb-liste-services .omb-input-1{
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 34px;
+}
+
+
+
+/* ==============================================================================
+== Ma messagerie
+** ============================================================================ */
+  
+.omb-messagerie header .navbar-right li a .active{
+	color : #e3212e;
+}  
+  
+.omb-messagerie .entete-msg{
+	max-width : 940px;
+	width : 100%;
+	height : 100%;
+	padding-top : 10px;
+	margin-top : 2px;
+	border : 1px solid #b10021;
+	border-radius: 5px;
+	padding-bottom : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	background-color : #b10021;
+	color : #fff;
+	font-size : 20px;
+	
+}
+
+.omb-messagerie .entete-msg #fermer{
+	margin-top : 10px;
+	margin-bottom : 10px;
+	color : #fff;
+	text-transform : none;
+	text-decoration : none;
+	padding-right : 8px;
+	padding-left : 8px;
+	padding-top : 2px;
+	padding-bottom : 2px;
+	border-radius: 50%;	
+	border: 2px solid white;
+	cursor : pointer;
+}
+ 
+.omb-messagerie .entete-msg .ligne{
+	margin-top : 10px;
+}
+
+.omb-messagerie .entete-msg .left{
+	text-transform : uppercase;
+}
+ 
+.omb-messagerie .entete-msg .right{
+	text-align : right;
+}
+
+.omb-messagerie .entete-msg  #small{	
+	font-size : 12px;
+	color : #fff;
+	text-decoration : none;
+}
+  
+.omb-messagerie section{
+	margin-top : 0px;
+}
+
+
+.omb-messagerie .omb-container .omb-left-menu{
+	background-color : #fff;
+}  
+
+.omb-messagerie #new-message{ 
+	margin : 20px;	 
+	width: 75%;	
+	background:rgb(95, 96, 98);
+	border:1px solid #b10021;	
+	text-align : center;
+	
+}
+
+
+.omb-messagerie .omb-container .omb-left-menu li a{
+	text-transform : none;
+	
+}
+
+.omb-messagerie .omb-container .omb-left-menu li a:after{
+	width : 0px;
+}
+
+.omb-messagerie #new-message a{ 
+	color : #fff;
+	text-decoration : none;
+}
+
+.omb-messagerie #filtre{
+	text-transform : uppercase;
+	margin : 10px;
+	cursor: auto;
+}
+
+.omb-messagerie .omb-container .omb-left-menu .fa-plus{
+	margin-left : 85px;
+	cursor : pointer;
+}
+
+.omb-messagerie .omb-container .omb-left-menu #nb-mess {
+	text-align : right;	
+	border-radius: 50%;
+	border: 2px solid red;
+}
+  
+.omb-messagerie .omb-container .omb-left-menu li input[type=radio]{
+	margin : 10px;
+	margin-right : 20px;
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg{
+	color : #000;
+	border-left : 1px solid rgb(220, 220, 220);
+	width : 79%;
+	
+	
+}
+
+.omb-messagerie .omb-container .omb-content table th{
+	color : rgb(95, 96, 98);
+	padding : 20px;
+	background-color : rgba(128, 128, 128, 0.1);
+	border-bottom : 1px solid rgb(220, 220, 220);
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg thead a{
+	color : rgb(95, 96, 98);
+	cursor : pointer;
+	text-transform : none; 
+}
+
+.omb-messagerie .omb-container .omb-content #long {
+	width : 70%;	
+}
+
+.omb-messagerie .omb-container .omb-content #tri{
+	width : 20%;	
+}
+
+.omb-messagerie .omb-container .omb-content #tri select{
+	width : 85%;	
+	border : 0;
+	border-right : 2px solid rgb(220, 220, 220);
+	border-left : 2px solid rgb(220, 220, 220);
+	background-color : rgba(128, 128, 128, 0);
+	cursor : pointer;
+}
+
+.omb-messagerie .omb-container .omb-content #third {
+	width : 10%;	
+	text-align : center;
+}
+
+.omb-messagerie .omb-container .omb-content table #msg{
+	padding : 10px;	
+	border-top : 1px solid rgb(220, 220, 220);	
+}
+
+.omb-messagerie .omb-container .omb-content table #msg a{
+	color : #000;
+	text-transform : none;
+	cursor : pointer;
+	text-decoration : none;
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody th {
+	padding : 20px;
+	text-align : center;
+	color : rgb(95, 96, 98);
+	
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #date{	
+	text-align : right;	
+	border-top : 1px solid rgb(220, 220, 220);
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #court{
+	
+	padding : 10px;
+	border-bottom : 1px solid rgb(220, 220, 220);
+}
+
+.omb-messagerie .omb-container .omb-content .corps-msg tbody #sender{	
+	font-weight : bold;	
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td select{
+	width : 100%;
+	border : 0;
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td input[type=text]{
+	width : 100%;
+	border : 0;
+	
+}
+
+.omb-messagerie .omb-container .omb-content #new-msg-table td textarea{
+	width : 100%;
+	height : 100%;
+	padding-bottom : 150px;
+	border : 0;
+	padding-top : 20px;
+}
+
+.omb-messagerie  .omb-content #btn-send{	
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+	margin-bottom : 30px;
+	margin-left :50px;
+}
+	
+
+.omb-internal  .omb-content  #btn-pj {	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	margin-bottom : 30px;	
+	margin-left : 467%;
+}
+
+.omb-internal  .omb-content  #insert-pj {
+	margin-left : 25%;
+}
+
+
+.omb-messagerie  .omb-content #btn-answer{
+	background-color : #b10021;
+	border : 1px solid #b10021;
+	text-align : center;
+}
+
+.omb-messagerie .omb-container .omb-content table #msg-vue{
+	padding : 20px;	
+	border-top : 1px solid rgb(220, 220, 220);	
+}
+
+.omb-messagerie .omb-container .omb-content table #msg-vue a i{
+	color : #000;	
+	cursor : pointer;
+	text-decoration : underline;	
+}
+
+.omb-messagerie .omb-container .omb-content table tbody tr td #apercu{
+	
+	color : grey;
+}
+
+.omb-messagerie .omb-container .omb-content table #text-area{
+	border-top : 1px solid rgb(220, 220, 220);
+}
+
+.omb-internal  .omb-content  #select-fic{	
+	border : 1px solid rgba(95,96,98,0.3);
+	background-color : #dcdcdc;
+	color : #000;
+	text-align : center;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
