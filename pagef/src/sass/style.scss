@@ -1,0 +1,21 @@
+
+// bower:scss
+@import "../../dest/development/bower-components/bootstrap/scss/bootstrap.scss";
+@import "../../dest/development/bower-components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+
+
+@import "variables";
+@import "mixins";
+@import "modules/pourcentage";
+@import "bases";
+@import "modules/navigation";
+@import "modules/form";
+@import "modules/content-etape";
+@import "modules/tables";
+@import "modules/boutons";
+@import "modules/accordeon";
+@import "modules/media-queries";
+
+

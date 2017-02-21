@@ -1,0 +1,82 @@
+$color-even-cells : transparentize($lightyellow , .8);
+
+.green{color :$green;}
+.red{ color: $orange;}
+.yellow{color :$lightyellow;}
+
+.actif{ background-color:lighten($lightGrey,20);}
+
+.table{
+	font-size: 15px;
+	text-align: left;
+	width: 100%;
+	background-color: $white;
+ 
+   &, * {
+    border-color: $brown ;
+    }
+
+
+	
+	> thead,
+	> tbody,
+	> tfoot{
+		> tr {
+
+		
+			> th,
+			> td {
+				padding: 10px;
+				border-bottom:1px dotted $brown;
+				text-align: center;
+
+				
+			}
+		}
+	}
+
+	> thead > tr {
+		background:lighten($brown,10);
+		color:$beige;
+		border:1px dotted lighten($brown,10);
+		& :hover{ // & =parent
+			background:lighten($lightGrey,10);
+		}
+		> th {
+			border-bottom: 0px;
+			border:1px solid $white;
+			text-transform: uppercase;
+		    font-weight: 300;
+		    text-align: center;
+		    color: white;
+		   background: -webkit-linear-gradient(top, 
+			    	lighten($brown,10) , 
+			    	darken($lightyellow,10), 
+			    	lighten($brown,10));
+			    background: -o-linear-gradient(left,lighten($brown,10),darken($lightyellow,10), lighten($brown,10));
+		    position: relative;
+		    &:after {
+		      content: "";
+		      display: block;
+		      height: 5px;
+		      right: 0;
+		      left: 0;
+		      bottom: 0;
+		      background-color: $brown;
+		      position: absolute;
+		      }
+		}
+
+	}
+	> tbody{
+		
+		>tr{
+			border-bottom:1px dotted $brown;
+			&:last-child{
+				border-bottom: 0;
+				} 
+
+			}
+		}
+}
+			

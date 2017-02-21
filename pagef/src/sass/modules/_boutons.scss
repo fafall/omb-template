@@ -1,0 +1,94 @@
+ 
+.boutons{
+
+    @include marginTB(10%,0);
+  
+ a {
+    background: $brown;
+    border-bottom: 1px solid;
+    color: $white;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
+    &:hover{
+      color:$lightyellow;
+    }
+}
+   
+
+
+
+  .btn-annuler{
+    @extend %btn;
+    background:$noneColor;
+    border:1px solid $brown;
+    color:$brown;
+  }
+
+ .btn-add{
+     @extend %btn;
+     background:$lightyellow;
+      border:1px solid $brown;
+      color:$brown;
+      &:hover{
+        color:$brown;
+      }
+
+  }
+
+.btn-save {
+ @extend %btn;
+  border: 1px solid $white;
+  overflow: hidden;
+  
+  span {
+    z-index: 20;
+  }
+
+ 
+  
+  &:after {
+    background: $lightyellow;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+}
+
+.btn-save{
+  &:hover{
+     &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+   }
+
+  }
+}
+
+
+.btn-next,.btn-prev{
+  @extend %btn;
+  @include paddingTB(5.5px,5.5px);
+  width: 65%;
+  background:$lightBrown;
+}
+
+.accordeon-content &{
+  .btn{border-radius:50%;}
+ }
+}/** ./boutons **/
+
+
+.content .dropdown .btn{
+  background:lighten($lightyellow,20);
+  @include police($font-page,400,12px);
+  color:$black;
+  width: 100%;
+}

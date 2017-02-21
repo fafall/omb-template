@@ -1,0 +1,84 @@
+
+.modal-content{
+
+  @include marginTB(20%,0);
+    .modal-title{
+      
+        text-align: center;
+    }
+    .modal-body{
+      p{
+        text-align: center;
+
+      }
+
+    }
+
+
+}
+
+
+.login-form {
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  background:$beige;
+  
+  &:before {
+    @extend %beforeHLine;
+
+  }
+  .btn{
+    @extend %btn;
+  }
+  .col{
+    @include marginTB(10px,10px);
+  } 
+    .input-group{
+      align-items :flex-start;
+    }
+      label {
+        cursor: pointer;
+      
+          .input-group-addon{
+            border:0;
+            background-color: $white;
+            border: 1px solid $lightBorder;
+          }
+        }
+
+        .form-control{
+          @extend %inputText;
+        }
+        span{
+          color:$black;
+        }
+
+ 
+}/**login form **/
+
+
+
+.no-padding{
+  @include paddingLR(0,15px);
+} 
+
+  .p-forget {
+    margin-top: 1em;
+    color:$brown;
+    font-size:12px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+::placeholder { color: $lightGrey; }
+
+.modal-footer{
+
+  .btn{
+    background:$lightyellow;
+    color:$lightGrey;
+    @include police ($font-page,400,12px);
+  }
+
+}

@@ -1,0 +1,262 @@
+/** nav etapes **/
+
+$widthModal:50%;
+
+.clear{
+  clear: both;
+}
+
+
+.slide-toggle{
+  display: none;
+}
+
+.white-container{
+	background:$white;
+	@extend %shadow;
+}
+
+
+.slidemenu{
+ @include police($font-page,400,16px);
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+
+
+	 label{
+	  width: 14.2%;
+	  text-align: center;
+	  display: block;
+	  float: left;
+	  color: #333;
+	  opacity: 0.2;
+	  @extend %animation;
+	  &:hover{
+	  	cursor: pointer;
+	  color: #666;
+
+	  }
+	span{
+		display: block;
+ 	     @include paddingTB(10px,10px);
+ 	     @include paddingLR(10px,10px);
+	}
+	.icon{
+		font-size: 14px;
+		border: solid 2px $brown;
+		text-align: center;
+		height: 30px;
+		width: 30px;
+		display: block;
+		margin: 0 auto;
+		line-height: 28px;
+		border-radius: 50%;
+
+	  }
+
+   }
+
+
+
+
+    /*Bar Style*/
+
+	.slider{
+	  width: 100%;
+	  height: 5px;
+	  display: block;
+	  background: lighten($lightGrey,20);
+	  border-radius: 5px;
+
+		  .bar{
+		  width: 15%;
+		  height: 5px;
+		  background: $brown;
+		  border-radius: 5px;
+		  @extend %animation;	
+		}
+	}
+    .slide-toggle:checked + label{
+  		opacity: 1;
+	}
+
+
+	
+
+}/* ./slidemenu */
+
+
+
+$m : 0;
+$m15 : 15%;
+$m30 : 30%;
+$m42 : 42%;
+$m56 : 56%;
+$m70 : 70%;
+$m85 : 85%;
+
+$itemNumber :'1' ,'2' ,'3' ,'4' ,'5' ,'6','7';
+$itemNumberVal :$m, $m15,$m30 ,$m42 ,$m56 ,$m70 ,$m85;
+
+
+@for $i from 1 through length($itemNumberVal) {
+  $item: nth($itemNumber, $i);
+  $itemVal: nth($itemNumberVal, $i);
+  #slide-item-#{$item} {
+    &:checked{
+			~ .slider{
+				.bar{
+                     margin-left:$itemVal;
+				}
+			}
+		}
+  }
+}
+
+
+
+.separator-parent{
+    		position: relative;
+    		@include marginTB(0,20px);
+
+	.separator{
+		width: 15px;
+		height: 15px;
+		@include radius(50%);
+		background:lighten($lightyellow,20);
+	 	border:1px solid $brown;
+	 	margin: auto;
+	 
+
+	 &:before{
+	 	content:"";
+	 	width: 35%;
+	 	height: 1px;
+	 	background:$brown;
+	 	position: absolute;
+	 	top: 50%;
+	 	left: 10%;
+
+	 }
+	 &:after{
+	 	content:"";
+	 	width: 35%;
+	 	height: 1px;
+		position: absolute;
+	 	top: 50%;
+	 	right: 10%;
+	 	background:$brown;
+	 }
+}
+ 
+
+
+
+ 
+}
+
+section.header{
+ 	text-align: center;
+ 	@include marginTB(5%,5%);
+
+ 	p{
+ 		@include police($font-page,700,18px);
+ 	}
+ }
+
+
+.container-section{
+	background:$beige;
+	position: relative;
+
+	@include paddingTB(3%,3%);
+	@include paddingLR(8%,8%);
+	margin: auto;
+	 &:before {
+     @extend %beforeHLine;
+   }
+}
+/** design steps pages  **/
+
+.container-section {
+  .form-element {
+    .btn{
+    	@extend %btn;
+        position: absolute;
+        width: 14%;
+        top: 0 !important;
+        right: 16px;
+        padding: 11px;
+      }
+
+  }
+
+  .form-control{
+  	@extend %inputText;
+  }
+
+  .content{
+  	@extend %shadow;
+  	@include padding(24px);
+  	@include paddingTB(15px,10px);
+
+   .file{
+   	@include marginTB(5px,23px);
+
+   	 a.btn{
+   	 	@extend %btn;
+   	 	@include radius(50%);
+   	 }
+   	input{ 
+   		@include police($font-page,400,14px);
+        border:none;
+   	  }
+   }
+
+  	ul{list-style:none;
+  		
+  		@include margin(auto);
+  		@include padding(0px);
+  		&.no-border{
+	       		li{border:0;}
+	       	}
+       li{
+	       	border-bottom:1px solid $lightGrey;
+	       	@include paddingTB(10px,10px);
+	       	
+
+	       	&:last-child{
+	       		border-bottom:0;
+	       	}
+
+
+	       	div.file{
+	       		display: inline-block;
+	       		width: 32%;
+	       		text-align: center;
+
+	       		&:first-child{
+	       			text-align: left;
+	       		}
+                &:last-child{
+	       			text-align: right;
+	       		}
+		       	   span[data-toggle="modal"],span.red{
+		       	   	cursor: pointer;
+		       	   }
+
+	       		iframe{
+	       			width: 100%;
+	       			height: 500px;
+	       		}
+	       		.modal-dialog{
+	       			max-width: $widthModal;
+	       		}
+	       	}
+        }
+  	 }
+  }
+
+}
+

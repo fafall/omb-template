@@ -1,0 +1,310 @@
+/* header  & side menu **/
+
+$imgWidthMobile :150px;
+$imgHeightMobile :80px;
+
+$fontBase :16px;
+$radiusPercent :30%;
+
+$maxWidth:100%;
+img{
+	width: $imgWidthMobile;
+	height: $imgHeightMobile;
+}
+
+header{
+    &:after{
+    	content:"";
+    	display: block;
+    	width: 100%;
+    	background:$lightBorder;
+    	height: 1px;
+    }
+	.navbar{
+		@include paddingTB(0,0);
+		@include paddingLR(0,0);
+	}
+		.navbar-brand{
+			width: $maxWidth;
+		}
+			.dgid-site-name{
+				letter-spacing: 1.5px;
+			    background: -webkit-linear-gradient( left, 
+			    	$lightyellow , 
+			    	$black, 
+			    	$caramel, 
+			    	$lightyellow);
+			    background: -o-linear-gradient(left, $lightyellow, $black, $caramel, $lightyellow);
+			    -webkit-text-fill-color: transparent;
+			    -webkit-background-clip:text;
+			    font-size: $fontBase + 8px;
+
+			}
+
+		form{
+			.form-group{
+				position: relative;
+
+			}
+				
+			
+				.btn{
+					position: absolute;
+					top: 0;
+					border: none;
+				    color: $lightyellow;
+				    background:$noneColor;
+				    
+				   
+				}
+				.btn-plus{
+					right:0;
+				}
+				.form-control{
+	            	color: $lightGrey;
+					border: 2px solid $border-input-color;
+					@include radius(8px);
+					padding-left: 40px;
+					@include police($font-page,400,12px);
+				}
+		}
+		
+		.navbar-right
+		{
+			li{
+
+				a{
+					color:$caramel;
+				}
+			}
+		}
+} /*./header */
+
+
+
+.hide{
+	display: none;
+}
+.dgid-menu{
+	 a{
+		position: absolute;
+	    background: $brown;
+	    top: 40%;
+	    padding: 10px 20px;
+	    color:$lightyellow;
+	}
+
+}
+	
+.dgid-menu-principal{
+	 a{
+		 border-top-right-radius: $radiusPercent;
+	     border-bottom-right-radius: $radiusPercent;
+	    left: 0;
+	}
+}
+.dgid-outils {
+	a{
+	border-top-left-radius: $radiusPercent;
+    border-bottom-left-radius: $radiusPercent;
+    right: 0;
+   }
+}
+
+
+/***menu slide **/
+.menu-tab{
+  width: 75px;
+  height: 53px;
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  background: $brown;
+  left: 0px;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+  border-top-right-radius: $radiusPercent;
+ border-bottom-right-radius: $radiusPercent;
+  
+  div{
+    width: 30px;
+    height: 4px;
+    background-color: $lightyellow;
+    display: block;
+    border-radius:5px;
+    margin: 5px 20px;
+    transition: all .6s ease-in-out;
+
+    
+    &:nth-child(1){
+      margin-top: 14px;
+    }
+  }/*end of div*/
+}/*end of menu-tab*/
+.dropdown-menu{
+	right: 0;
+	text-align: center;
+	@include paddingTB(0,0);
+	@include marginTB(0,0);
+	background:$beige;
+
+}
+
+
+.menu-tab.active{
+  left: 250px;
+  top:0;
+  transition: all 600ms ease-in-out;
+  background-color: $brown;
+  border:1px solid $lightBorder;
+  
+    #one{
+      transform: translateY(9px) rotate(-135deg);
+      transition: all .6s ease-in-out;
+      background-color: $lightyellow;
+      
+    }
+    
+    #two{
+      opacity: 0;
+      transition: .4s ease;
+    }
+    
+    #three{
+      transform: translateY(-9px) rotate(-45deg);
+      transition: all .6s ease-in-out;
+      background-color: $lightyellow;
+    }
+}
+
+.menu-hide{
+	  width: 250px;
+	  left: -345px;
+	 min-height: -moz-calc(100% - (68px + 30px));
+	    min-height: -webkit-calc(100% - (68px + 30px));
+	    min-height: calc(100% - (68px + 30px));
+	  position: absolute;
+	  z-index: 10;
+	/*   top: 7.5%; */
+	  transition: all .6s ease-in-out;
+	  #etapes &{
+	  	top: 0;
+	  }
+  
+  nav{
+    ul{
+      li{
+        /* height: 50px; */
+        list-style-type: none;
+        text-align: center;
+        line-height: 50px;
+        transition: all .6s ease-in-out;
+        position: relative;
+        
+        &:hover{
+          background-color:lighten($brown,10);
+          /* transition: all .5s ease; */
+
+          a{
+          	color:$white;
+          }
+
+        }
+
+        a{
+         @include paddingTB(0,24px);
+          text-decoration: none;
+          color: $brown;
+          font-weight: 700;
+          
+
+        }
+      }/*end of li*/
+      li.dropdown{
+      		a{
+               color:$lightyellow;
+    		}
+    			&:hover{
+    			color:$lightyellow;
+    		}
+
+    	    .dropdown-menu{ //sous menu comme depot perquisition
+    	    	li{
+					a{
+	    	    		color:$brown;
+	    	    	}
+    	    	  &:hover{
+    	    			a{
+    	    			color:$white;
+    	    			}
+    	    		}
+    	   		 }
+    	    }
+
+      }
+    }/*end of ul*/
+    
+    
+  }/*end of nav*/
+}/*end of menu-hide*/
+.dropdown-header{
+color:$black;
+@include police($font-page,400,12px);
+}
+
+.menu-hide.show{
+  left: 0;
+  background-color:$beige;
+  transition: all .6s ease-in-out;
+
+}
+/** page etapes **/
+
+.notification{
+	a{
+		color:$brown;
+		@include police($font-page,400,18px);
+		
+	}
+	
+	.badge-info{
+		
+		color:$white;
+		@include marginLR(10px,0);
+		font-size: 100%;
+	}
+}
+.profil{
+
+	
+	.name{
+      @include police($font-page,700,16px);
+      color:$white;
+	}
+	
+}
+/** users options **/
+
+.users-options{
+	display: none;
+	position: absolute;
+    background: $beige;
+    z-index: 1;
+    right: 0;
+    width: 14.6%;
+    @include radius(4px);
+    @include paddingLR(10px,0);
+    border:1px solid lighten($brown,10);
+    border-top: 0;
+    transition: all .5s ease-in-out;
+    
+    a{
+    	color: $brown;
+
+	    &:hover{
+	    	color:$lightyellow;
+	    }
+    }
+}
+
+.show{display: block;}

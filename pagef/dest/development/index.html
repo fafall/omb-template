@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>geoportail</title>
+
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- endbower -->
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+  maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+<div class="home container-fluid">
+  <header>
+    <nav class="navbar ">
+      <div class="navbar-header">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-md-4">
+              <a class="navbar-brand" href="#">
+                <div class="row justify-content-between">
+                  <div class="col-4 col-md-6">
+                    <div class="dgid-logo">
+                      <img  src="assets/images/dgid-logo.png"   alt="Accueil DGID" />
+                    </div> 
+                  </div>
+                  <div class="col-4 col-md-6 align-self-center">
+                    <span class="dgid-site-name">Géoportail</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+            <div class="col-10 col-md-7">
+                <form class="search navbar-form navbar-left">
+                  <div class="form-group">
+                    <button class="btn btn-search " type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text search" class="form-control" placeholder="Rechercher une adresse, une donnée , un lieu ...">
+                    <button class="btn btn-plus" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </div>
+                </form>
+            </div>
+            <div class=".offset-1 col-2 col-md-1 profil align-self-center">
+              <div class="form-group">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="#" data-toggle="modal" data-target="#modalConnexion">
+                      <span class="fa fa-user fa-2x"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div> <!-- row -->
+      </div><!-- navbar-header -->
+    </nav>
+  </header>
+  
+  <!-- modalConnexion -->
+  <div id="modalConnexion" class="modal fade" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Mes cartes</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p class="titre-form">Merci de vous identifiez, <br> pour accéder à vos données!</p>
+          <div class="container">
+            <form class="login-form" method="post" >
+             <div class="form-group row">
+                <div class="col col-12">
+                  <div class="input-group">
+                    <label for="identifiant">
+                      <div class="input-group-addon">
+                        <span class="fa fa-user"></span>
+                      </div>
+                    </label>
+                    <input type="text" class="form-control" id="identifiant" placeholder="Identifiant">
+                  </div>
+                </div>
+                <div class="col col-12">
+                  <div class="input-group">
+                    <label for="password">
+                      <div class="input-group-addon">
+                        <span class="fa fa-key"></span>
+                      </div>
+                    </label>
+                    <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                  </div>
+                </div>
+                <div class="col col-12">
+                   <a href="etape1.html"><button type="submit" class="btn ">Se connecter</button></a>
+                 </div> 
+               </div>
+
+                <div class="col no-padding col-12">
+                  <a class="p-forget" href="#">Mot de passe Oublié ?</a>
+                </div>
+
+             </form> 
+          </div>
+        </div><!-- ./modal-body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">fermer</button>
+        </div><!-- ./modal-footer -->
+      </div> <!-- ./modal-content -->  
+    </div>
+  </div> <!-- /.modalConnexion -->
+  <div class="dgid-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593832.5085287904!2d-15.781293562880903!3d14.132945908062613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0x5a46a55099615940!2sSenegal!5e0!3m2!1sen!2s!4v1486123645525" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
+        <div class=" dgid-menu dgid-menu-principal">
+          <a href="#" alt="Menu"><span class="fa fa-bars fa-2x"></span></a>
+       </div><!-- dgid-menu-principal -->
+
+  <div class="menu-tab dgid-menu dgid-menu-principal">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+  </div>
+  <div class="menu-hide">
+    <nav >
+      <ul class="nav flex-column">
+        
+        <li class="nav-item"><a href="#"><span class="fa fa-home  fa-fw fa-lg"></span>
+                <span>Accueil</span></a></li>
+        <li class="nav-item"><a href="#"><span class="fa fa-newspaper-o  fa-fw fa-lg"></span><span>Actualités</span></a></li>
+        <li class="dropdown">
+                  <a class=" dropdown-toggle" data-toggle="dropdown" id="drop" href="#">Données Thématiques</a>
+
+                  <ul class="dropdown-menu" area-labelledby ="drop">
+                  <li class="dropdown-item">
+                    <a href="#"><span class="fa fa-tree fa-fw fa-lg"></span><span> Agriculture</span></a></li>
+                    <li class="dropdown-item">
+                   <a href="#"><span class="fa fa-scissors fa-fw fa-lg"></span><span> découpage</span></a></li>
+                
+                  </ul>
+        </li>
+
+        <li class="nav-item"><a href="#"><span class="fa fa-link fa-fw fa-lg"></span><span> Partenaires</span></a></li>
+         <li class="nav-item" ><a href="#">Link Four</a></li>
+           <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Procédures
+                  </a>
+                  <ul class="dropdown-menu">
+                      
+                      <h6 class="dropdown-header">
+                      <span class="fa fa-pencil-square-o fa-fw fa-lg"></span>
+                      <span>Immatriculation</span></h6>
+                      <li ><a href="#"><span class="fa fa-arrow-right fa-fw "></span><span>Dépot réquisition </span></a></li>
+                      <li ><a href="etape1.html"><span class="fa fa-arrow-right fa-fw "></span><span>Dépot perquisition </span></a></li>
+                        <div class="dropdown-divider"></div>
+                        
+
+                  </ul>
+
+
+                    </li>
+                   
+              
+
+      </ul>
+    </nav>
+  </div>
+  <div class="dgid-menu dgid-outils">
+    <a href="#" alt="Outils"><span class="fa fa-cogs fa-2x"></span></a>
+  </div><!-- dgid-outils -->
+
+   
+ 
+  
+        
+  
+    
+  </div><!-- ./container -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12">
+          <p>@ Copyright Atos 2017</p>
+        </div>
+      </div>   
+    </div>
+  </footer>
+
+
+</div>
+
+
+
+
+<!-- bower:js -->
+<script src="bower-components/jquery/dist/jquery.js"></script>
+<script src="bower-components/tether/dist/js/tether.js"></script>
+<script src="bower-components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/js/my-script.js"></script>
+<!-- endbower -->
+
+</body>
+</html>

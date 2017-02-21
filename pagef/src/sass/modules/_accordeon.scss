@@ -1,0 +1,111 @@
+
+
+.accordeon-content{
+
+	background:$brown;
+	@include paddingTB(0,10px);
+	@include radius(5px);
+	
+
+	#accordion{ background: #fff;}
+		/* .card{
+			border:0;
+			border-bottom: 1px solid $brown;
+		
+		} */
+
+
+	.card-header{
+		@include paddingLR(20px,10px);
+		background:$white;
+
+		a{
+			color:darken($caramel,10);
+			span{
+				
+				float: right;
+			   }
+		}
+	
+	}
+	.in {
+		   .card-header{
+				a{
+					color:$lightyellow;
+					transition: all .7s ease-in-out;
+				}
+		  }
+		}
+
+		ul{
+			list-style: none;
+			@include padding(0);
+
+
+
+		 li{
+		 	display: inline-block;
+		 	border:1px solid $lightBorder;
+		 	@include margin(8px);
+		 	
+		 	background:$white;
+		 	box-shadow: 
+			0 5px 15px 1px rgba($black, 0.6), 
+			0 0 200px 1px rgba($white, 0.5);
+			@include radius(10px);
+			@include padding(10px);
+
+ 			&:nth-child(1){
+		 	transform:rotate(5deg);
+		   }
+		 	&:nth-child(2){
+		 	transform:rotate(-6deg);
+		 	margin-top:10px;
+		   }
+		   &:nth-child(3){
+		 	transform:rotate(7deg);
+		   }
+
+		 }
+		 
+
+		 span{
+		 	@include police($font-page,400,11px);
+		 	color:$brown;
+		 	&:first-child{
+				@include police($font-page,700,11px);
+				@include marginLR(0,10px);
+		 	}
+
+		 }
+		}
+	   #mandataire {
+			ul,.left{
+				float: left;
+				width: 50%;
+
+			 li{
+			 	float: right;
+			 	transform:rotate(0deg);
+			 }
+			}
+
+		form{
+			.form-control{
+				@extend %inputAcc;
+
+
+				}
+			}
+
+	.boutons{
+		clear:both;
+		}
+	}
+	#doc-legal{
+		input{ border:0;
+		 @include police($font-page,400,13px);
+		}
+	}
+
+}

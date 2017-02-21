@@ -1,0 +1,58 @@
+/*** fonctions **/
+
+
+@mixin police($font,$weight,$length){
+	font-family:$font;
+	font-weight: $weight;
+	font-size: $length;
+}
+
+@mixin clearfix{
+	&:before,
+	&:after{
+		content:'';
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+@mixin radius($radius){
+	border-radius :$radius;
+}
+
+@mixin paddingLR($left,$right){
+	padding-left: $left;
+	padding-right: $right;
+}
+@mixin paddingTB($top,$bottom){
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+@mixin padding($padding){
+	padding:$padding;
+}
+
+@mixin marginLR($left,$right){
+	margin-left: $left;
+	margin-right: $right;
+}
+@mixin marginTB($top,$bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin margin($margin){
+	margin:$margin;
+}
+@mixin fullScreen(){
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}

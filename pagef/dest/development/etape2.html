@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>geoportail</title>
+
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- endbower -->
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+  maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body >
+  <div id="etapes" class="etapes">
+      <div class="container-fluid">
+          <header>
+            <nav class="navbar">
+              <div class="navbar-header">
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-md-4">
+                      <a class="navbar-brand" href="#">
+                        <div class="row justify-content-between">
+                          <div class="col-4 col-md-6">
+                            <div class="dgid-logo">
+                              <img  src="assets/images/dgid-logo.png"   alt="Accueil DGID" />
+                            </div> 
+                          </div>
+                          <div class="col-4 col-md-6 align-self-center">
+                            <span class="dgid-site-name">Géoportail</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                    <div class="col-8 col-md-4">
+                        <form class="search navbar-form navbar-left">
+                          <div class="form-group">
+                            <button class="btn btn-search " type="button">
+                              <i class="fa fa-search"></i>
+                            </button>
+                            <input type="text search" class="form-control" placeholder="Rechercher une adresse, une donnée ...">
+                            <button class="btn btn-plus" type="button">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="col-2 col-md-2">
+                        <div class="notification">
+                          <a href="#">Notification<span class="badge badge-info"> 3 </span></a>
+                        </div>
+                    </div>
+                    <div class=".offset-1 col-2 col-md-2 profil ">
+                      <div class="form-group">
+                        <div class="row align-items-center no-gutters">
+                          <div class="col-2"><span class="fa fa-user fa-fw fa-lg"></span></div>
+                          <div class="col-7 text-center">Bienvenue,<br><span class="name">Mr Démo</span></div>
+                          <div class="col-3 show-more"><span class="fa fa-caret-down fa-fw fa-lg"></span></div>
+                        </div>
+                    </div>
+                    </div>
+                </div> <!-- row -->
+              </div><!-- navbar-header -->
+            </nav>
+          </header>
+        
+
+          <div class="dgid-container">
+            <!--  .profil-user -->
+            <div class="users-options">
+                <p><a href="#"><span class="fa fa-eye"> Voir profil</span></a></p>
+                <p><a href="#"><span class="fa fa-envelope-o"> Messages</span></a></p>
+                <p><a href="index.html"><span class="fa fa-sign-out"> Se déconnecter</span></a></p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-8">
+                  
+                  <section class="header">
+                          <h1 class="text-uppercase">Procédure immatriculation</h1>
+                          <h3>Démarche : dépôt réquisition</h3>
+                          <p class="step-name">Etape 2 : Choix déclarants</p>
+                  </section>
+                  <section class="steps">
+                      <nav class="slidemenu">
+        
+                          <!-- Item 1 -->
+                          <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" />
+                          <label for="slide-item-1"><p class="icon">1</p><span>1</span></label>
+                          
+                          <!-- Item 2 -->
+                          <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" checked/>
+                          <label for="slide-item-2"><p class="icon">2</p><span>2</span></label>
+                          
+                          <!-- Item 3 -->
+                          <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+                          <label for="slide-item-3"><p class="icon">3</p><span>3</span></label>
+                          
+                          <!-- Item 4 -->
+                          <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+                          <label for="slide-item-4"><p class="icon">4</p><span>4</span></label>
+                          <!-- Item 5 -->
+                          <input type="radio" name="slideItem" id="slide-item-5" class="slide-toggle"/>
+                          <label for="slide-item-5"><p class="icon">5</p><span>5</span></label>
+                          <!-- Item 6 -->
+                          <input type="radio" name="slideItem" id="slide-item-6" class="slide-toggle"/>
+                          <label for="slide-item-6"><p class="icon">6</p><span>6</span></label>
+                          <!-- Item 7 -->
+                          <input type="radio" name="slideItem" id="slide-item-7" class="slide-toggle"/>
+                          <label for="slide-item-7"><p class="icon">7</p><span>7</span></label>
+                          
+                          <div class="clear"></div>
+                          
+                          <!-- Bar -->
+                          <div class="slider">
+                            <div class="bar"></div>
+                          </div>
+                      </nav>
+                  </section>
+                  <div class="container-section">
+                      <section class="content">
+                        <div class="accordeon-content">
+                          <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                              <div class="card-header" role="tab" id="declarant-head">
+                                <h3 class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#declarants" aria-expanded="true" aria-controls="declarants">
+                                   Déclarants
+                                   <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                  
+                                </h3>
+                              </div>
+
+                              <div id="declarants" class="collapse show" role="tabpanel" aria-labelledby="declarant-head">
+                                <div class="card-block">
+                                   <ul>
+                                    <li>
+                                     <img src="http://placehold.it/100x100" alt=""/>
+                                      <div><span>Nom :</span><span>Dupont</span></div>
+                                      <div><span>Prénom :</span><span>Jean</span></div>
+                                      <div><span>Adresse :</span><span>Cite Asecna</span></div>
+                                    </li>
+                                     <li>
+                                      <img src="http://placehold.it/100x100" alt=""/>
+                                      <div><span>Nom:</span><span>Dupont</span></div>
+                                      <div><span>Prénom :</span><span>Jean</span></div>
+                                      <div><span>Adresse :</span><span>Cite Asecna</span></div>
+                                    </li>
+                                     <li>
+                                      <img src="http://placehold.it/100x100" alt=""/>
+                                      <div><span>Nom :</span><span>Dupont</span></div>
+                                      <div><span>Prénom :</span><span>Jean</span></div>
+                                      <div><span>Adresse :</span><span>Cite Asecna</span></div>
+                                    </li>
+                                  </ul>
+                                  <section  class="boutons">
+                                    <div class="row justify-content-md-center">
+                                      
+                                        <div class="col-3"><a href="#" class="btn btn-annuler">Annuler</a></div>
+                                       <div class="col-3"><a href="#" class="btn btn-save"><span>Valider</span></a></div>
+                                       <div class="col-3"><a href="#" data-toggle="modal"  data-target="#modalCarnet" class=" btn btn-add" ><span>Ajouter</span></a></div>
+                                      
+                                      </div>
+                                  </section>
+                                  <!-- Modal -->
+                                    <div class="modal fade" id="modalCarnet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">carnet d'@ ici</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            ...
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">fermer</button>
+                                           
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="parcelle-head">
+                                <h3 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#parcelle" aria-expanded="false" aria-controls="parcelle">
+                                    Informations parcellaires
+                                    <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                </h3>
+                              </div>
+                              <div id="parcelle" class="collapse" role="tabpanel" aria-labelledby="parcelle-head">
+                                <div class="card-block">
+                                <p>Information sparcellaire à mettre</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="mandataire-head">
+                                <h3 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#mandataire" aria-expanded="false" aria-controls="mandataire">
+                                    Mandataire
+                                  <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                </h3>
+                              </div>
+                              <div id="mandataire" class="collapse" role="tabpanel" aria-labelledby="mandataire-head">
+                                <div class="card-block">
+                                  <div class="left">
+                                      <form>
+                                        <div class="form-group">
+                                          <select class="form-control" id="exampleSelect1">
+                                            <option>Choisir</option>
+                                            <option>Jean dupond</option>
+                                            <option>Mr démo</option>
+                                              
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                             <input type="email" class="form-control" id="email"  placeholder="Email">
+                                              
+                                        </div>
+                                        <div class="form-group">
+                                             <input type="email" class="form-control" id="emailConfirm"  placeholder="Confirmer Email">
+                                        </div>
+                                      </form>
+                                  </div>
+                                  <ul>
+                                    <li>
+                                     <img src="http://placehold.it/100x100" alt=""/>
+                                      <div><span>Nom :</span><span>Dupont</span></div>
+                                      <div><span>Prénom :</span><span>Jean</span></div>
+                                      <div><span>Adresse :</span><span>Cite Asecna</span></div>
+                                    </li>
+                                  </ul>
+                                  <section  class="boutons">
+                                    <div class="row justify-content-md-center">
+                                      
+                                        <div class="col-3"><a href="#" class="btn btn-annuler">Annuler</a></div>
+                                       <div class="col-3"><a href="#" class="btn btn-save"><span>Valider</span></a></div>
+                                       
+                                      
+                                      </div>
+                                  </section>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="doc-legal-head">
+                                <h3 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#doc-legal" aria-expanded="false" aria-controls="doc-legal">
+                                    Documents légales
+                                    <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                </h3>
+                              </div>
+                              <div id="doc-legal" class="collapse" role="tabpanel" aria-labelledby="doc-legal-head">
+                                <div class="card-block">
+                                    <div class="form-group">
+                                      <label for="file">Chargement Fichier</label>
+                                      <input type="file" class="form-control-file" id="file" aria-describedby="fileHelp">
+                                      <small id="fileHelp" class="form-text text-muted">Choisissez un ou plusieurs documents.</small>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div><!-- accordeon-content -->
+                      </section>
+                  
+                
+                      <section id="boutons" class="boutons">
+                        <div class="row justify-content-md-center">
+                          <div class="col-2"><a href="etape1.html" alt="précédent" class="btn btn-prev"><span class="fa fa-angle-double-left fa-2x"></span></a></div>
+                            <div class="col-4"><a href="#" class="btn btn-annuler">Annuler</a></div>
+                          <div class="col-4"><a href="#" class="btn btn-save"><span>Sauvegarder</span></a></div>
+                          <div class="col-2"><a href="etape3.html" alt="suivant" class="btn btn-next"><span class="fa fa-angle-double-right fa-2x"></span></a></div>
+                          </div>
+                      </section>
+                  </div>
+                </div>
+            </div>
+          
+        
+
+        <!--left menu -->
+            <div class=" dgid-menu dgid-menu-principal">
+                <a href="#" alt="Menu"><span class="fa fa-bars fa-2x"></span></a>
+            </div><!-- dgid-menu-principal -->
+
+            <div class="menu-tab dgid-menu dgid-menu-principal">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+            </div>
+            <div class="menu-hide">
+              <nav >
+                <ul class="nav flex-column">
+                  
+                  <li class="nav-item"><a href="#"><span class="fa fa-home  fa-fw fa-lg"></span>
+                          <span>Accueil</span></a></li>
+                  <li class="nav-item"><a href="#"><span class="fa fa-newspaper-o  fa-fw fa-lg"></span><span>Actualités</span></a></li>
+                  <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" id="drop" href="#">Données Thématiques</a>
+
+                            <ul class="dropdown-menu" area-labelledby ="drop">
+                            <li class="dropdown-item">
+                              <a href="#"><span class="fa fa-tree fa-fw fa-lg"></span><span> Agriculture</span></a></li>
+                              <li class="dropdown-item">
+                             <a href="#"><span class="fa fa-scissors fa-fw fa-lg"></span><span> découpage</span></a></li>
+                          
+                            </ul>
+                  </li>
+
+                  <li class="nav-item"><a href="#"><span class="fa fa-link fa-fw fa-lg"></span><span> Partenaires</span></a></li>
+                   <li class="nav-item" ><a href="#">Link Four</a></li>
+                     <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Procédures
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                <h6 class="dropdown-header">
+                                <span class="fa fa-pencil-square-o fa-fw fa-lg"></span>
+                                <span>Immatriculation</span></h6>
+                                <li ><a href="#"><span class="fa fa-arrow-right fa-fw "></span><span>Dépot réquisition </span></a></li>
+                                <li ><a href="etape1.html"><span class="fa fa-arrow-right fa-fw "></span><span>Dépot perquisition </span></a></li>
+                                  <div class="dropdown-divider"></div>
+                                  
+
+                            </ul>
+
+
+                              </li>
+                             
+                        
+
+                </ul>
+              </nav>
+            </div>
+        </div><!-- ./dgid-container -->  
+     
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col col-xs-12">
+                  <p>@ Copyright Atos 2017</p>
+                </div>
+              </div>   
+            </div>
+        </footer>
+      </div><!-- container-fluid  -->
+  </div><!-- etapes -->
+
+<!-- bower:js -->
+<script src="bower-components/jquery/dist/jquery.js"></script>
+<script src="bower-components/tether/dist/js/tether.js"></script>
+<script src="bower-components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/js/my-script.js"></script>
+<!-- endbower -->
+
+</body>
+</html>

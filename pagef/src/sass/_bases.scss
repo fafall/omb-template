@@ -1,0 +1,149 @@
+/* page element **/
+
+$bold :700;
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body,html,#etapes{
+	height: 100%;
+}
+
+body{
+	background-color:$white;
+	@include police($font-page,300,16px);
+	color:$caramel;
+}
+.container-fluid{
+	width: 90%;
+	
+	height: 100%;
+	@include paddingLR(0,0);
+
+	.dgid-container
+	{
+	background: $white;
+    min-height: -moz-calc(100% - (68px + 30px));
+    min-height: -webkit-calc(100% - (68px + 30px));
+    min-height: calc(100% - (68px + 30px));
+    position: relative;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 
+	0 6px 20px 0 rgba(0,0,0,0.2), 
+	0 8px 22px 0 rgba(0,0,0,0.2);
+	}
+	 
+	
+}
+
+.home{
+	iframe{
+	 	@include fullScreen();
+	 }
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	@include police($font-page,700,22px);
+    color:$color-headlines; 
+    text-transform: uppercase;
+    @include marginTB(10px,15px);
+		/* font-family: $font-highlight; */
+    
+}
+h3{
+	font-size: 14px;
+	color:$lightyellow;
+}
+
+p.title{
+	@include police($font-page,700,14px);
+	color: $black;
+	text-align: justify;
+	line-height: 1.53em;
+
+}
+
+p.internal{
+	@extend p.title;
+	font-weight:$bold;
+
+}
+
+#navigation {
+	ul{
+		list-style:none
+	}
+		li{
+
+          }
+			a{
+				@include police($font-page,400,14px);
+				color: $color-headlines;
+				
+
+				&:hover{
+					/* background-color:$link-hover-background; */
+					color:$brown;
+				}
+				&:active{
+					background-color:$link-hover-background;
+					color:$color-headlines;
+				}
+			}
+}
+
+
+footer{
+	text-align: center;
+
+	p{
+		@include police ($font-page,700,12px);
+		color:$brown;
+		@include marginTB(10px,0);
+	}
+
+	a.title{
+		@include police($font-page,700,14px);
+		text-transform: uppercase;
+	 &:hover{
+	 	color:$black;
+	 }
+	}
+	a.body{
+		@include police($font-page,700,11px);
+       color: $color-headlines;
+       text-transform: capitalize;
+
+       &:hover{
+       	color:$black;
+       }
+	}
+	&:before{
+		content :"";
+		width: 100%;
+		display: block;
+		height: 1px;
+		background:$lightBorder;
+		
+
+	}
+}
+
+
+/** forms **/
+
+input{
+	border:2px solid $border-input-color;
+	@include radius(5px);
+	color:$dark-grey;
+
+	:focus{
+		border-color:$brown;
+		@include radius(8px);
+	}
+}
+
