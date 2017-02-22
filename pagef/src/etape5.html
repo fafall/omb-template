@@ -14,7 +14,7 @@
 </head>
 <body >
   <div id="etapes" class="etape-5">
-      <div class="container-fluid">
+      
           <header>
             <nav class="navbar">
               <div class="navbar-header">
@@ -130,7 +130,7 @@
                               <div class="card-header" role="tab" id="doc-head">
                                 <h3 class="mb-0">
                                   <a data-toggle="collapse" data-parent="#accordion" href="#docs" aria-expanded="true" aria-controls="docs">
-                                   Documents
+                                   Paiement taxes
                                    <span class="fa fa-chevron-circle-down"></span>
                                   </a>
                                   
@@ -139,7 +139,7 @@
 
                               <div id="docs" class="collapse show" role="tabpanel" aria-labelledby="doc-head">
                                 <div class="card-block">
-                                <table class="table table-responsive">
+                                <table class="table table-paid ">
                                     <thead>
                                       <tr>
                                         <th>Taxes</th>
@@ -149,119 +149,36 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
+                                      <td>Timbre 1</td>
+                                      <td>10 000</td>
+                                      <td>1 000</td>
                                     </tr>
                                     <tr>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
+                                      <td>Timbre 2</td>
+                                      <td>2 000</td>
+                                      <td>2 000</td>
                                     </tr>
                                     <tr>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
-                                    <td>Cell</td>
+                                      <td>Timbre 3</td>
+                                      <td>0</td>
+                                      <td>0</td>
                                     </tr>
                                     </tbody>
+                                    <tfoot>
+                                      <tr>
+                                        <th>Total</th>
+                                        <th>12 000</th>
+                                        <th>3 000</th>
+                                      </tr>
+                                    </tfoot>
                                     </table>
                                   
-                                  <section  class="boutons">
+                                  <section  class="boutons less-marginB">
                                     <div class="row justify-content-md-center">
-                                      
-                                        <div class="col-3"><a href="#" class="btn btn-annuler">Annuler</a></div>
-                                       <div class="col-3"><a href="#" class="btn btn-save"><span>Valider</span></a></div>
-                                       <div class="col-3"><a href="#" data-toggle="modal"  data-target="#modalCarnet" class=" btn btn-add" ><span>Ajouter</span></a></div>
-                                      
-                                      </div>
+                                      <div class="col-4"><a href="#" class="btn btn-paid"><span>Total à payer : </span><span class="montant">9000 FCFA</span></a></div>
+                                    </div>
                                   </section>
                                 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <div class="card-header" role="tab" id="payeur-head">
-                                <h3 class="mb-0">
-                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#payeur" aria-expanded="false" aria-controls="payeur">
-                                    Payeurs
-                                    <span class="fa fa-chevron-circle-down"></span>
-                                  </a>
-                                </h3>
-                              </div>
-                              <div id="payeur" class="collapse" role="tabpanel" aria-labelledby="payeur-head">
-                                <div class="card-block">
-                                <p>Information sparcellaire à mettre</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <div class="card-header" role="tab" id="preuve-head">
-                                <h3 class="mb-0">
-                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#preuve" aria-expanded="false" aria-controls="preuve">
-                                    Preuve de paiement
-                                  <span class="fa fa-chevron-circle-down"></span>
-                                  </a>
-                                </h3>
-                              </div>
-                              <div id="preuve" class="collapse" role="tabpanel" aria-labelledby="preuve-head">
-                                <div class="card-block">
-                                  <div class="left">
-                                      <form>
-                                        <div class="form-group">
-                                          <select class="form-control" id="exampleSelect1">
-                                            <option>Choisir</option>
-                                            <option>Jean dupond</option>
-                                            <option>Mr démo</option>
-                                              
-                                          </select>
-                                        </div>
-                                        <div class="form-group">
-                                             <input type="email" class="form-control" id="email"  placeholder="Email">
-                                              
-                                        </div>
-                                        <div class="form-group">
-                                             <input type="email" class="form-control" id="emailConfirm"  placeholder="Confirmer Email">
-                                        </div>
-                                      </form>
-                                  </div>
-                                  <ul>
-                                    <li>
-                                     <img src="http://placehold.it/100x100" alt=""/>
-                                      <div><span>Nom :</span><span>Dupont</span></div>
-                                      <div><span>Prénom :</span><span>Jean</span></div>
-                                      <div><span>Adresse :</span><span>Cite Asecna</span></div>
-                                    </li>
-                                  </ul>
-                                  <section  class="boutons">
-                                    <div class="row justify-content-md-center">
-                                      
-                                        <div class="col-3"><a href="#" class="btn btn-annuler">Annuler</a></div>
-                                       <div class="col-3"><a href="#" class="btn btn-save"><span>Valider</span></a></div>
-                                       
-                                      
-                                      </div>
-                                  </section>
                                 </div>
                               </div>
                             </div>
@@ -276,14 +193,162 @@
                               </div>
                               <div id="moyenP" class="collapse" role="tabpanel" aria-labelledby="moyenP-head">
                                 <div class="card-block">
-                                    <div class="form-group">
-                                      <label for="file">Chargement Fichier</label>
-                                      <input type="file" class="form-control-file" id="file" aria-describedby="fileHelp">
-                                      <small id="fileHelp" class="form-text text-muted">Choisissez un ou plusieurs documents.</small>
+                                  <ul  class="nav nav-tabs" role="tablist">
+  
+                                        <li class="nav-item">
+                                          <a class="nav-link active" href="#paypal" role="tab" data-toggle="tab" id="p-tab" aria-expanded="true">Paypal</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#cb" role="tab" id="hats-tab" data-toggle="tab" aria-controls="cb">carte Bancaire</a>
+                                        </li>
+
+                                        <!-- Dropdown -->
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                          Autres Modes
+                                          </a>
+                                          <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#service1" role="tab"  data-toggle="tab">Orange Money</a>
+                                            <a class="dropdown-item" href="#service2" role="tab"  data-toggle="tab">Cheques/especes</a>
+                                          </div>
+                                        </li>
+                                  </ul>
+                                  <!-- Content Panel -->
+                                  <div  class="tab-content">
+
+                                  <div role="tabpanel" class="tab-pane fade in active" id="paypal" aria-labelledby="p-tab">
+                                      <p class="icon"><span class="fa fa-paypal fa-3x"></span></p>
+                                        <p><a href="https://www.paypal.com/signin">Payez avec votre compte paypal
+                                        </a>
+                                        <small>Connectez vous à votre compte pour payer</small>
+                                        </p>
+                                        
+                                        <p><a href="https://www.paypal.com/signup/account">Vous n'avez pas de compte paypal ?
+                                        </a>
+                                        <small>utilisez un autre type de paiement <br />
+                                        ou rejoignez paypal pour payer plus rapidement</small>
+                                        </p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane fade" id="cb" aria-labelledby="hats-tab">
+                                      <p class="icon"><span class="fa fa-credit-card fa-3x"></span></p>
+                                      <form action="#">
+                                        <div class="form-group">
+                                          <label for="posCard">Nom propriétaire</label><input id="posCard" type="text" class="form-control"/>
+                                           <label for="cardNumber">Numéro carte</label><input id="cardNumber" type="text" class="form-control"/>
+                                          <label for="expDate">Date expiration(mm/aaaa)</label>
+                                          <input id ="expDate" type="month" class="form-control"/>
+                                        
+                                          <label for="verifCode">code de vérification</label><input id="verifCode" type="text" class="form-control"/>
+                                         <button class="help " title="Renseignez les 3 derniers chiffres inscrits au dos de votre Carte bancaire."><span class="fa fa-question-circle"></span></button>
+                                         </div>
+                                        <div class="boutons">
+                                           <input class="btn btn-save" type="submit" value="Confirmer paiement" />
+                                        </div>
+                                      </form>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fade" id="service1">
+                                    <p class="icon"><img src="assets/images/orange-money.svg" alt="orange money"></p>
+                                    <form action="#">
+                                      <div class="form-group">
+                                        <label for="montantP">Montant à payer</label>
+                                        <input id="montantP" type="text" class="form-control" placeholder="9000" />
+                                        <label for="codeS">Code secret</label>
+                                        <input id="codeS" type="password" class="form-control" placeholder="12345" />
+                                        <div class="boutons">
+                                          <input class="btn btn-save" type="submit" value="Valider" />
+                                        </div>
+                                      </div>
+                                    </form>
+                                      
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fade" id="service2" >
+                                    <p class="icon"><img src="assets/images/argent.svg" alt="espèces/cheques"></p>
+                                    <p class="text-center">Merci de vous rendre à l' accueil de notre batiment<br/> pour effectuer ce type de paiement.</p>
+                                  </div>
+
                                     </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="payeur-head">
+                                <h3 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#payeur" aria-expanded="false" aria-controls="payeur">
+                                    Payeurs
+                                    <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                </h3>
+                              </div>
+                              <div id="payeur" class="collapse" role="tabpanel" aria-labelledby="payeur-head">
+                                <div class="card-block">
+                                <div class="row align-items-center">
+                                  <div class="col-6 text-center">
+                                   <section  class="boutons less-marginB">
+                                      <a href="#" class="btn btn-paid"><span>Total à payer : </span><span class="montant">9000 FCFA</span></a>
+                                    </section>
+                                  </div>
+                                  <div class="col-6 text-center">
+                                    <section class="infos-p">
+                                        <ul>
+                                          <li>
+                                           <img src="http://placehold.it/100x100" alt=""/>
+                                            <div><span>Nom :</span><span>Dupont</span></div>
+                                            <div><span>Prénom :</span><span>Jean</span></div>
+                                            <div><span>Adresse :</span><span>Cite Asecna</span></div>
+                                          </li>
+                                        </ul>
+                                      </section>
+                                  </div>
+                                  <div class="offset-7 col-4">
+                                    <section  class="boutons">
+                                      <a href="#" class="btn btn-annuler "><span>Changer de payeur</span></a>
+                                    </section>
+                                  </div>
+                                </div>
+                                  
+                                                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="preuve-head">
+                                <h3 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#preuve" aria-expanded="false" aria-controls="preuve">
+                                    Preuve de paiement
+                                  <span class="fa fa-chevron-circle-down"></span>
+                                  </a>
+                                </h3>
+                              </div>
+                              <div id="preuve" class="collapse" role="tabpanel" aria-labelledby="preuve-head">
+                                <div class="card-block">
+                                  <div class="row align-items-center">
+                                    <div class="col-8 ">
+                                     <form>
+                                        <div class="file form-group">
+                                          <input type="file" />
+                                          </div>
+                                        <div class="form-group row">
+                                               <label class="col-form-label col-6" for="refT">Référence transaction </label>
+                                               <div class="div col-6">
+                                                 <input type="text" class="form-control" id="refT"  placeholder="123456788">
+                                               </div>
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="col-4">
+                                      <section  class="boutons less-marginB">
+                                      <a href="#" class="btn btn-save"><span>Joindre</span></a>
+                                      </section>
+                                    </div>
+                                  </div>
+                                
+                                </div>
+                              </div>
+                            </div>
+                            
                           </div>
                           
                         </div><!-- accordeon-content -->
@@ -293,10 +358,10 @@
                      <!--boutons navigations -->
                       <section id="boutons" class="boutons">
                         <div class="row justify-content-md-center">
-                          <div class="col-2"><a href="etape3.html" alt="précédent" class="btn btn-prev"><span class="fa fa-angle-double-left fa-2x"></span></a></div>
+                          <div class="col-2"><a href="etape4.html" alt="précédent" class="btn btn-prev"><span class="fa fa-angle-double-left fa-2x"></span></a></div>
                             <div class="col-4"><a href="#" class="btn btn-annuler">Annuler</a></div>
                           <div class="col-4"><a href="#" class="btn btn-save"><span>Sauvegarder</span></a></div>
-                          <div class="col-2"><a href="etape5.html" alt="suivant" class="btn btn-next"><span class="fa fa-angle-double-right fa-2x"></span></a></div>
+                          <div class="col-2"><a href="etape6.html" alt="suivant" class="btn btn-next"><span class="fa fa-angle-double-right fa-2x"></span></a></div>
                           </div>
                       </section>
 
@@ -372,13 +437,14 @@
               </div>   
             </div>
         </footer>
-      </div><!-- container-fluid  -->
+      
   </div><!-- etapes -->
 
 <!-- bower:js -->
 <script src="bower-components/jquery/dist/jquery.js"></script>
 <script src="bower-components/tether/dist/js/tether.js"></script>
-<script src="bower-components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower-components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <script src="assets/js/my-script.js"></script>
 <!-- endbower -->
 

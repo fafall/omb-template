@@ -30,6 +30,7 @@
 		0 0 200px 1px rgba(255, 255, 255, 0.5);
 		background:$white;
 }
+ 
 
 %animation{
   transition: all 500ms ease-in-out;
@@ -76,12 +77,34 @@
   %inputText{
     @include paddingTB(6px,6px);
           border: 1px solid $lightBorder;
-          border-left: 0;
           color: $lightGrey;
           background-color:$white;
           &:focus{
              outline: none;
               transition: transform .15s ease;
-              transform: scale(1.2);
+              
           }
   }
+  %noneBorder{
+    box-shadow: none;
+    border-radius: 0;
+    border:none;
+  }
+
+  %shadow-page{
+  box-shadow: 
+   12px 0 15px -5px rgba(0, 0, 0, 0.15), -12px 0 8px -5px rgba(0, 0, 0, 0.15);
+    
+}
+%iframeModal{
+  width: 100%;
+  height: 500px;
+}
+
+%gradient{
+  background: -webkit-linear-gradient(top, 
+            lighten($brown,10) , 
+            darken($lightyellow,10), 
+            lighten($brown,10));
+          background: -o-linear-gradient(left,lighten($brown,10),darken($lightyellow,10), lighten($brown,10));
+}

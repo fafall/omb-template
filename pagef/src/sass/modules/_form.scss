@@ -82,3 +82,43 @@
   }
 
 }
+
+.tab-content {
+
+
+  p.icon{
+      text-align: center;
+      @include margin(0);
+      span{
+        @include marginTB(10px,0);
+        color:$black;
+      }
+    }
+   
+  form{
+
+  width: 70%;
+  margin: auto;
+    
+    .form-group{
+     position: relative;
+    }
+    label{
+      color:$black;
+      @include police($font-page,400,12px);
+      @include marginTB(10px,0);
+    }
+    .help{
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border:0;
+        background: transparent;
+        cursor: pointer;
+      }
+      .boutons .btn{
+        @extend %noneBorder;
+      }
+  }
+
+}

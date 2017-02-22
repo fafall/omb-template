@@ -82,8 +82,17 @@
 
 .accordeon-content &{
   .btn{border-radius:50%;}
+    .btn-paid{
+    @include radius(0);
+    @include paddingLR(10px,10px);
+    @extend %shadow;
+    background:$brown;
+        }
+    .montant{
+      font-weight: $bold;
+    }
  }
-}/** ./boutons **/
+
 
 
 .content .dropdown .btn{
@@ -92,3 +101,17 @@
   color:$black;
   width: 100%;
 }
+
+
+
+}/** ./boutons **/
+
+.less-marginB{
+  @include marginTB(5%,0);
+
+  #payeur &,#preuve &{
+    margin-top: 0;
+  }
+}
+
+

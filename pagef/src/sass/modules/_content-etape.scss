@@ -16,6 +16,14 @@ $widthModal:50%;
 	@extend %shadow;
 }
 
+.divider{
+	@include marginTB(15px,15px);
+	width: 100%;
+	@include marginLR(auto,auto);
+	height: 1px;
+	background:rgba(0, 0, 0, 0.2);;
+}
+
 
 .slidemenu{
  @include police($font-page,400,16px);
@@ -31,7 +39,7 @@ $widthModal:50%;
 	  float: left;
 	  color: #333;
 	  opacity: 0.2;
-	  @extend %animation;
+	@extend %animation;
 	  &:hover{
 	  	cursor: pointer;
 	  color: #666;
@@ -41,6 +49,7 @@ $widthModal:50%;
 		display: block;
  	     @include paddingTB(10px,10px);
  	     @include paddingLR(10px,10px);
+ 	     @include police($font-page,400,12px);
 	}
 	.icon{
 		font-size: 14px;
@@ -56,6 +65,13 @@ $widthModal:50%;
 	  }
 
    }
+   .done {
+	  	opacity:1;
+	  	color:darken($lightyellow,25);
+	  	.icon{
+	  		border-color:darken($lightyellow,25);
+	  	}
+	  }
 
 
 
@@ -93,11 +109,11 @@ $m15 : 15%;
 $m30 : 30%;
 $m42 : 42%;
 $m56 : 56%;
-$m70 : 70%;
+$m72 : 72%;
 $m85 : 85%;
 
 $itemNumber :'1' ,'2' ,'3' ,'4' ,'5' ,'6','7';
-$itemNumberVal :$m, $m15,$m30 ,$m42 ,$m56 ,$m70 ,$m85;
+$itemNumberVal :$m, $m15,$m30 ,$m42 ,$m56 ,$m72 ,$m85;
 
 
 @for $i from 1 through length($itemNumberVal) {
@@ -149,10 +165,6 @@ $itemNumberVal :$m, $m15,$m30 ,$m42 ,$m56 ,$m70 ,$m85;
 	 	background:$brown;
 	 }
 }
- 
-
-
-
  
 }
 
@@ -225,7 +237,7 @@ section.header{
 	       	border-bottom:1px solid $lightGrey;
 	       	@include paddingTB(10px,10px);
 	       	
-
+        
 	       	&:last-child{
 	       		border-bottom:0;
 	       	}
@@ -247,8 +259,7 @@ section.header{
 		       	   }
 
 	       		iframe{
-	       			width: 100%;
-	       			height: 500px;
+	       			@extend %iframeModal;
 	       		}
 	       		.modal-dialog{
 	       			max-width: $widthModal;
@@ -260,3 +271,20 @@ section.header{
 
 }
 
+.confirmation{
+
+	p{
+		color:$black;
+		margin-bottom: 5px;
+       &:nth-child(3){
+       	font-size: 15px;
+       }
+	}
+		
+	.mail{
+			@include police($font-page,700,18px);
+			color:$brown;
+
+	}
+	
+}

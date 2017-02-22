@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 
 
-    //** handle accordeon **//
+    //** handle accordeon  change icone to be continued ....**//
 
     $('.card a' ).click(function() {
         $child1 = $(this).parents('.card-header').siblings('.collapse');
@@ -71,6 +71,23 @@ $(document).ready(function(){
     });
 
 
+    //handle done steps by adding a done class
+
+ $checkedStep =$(".steps input");
+
+
+  $checkedStep.each(function(){
+
+     if(true == $(this).prop("checked")){ //if this item is unchecked
+           
+             $(this).prevAll('label').addClass('done');
+        }
+
+
+
+  });
+
+    
 
 
 }); //document ready

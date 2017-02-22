@@ -40,14 +40,17 @@
 		ul{
 			list-style: none;
 			@include padding(0);
+			.infos-p  &{
+				background:red;
+				&:nth-child(1){
+			 	transform:rotate(0deg);
+			   }
+			}
 
-
-
-		 li{
+		li{
 		 	display: inline-block;
 		 	border:1px solid $lightBorder;
 		 	@include margin(8px);
-		 	
 		 	background:$white;
 		 	box-shadow: 
 			0 5px 15px 1px rgba($black, 0.6), 
@@ -66,10 +69,11 @@
 		 	transform:rotate(7deg);
 		   }
 
-		 }
-		 
+			
 
-		 span{
+		 }
+
+		span{
 		 	@include police($font-page,400,11px);
 		 	color:$brown;
 		 	&:first-child{
@@ -78,6 +82,15 @@
 		 	}
 
 		 }
+		}
+		.infos-p{
+			li{
+				&:nth-child(1){
+			 	transform:rotate(0deg);
+			   }
+
+			}
+				
 		}
 	   #mandataire {
 			ul,.left{
@@ -107,5 +120,63 @@
 		 @include police($font-page,400,13px);
 		}
 	}
+	#moyenP,#pp {
+        	ul{
+        		li{
+        			@include padding(0px);
+        			transform:rotate(0deg);
+        			@extend %noneBorder;
+        			@include margin(2px);
+        			@include police($font-page,400,14px);
+        			text-align: center;
+
+        			a{
+        				color:$brown;
+        				&:hover, &.active{
+        					color:darken($lightyellow,20);
+        					font-weight: $bold;
+        				}
+        			}
+
+        		
+        		}
+        	}
+        }
+
+     #paypal{
+     	p{
+     		&:not(.icon){
+     			text-align: center;
+     			a, small{
+     				display: block;
+     			}
+     			a{
+     				color:$black;
+     				text-decoration: underline;
+     				&:hover{
+     					color:darken($lightyellow,20);
+     				}
+     			}
+     		}
+     	}
+     }
 
 }
+small{
+	font-size: 70%;
+}
+
+.etape-6{
+	iframe{
+		@extend %iframeModal;
+	}
+}
+
+.name-file{
+	text-decoration: underline;
+	cursor:pointer;
+	font-size: 14px;
+	font-weight: $bold;
+}
+
+
