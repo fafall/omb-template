@@ -80,6 +80,12 @@ $color-even-cells : transparentize($lightyellow , .8);
 				  color:$black;
 				  @include police ($font-page,700,12px);
 				}
+
+			 input{
+			 	width: 66%;
+			 	border: 1px solid $lightBorder;
+			 	@include paddingLR(10px,0);
+			 }
 			}
 		}
 	}

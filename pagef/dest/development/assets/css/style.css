@@ -15159,6 +15159,13 @@ section.header p {
   font-weight: 700;
   font-size: 12px;
 }
+/* line 84, ../../../../src/sass/modules/_tables.scss */
+.table-paid tbody tr td input {
+  width: 66%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  padding-right: 0;
+}
 
 /* line 2, ../../../../src/sass/modules/_boutons.scss */
 .boutons {
